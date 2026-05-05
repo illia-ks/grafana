@@ -30,6 +30,6 @@ jobs:
           SUPERNOVA_API_KEY: ${{ secrets.SUPERNOVA_API_KEY }}
           SUPERNOVA_DESIGN_SYSTEM_ID: ${{ secrets.SUPERNOVA_DESIGN_SYSTEM_ID }}
         run: |
-          npx supernova analyze \
+          npx supernova code analyze \
             --apiKey="$SUPERNOVA_API_KEY" \
             --designSystemId="$SUPERNOVA_DESIGN_SYSTEM_ID"
