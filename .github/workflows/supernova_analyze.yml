@@ -9,29 +9,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout Grafana source
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # 2. Enable Corepack 
-      - name: Enable Corepack
-        run: corepack enable
+      - name: Install CLI
+        run: npm install -g @supernovaio/cli
 
-      # 3. Run Supernova CLI in isolated environment
-      - name: Run Supernova analyze
+      - name: Login to Supernova
         env:
           SUPERNOVA_API_KEY: ${{ secrets.SUPERNOVA_API_KEY }}
         run: |
-          mkdir -p /tmp/supernova-run
-          cd /tmp/supernova-run
+          supernova login --apiKey "$SUPERNOVA_API_KEY"
 
-          npm init -y
-          npm install @supernovaio/cli
-
-          # copy Grafana code into context folder
-          cp -R "$GITHUB_WORKSPACE" ./source
-
-          cd source
-
-          npx supernova code analyze \
-            --designSystemId="$SUPERNOVA_DESIGN_SYSTEM_ID"
+      - name: Run analysis
+        env:
+          SUPERNOVA_DESIGN_SYSTEM_ID: ${{ secrets.SUPERNOVA_DESIGN_SYSTEM_ID }}
+        run: |
+          supernova code analyze \
+            -d "$SUPERNOVA_DESIGN_SYSTEM_ID"
