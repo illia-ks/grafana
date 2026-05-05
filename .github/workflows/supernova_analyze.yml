@@ -3,6 +3,7 @@ name: Supernova Analyze
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   analyze:
@@ -13,15 +14,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Enable Yarn (Grafana monorepo requirement)
+      # 2. Enable Corepack (Yarn)
       - name: Enable Corepack (Yarn)
         run: |
           corepack enable
           corepack prepare yarn@stable --activate
 
-      # 3. Install dependencies (Grafana uses workspaces)
+      # 3. Install dependencies
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable --check-cache
 
       # 4. Run Supernova CLI analyze
       - name: Run Supernova analyze
