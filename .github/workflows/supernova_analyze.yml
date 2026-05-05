@@ -20,7 +20,7 @@ jobs:
       # 3. Run analysis
       - name: Run Supernova analyze
         env:
-          SUPERNOVA_API_KEY: ${{ secrets.SUPERNOVA_API_KEY }}
+          SUPERNOVA_TOKEN: ${{ secrets.SUPERNOVA_API_KEY }}
         run: |
           supernova code analyze \
             -d "${{ secrets.SUPERNOVA_DESIGN_SYSTEM_ID }}"
