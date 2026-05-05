@@ -4627,7 +4627,6 @@ export type DashboardMeta = {
   hasAcl?: boolean;
   isFolder?: boolean;
   isSnapshot?: boolean;
-  isStarred?: boolean;
   provisioned?: boolean;
   provisionedExternalId?: string;
   publicDashboardEnabled?: boolean;
@@ -4789,6 +4788,10 @@ export type ReportSchedule = {
   workdaysOnly?: boolean;
 };
 export type State = string;
+export type ReportUrlItem = {
+  title?: string;
+  url?: string;
+};
 export type Report = {
   created?: string;
   dashboards?: ReportDashboard[];
@@ -4808,6 +4811,7 @@ export type Report = {
   subject?: string;
   uid?: string;
   updated?: string;
+  urls?: ReportUrlItem[];
   userId?: number;
 };
 export type CreateOrUpdateReport = {
@@ -4824,6 +4828,7 @@ export type CreateOrUpdateReport = {
   schedule?: ReportSchedule;
   state?: State;
   subject?: string;
+  urls?: ReportUrlItem[];
 };
 export type ReportEmail = {
   /** Comma-separated list of emails to which to send the report to. */
