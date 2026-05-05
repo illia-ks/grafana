@@ -3,33 +3,33 @@ name: Supernova Analyze
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
 
 jobs:
   analyze:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout Grafana source
+      # 1. Checkout Grafana source code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Enable Corepack (Yarn)
-      - name: Enable Corepack (Yarn)
-        run: |
-          corepack enable
-          corepack prepare yarn@stable --activate
+      # 2. Enable Corepack 
+      - name: Enable Corepack
+        run: corepack enable
 
-      # 3. Install dependencies
-      - name: Install dependencies
-        run: yarn install --immutable --check-cache
-
-      # 4. Run Supernova CLI analyze
-      - name: Run Supernova analyze
+      # 3. Run Supernova in isolated environment
+      - name: Run Supernova analyze (isolated)
         env:
           SUPERNOVA_API_KEY: ${{ secrets.SUPERNOVA_API_KEY }}
           SUPERNOVA_DESIGN_SYSTEM_ID: ${{ secrets.SUPERNOVA_DESIGN_SYSTEM_ID }}
         run: |
+          mkdir -p /tmp/supernova-run
+          cd /tmp/supernova-run
+
+          npm init -y
+          npm install @supernovaio/cli
+
           npx supernova code analyze \
             --apiKey="$SUPERNOVA_API_KEY" \
-            --designSystemId="$SUPERNOVA_DESIGN_SYSTEM_ID"
+            --designSystemId="$SUPERNOVA_DESIGN_SYSTEM_ID" \
+            --path="${GITHUB_WORKSPACE}"
