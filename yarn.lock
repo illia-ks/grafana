@@ -23552,6 +23552,7 @@ __metadata:
     prettier: "npm:3.6.2"
     prismjs: "npm:1.30.0"
     prom-client: "npm:^15.1.3"
+    prosemirror-state: "npm:^1.4.4"
     publint: "npm:^0.3.12"
     re-resizable: "npm:6.11.2"
     react: "npm:18.3.1"
@@ -32789,12 +32790,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prosemirror-model@npm:^1.25.4":
+"prosemirror-model@npm:^1.0.0, prosemirror-model@npm:^1.20.0, prosemirror-model@npm:^1.21.0, prosemirror-model@npm:^1.25.4":
   version: 1.25.4
   resolution: "prosemirror-model@npm:1.25.4"
   dependencies:
     orderedmap: "npm:^2.0.0"
   checksum: 10/63c5d6dd3b70e42650f07b4a2ed87e7442291b1f95a9930bf4ff2f7c6a1228e95db0e996cdabed667f4cbaf67c3ee290e19b91a31dd199da95477ac4d1b868e3
+  languageName: node
+  linkType: hard
+
+"prosemirror-state@npm:^1.0.0, prosemirror-state@npm:^1.4.4":
+  version: 1.4.4
+  resolution: "prosemirror-state@npm:1.4.4"
+  dependencies:
+    prosemirror-model: "npm:^1.0.0"
+    prosemirror-transform: "npm:^1.0.0"
+    prosemirror-view: "npm:^1.27.0"
+  checksum: 10/90e66cbc49f2eceeb174f5184ed94df432a8b83866ab74ef602d21555dd151eb1ff9a0794b12d98384981601ebaa885d930f6c667165ff969874944a2f9e2488
+  languageName: node
+  linkType: hard
+
+"prosemirror-transform@npm:^1.0.0, prosemirror-transform@npm:^1.1.0":
+  version: 1.12.0
+  resolution: "prosemirror-transform@npm:1.12.0"
+  dependencies:
+    prosemirror-model: "npm:^1.21.0"
+  checksum: 10/9b7c48529b32ea5f58f4875148eea50f963dda231c6dc10523745eb7c697ee9ba689027066039c4e13540acf93d9d6102796dd12c46b16b30136c73a7353db45
+  languageName: node
+  linkType: hard
+
+"prosemirror-view@npm:^1.27.0":
+  version: 1.41.8
+  resolution: "prosemirror-view@npm:1.41.8"
+  dependencies:
+    prosemirror-model: "npm:^1.20.0"
+    prosemirror-state: "npm:^1.0.0"
+    prosemirror-transform: "npm:^1.1.0"
+  checksum: 10/16a52d02219bfc91529d47cbbd75765dc2429ad9682d11ed6404ca97c2ec16a0805abcd0eb8b722494dcd753bfaf00db580a2d045ae9805375e3c546334cd028
   languageName: node
   linkType: hard
 
