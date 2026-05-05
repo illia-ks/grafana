@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/ui",
+      "@grafana/ui/internal"
+    ]
+  },
+  "records": {
+    "plugin-signature-badge": {
+      "count": 1,
+      "files": [
+        "src/components/DataSourcePicker.tsx"
+      ],
+      "propUsage": {
+        "status": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{o.meta.signature}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 213,
+          "lineStart": 213,
+          "snippet": "<PluginSignatureBadge status={o.meta.signature} />",
+          "sourcePath": "src/components/DataSourcePicker.tsx"
+        }
+      ]
+    },
+    "select": {
+      "count": 1,
+      "files": [
+        "src/components/DataSourcePicker.tsx"
+      ],
+      "propUsage": {
+        "aria-label": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "'Select a data source'"
+            }
+          ]
+        },
+        "autoFocus": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{autoFocus}"
+            }
+          ]
+        },
+        "backspaceRemovesValue": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "false"
+            }
+          ]
+        },
+        "className": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"ds-picker select-container\""
+            }
+          ]
+        },
+        "data-testid": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{selectors.components.DataSourcePicker.inputV2}"
+            }
+          ]
+        },
+        "disabled": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{disabled}"
+            }
+          ]
+        },
+        "getOptionLabel": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{(o) => { if (o.meta && isUnsignedPluginSignature(o.meta.signature) && o !== value) { return ( <Stack alignItems=\"center…}"
+            }
+          ]
+        },
+        "inputId": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{inputId || 'data-source-picker'}"
+            }
+          ]
+        },
+        "invalid": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{Boolean(error) || Boolean(this.props.invalid)}"
+            }
+          ]
+        },
+        "isClearable": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{isClearable}"
+            }
+          ]
+        },
+        "isLoading": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{isLoading}"
+            }
+          ]
+        },
+        "isMulti": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "false"
+            }
+          ]
+        },
+        "maxMenuHeight": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "500"
+            }
+          ]
+        },
+        "noOptionsMessage": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"No datasources found\""
+            }
+          ]
+        },
+        "onBlur": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{onBlur}"
+            }
+          ]
+        },
+        "onChange": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{this.onChange}"
+            }
+          ]
+        },
+        "openMenuOnFocus": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{openMenuOnFocus}"
+            }
+          ]
+        },
+        "options": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{options}"
+            }
+          ]
+        },
+        "placeholder": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{placeholder}"
+            }
+          ]
+        },
+        "value": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{value ?? null}"
+            }
+          ]
+        },
+        "width": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{width}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 209,
+          "lineStart": 188,
+          "snippet": "<Select\n          isLoading={isLoading}\n          disabled={disabled}\n          aria-label={'Select a data source'}\n          data-testid={selectors.components.DataSourcePicker.inputV2}\n          inputId={inputId || 'data-source-picker'}\n          className=\"ds-picker select-container\"\n          isMulti={false}\n          isClearable={isClearable}\n          backspaceRemovesValue={false}\n          onChange={this.onChange}\n          options={options}\n          autoFocus={autoFocus}\n          onBlur={onBlur}\n          width={width}\n          openMenuOnFocus={openMenuOnFocus}\n          maxMenuHeight={500}\n          placeholder={placeholder}\n          noOptionsMessage=\"No datasources found\"\n          value={value ?? null}\n          invalid={Boolean(error) || Boolean(this.props.invalid)}\n          getOptionLabel={(o) =>",
+          "sourcePath": "src/components/DataSourcePicker.tsx"
+        }
+      ]
+    },
+    "stack": {
+      "count": 1,
+      "files": [
+        "src/components/DataSourcePicker.tsx"
+      ],
+      "propUsage": {
+        "alignItems": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"center\""
+            }
+          ]
+        },
+        "justifyContent": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"space-between\""
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 214,
+          "lineStart": 212,
+          "snippet": "<Stack alignItems=\"center\" justifyContent=\"space-between\">\n                  <span>{o.label}</span> <PluginSignatureBadge status={o.meta.signature} />\n                </Stack>",
+          "sourcePath": "src/components/DataSourcePicker.tsx"
+        }
+      ]
+    },
+    "attach-debugger": {
+      "count": 1,
+      "files": [
+        "src/services/LocationService.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 178,
+          "lineStart": 178,
+          "snippet": "attachDebugger('location', locationService, navigationLog);",
+          "sourcePath": "src/services/LocationService.tsx"
+        }
+      ]
+    },
+    "create-logger": {
+      "count": 1,
+      "files": [
+        "src/services/LocationService.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 172,
+          "lineStart": 172,
+          "snippet": "const navigationLog = createLogger('Router');",
+          "sourcePath": "src/services/LocationService.tsx"
+        }
+      ]
+    }
+  }
+}

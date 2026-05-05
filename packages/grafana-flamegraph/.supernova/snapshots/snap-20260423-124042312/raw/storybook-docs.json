@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "docPath": "README.md",
+      "kind": "reference",
+      "lineEnd": 9,
+      "lineStart": 9,
+      "score": 20,
+      "snippet": "Currently this library exposes single component `Flamegraph` that renders whole visualization used for profiling which contains a header, a table representation of the data and a flamegraph.",
+      "title": "Grafana Flamegraph component"
+    },
+    {
+      "docPath": "README.md",
+      "kind": "reference",
+      "lineEnd": 24,
+      "lineStart": 14,
+      "score": 20,
+      "snippet": "<FlameGraph\n  getTheme={() => createTheme({ colors: { mode: 'dark' } })}\n  data={dataFrame}\n  extraHeaderElements={\n    <Button onClick={() => {}} variant=\"secondary\">\n      Download\n    />\n  }\n  stickyHeader\n  vertical\n/>",
+      "title": "Grafana Flamegraph component"
+    },
+    {
+      "docPath": "README.md",
+      "kind": "reference",
+      "lineEnd": 39,
+      "lineStart": 29,
+      "score": 20,
+      "snippet": "| Name                  | Type                     | Description                                                                                                                 |\n| --------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |\n| data                  | DataFrame                | DataFrame with the profile data. Optional, if missing or empty the flamegraph is not rendered                               |\n| stickyHeader          | boolean                  | Whether the header should be sticky and be always visible on the top when scrolling.                                        |\n| getTheme              | () => GrafanaTheme2      | Provides a theme for the visualization on which colors and some sizes are based.                                            |\n| onTableSymbolClick    | (symbol: string) => void | Interaction hook that can be used to report on the interaction. Fires when user click on a name in the table.               |\n| onViewSelected        | (view: string) => void   | Interaction hook that can be used to report on the interaction. Fires when user changes the view to show (table/graph/both) |\n| onTextAlignSelected   | (align: string) => void  | Interaction hook that can be used to report on the interaction. Fires when user changes the text align.                     |\n| onTableSort           | (sort: string) => void   | Interaction hook that can be used to report on the interaction. Fires when user changes the teble sorting.                  |\n| extraHeaderElements   | React.ReactNode          | Elements that will be shown in the header on the right side of the header buttons. Useful for additional functionality.     |\n| vertical              | boolean                  | If true the flamegraph will be rendered on top of the table.                                                                |",
+      "title": "Grafana Flamegraph component"
+    }
+  ],
+  "flame-graph": [
+    {
+      "content": "# Grafana Flamegraph component\n\n> **@grafana/flamegraph is currently in BETA**.\n\nThis is a Flamegraph component that is used in Grafana and Pyroscope web app to display profiles.\n\n## Usage\n\nCurrently this library exposes single component `Flamegraph` that renders whole visualization used for profiling which contains a header, a table representation of the data and a flamegraph.\n\n```tsx\nimport { FlameGraph } from '@grafana/flamegraph';\n\n<FlameGraph\n  getTheme={() => createTheme({ colors: { mode: 'dark' } })}\n  data={dataFrame}\n  extraHeaderElements={\n    <Button onClick={() => {}} variant=\"secondary\">\n      Download\n    />\n  }\n  stickyHeader\n  vertical\n/>\n```\n\n#### Props\n\n| Name                  | Type                     | Description                                                                                                                 |\n| --------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |\n| data                  | DataFrame                | DataFrame with the profile data. Optional, if missing or empty the flamegraph is not rendered                               |\n| stickyHeader          | boolean                  | Whether the header should be sticky and be always visible on the top when scrolling.                                        |\n| getTheme              | () => GrafanaTheme2      | Provides a theme for the visualization on which colors and some sizes are based.                                            |\n| onTableSymbolClick    | (symbol: string) => void | Interaction hook that can be used to report on the interaction. Fires when user click on a name in the table.               |\n| onViewSelected        | (view: string) => void   | Interaction hook that can be used to report on the interaction. Fires when user changes the view to show (table/graph/both) |\n| onTextAlignSelected   | (align: string) => void  | Interaction hook that can be used to report on the interaction. Fires when user changes the text align.                     |\n| onTableSort           | (sort: string) => void   | Interaction hook that can be used to report on the interaction. Fires when user changes the teble sorting.                  |\n| extraHeaderElements   | React.ReactNode          | Elements that will be shown in the header on the right side of the header buttons. Useful for additional functionality.     |\n| vertical              | boolean                  | If true the flamegraph will be rendered on top of the table.                                                                |\n| keepFocusOnDataChange | boolean                  | If true any focused block will stay focused when the profile data changes. Same for the sandwich view.                      |\n\n##### DataFrame schema\n\nThe dataFrame needs to have the following fields:\n\n| Name       | Type     | Description                                                                                                        |\n| ---------- | -------- | ------------------------------------------------------------------------------------------------------------------ |\n| name       | string   | The name of the node.                                                                                              |\n| labels     | string[] | The labels of the node.                                                                                            |\n| level      | number   | The nesting level of the node.                                                                                     |\n| value      | number   | The total value of the node.                                                                                       |\n| self       | number   | The self value of the node.                                                                                        |\n| valueRight | number   | The total value of the node in the right profile. Optional, if present will show a diff version of the flamegraph. |\n| selfRight  | number   | The self value of the node in the right profile. Optional, if present will show a diff version of the flamegraph.  |\n",
+      "docPath": "README.md",
+      "kind": "doc",
+      "lineEnd": 12,
+      "lineStart": 12,
+      "score": 80,
+      "title": "Grafana Flamegraph component"
+    }
+  ]
+}

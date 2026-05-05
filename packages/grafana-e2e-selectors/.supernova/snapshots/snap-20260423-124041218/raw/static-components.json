@@ -1,0 +1,9 @@
+[
+  {
+    "componentKey": "resolve-selectors",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "resolveSelectors",
+    "exportType": "inferred-export"
+  }
+]

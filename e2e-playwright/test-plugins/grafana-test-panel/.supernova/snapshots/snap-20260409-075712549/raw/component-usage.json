@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/ui",
+      "@grafana/ui/internal"
+    ]
+  },
+  "records": {
+    "use-styles2": {
+      "count": 1,
+      "files": [
+        "components/SimplePanel.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 34,
+          "lineStart": 34,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "components/SimplePanel.tsx"
+        }
+      ]
+    },
+    "use-theme2": {
+      "count": 1,
+      "files": [
+        "components/SimplePanel.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 33,
+          "lineStart": 33,
+          "snippet": "const theme = useTheme2();",
+          "sourcePath": "components/SimplePanel.tsx"
+        }
+      ]
+    }
+  }
+}

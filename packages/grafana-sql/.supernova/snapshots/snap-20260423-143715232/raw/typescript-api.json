@@ -1,0 +1,189 @@
+{
+  "connection-limits": {
+    "linkedTypes": [
+      {
+        "definition": "export interface SQLConnectionLimits {\n  maxOpenConns: number;\n  maxIdleConns: number;\n  maxIdleConnsAuto: boolean;\n  connMaxLifetime: number;\n}",
+        "lineEnd": 35,
+        "lineStart": 30,
+        "name": "SQLConnectionLimits",
+        "sourcePath": "types.ts"
+      },
+      {
+        "definition": "export interface SQLOptions extends SQLConnectionLimits, DataSourceJsonData {\n  tlsAuth: boolean;\n  tlsAuthWithCACert: boolean;\n  timezone: string;\n  tlsSkipVerify: boolean;\n  user: string;\n  database: string;\n  url: string;\n  timeInterval: string;\n}",
+        "lineEnd": 46,
+        "lineStart": 37,
+        "name": "SQLOptions",
+        "sourcePath": "types.ts"
+      }
+    ],
+    "props": [
+      {
+        "name": "onOptionsChange",
+        "required": true,
+        "type": "interface Function { /** * Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function. * @param thisArg The object to be used as the this object. * @param argArray A set of arguments to be passed to the function. */ apply(this: Function, thisArg: any, argArray?: any): any; /** * Calls a method of an object, substituting another object for the current object. * @param thisArg The object to be used as the current object. * @param argArray A list of arguments to be passed to the method. */ call(this: Function, thisArg: any, ...argArray: any[]): any; /** * For a given function, creates a bound function that has the same body as the original function. * The this object of the bound function is associated with the specified object, and has the specified initial parameters. * @param thisArg An object to which the this keyword can refer inside the new function. * @param argArray A list of arguments to be passed to the new function. */ bind(this: Function, thisArg: any, ...argArray: any[]): any; /** Returns a string representation of a function. */ toString(): string; prototype: any; readonly length: number; // Non-standard extensions arguments: any; caller: Function; }"
+      },
+      {
+        "name": "options",
+        "required": true,
+        "type": "DataSourceSettings<SQLOptions>"
+      }
+    ],
+    "sourcePath": "components/configuration/ConnectionLimits.tsx"
+  },
+  "max-lifetime-field": {
+    "linkedTypes": [
+      {
+        "definition": "export interface SQLConnectionLimits {\n  maxOpenConns: number;\n  maxIdleConns: number;\n  maxIdleConnsAuto: boolean;\n  connMaxLifetime: number;\n}",
+        "lineEnd": 35,
+        "lineStart": 30,
+        "name": "SQLConnectionLimits",
+        "sourcePath": "types.ts"
+      },
+      {
+        "definition": "export interface SQLOptions extends SQLConnectionLimits, DataSourceJsonData {\n  tlsAuth: boolean;\n  tlsAuthWithCACert: boolean;\n  timezone: string;\n  tlsSkipVerify: boolean;\n  user: string;\n  database: string;\n  url: string;\n  timeInterval: string;\n}",
+        "lineEnd": 46,
+        "lineStart": 37,
+        "name": "SQLOptions",
+        "sourcePath": "types.ts"
+      }
+    ],
+    "props": [
+      {
+        "name": "jsonData",
+        "required": true,
+        "type": "export interface SQLOptions extends SQLConnectionLimits, DataSourceJsonData { tlsAuth: boolean; tlsAuthWithCACert: boolean; timezone: string; tlsSkipVerify: boolean; user: string; database: string; url: string; timeInterval: string; }"
+      },
+      {
+        "name": "labelWidth",
+        "required": true,
+        "type": "number"
+      },
+      {
+        "name": "onMaxLifetimeChanged",
+        "required": true,
+        "type": "(number?: number | undefined) => void"
+      }
+    ],
+    "sourcePath": "components/configuration/MaxLifetimeField.tsx"
+  },
+  "max-open-connections-field": {
+    "linkedTypes": [
+      {
+        "definition": "export interface SQLConnectionLimits {\n  maxOpenConns: number;\n  maxIdleConns: number;\n  maxIdleConnsAuto: boolean;\n  connMaxLifetime: number;\n}",
+        "lineEnd": 35,
+        "lineStart": 30,
+        "name": "SQLConnectionLimits",
+        "sourcePath": "types.ts"
+      },
+      {
+        "definition": "export interface SQLOptions extends SQLConnectionLimits, DataSourceJsonData {\n  tlsAuth: boolean;\n  tlsAuthWithCACert: boolean;\n  timezone: string;\n  tlsSkipVerify: boolean;\n  user: string;\n  database: string;\n  url: string;\n  timeInterval: string;\n}",
+        "lineEnd": 46,
+        "lineStart": 37,
+        "name": "SQLOptions",
+        "sourcePath": "types.ts"
+      }
+    ],
+    "props": [
+      {
+        "name": "jsonData",
+        "required": true,
+        "type": "export interface SQLOptions extends SQLConnectionLimits, DataSourceJsonData { tlsAuth: boolean; tlsAuthWithCACert: boolean; timezone: string; tlsSkipVerify: boolean; user: string; database: string; url: string; timeInterval: string; }"
+      },
+      {
+        "name": "labelWidth",
+        "required": true,
+        "type": "number"
+      },
+      {
+        "name": "onMaxConnectionsChanged",
+        "required": true,
+        "type": "(number?: number | undefined) => void"
+      }
+    ],
+    "sourcePath": "components/configuration/MaxOpenConnectionsField.tsx"
+  },
+  "number-input": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "defaultValue",
+        "required": true,
+        "type": "number"
+      },
+      {
+        "name": "onChange",
+        "required": true,
+        "type": "(value: number) => void"
+      },
+      {
+        "name": "value",
+        "required": true,
+        "type": "number"
+      },
+      {
+        "name": "width",
+        "required": true,
+        "type": "number"
+      }
+    ],
+    "sourcePath": "components/configuration/NumberInput.tsx"
+  },
+  "preview": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "datasourceType",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "rawSql",
+        "required": true,
+        "type": "string"
+      }
+    ],
+    "sourcePath": "components/visual-query-builder/Preview.tsx"
+  },
+  "sql-query-editor-lazy": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "queryHeaderProps",
+        "required": false,
+        "type": "{ [P in K]: T[P]; }"
+      }
+    ],
+    "sourcePath": "components/QueryEditorLazy.tsx"
+  },
+  "tlssecrets-config": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "editorProps",
+        "required": true,
+        "type": "DataSourcePluginOptionsEditorProps<T, S>"
+      },
+      {
+        "name": "labelWidth",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "secureJsonFields",
+        "required": false,
+        "type": "any"
+      },
+      {
+        "name": "showCACert",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "showKeyPair",
+        "required": false,
+        "type": "boolean"
+      }
+    ],
+    "sourcePath": "components/configuration/TLSSecretsConfig.tsx"
+  }
+}

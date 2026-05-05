@@ -1,0 +1,2883 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@test-plugins/extensions-test-app",
+      "@test-plugins/grafana-e2etest-datasource",
+      "@test-plugins/grafana-e2etest-panel"
+    ]
+  },
+  "packages": {
+    "@grafana/alerting": {
+      "records": {}
+    },
+    "@grafana/api-clients": {
+      "records": {}
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {
+        "format-date": {
+          "count": 2,
+          "files": [
+            "src/datetime/formatter.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 113,
+              "lineStart": 113,
+              "snippet": "return formatDate(dateAsDate, intlOptions);",
+              "sourcePath": "src/datetime/formatter.ts"
+            },
+            {
+              "lineEnd": 161,
+              "lineStart": 161,
+              "snippet": "return formatDate(dateAsDate, intlOptions);",
+              "sourcePath": "src/datetime/formatter.ts"
+            }
+          ]
+        },
+        "format-date-range": {
+          "count": 1,
+          "files": [
+            "src/datetime/rangeutil.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 465,
+              "lineStart": 465,
+              "snippet": "return formatDateRange(fromDate, toDate, intlFormatOptions);",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            }
+          ]
+        },
+        "t": {
+          "count": 440,
+          "files": [
+            "src/datetime/rangeutil.ts",
+            "src/field/fieldColor.ts",
+            "src/valueFormats/categories.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 29,
+              "lineStart": 29,
+              "snippet": "return t('grafana-data.datetime.rangeutils.lastNMinutes', 'Last {{count}} minutes', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 36,
+              "lineStart": 36,
+              "snippet": "return t('grafana-data.datetime.rangeutils.lastNHours', 'Last {{count}} hours', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 43,
+              "lineStart": 43,
+              "snippet": "return t('grafana-data.datetime.rangeutils.lastNDays', 'Last {{count}} days', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 50,
+              "lineStart": 50,
+              "snippet": "return t('grafana-data.datetime.rangeutils.lastNMonths', 'Last {{count}} months', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 57,
+              "lineStart": 57,
+              "snippet": "return t('grafana-data.datetime.rangeutils.lastNYears', 'Last {{count}} years', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 64,
+              "lineStart": 64,
+              "snippet": "return t('grafana-data.datetime.rangeutils.nextNMinutes', 'Next {{count}} minutes', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 71,
+              "lineStart": 71,
+              "snippet": "return t('grafana-data.datetime.rangeutils.nextNHours', 'Next {{count}} hours', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 78,
+              "lineStart": 78,
+              "snippet": "return t('grafana-data.datetime.rangeutils.nextNDays', 'Next {{count}} days', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 85,
+              "lineStart": 85,
+              "snippet": "return t('grafana-data.datetime.rangeutils.nextNMonths', 'Next {{count}} months', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 92,
+              "lineStart": 92,
+              "snippet": "return t('grafana-data.datetime.rangeutils.nextNYears', 'Next {{count}} years', {",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 99,
+              "lineStart": 99,
+              "snippet": "{ from: 'now/d', to: 'now/d', display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.today', 'Today') },",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 103,
+              "lineStart": 103,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.todaySoFar', 'Today so far'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 108,
+              "lineStart": 108,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisWeek', 'This week'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 113,
+              "lineStart": 113,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisWeekSoFar', 'This week so far'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 118,
+              "lineStart": 118,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisMonth', 'This month'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 123,
+              "lineStart": 123,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisMonthSoFar', 'This month so far'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 128,
+              "lineStart": 128,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisYear', 'This year'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 133,
+              "lineStart": 133,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisYearSoFar', 'This year so far'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 139,
+              "lineStart": 139,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.yesterday', 'Yesterday'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 144,
+              "lineStart": 144,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.dayBeforeYesterday', 'Day before yesterday'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 149,
+              "lineStart": 149,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisDayLastWeek', 'This day last week'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 154,
+              "lineStart": 154,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.previousWeek', 'Previous week'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 159,
+              "lineStart": 159,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.previousMonth', 'Previous month'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 164,
+              "lineStart": 164,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.previousFiscalQuarter', 'Previous fiscal quarter'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 169,
+              "lineStart": 169,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.previousYear', 'Previous year'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 174,
+              "lineStart": 174,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.previousFiscalYear', 'Previous fiscal year'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 260,
+              "lineStart": 260,
+              "snippet": "display: t(",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 268,
+              "lineStart": 268,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisFiscalQuarter', 'This fiscal quarter'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 273,
+              "lineStart": 273,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisFiscalYearSoFar', 'This fiscal year so far'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 278,
+              "lineStart": 278,
+              "snippet": "display: t('grafana-data.datetime.rangeutils.getBaseRangeOptions.thisFiscalYear', 'This fiscal year'),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 402,
+              "lineStart": 402,
+              "snippet": "const amount = parseInt(parts[2], 10);",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 441,
+              "lineStart": 441,
+              "snippet": "const rangeOptions = quickRanges ? quickRanges.concat(getStandardRangeOptions()) : getStandardRangeOptions();",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 455,
+              "lineStart": 455,
+              "snippet": "return dateTimeFormat(range.from, options) + ' to ' + dateTimeFormat(range.to, options);",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 455,
+              "lineStart": 455,
+              "snippet": "return dateTimeFormat(range.from, options) + ' to ' + dateTimeFormat(range.to, options);",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 472,
+              "lineStart": 472,
+              "snippet": "return parsed ? dateTimeFormat(range.from, options) + ' to ' + dateTimeFormatTimeAgo(parsed, options) : '';",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 477,
+              "lineStart": 477,
+              "snippet": "return parsed ? dateTimeFormatTimeAgo(parsed, options) + ' to ' + dateTimeFormat(range.to, options) : '';",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 625,
+              "lineStart": 625,
+              "snippet": "count: parseInt(str, 10),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 649,
+              "lineStart": 649,
+              "snippet": "count: parseInt(matches[1], 10),",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 779,
+              "lineStart": 779,
+              "snippet": "const from = dateTime(now).subtract(relativeTimeRange.from, 's');",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 780,
+              "lineStart": 780,
+              "snippet": "const to = relativeTimeRange.to === 0 ? dateTime(now) : dateTime(now).subtract(relativeTimeRange.to, 's');",
+              "sourcePath": "src/datetime/rangeutil.ts"
+            },
+            {
+              "lineEnd": 58,
+              "lineStart": 58,
+              "snippet": "const accessibleGroup = t('grafana-data.field.fieldColor.accessibleGroup', 'Accessible');",
+              "sourcePath": "src/field/fieldColor.ts"
+            },
+            {
+              "lineEnd": 59,
+              "lineStart": 59,
+              "snippet": "const otherGroup = t('grafana-data.field.fieldColor.otherGroup', 'Others');",
+              "sourcePath": "src/field/fieldColor.ts"
+            },
+            {
+              "lineEnd": 356,
+              "lineStart": 356,
+              "snippet": "fieldColorModeRegistry.get(FieldColorModeId.Thresholds)",
+              "sourcePath": "src/field/fieldColor.ts"
+            },
+            {
+              "lineEnd": 362,
+              "lineStart": 362,
+              "snippet": "return fieldColorModeRegistry.getIfExists(mode) ?? fieldColorModeRegistry.get(FieldColorModeId.Thresholds);",
+              "sourcePath": "src/field/fieldColor.ts"
+            },
+            {
+              "lineEnd": 41,
+              "lineStart": 41,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.name', 'Misc'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 44,
+              "lineStart": 44,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-number', 'Number'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 46,
+              "lineStart": 46,
+              "snippet": "fn: toFixedUnit(''),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 49,
+              "lineStart": 49,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-string', 'String'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 54,
+              "lineStart": 54,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-short', 'short'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 59,
+              "lineStart": 59,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-si-short', 'SI short'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 64,
+              "lineStart": 64,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-percent-100', 'Percent (0-100)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 64,
+              "lineStart": 64,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-percent-100', 'Percent (0-100)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 69,
+              "lineStart": 69,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-percent-1', 'Percent (0.0-1.0)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 69,
+              "lineStart": 69,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-percent-1', 'Percent (0.0-1.0)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 74,
+              "lineStart": 74,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-humidity', 'Humidity (%H)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 76,
+              "lineStart": 76,
+              "snippet": "fn: toFixedUnit('%H'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 79,
+              "lineStart": 79,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-decibel', 'Decibel'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 81,
+              "lineStart": 81,
+              "snippet": "fn: toFixedUnit('dB'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 84,
+              "lineStart": 84,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-candala', 'Candela (cd)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 89,
+              "lineStart": 89,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-hexadecimal-0x', 'Hexadecimal (0x)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 94,
+              "lineStart": 94,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-hexadecimal', 'Hexadecimal'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 99,
+              "lineStart": 99,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-scientific', 'Scientific notation'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 104,
+              "lineStart": 104,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-locale', 'Locale format'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 109,
+              "lineStart": 109,
+              "snippet": "name: t('grafana-data.valueFormats.categories.misc.formats.name-pixels', 'Pixels'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 111,
+              "lineStart": 111,
+              "snippet": "fn: toFixedUnit('px'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 116,
+              "lineStart": 116,
+              "snippet": "name: t('grafana-data.valueFormats.categories.acceleration.name', 'Acceleration'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 119,
+              "lineStart": 119,
+              "snippet": "name: t('grafana-data.valueFormats.categories.acceleration.formats.name-meters-sec', 'Meters/sec²'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 121,
+              "lineStart": 121,
+              "snippet": "fn: toFixedUnit('m/sec²'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 124,
+              "lineStart": 124,
+              "snippet": "name: t('grafana-data.valueFormats.categories.acceleration.formats.name-feet-sec', 'Feet/sec²'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 126,
+              "lineStart": 126,
+              "snippet": "fn: toFixedUnit('f/sec²'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 129,
+              "lineStart": 129,
+              "snippet": "name: t('grafana-data.valueFormats.categories.acceleration.formats.name-g-unit', 'G unit'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 131,
+              "lineStart": 131,
+              "snippet": "fn: toFixedUnit('g'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 136,
+              "lineStart": 136,
+              "snippet": "name: t('grafana-data.valueFormats.categories.angle.name', 'Angle'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 139,
+              "lineStart": 139,
+              "snippet": "name: t('grafana-data.valueFormats.categories.angle.formats.name-degrees', 'Degrees (°)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 141,
+              "lineStart": 141,
+              "snippet": "fn: toFixedUnit('°'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 144,
+              "lineStart": 144,
+              "snippet": "name: t('grafana-data.valueFormats.categories.angle.formats.name-radians', 'Radians'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 146,
+              "lineStart": 146,
+              "snippet": "fn: toFixedUnit('rad'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 149,
+              "lineStart": 149,
+              "snippet": "name: t('grafana-data.valueFormats.categories.angle.formats.name-gradian', 'Gradian'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 151,
+              "lineStart": 151,
+              "snippet": "fn: toFixedUnit('grad'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 154,
+              "lineStart": 154,
+              "snippet": "name: t('grafana-data.valueFormats.categories.angle.formats.name-arc-minutes', 'Arc Minutes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 156,
+              "lineStart": 156,
+              "snippet": "fn: toFixedUnit('arcmin'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 159,
+              "lineStart": 159,
+              "snippet": "name: t('grafana-data.valueFormats.categories.angle.formats.name-arc-seconds', 'Arc Seconds'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 161,
+              "lineStart": 161,
+              "snippet": "fn: toFixedUnit('arcsec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 166,
+              "lineStart": 166,
+              "snippet": "name: t('grafana-data.valueFormats.categories.area.name', 'Area'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 169,
+              "lineStart": 169,
+              "snippet": "name: t('grafana-data.valueFormats.categories.area.formats.name-square-meters', 'Square Meters (m²)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 171,
+              "lineStart": 171,
+              "snippet": "fn: toFixedUnit('m²'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 174,
+              "lineStart": 174,
+              "snippet": "name: t('grafana-data.valueFormats.categories.area.formats.name-square-feet', 'Square Feet (ft²)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 174,
+              "lineStart": 174,
+              "snippet": "name: t('grafana-data.valueFormats.categories.area.formats.name-square-feet', 'Square Feet (ft²)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 176,
+              "lineStart": 176,
+              "snippet": "fn: toFixedUnit('ft²'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 179,
+              "lineStart": 179,
+              "snippet": "name: t('grafana-data.valueFormats.categories.area.formats.name-square-miles', 'Square Miles (mi²)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 181,
+              "lineStart": 181,
+              "snippet": "fn: toFixedUnit('mi²'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 184,
+              "lineStart": 184,
+              "snippet": "name: t('grafana-data.valueFormats.categories.area.formats.name-acres', 'Acres (ac)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 186,
+              "lineStart": 186,
+              "snippet": "fn: toFixedUnit('ac'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 189,
+              "lineStart": 189,
+              "snippet": "name: t('grafana-data.valueFormats.categories.area.formats.name-hectares', 'Hectares (ha)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 191,
+              "lineStart": 191,
+              "snippet": "fn: toFixedUnit('ha'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 196,
+              "lineStart": 196,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.name', 'Computation'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 199,
+              "lineStart": 199,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.formats.name-flops', 'FLOP/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 204,
+              "lineStart": 204,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.formats.name-mflops', 'MFLOP/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 209,
+              "lineStart": 209,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.formats.name-gflops', 'GFLOP/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 214,
+              "lineStart": 214,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.formats.name-tflops', 'TFLOP/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 219,
+              "lineStart": 219,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.formats.name-pflops', 'PFLOP/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 224,
+              "lineStart": 224,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.formats.name-eflops', 'EFLOP/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 229,
+              "lineStart": 229,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.formats.name-zflops', 'ZFLOP/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 234,
+              "lineStart": 234,
+              "snippet": "name: t('grafana-data.valueFormats.categories.computation.formats.name-yflops', 'YFLOP/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 241,
+              "lineStart": 241,
+              "snippet": "name: t('grafana-data.valueFormats.categories.concentration.name', 'Concentration'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 244,
+              "lineStart": 244,
+              "snippet": "name: t('grafana-data.valueFormats.categories.concentration.formats.name-ppm', 'parts-per-million (ppm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 246,
+              "lineStart": 246,
+              "snippet": "fn: toFixedUnit('ppm'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 249,
+              "lineStart": 249,
+              "snippet": "name: t('grafana-data.valueFormats.categories.concentration.formats.name-ppb', 'parts-per-billion (ppb)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 251,
+              "lineStart": 251,
+              "snippet": "fn: toFixedUnit('ppb'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 254,
+              "lineStart": 254,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 259,
+              "lineStart": 259,
+              "snippet": "fn: toFixedUnit('ng/m³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 262,
+              "lineStart": 262,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 267,
+              "lineStart": 267,
+              "snippet": "fn: toFixedUnit('ng/Nm³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 270,
+              "lineStart": 270,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 275,
+              "lineStart": 275,
+              "snippet": "fn: toFixedUnit('μg/m³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 278,
+              "lineStart": 278,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 283,
+              "lineStart": 283,
+              "snippet": "fn: toFixedUnit('μg/Nm³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 286,
+              "lineStart": 286,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 291,
+              "lineStart": 291,
+              "snippet": "fn: toFixedUnit('mg/m³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 294,
+              "lineStart": 294,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 299,
+              "lineStart": 299,
+              "snippet": "fn: toFixedUnit('mg/Nm³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 302,
+              "lineStart": 302,
+              "snippet": "name: t('grafana-data.valueFormats.categories.concentration.formats.name-g-m3', 'gram per cubic meter (g/m³)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 304,
+              "lineStart": 304,
+              "snippet": "fn: toFixedUnit('g/m³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 307,
+              "lineStart": 307,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 312,
+              "lineStart": 312,
+              "snippet": "fn: toFixedUnit('g/Nm³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 315,
+              "lineStart": 315,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 320,
+              "lineStart": 320,
+              "snippet": "fn: toFixedUnit('mg/dL'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 323,
+              "lineStart": 323,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 328,
+              "lineStart": 328,
+              "snippet": "fn: toFixedUnit('mmol/L'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 333,
+              "lineStart": 333,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.name', 'Currency'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 336,
+              "lineStart": 336,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-usd', 'Dollars ($)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 341,
+              "lineStart": 341,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-gbp', 'Pounds (£)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 346,
+              "lineStart": 346,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-eur', 'Euro (€)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 351,
+              "lineStart": 351,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-jpy', 'Yen (¥)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 356,
+              "lineStart": 356,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-rub', 'Rubles (₽)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 361,
+              "lineStart": 361,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-uah', 'Hryvnias (₴)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 366,
+              "lineStart": 366,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-brl', 'Real (R$)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 371,
+              "lineStart": 371,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-dkk', 'Danish Krone (kr)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 376,
+              "lineStart": 376,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-isk', 'Icelandic Króna (kr)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 381,
+              "lineStart": 381,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-nok', 'Norwegian Krone (kr)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 386,
+              "lineStart": 386,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-sek', 'Swedish Krona (kr)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 391,
+              "lineStart": 391,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-czk', 'Czech koruna (czk)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 396,
+              "lineStart": 396,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-chf', 'Swiss franc (CHF)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 401,
+              "lineStart": 401,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-pln', 'Polish Złoty (PLN)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 406,
+              "lineStart": 406,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-btc', 'Bitcoin (฿)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 411,
+              "lineStart": 411,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-mbtc', 'Milli Bitcoin (฿)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 416,
+              "lineStart": 416,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-ubtc', 'Micro Bitcoin (฿)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 421,
+              "lineStart": 421,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-zar', 'South African Rand (R)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 426,
+              "lineStart": 426,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-inr', 'Indian Rupee (₹)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 431,
+              "lineStart": 431,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-krw', 'South Korean Won (₩)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 436,
+              "lineStart": 436,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-idr', 'Indonesian Rupiah (Rp)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 441,
+              "lineStart": 441,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-php', 'Philippine Peso (PHP)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 446,
+              "lineStart": 446,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-vnd', 'Vietnamese Dong (VND)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 451,
+              "lineStart": 451,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-try', 'Turkish Lira (₺)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 456,
+              "lineStart": 456,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-myr', 'Malaysian Ringgit (RM)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 456,
+              "lineStart": 456,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-myr', 'Malaysian Ringgit (RM)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 461,
+              "lineStart": 461,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-xpf', 'CFP franc (XPF)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 466,
+              "lineStart": 466,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-bgn', 'Bulgarian Lev (BGN)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 471,
+              "lineStart": 471,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-pyg', 'Guaraní (₲)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 476,
+              "lineStart": 476,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-uyu', 'Uruguay Peso (UYU)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 481,
+              "lineStart": 481,
+              "snippet": "name: t('grafana-data.valueFormats.categories.currency.formats.name-ils', 'Israeli New Shekels (₪)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 488,
+              "lineStart": 488,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.name', 'Data'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 491,
+              "lineStart": 491,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-bytes-iec', 'bytes(IEC)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 496,
+              "lineStart": 496,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-bytes-si', 'bytes(SI)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 501,
+              "lineStart": 501,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-bits-iec', 'bits(IEC)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 506,
+              "lineStart": 506,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-bits-si', 'bits(SI)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 511,
+              "lineStart": 511,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-kibibytes', 'kibibytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 516,
+              "lineStart": 516,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-kilobytes', 'kilobytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 521,
+              "lineStart": 521,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-mebibytes', 'mebibytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 526,
+              "lineStart": 526,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-megabytes', 'megabytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 531,
+              "lineStart": 531,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-gibibytes', 'gibibytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 536,
+              "lineStart": 536,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-gigabytes', 'gigabytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 541,
+              "lineStart": 541,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-tebibytes', 'tebibytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 546,
+              "lineStart": 546,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-terabytes', 'terabytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 551,
+              "lineStart": 551,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-pebibytes', 'pebibytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 556,
+              "lineStart": 556,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data.formats.name-petabytes', 'petabytes'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 563,
+              "lineStart": 563,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.name', 'Data rate'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 566,
+              "lineStart": 566,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-packets-sec', 'packets/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 571,
+              "lineStart": 571,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-bytes-sec-iec', 'bytes/sec(IEC)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 576,
+              "lineStart": 576,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-bytes-sec-si', 'bytes/sec(SI)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 581,
+              "lineStart": 581,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-bits-sec-iec', 'bits/sec(IEC)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 586,
+              "lineStart": 586,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-bits-sec-si', 'bits/sec(SI)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 591,
+              "lineStart": 591,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-kibibytes-sec', 'kibibytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 596,
+              "lineStart": 596,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-kibibits-sec', 'kibibits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 601,
+              "lineStart": 601,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-kilobytes-sec', 'kilobytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 606,
+              "lineStart": 606,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-kilobits-sec', 'kilobits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 611,
+              "lineStart": 611,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-mebibytes-sec', 'mebibytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 616,
+              "lineStart": 616,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-mebibits-sec', 'mebibits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 621,
+              "lineStart": 621,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-megabytes-sec', 'megabytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 626,
+              "lineStart": 626,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-megabits-sec', 'megabits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 631,
+              "lineStart": 631,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-gibibytes-sec', 'gibibytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 636,
+              "lineStart": 636,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-gibibits-sec', 'gibibits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 641,
+              "lineStart": 641,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-gigabytes-sec', 'gigabytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 646,
+              "lineStart": 646,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-gigabits-sec', 'gigabits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 651,
+              "lineStart": 651,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-tebibytes-sec', 'tebibytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 656,
+              "lineStart": 656,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-tebibits-sec', 'tebibits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 661,
+              "lineStart": 661,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-terabytes-sec', 'terabytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 666,
+              "lineStart": 666,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-terabits-sec', 'terabits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 671,
+              "lineStart": 671,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-pebibytes-sec', 'pebibytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 676,
+              "lineStart": 676,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-pebibits-sec', 'pebibits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 681,
+              "lineStart": 681,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-petabytes-sec', 'petabytes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 686,
+              "lineStart": 686,
+              "snippet": "name: t('grafana-data.valueFormats.categories.data-rate.formats.name-petabits-sec', 'petabits/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 693,
+              "lineStart": 693,
+              "snippet": "name: t('grafana-data.valueFormats.categories.date-time.name', 'Date & time'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 696,
+              "lineStart": 696,
+              "snippet": "name: t('grafana-data.valueFormats.categories.date-time.formats.name-datetime-iso', 'Datetime ISO'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 701,
+              "lineStart": 701,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 709,
+              "lineStart": 709,
+              "snippet": "name: t('grafana-data.valueFormats.categories.date-time.formats.name-datetime-us', 'Datetime US'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 714,
+              "lineStart": 714,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 722,
+              "lineStart": 722,
+              "snippet": "name: t('grafana-data.valueFormats.categories.date-time.formats.name-datetime-local', 'Datetime local'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 724,
+              "lineStart": 724,
+              "snippet": "fn: getDateTimeAsLocalFormat(),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 727,
+              "lineStart": 727,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 735,
+              "lineStart": 735,
+              "snippet": "name: t('grafana-data.valueFormats.categories.date-time.formats.name-datetime-default', 'Datetime default'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 740,
+              "lineStart": 740,
+              "snippet": "name: t('grafana-data.valueFormats.categories.date-time.formats.name-from-now', 'From Now'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 747,
+              "lineStart": 747,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.name', 'Energy'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 750,
+              "lineStart": 750,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-watt', 'Watt (W)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 750,
+              "lineStart": 750,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-watt', 'Watt (W)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 755,
+              "lineStart": 755,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kilowatt', 'Kilowatt (kW)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 755,
+              "lineStart": 755,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kilowatt', 'Kilowatt (kW)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 760,
+              "lineStart": 760,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-megawatt', 'Megawatt (MW)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 760,
+              "lineStart": 760,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-megawatt', 'Megawatt (MW)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 765,
+              "lineStart": 765,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-gigawatt', 'Gigawatt (GW)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 765,
+              "lineStart": 765,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-gigawatt', 'Gigawatt (GW)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 770,
+              "lineStart": 770,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-milliwatt', 'Milliwatt (mW)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 770,
+              "lineStart": 770,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-milliwatt', 'Milliwatt (mW)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 775,
+              "lineStart": 775,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 783,
+              "lineStart": 783,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-volt-ampere', 'Volt-Ampere (VA)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 788,
+              "lineStart": 788,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kilovolt-ampere', 'Kilovolt-Ampere (kVA)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 793,
+              "lineStart": 793,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 801,
+              "lineStart": 801,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 809,
+              "lineStart": 809,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-watt-hour', 'Watt-hour (Wh)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 814,
+              "lineStart": 814,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 822,
+              "lineStart": 822,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kilowatt-hour', 'Kilowatt-hour (kWh)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 827,
+              "lineStart": 827,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kilowatt-min', 'Kilowatt-min (kWm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 832,
+              "lineStart": 832,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-megawatt-hour', 'Megawatt-hour (MWh)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 837,
+              "lineStart": 837,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-ampere-hour', 'Ampere-hour (Ah)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 842,
+              "lineStart": 842,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kiloampere-hour', 'Kiloampere-hour (kAh)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 847,
+              "lineStart": 847,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-milliampere-hour', 'Milliampere-hour (mAh)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 852,
+              "lineStart": 852,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-joule', 'Joule (J)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 857,
+              "lineStart": 857,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-electron-volt', 'Electron volt (eV)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 857,
+              "lineStart": 857,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-electron-volt', 'Electron volt (eV)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 862,
+              "lineStart": 862,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-ampere', 'Ampere (A)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 867,
+              "lineStart": 867,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kiloampere', 'Kiloampere (kA)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 872,
+              "lineStart": 872,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-milliampere', 'Milliampere (mA)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 877,
+              "lineStart": 877,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-volt', 'Volt (V)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 877,
+              "lineStart": 877,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-volt', 'Volt (V)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 882,
+              "lineStart": 882,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kilovolt', 'Kilovolt (kV)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 882,
+              "lineStart": 882,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kilovolt', 'Kilovolt (kV)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 887,
+              "lineStart": 887,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-millivolt', 'Millivolt (mV)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 887,
+              "lineStart": 887,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-millivolt', 'Millivolt (mV)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 892,
+              "lineStart": 892,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 894,
+              "lineStart": 894,
+              "snippet": "'Decibel-milliwatt (dBm)'",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 900,
+              "lineStart": 900,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-milliohm', 'Milliohm (mΩ)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 905,
+              "lineStart": 905,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-ohm', 'Ohm (Ω)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 910,
+              "lineStart": 910,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-kiloohm', 'Kiloohm (kΩ)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 915,
+              "lineStart": 915,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-megaohm', 'Megaohm (MΩ)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 920,
+              "lineStart": 920,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-farad', 'Farad (F)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 925,
+              "lineStart": 925,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-microfarad', 'Microfarad (µF)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 930,
+              "lineStart": 930,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-nanofarad', 'Nanofarad (nF)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 935,
+              "lineStart": 935,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-picofarad', 'Picofarad (pF)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 940,
+              "lineStart": 940,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-femtofarad', 'Femtofarad (fF)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 945,
+              "lineStart": 945,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-henry', 'Henry (H)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 950,
+              "lineStart": 950,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-millihenry', 'Millihenry (mH)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 955,
+              "lineStart": 955,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-microhenry', 'Microhenry (µH)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 960,
+              "lineStart": 960,
+              "snippet": "name: t('grafana-data.valueFormats.categories.energy.formats.name-lumens', 'Lumens (Lm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 967,
+              "lineStart": 967,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.name', 'Flow'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 970,
+              "lineStart": 970,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.formats.name-gallons-min', 'Gallons/min (gpm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 972,
+              "lineStart": 972,
+              "snippet": "fn: toFixedUnit('gpm'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 975,
+              "lineStart": 975,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.formats.name-cubic-meters-sec', 'Cubic meters/sec (cms)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 977,
+              "lineStart": 977,
+              "snippet": "fn: toFixedUnit('cms'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 980,
+              "lineStart": 980,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.formats.name-cubic-feet-sec', 'Cubic feet/sec (cfs)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 982,
+              "lineStart": 982,
+              "snippet": "fn: toFixedUnit('cfs'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 985,
+              "lineStart": 985,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.formats.name-cubic-feet-min', 'Cubic feet/min (cfm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 987,
+              "lineStart": 987,
+              "snippet": "fn: toFixedUnit('cfm'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 990,
+              "lineStart": 990,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.formats.name-litre-hour', 'Litre/hour'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 992,
+              "lineStart": 992,
+              "snippet": "fn: toFixedUnit('L/h'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 995,
+              "lineStart": 995,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.formats.name-litre-min', 'Litre/min (L/min)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 997,
+              "lineStart": 997,
+              "snippet": "fn: toFixedUnit('L/min'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1000,
+              "lineStart": 1000,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.formats.name-millilitre-min', 'milliLitre/min (mL/min)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1002,
+              "lineStart": 1002,
+              "snippet": "fn: toFixedUnit('mL/min'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1005,
+              "lineStart": 1005,
+              "snippet": "name: t('grafana-data.valueFormats.categories.flow.formats.name-lux', 'Lux (lx)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1007,
+              "lineStart": 1007,
+              "snippet": "fn: toFixedUnit('lux'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1012,
+              "lineStart": 1012,
+              "snippet": "name: t('grafana-data.valueFormats.categories.force.name', 'Force'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1015,
+              "lineStart": 1015,
+              "snippet": "name: t('grafana-data.valueFormats.categories.force.formats.name-newton-meters', 'Newton-meters (Nm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1020,
+              "lineStart": 1020,
+              "snippet": "name: t('grafana-data.valueFormats.categories.force.formats.name-kilonewton-meters', 'Kilonewton-meters (kNm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1025,
+              "lineStart": 1025,
+              "snippet": "name: t('grafana-data.valueFormats.categories.force.formats.name-newtons', 'Newtons (N)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1030,
+              "lineStart": 1030,
+              "snippet": "name: t('grafana-data.valueFormats.categories.force.formats.name-kilonewtons', 'Kilonewtons (kN)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1037,
+              "lineStart": 1037,
+              "snippet": "name: t('grafana-data.valueFormats.categories.hash-rate.name', 'Hash rate'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1040,
+              "lineStart": 1040,
+              "snippet": "name: t('grafana-data.valueFormats.categories.hash-rate.formats.name-hashes-sec', 'hashes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1045,
+              "lineStart": 1045,
+              "snippet": "name: t('grafana-data.valueFormats.categories.hash-rate.formats.name-kilohashes-sec', 'kilohashes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1050,
+              "lineStart": 1050,
+              "snippet": "name: t('grafana-data.valueFormats.categories.hash-rate.formats.name-megahashes-sec', 'megahashes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1055,
+              "lineStart": 1055,
+              "snippet": "name: t('grafana-data.valueFormats.categories.hash-rate.formats.name-gigahashes-sec', 'gigahashes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1060,
+              "lineStart": 1060,
+              "snippet": "name: t('grafana-data.valueFormats.categories.hash-rate.formats.name-terahashes-sec', 'terahashes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1065,
+              "lineStart": 1065,
+              "snippet": "name: t('grafana-data.valueFormats.categories.hash-rate.formats.name-petahashes-sec', 'petahashes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1070,
+              "lineStart": 1070,
+              "snippet": "name: t('grafana-data.valueFormats.categories.hash-rate.formats.name-exahashes-sec', 'exahashes/sec'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1077,
+              "lineStart": 1077,
+              "snippet": "name: t('grafana-data.valueFormats.categories.mass.name', 'Mass'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1080,
+              "lineStart": 1080,
+              "snippet": "name: t('grafana-data.valueFormats.categories.mass.formats.name-milligram', 'milligram (mg)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1085,
+              "lineStart": 1085,
+              "snippet": "name: t('grafana-data.valueFormats.categories.mass.formats.name-gram', 'gram (g)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1090,
+              "lineStart": 1090,
+              "snippet": "name: t('grafana-data.valueFormats.categories.mass.formats.name-pound', 'pound (lb)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1092,
+              "lineStart": 1092,
+              "snippet": "fn: toFixedUnit('lb'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1095,
+              "lineStart": 1095,
+              "snippet": "name: t('grafana-data.valueFormats.categories.mass.formats.name-kilogram', 'kilogram (kg)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1100,
+              "lineStart": 1100,
+              "snippet": "name: t('grafana-data.valueFormats.categories.mass.formats.name-metric-ton', 'metric ton (t)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1102,
+              "lineStart": 1102,
+              "snippet": "fn: toFixedUnit('t'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1107,
+              "lineStart": 1107,
+              "snippet": "name: t('grafana-data.valueFormats.categories.length.name', 'Length'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1110,
+              "lineStart": 1110,
+              "snippet": "name: t('grafana-data.valueFormats.categories.length.formats.name-millimeter', 'millimeter (mm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1115,
+              "lineStart": 1115,
+              "snippet": "name: t('grafana-data.valueFormats.categories.length.formats.name-inch', 'inch (in)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1117,
+              "lineStart": 1117,
+              "snippet": "fn: toFixedUnit('in'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1120,
+              "lineStart": 1120,
+              "snippet": "name: t('grafana-data.valueFormats.categories.length.formats.name-feet', 'feet (ft)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1120,
+              "lineStart": 1120,
+              "snippet": "name: t('grafana-data.valueFormats.categories.length.formats.name-feet', 'feet (ft)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1122,
+              "lineStart": 1122,
+              "snippet": "fn: toFixedUnit('ft'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1125,
+              "lineStart": 1125,
+              "snippet": "name: t('grafana-data.valueFormats.categories.length.formats.name-meter', 'meter (m)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1130,
+              "lineStart": 1130,
+              "snippet": "name: t('grafana-data.valueFormats.categories.length.formats.name-kilometer', 'kilometer (km)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1135,
+              "lineStart": 1135,
+              "snippet": "name: t('grafana-data.valueFormats.categories.length.formats.name-mile', 'mile (mi)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1137,
+              "lineStart": 1137,
+              "snippet": "fn: toFixedUnit('mi'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1142,
+              "lineStart": 1142,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.name', 'Pressure'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1145,
+              "lineStart": 1145,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.formats.name-millibars', 'Millibars'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1150,
+              "lineStart": 1150,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.formats.name-bars', 'Bars'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1155,
+              "lineStart": 1155,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.formats.name-kilobars', 'Kilobars'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1160,
+              "lineStart": 1160,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.formats.name-pascals', 'Pascals'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1165,
+              "lineStart": 1165,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.formats.name-hectopascals', 'Hectopascals'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1167,
+              "lineStart": 1167,
+              "snippet": "fn: toFixedUnit('hPa'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1170,
+              "lineStart": 1170,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.formats.name-kilopascals', 'Kilopascals'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1172,
+              "lineStart": 1172,
+              "snippet": "fn: toFixedUnit('kPa'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1175,
+              "lineStart": 1175,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.formats.name-inches-mercury', 'Inches of mercury'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1177,
+              "lineStart": 1177,
+              "snippet": "fn: toFixedUnit('\"Hg'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1180,
+              "lineStart": 1180,
+              "snippet": "name: t('grafana-data.valueFormats.categories.pressure.formats.name-psi', 'PSI'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1187,
+              "lineStart": 1187,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.name', 'Radiation'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1190,
+              "lineStart": 1190,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-becquerel', 'Becquerel (Bq)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1195,
+              "lineStart": 1195,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-curie', 'curie (Ci)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1200,
+              "lineStart": 1200,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-gray', 'Gray (Gy)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1205,
+              "lineStart": 1205,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-rad', 'rad'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1210,
+              "lineStart": 1210,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-sievert', 'Sievert (Sv)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1210,
+              "lineStart": 1210,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-sievert', 'Sievert (Sv)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1215,
+              "lineStart": 1215,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-millisievert', 'milliSievert (mSv)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1215,
+              "lineStart": 1215,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-millisievert', 'milliSievert (mSv)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1220,
+              "lineStart": 1220,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-microsievert', 'microSievert (µSv)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1220,
+              "lineStart": 1220,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-microsievert', 'microSievert (µSv)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1225,
+              "lineStart": 1225,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-rem', 'rem'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1230,
+              "lineStart": 1230,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-exposure', 'Exposure (C/kg)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1235,
+              "lineStart": 1235,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-roentgen', 'roentgen (R)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1240,
+              "lineStart": 1240,
+              "snippet": "name: t('grafana-data.valueFormats.categories.radiation.formats.name-sievert-hour', 'Sievert/hour (Sv/h)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1245,
+              "lineStart": 1245,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1253,
+              "lineStart": 1253,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1263,
+              "lineStart": 1263,
+              "snippet": "name: t('grafana-data.valueFormats.categories.rotational-speed.name', 'Rotational Speed'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1266,
+              "lineStart": 1266,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1271,
+              "lineStart": 1271,
+              "snippet": "fn: toFixedUnit('rpm'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1274,
+              "lineStart": 1274,
+              "snippet": "name: t('grafana-data.valueFormats.categories.rotational-speed.formats.name-hertz', 'Hertz (Hz)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1279,
+              "lineStart": 1279,
+              "snippet": "name: t('grafana-data.valueFormats.categories.rotational-speed.formats.name-kilohertz', 'Kilohertz (kHz)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1284,
+              "lineStart": 1284,
+              "snippet": "name: t('grafana-data.valueFormats.categories.rotational-speed.formats.name-megahertz', 'Megahertz (MHz)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1289,
+              "lineStart": 1289,
+              "snippet": "name: t('grafana-data.valueFormats.categories.rotational-speed.formats.name-gigahertz', 'Gigahertz (GHz)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1294,
+              "lineStart": 1294,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1299,
+              "lineStart": 1299,
+              "snippet": "fn: toFixedUnit('rad/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1302,
+              "lineStart": 1302,
+              "snippet": "name: t(",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1307,
+              "lineStart": 1307,
+              "snippet": "fn: toFixedUnit('°/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1312,
+              "lineStart": 1312,
+              "snippet": "name: t('grafana-data.valueFormats.categories.temperature.name', 'Temperature'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1315,
+              "lineStart": 1315,
+              "snippet": "name: t('grafana-data.valueFormats.categories.temperature.formats.name-celsius', 'Celsius (°C)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1317,
+              "lineStart": 1317,
+              "snippet": "fn: toFixedUnit('°C'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1320,
+              "lineStart": 1320,
+              "snippet": "name: t('grafana-data.valueFormats.categories.temperature.formats.name-fahrenheit', 'Fahrenheit (°F)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1320,
+              "lineStart": 1320,
+              "snippet": "name: t('grafana-data.valueFormats.categories.temperature.formats.name-fahrenheit', 'Fahrenheit (°F)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1322,
+              "lineStart": 1322,
+              "snippet": "fn: toFixedUnit('°F'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1325,
+              "lineStart": 1325,
+              "snippet": "name: t('grafana-data.valueFormats.categories.temperature.formats.name-kelvin', 'Kelvin (K)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1327,
+              "lineStart": 1327,
+              "snippet": "fn: toFixedUnit('K'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1332,
+              "lineStart": 1332,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.name', 'Time'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1335,
+              "lineStart": 1335,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-hertz', 'Hertz (1/s)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1340,
+              "lineStart": 1340,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-nanoseconds', 'nanoseconds (ns)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1345,
+              "lineStart": 1345,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-microseconds', 'microseconds (µs)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1350,
+              "lineStart": 1350,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-milliseconds', 'milliseconds (ms)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1355,
+              "lineStart": 1355,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-seconds', 'seconds (s)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1360,
+              "lineStart": 1360,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-minutes', 'minutes (m)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1364,
+              "lineStart": 1364,
+              "snippet": "{ name: t('grafana-data.valueFormats.categories.time.formats.name-hours', 'hours (h)'), id: 'h', fn: toHours },",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1365,
+              "lineStart": 1365,
+              "snippet": "{ name: t('grafana-data.valueFormats.categories.time.formats.name-days', 'days (d)'), id: 'd', fn: toDays },",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1367,
+              "lineStart": 1367,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-duration-ms', 'duration (ms)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1372,
+              "lineStart": 1372,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-duration-s', 'duration (s)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1377,
+              "lineStart": 1377,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-duration-hms', 'duration (hh:mm:ss)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1382,
+              "lineStart": 1382,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-duration-dhms', 'duration (d hh:mm:ss)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1387,
+              "lineStart": 1387,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-timeticks', 'Timeticks (s/100)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1392,
+              "lineStart": 1392,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-clock-ms', 'clock (ms)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1397,
+              "lineStart": 1397,
+              "snippet": "name: t('grafana-data.valueFormats.categories.time.formats.name-clock-s', 'clock (s)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1404,
+              "lineStart": 1404,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.name', 'Throughput'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1407,
+              "lineStart": 1407,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-counts-sec', 'counts/sec (cps)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1409,
+              "lineStart": 1409,
+              "snippet": "fn: simpleCountUnit('c/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1412,
+              "lineStart": 1412,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-ops-sec', 'ops/sec (ops)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1414,
+              "lineStart": 1414,
+              "snippet": "fn: simpleCountUnit('ops/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1417,
+              "lineStart": 1417,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-requests-sec', 'requests/sec (rps)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1419,
+              "lineStart": 1419,
+              "snippet": "fn: simpleCountUnit('req/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1422,
+              "lineStart": 1422,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-reads-sec', 'reads/sec (rps)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1424,
+              "lineStart": 1424,
+              "snippet": "fn: simpleCountUnit('rd/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1427,
+              "lineStart": 1427,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-writes-sec', 'writes/sec (wps)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1429,
+              "lineStart": 1429,
+              "snippet": "fn: simpleCountUnit('wr/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1432,
+              "lineStart": 1432,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-io-ops-sec', 'I/O ops/sec (iops)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1434,
+              "lineStart": 1434,
+              "snippet": "fn: simpleCountUnit('io/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1437,
+              "lineStart": 1437,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-events-sec', 'events/sec (eps)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1439,
+              "lineStart": 1439,
+              "snippet": "fn: simpleCountUnit('evt/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1442,
+              "lineStart": 1442,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-messages-sec', 'messages/sec (mps)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1444,
+              "lineStart": 1444,
+              "snippet": "fn: simpleCountUnit('msg/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1447,
+              "lineStart": 1447,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-records-sec', 'records/sec (rps)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1449,
+              "lineStart": 1449,
+              "snippet": "fn: simpleCountUnit('rec/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1452,
+              "lineStart": 1452,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-rows-sec', 'rows/sec (rps)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1454,
+              "lineStart": 1454,
+              "snippet": "fn: simpleCountUnit('rows/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1457,
+              "lineStart": 1457,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-counts-min', 'counts/min (cpm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1459,
+              "lineStart": 1459,
+              "snippet": "fn: simpleCountUnit('c/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1462,
+              "lineStart": 1462,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-ops-min', 'ops/min (opm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1464,
+              "lineStart": 1464,
+              "snippet": "fn: simpleCountUnit('ops/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1467,
+              "lineStart": 1467,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-requests-min', 'requests/min (rpm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1469,
+              "lineStart": 1469,
+              "snippet": "fn: simpleCountUnit('req/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1472,
+              "lineStart": 1472,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-reads-min', 'reads/min (rpm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1474,
+              "lineStart": 1474,
+              "snippet": "fn: simpleCountUnit('rd/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1477,
+              "lineStart": 1477,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-writes-min', 'writes/min (wpm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1479,
+              "lineStart": 1479,
+              "snippet": "fn: simpleCountUnit('wr/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1482,
+              "lineStart": 1482,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-events-min', 'events/min (epm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1484,
+              "lineStart": 1484,
+              "snippet": "fn: simpleCountUnit('evts/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1487,
+              "lineStart": 1487,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-messages-min', 'messages/min (mpm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1489,
+              "lineStart": 1489,
+              "snippet": "fn: simpleCountUnit('msgs/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1492,
+              "lineStart": 1492,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-records-min', 'records/min (rpm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1494,
+              "lineStart": 1494,
+              "snippet": "fn: simpleCountUnit('rec/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1497,
+              "lineStart": 1497,
+              "snippet": "name: t('grafana-data.valueFormats.categories.throughput.formats.name-rows-min', 'rows/min (rpm)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1499,
+              "lineStart": 1499,
+              "snippet": "fn: simpleCountUnit('rows/m'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1504,
+              "lineStart": 1504,
+              "snippet": "name: t('grafana-data.valueFormats.categories.velocity.name', 'Velocity'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1507,
+              "lineStart": 1507,
+              "snippet": "name: t('grafana-data.valueFormats.categories.velocity.formats.name-meters-second', 'meters/second (m/s)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1509,
+              "lineStart": 1509,
+              "snippet": "fn: toFixedUnit('m/s'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1512,
+              "lineStart": 1512,
+              "snippet": "name: t('grafana-data.valueFormats.categories.velocity.formats.name-kilometers-hour', 'kilometers/hour (km/h)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1514,
+              "lineStart": 1514,
+              "snippet": "fn: toFixedUnit('km/h'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1517,
+              "lineStart": 1517,
+              "snippet": "name: t('grafana-data.valueFormats.categories.velocity.formats.name-miles-hour', 'miles/hour (mph)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1519,
+              "lineStart": 1519,
+              "snippet": "fn: toFixedUnit('mph'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1522,
+              "lineStart": 1522,
+              "snippet": "name: t('grafana-data.valueFormats.categories.velocity.formats.name-knot', 'knot (kn)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1522,
+              "lineStart": 1522,
+              "snippet": "name: t('grafana-data.valueFormats.categories.velocity.formats.name-knot', 'knot (kn)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1524,
+              "lineStart": 1524,
+              "snippet": "fn: toFixedUnit('kn'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1529,
+              "lineStart": 1529,
+              "snippet": "name: t('grafana-data.valueFormats.categories.volume.name', 'Volume'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1532,
+              "lineStart": 1532,
+              "snippet": "name: t('grafana-data.valueFormats.categories.volume.formats.name-millilitre', 'millilitre (mL)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1537,
+              "lineStart": 1537,
+              "snippet": "name: t('grafana-data.valueFormats.categories.volume.formats.name-litre', 'litre (L)'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1542,
+              "lineStart": 1542,
+              "snippet": "name: t('grafana-data.valueFormats.categories.volume.formats.name-cubic-meter', 'cubic meter'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1544,
+              "lineStart": 1544,
+              "snippet": "fn: toFixedUnit('m³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1547,
+              "lineStart": 1547,
+              "snippet": "name: t('grafana-data.valueFormats.categories.volume.formats.name-normal-cubic-meter', 'Normal cubic meter'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1549,
+              "lineStart": 1549,
+              "snippet": "fn: toFixedUnit('Nm³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1552,
+              "lineStart": 1552,
+              "snippet": "name: t('grafana-data.valueFormats.categories.volume.formats.name-cubic-decimeter', 'cubic decimeter'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1554,
+              "lineStart": 1554,
+              "snippet": "fn: toFixedUnit('dm³'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1557,
+              "lineStart": 1557,
+              "snippet": "name: t('grafana-data.valueFormats.categories.volume.formats.name-gallons', 'gallons'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1559,
+              "lineStart": 1559,
+              "snippet": "fn: toFixedUnit('gal'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1564,
+              "lineStart": 1564,
+              "snippet": "name: t('grafana-data.valueFormats.categories.boolean.name', 'Boolean'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1567,
+              "lineStart": 1567,
+              "snippet": "name: t('grafana-data.valueFormats.categories.boolean.formats.name-true-false', 'True / False'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1572,
+              "lineStart": 1572,
+              "snippet": "name: t('grafana-data.valueFormats.categories.boolean.formats.name-yes-no', 'Yes / No'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            },
+            {
+              "lineEnd": 1577,
+              "lineStart": 1577,
+              "snippet": "name: t('grafana-data.valueFormats.categories.boolean.formats.name-on-off', 'On / Off'),",
+              "sourcePath": "src/valueFormats/categories.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {}
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/runtime": {
+      "records": {}
+    },
+    "@grafana/schema": {
+      "records": {
+        "time-zone": {
+          "count": 1,
+          "files": [
+            "src/datetime/datemath.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 102,
+              "lineStart": 102,
+              "snippet": "time = dateTimeForTimeZone(options.timezone, options.now);",
+              "sourcePath": "src/datetime/datemath.ts"
+            }
+          ]
+        },
+        "map-layer-options": {
+          "count": 2,
+          "files": [
+            "src/geo/layer.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 44,
+              "lineStart": 44,
+              "snippet": "<MapLayerOptions<TConfig>",
+              "sourcePath": "src/geo/layer.ts"
+            },
+            {
+              "lineEnd": 45,
+              "lineStart": 45,
+              "snippet": "<MapLayerOptions<TConfig>",
+              "sourcePath": "src/geo/layer.ts"
+            }
+          ]
+        },
+        "dashboard-link": {
+          "count": 1,
+          "files": [
+            "src/types/datasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 360,
+              "lineStart": 360,
+              "snippet": "<DashboardLink[]>",
+              "sourcePath": "src/types/datasource.ts"
+            }
+          ]
+        },
+        "variable-kind": {
+          "count": 1,
+          "files": [
+            "src/types/datasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 355,
+              "lineStart": 355,
+              "snippet": "<VariableKind[]>",
+              "sourcePath": "src/types/datasource.ts"
+            }
+          ]
+        },
+        "data-query": {
+          "count": 2,
+          "files": [
+            "src/types/logs.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 289,
+              "lineStart": 289,
+              "snippet": "<DataQuery>",
+              "sourcePath": "src/types/logs.ts"
+            },
+            {
+              "lineEnd": 300,
+              "lineStart": 300,
+              "snippet": "<DataQuery>",
+              "sourcePath": "src/types/logs.ts"
+            }
+          ]
+        },
+        "data-source-ref": {
+          "count": 3,
+          "files": [
+            "src/utils/datasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 19,
+              "lineStart": 19,
+              "snippet": "export function getDataSourceRef(ds: DataSourceInstanceSettings): DataSourceRef {",
+              "sourcePath": "src/utils/datasource.ts"
+            },
+            {
+              "lineEnd": 32,
+              "lineStart": 32,
+              "snippet": "export function isDataSourceRef(ref: unknown): ref is DataSourceRef {",
+              "sourcePath": "src/utils/datasource.ts"
+            },
+            {
+              "lineEnd": 48,
+              "lineStart": 48,
+              "snippet": "if (isDataSourceRef(ref)) {",
+              "sourcePath": "src/utils/datasource.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/sql": {
+      "records": {}
+    },
+    "@grafana/test-utils": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {}
+    },
+    "@test-plugins/extensions-test-app": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-datasource": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-panel": {
+      "records": {}
+    }
+  }
+}

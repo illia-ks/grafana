@@ -1,0 +1,42 @@
+[
+  {
+    "componentKey": "embedded-dashboard",
+    "componentPath": "components/EmbeddedDashboard.tsx",
+    "exportName": "EmbeddedDashboard"
+  },
+  {
+    "componentKey": "folder-picker",
+    "componentPath": "components/FolderPicker.tsx",
+    "exportName": "FolderPicker"
+  },
+  {
+    "componentKey": "location-service-provider",
+    "componentPath": "services/LocationService.tsx",
+    "exportName": "LocationServiceProvider"
+  },
+  {
+    "componentKey": "panel-data-error-view",
+    "componentPath": "components/PanelDataErrorView.tsx",
+    "exportName": "PanelDataErrorView"
+  },
+  {
+    "componentKey": "panel-renderer",
+    "componentPath": "components/PanelRenderer.tsx",
+    "exportName": "PanelRenderer"
+  },
+  {
+    "componentKey": "plugin-page",
+    "componentPath": "components/PluginPage.tsx",
+    "exportName": "PluginPage"
+  },
+  {
+    "componentKey": "render-limited-components",
+    "componentPath": "services/pluginExtensions/utils.tsx",
+    "exportName": "renderLimitedComponents"
+  },
+  {
+    "componentKey": "scopes-context",
+    "componentPath": "services/ScopesContext.ts",
+    "exportName": "ScopesContext"
+  }
+]

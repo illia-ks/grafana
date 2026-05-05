@@ -1,0 +1,29 @@
+{
+  "designSystemId": "801363",
+  "analyze": {
+    "repoId": "4ee33d8c-93fd-45e7-9d88-659f65887789",
+    "repoName": "grafana",
+    "packages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@test-plugins/extensions-test-app",
+      "@test-plugins/grafana-e2etest-datasource",
+      "@test-plugins/grafana-e2etest-panel"
+    ],
+    "excludedPackages": []
+  }
+}

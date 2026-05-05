@@ -1,0 +1,789 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@test-plugins/grafana-e2etest-datasource",
+      "@test-plugins/grafana-e2etest-panel"
+    ]
+  },
+  "packages": {
+    "@grafana/alerting": {
+      "records": {}
+    },
+    "@grafana/api-clients": {
+      "records": {}
+    },
+    "@grafana/data": {
+      "records": {
+        "plugin-extension": {
+          "count": 2,
+          "files": [
+            "components/ActionButton/ActionButton.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 52,
+              "lineStart": 52,
+              "snippet": "<PluginExtension>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 54,
+              "lineStart": 54,
+              "snippet": "<PluginExtension>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            }
+          ]
+        },
+        "plugin-extension-link": {
+          "count": 1,
+          "files": [
+            "components/ActionButton/ActionButton.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 14,
+              "lineStart": 14,
+              "snippet": "<PluginExtensionLink | undefined>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            }
+          ]
+        },
+        "selectable-value": {
+          "count": 2,
+          "files": [
+            "components/ActionButton/ActionButton.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 52,
+              "lineStart": 52,
+              "snippet": "<SelectableValue<PluginExtension>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 54,
+              "lineStart": 54,
+              "snippet": "<SelectableValue<PluginExtension>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            }
+          ]
+        },
+        "plugin-extension-panel-context": {
+          "count": 2,
+          "files": [
+            "module.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 12,
+              "lineStart": 12,
+              "snippet": "<PluginExtensionPanelContext>",
+              "sourcePath": "module.tsx"
+            },
+            {
+              "lineEnd": 37,
+              "lineStart": 37,
+              "snippet": "<PluginExtensionPanelContext>",
+              "sourcePath": "module.tsx"
+            }
+          ]
+        },
+        "app-root-props": {
+          "count": 3,
+          "files": [
+            "plugins/grafana-extensionexample1-app/components/App/App.tsx",
+            "plugins/grafana-extensionexample2-app/components/App/App.tsx",
+            "plugins/grafana-extensionexample3-app/components/App/App.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 5,
+              "lineStart": 5,
+              "snippet": "<AppRootProps>",
+              "sourcePath": "plugins/grafana-extensionexample1-app/components/App/App.tsx"
+            },
+            {
+              "lineEnd": 4,
+              "lineStart": 4,
+              "snippet": "<AppRootProps>",
+              "sourcePath": "plugins/grafana-extensionexample2-app/components/App/App.tsx"
+            },
+            {
+              "lineEnd": 6,
+              "lineStart": 6,
+              "snippet": "<AppRootProps>",
+              "sourcePath": "plugins/grafana-extensionexample3-app/components/App/App.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {
+        "init-plugin-translations": {
+          "count": 1,
+          "files": [
+            "module.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 8,
+              "lineStart": 8,
+              "snippet": "await initPluginTranslations(pluginJson.id);",
+              "sourcePath": "module.tsx"
+            }
+          ]
+        },
+        "trans": {
+          "count": 1,
+          "files": [
+            "pages/Config.tsx"
+          ],
+          "propUsage": {
+            "i18nKey": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"config-page.header.text\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 11,
+              "lineStart": 11,
+              "snippet": "<Trans i18nKey=\"config-page.header.text\">Is this translated</Trans>",
+              "sourcePath": "pages/Config.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {
+        "grafana-config": {
+          "count": 1,
+          "files": [
+            "webpack.config.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 23,
+              "lineStart": 23,
+              "snippet": "const baseConfig = await grafanaConfig(env);",
+              "sourcePath": "webpack.config.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/runtime": {
+      "records": {
+        "is-plugin-extension-link": {
+          "count": 2,
+          "files": [
+            "components/ActionButton/ActionButton.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 34,
+              "lineStart": 34,
+              "snippet": "if (isPluginExtensionLink(extension)) {",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 55,
+              "lineStart": 55,
+              "snippet": "if (isPluginExtensionLink(extension)) {",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            }
+          ]
+        },
+        "plugin-page": {
+          "count": 4,
+          "files": [
+            "pages/AddedComponents.tsx",
+            "pages/AddedLinks.tsx",
+            "pages/Config.tsx",
+            "pages/ExposedComponents.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 25,
+              "lineStart": 16,
+              "snippet": "<PluginPage>\n      <Stack direction={'column'} gap={4} data-testid={testIds.addedComponentsPage.container}>\n        <article>\n          <h3>Component extensions defined with addComponent and retrived with usePluginComponents hook</h3>\n          {components.map((Component, i) => {\n            return <Component key={i} name=\"World\" />;\n          })}\n        </article>\n      </Stack>\n    </PluginPage>",
+              "sourcePath": "pages/AddedComponents.tsx"
+            },
+            {
+              "lineEnd": 20,
+              "lineStart": 13,
+              "snippet": "<PluginPage>\n      <Stack direction={'column'} gap={4} data-testid={testIds.addedLinksPage.container}>\n        <section data-testid={testIds.addedLinksPage.section1}>\n          <h3>Link extensions defined with addLink and retrieved using usePluginLinks</h3>\n          <ActionButton extensions={links} />\n        </section>\n      </Stack>\n    </PluginPage>",
+              "sourcePath": "pages/AddedLinks.tsx"
+            },
+            {
+              "lineEnd": 15,
+              "lineStart": 7,
+              "snippet": "<PluginPage>\n      <Stack direction={'column'} gap={4}>\n        <section>\n          <h3>\n            <Trans i18nKey=\"config-page.header.text\">Is this translated</Trans>\n          </h3>\n        </section>\n      </Stack>\n    </PluginPage>",
+              "sourcePath": "pages/Config.tsx"
+            },
+            {
+              "lineEnd": 41,
+              "lineStart": 20,
+              "snippet": "<PluginPage>\n      <div data-testid={testIds.exposedComponentsPage.container}>\n        <ReusableComponent name={'World'} />\n      </div>\n      {AddToDashboardForm && (\n        <section>\n          <h3>Save to dashboard (exposed form)</h3>\n          <AddToDashboardForm\n            // Create a recognizable panel for assertion\n            // @ts-expect-error - the exposed component accepts a partial Props, so we don't have to provide all the fields here\n            buildPanel={() => ({\n              type: 'timeseries',\n              title: 'E2E Add to Dashboard Panel',\n              targets: [],\n            })}\n            // Ensure navigation works correctly from plugin page\n            options={{ useAbsolutePath: true }}\n            onClose={() => {}}\n          />\n        </section>\n      )}\n    </PluginPage>",
+              "sourcePath": "pages/ExposedComponents.tsx"
+            }
+          ]
+        },
+        "use-plugin-links": {
+          "count": 2,
+          "files": [
+            "pages/AddedLinks.tsx",
+            "plugins/grafana-extensionexample3-app/components/App/AddedLinks.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 10,
+              "lineStart": 10,
+              "snippet": "const { links } = usePluginLinks({ extensionPointId: LINKS_EXTENSION_POINT_ID });",
+              "sourcePath": "pages/AddedLinks.tsx"
+            },
+            {
+              "lineEnd": 9,
+              "lineStart": 9,
+              "snippet": "const { links } = usePluginLinks({ extensionPointId: LINKS_EXTENSION_POINT_ID });",
+              "sourcePath": "plugins/grafana-extensionexample3-app/components/App/AddedLinks.tsx"
+            }
+          ]
+        },
+        "use-plugin-component": {
+          "count": 1,
+          "files": [
+            "pages/ExposedComponents.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 13,
+              "lineStart": 13,
+              "snippet": "const { component: AddToDashboardForm } = usePluginComponent('grafana/add-to-dashboard-form/v1');",
+              "sourcePath": "pages/ExposedComponents.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/schema": {
+      "records": {}
+    },
+    "@grafana/sql": {
+      "records": {}
+    },
+    "@grafana/test-utils": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {
+        "button": {
+          "count": 6,
+          "files": [
+            "components/ActionButton/ActionButton.tsx",
+            "components/QueryModal/QueryModal.tsx"
+          ],
+          "propUsage": {
+            "onClick": {
+              "count": 5,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{onDismiss}"
+                },
+                {
+                  "count": 1,
+                  "value": "{() => { onDismiss?.(); selectQuery(selected); }}"
+                },
+                {
+                  "count": 1,
+                  "value": "{openInCurrentTab}"
+                },
+                {
+                  "count": 1,
+                  "value": "{openInNewTab}"
+                }
+              ]
+            },
+            "variant": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 3,
+                  "value": "\"secondary\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"primary\""
+                }
+              ]
+            },
+            "fill": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"outline\""
+                }
+              ]
+            },
+            "icon": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"apps\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"external-link-alt\""
+                }
+              ]
+            },
+            "type": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"submit\""
+                }
+              ]
+            },
+            "data-testid": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{testIds.modal.open}"
+                }
+              ]
+            },
+            "disabled": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{!Boolean(selected)}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 17,
+              "lineStart": 17,
+              "snippet": "<Button>Run default action</Button>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 90,
+              "lineStart": 88,
+              "snippet": "<Button onClick={onDismiss} fill=\"outline\" variant=\"secondary\">\n          Cancel\n        </Button>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 93,
+              "lineStart": 91,
+              "snippet": "<Button type=\"submit\" variant=\"secondary\" onClick={openInNewTab} icon=\"external-link-alt\">\n          Open in new tab\n        </Button>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 96,
+              "lineStart": 94,
+              "snippet": "<Button data-testid={testIds.modal.open} type=\"submit\" variant=\"primary\" onClick={openInCurrentTab} icon=\"apps\">\n          Open\n        </Button>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 32,
+              "lineStart": 30,
+              "snippet": "<Button variant=\"secondary\" fill=\"outline\" onClick={onDismiss}>\n          Cancel\n        </Button>",
+              "sourcePath": "components/QueryModal/QueryModal.tsx"
+            },
+            {
+              "lineEnd": 41,
+              "lineStart": 33,
+              "snippet": "<Button\n          disabled={!Boolean(selected)}\n          onClick={() => {\n            onDismiss?.();\n            selectQuery(selected);\n          }}\n        >\n          OK\n        </Button>",
+              "sourcePath": "components/QueryModal/QueryModal.tsx"
+            }
+          ]
+        },
+        "button-group": {
+          "count": 1,
+          "files": [
+            "components/ActionButton/ActionButton.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 44,
+              "lineStart": 22,
+              "snippet": "<ButtonGroup>\n        <ToolbarButton key=\"default-action\" variant=\"canvas\" onClick={() => alert('You triggered the default action')}>\n          Run default action\n        </ToolbarButton>\n        <ButtonSelect\n          data-testid={testIds.actions.button}\n          key=\"select-extension\"\n          variant=\"canvas\"\n          options={options}\n          onChange={(option) => {\n            const extension = option.value;\n\n            if (isPluginExtensionLink(extension)) {\n              if (extension.path) {\n                return setExtension(extension);\n              }\n              if (extension.onClick) {\n                return extension.onClick();\n              }\n            }\n          }}\n        />\n      </ButtonGroup>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            }
+          ]
+        },
+        "button-select": {
+          "count": 1,
+          "files": [
+            "components/ActionButton/ActionButton.tsx"
+          ],
+          "propUsage": {
+            "data-testid": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{testIds.actions.button}"
+                }
+              ]
+            },
+            "key": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"select-extension\""
+                }
+              ]
+            },
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(option) => { const extension = option.value; if (isPluginExtensionLink(extension)) { if (extension.path) { return setE…}"
+                }
+              ]
+            },
+            "options": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{options}"
+                }
+              ]
+            },
+            "variant": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"canvas\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 31,
+              "lineStart": 26,
+              "snippet": "<ButtonSelect\n          data-testid={testIds.actions.button}\n          key=\"select-extension\"\n          variant=\"canvas\"\n          options={options}\n          onChange={(option) =>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            }
+          ]
+        },
+        "modal": {
+          "count": 3,
+          "files": [
+            "components/ActionButton/ActionButton.tsx",
+            "components/QueryModal/QueryModal.tsx"
+          ],
+          "propUsage": {
+            "data-testid": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{testIds.modal.container}"
+                }
+              ]
+            },
+            "isOpen": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{true}"
+                }
+              ]
+            },
+            "onDismiss": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{onDismiss}"
+                }
+              ]
+            },
+            "title": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{title}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 98,
+              "lineStart": 83,
+              "snippet": "<Modal data-testid={testIds.modal.container} title={title} isOpen onDismiss={onDismiss}>\n      <Stack direction={'column'}>\n        <p>Do you want to proceed in the current tab or open a new tab?</p>\n      </Stack>\n      <Modal.ButtonRow>\n        <Button onClick={onDismiss} fill=\"outline\" variant=\"secondary\">\n          Cancel\n        </Button>\n        <Button type=\"submit\" variant=\"secondary\" onClick={openInNewTab} icon=\"external-link-alt\">\n          Open in new tab\n        </Button>\n        <Button data-testid={testIds.modal.open} type=\"submit\" variant=\"primary\" onClick={openInCurrentTab} icon=\"apps\">\n          Open\n        </Button>\n      </Modal.ButtonRow>\n    </Modal>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 97,
+              "lineStart": 87,
+              "snippet": "<Modal.ButtonRow>\n        <Button onClick={onDismiss} fill=\"outline\" variant=\"secondary\">\n          Cancel\n        </Button>\n        <Button type=\"submit\" variant=\"secondary\" onClick={openInNewTab} icon=\"external-link-alt\">\n          Open in new tab\n        </Button>\n        <Button data-testid={testIds.modal.open} type=\"submit\" variant=\"primary\" onClick={openInCurrentTab} icon=\"apps\">\n          Open\n        </Button>\n      </Modal.ButtonRow>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 42,
+              "lineStart": 29,
+              "snippet": "<Modal.ButtonRow>\n        <Button variant=\"secondary\" fill=\"outline\" onClick={onDismiss}>\n          Cancel\n        </Button>\n        <Button\n          disabled={!Boolean(selected)}\n          onClick={() => {\n            onDismiss?.();\n            selectQuery(selected);\n          }}\n        >\n          OK\n        </Button>\n      </Modal.ButtonRow>",
+              "sourcePath": "components/QueryModal/QueryModal.tsx"
+            }
+          ]
+        },
+        "stack": {
+          "count": 6,
+          "files": [
+            "components/ActionButton/ActionButton.tsx",
+            "components/QueryModal/QueryModal.tsx",
+            "pages/AddedComponents.tsx",
+            "pages/AddedLinks.tsx",
+            "pages/Config.tsx",
+            "plugins/grafana-extensionexample3-app/components/App/AddedLinks.tsx"
+          ],
+          "propUsage": {
+            "direction": {
+              "count": 5,
+              "values": [
+                {
+                  "count": 5,
+                  "value": "'column'"
+                }
+              ]
+            },
+            "gap": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 4,
+                  "value": "4"
+                }
+              ]
+            },
+            "data-testid": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{testIds.addedComponentsPage.container}"
+                },
+                {
+                  "count": 1,
+                  "value": "{testIds.addedLinksPage.container}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 86,
+              "lineStart": 84,
+              "snippet": "<Stack direction={'column'}>\n        <p>Do you want to proceed in the current tab or open a new tab?</p>\n      </Stack>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            },
+            {
+              "lineEnd": 28,
+              "lineStart": 19,
+              "snippet": "<Stack>\n        {targets.map((query) => (\n          <FilterPill\n            key={query.refId}\n            label={query.refId}\n            selected={query.refId === selected?.refId}\n            onClick={() => setSelected(query)}\n          />\n        ))}\n      </Stack>",
+              "sourcePath": "components/QueryModal/QueryModal.tsx"
+            },
+            {
+              "lineEnd": 24,
+              "lineStart": 17,
+              "snippet": "<Stack direction={'column'} gap={4} data-testid={testIds.addedComponentsPage.container}>\n        <article>\n          <h3>Component extensions defined with addComponent and retrived with usePluginComponents hook</h3>\n          {components.map((Component, i) => {\n            return <Component key={i} name=\"World\" />;\n          })}\n        </article>\n      </Stack>",
+              "sourcePath": "pages/AddedComponents.tsx"
+            },
+            {
+              "lineEnd": 19,
+              "lineStart": 14,
+              "snippet": "<Stack direction={'column'} gap={4} data-testid={testIds.addedLinksPage.container}>\n        <section data-testid={testIds.addedLinksPage.section1}>\n          <h3>Link extensions defined with addLink and retrieved using usePluginLinks</h3>\n          <ActionButton extensions={links} />\n        </section>\n      </Stack>",
+              "sourcePath": "pages/AddedLinks.tsx"
+            },
+            {
+              "lineEnd": 14,
+              "lineStart": 8,
+              "snippet": "<Stack direction={'column'} gap={4}>\n        <section>\n          <h3>\n            <Trans i18nKey=\"config-page.header.text\">Is this translated</Trans>\n          </h3>\n        </section>\n      </Stack>",
+              "sourcePath": "pages/Config.tsx"
+            },
+            {
+              "lineEnd": 16,
+              "lineStart": 11,
+              "snippet": "<Stack direction={'column'} gap={4}>\n      <section data-testid={testIds.appC.section1}>\n        <h3>Link extensions defined with addLink and retrieved using usePluginLinks</h3>\n        <ActionButton extensions={links} />\n      </section>\n    </Stack>",
+              "sourcePath": "plugins/grafana-extensionexample3-app/components/App/AddedLinks.tsx"
+            }
+          ]
+        },
+        "toolbar-button": {
+          "count": 1,
+          "files": [
+            "components/ActionButton/ActionButton.tsx"
+          ],
+          "propUsage": {
+            "key": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"default-action\""
+                }
+              ]
+            },
+            "onClick": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{() => alert('You triggered the default action')}"
+                }
+              ]
+            },
+            "variant": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"canvas\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 25,
+              "lineStart": 23,
+              "snippet": "<ToolbarButton key=\"default-action\" variant=\"canvas\" onClick={() => alert('You triggered the default action')}>\n          Run default action\n        </ToolbarButton>",
+              "sourcePath": "components/ActionButton/ActionButton.tsx"
+            }
+          ]
+        },
+        "filter-pill": {
+          "count": 1,
+          "files": [
+            "components/QueryModal/QueryModal.tsx"
+          ],
+          "propUsage": {
+            "key": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{query.refId}"
+                }
+              ]
+            },
+            "label": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{query.refId}"
+                }
+              ]
+            },
+            "onClick": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{() => setSelected(query)}"
+                }
+              ]
+            },
+            "selected": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{query.refId === selected?.refId}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 25,
+              "lineStart": 21,
+              "snippet": "<FilterPill\n            key={query.refId}\n            label={query.refId}\n            selected={query.refId === selected?.refId}\n            onClick={() =>",
+              "sourcePath": "components/QueryModal/QueryModal.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@test-plugins/grafana-e2etest-datasource": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-panel": {
+      "records": {}
+    }
+  }
+}

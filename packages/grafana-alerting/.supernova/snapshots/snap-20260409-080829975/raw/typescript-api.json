@@ -1,0 +1,390 @@
+{
+  "alert-label": {
+    "linkedTypes": [
+      {
+        "definition": "export type LabelSize = 'md' | 'sm' | 'xs';",
+        "lineEnd": 9,
+        "lineStart": 9,
+        "name": "LabelSize",
+        "sourcePath": "grafana/rules/components/labels/AlertLabel.tsx"
+      }
+    ],
+    "props": [
+      {
+        "name": "aria-activedescendant",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-atomic",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-autocomplete",
+        "required": false,
+        "type": "\"both\" | \"none\" | \"list\" | \"inline\""
+      },
+      {
+        "name": "aria-braillelabel",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-brailleroledescription",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-checked",
+        "required": false,
+        "type": "boolean | \"true\" | \"false\" | \"mixed\""
+      },
+      {
+        "name": "aria-colcount",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-colindex",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-colindextext",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-colspan",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-controls",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-current",
+        "required": false,
+        "type": "boolean | \"true\" | \"false\" | \"page\" | \"step\" | \"location\" | \"date\" | \"time\""
+      },
+      {
+        "name": "aria-describedby",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-description",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-details",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-disabled",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-dropeffect",
+        "required": false,
+        "type": "\"none\" | \"link\" | \"copy\" | \"execute\" | \"move\" | \"popup\""
+      },
+      {
+        "name": "aria-errormessage",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-expanded",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-flowto",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-grabbed",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-haspopup",
+        "required": false,
+        "type": "boolean | \"true\" | \"false\" | \"dialog\" | \"grid\" | \"listbox\" | \"menu\" | \"tree\""
+      },
+      {
+        "name": "aria-hidden",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-invalid",
+        "required": false,
+        "type": "boolean | \"true\" | \"false\" | \"grammar\" | \"spelling\""
+      },
+      {
+        "name": "aria-keyshortcuts",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-label",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-labelledby",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-level",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-live",
+        "required": false,
+        "type": "\"off\" | \"assertive\" | \"polite\""
+      },
+      {
+        "name": "aria-modal",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-multiline",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-multiselectable",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-orientation",
+        "required": false,
+        "type": "\"horizontal\" | \"vertical\""
+      },
+      {
+        "name": "aria-owns",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-placeholder",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-posinset",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-pressed",
+        "required": false,
+        "type": "boolean | \"true\" | \"false\" | \"mixed\""
+      },
+      {
+        "name": "aria-readonly",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-relevant",
+        "required": false,
+        "type": "\"text\" | \"additions\" | \"additions removals\" | \"additions text\" | \"all\" | \"removals\" | \"removals additions\" | \"removals text\" | \"text additions\" | \"text removals\""
+      },
+      {
+        "name": "aria-required",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-roledescription",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-rowcount",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-rowindex",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-rowindextext",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "aria-rowspan",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-selected",
+        "required": false,
+        "type": "Booleanish"
+      },
+      {
+        "name": "aria-setsize",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-sort",
+        "required": false,
+        "type": "\"none\" | \"ascending\" | \"descending\" | \"other\""
+      },
+      {
+        "name": "aria-valuemax",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-valuemin",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-valuenow",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "aria-valuetext",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "color",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "colorBy",
+        "required": false,
+        "type": "\"key\" | \"value\" | \"both\""
+      },
+      {
+        "name": "exportparts",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "icon",
+        "required": false,
+        "type": "any"
+      },
+      {
+        "name": "inert",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "inputMode",
+        "required": false,
+        "type": "\"none\" | \"search\" | \"text\" | \"tel\" | \"url\" | \"email\" | \"numeric\" | \"decimal\""
+      },
+      {
+        "name": "is",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "labelKey",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "onClick",
+        "required": false,
+        "type": "([value, key]: [string | undefined, string | undefined]) => void"
+      },
+      {
+        "name": "onKeyPress",
+        "required": false,
+        "type": "KeyboardEventHandler<HTMLDivElement>"
+      },
+      {
+        "name": "onKeyPressCapture",
+        "required": false,
+        "type": "KeyboardEventHandler<HTMLDivElement>"
+      },
+      {
+        "name": "part",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "size",
+        "required": false,
+        "type": "LabelSize"
+      },
+      {
+        "name": "value",
+        "required": false,
+        "type": "string"
+      }
+    ],
+    "sourcePath": "grafana/rules/components/labels/AlertLabel.tsx"
+  },
+  "alert-labels": {
+    "linkedTypes": [
+      {
+        "definition": "export type LabelSize = 'md' | 'sm' | 'xs';",
+        "lineEnd": 9,
+        "lineStart": 9,
+        "name": "LabelSize",
+        "sourcePath": "grafana/rules/components/labels/AlertLabel.tsx"
+      }
+    ],
+    "props": [
+      {
+        "name": "commonLabelsMode",
+        "required": false,
+        "type": "\"expand\" | \"tooltip\""
+      },
+      {
+        "name": "displayCommonLabels",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "labels",
+        "required": true,
+        "type": "{ [P in K]: T; }"
+      },
+      {
+        "name": "labelSets",
+        "required": false,
+        "type": "Record<string, string>[]"
+      },
+      {
+        "name": "onClick",
+        "required": false,
+        "type": "([value, key]: [string | undefined, string | undefined]) => void"
+      },
+      {
+        "name": "size",
+        "required": false,
+        "type": "LabelSize"
+      }
+    ],
+    "sourcePath": "grafana/rules/components/labels/AlertLabels.tsx"
+  }
+}

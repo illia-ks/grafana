@@ -1,0 +1,446 @@
+{
+  "alert": {
+    "description": "An alert displays an important message in a way that attracts the user's attention without interrupting the user's task.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-alert--docs",
+    "sourcePath": "components/Alert/Alert.tsx"
+  },
+  "auto-save-field": {
+    "description": "Used for form inputs that should save its content automatically.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-autosavefield--docs",
+    "sourcePath": "components/AutoSaveField/AutoSaveField.tsx"
+  },
+  "auto-size-input": {
+    "description": "You can use it or regular text input. When used, AutoSizeInput resizes itself to the current content. For an array of data or tree-structured data, consider using `Combobox` or `Cascader` respectively.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-autosizeinput--docs",
+    "sourcePath": "components/Input/AutoSizeInput.tsx"
+  },
+  "badge": {
+    "description": "The badge component adds meta information to other content, for example about release status or new elements. You can add any `Icon` component or use the badge without an icon.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-badge--docs",
+    "sourcePath": "components/Badge/Badge.tsx"
+  },
+  "bar-gauge": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/BarGauge/BarGauge.tsx"
+  },
+  "big-value": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/BigValue/BigValue.tsx"
+  },
+  "box": {
+    "description": "The Box Component is the most basic layout component. It can be used to build more complex components and layouts with properties that use our design tokens instead of using CSS.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/layout-box--docs",
+    "sourcePath": "components/Layout/Box/Box.tsx"
+  },
+  "button": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-button--docs",
+    "sourcePath": "components/Button/Button.tsx"
+  },
+  "button-cascader": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-buttoncascader--docs",
+    "sourcePath": "components/ButtonCascader/ButtonCascader.tsx"
+  },
+  "carousel": {
+    "description": "The Carousel component displays a grid of image thumbnails that can be clicked to view full-sized images in a modal with navigation controls. It provides an elegant way to present collections of images or screenshots with fullscreen preview capabilities.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-carousel--docs",
+    "sourcePath": "components/Carousel/Carousel.tsx"
+  },
+  "cascader": {
+    "description": "The cascader component is a Select with a cascading flyout menu. When you have lots of options in your select, they can be hard to navigate from a regular dropdown list. In that case you can use the cascader to organize your options into groups hierarchically. Just like in the Select component, the cascader input doubles as a search field to quickly jump to a selection without navigating the list.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-cascader--docs",
+    "sourcePath": "components/Cascader/Cascader.tsx"
+  },
+  "checkbox": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-checkbox--docs",
+    "sourcePath": "components/Forms/Checkbox.tsx"
+  },
+  "click-outside-wrapper": {
+    "description": "A wrapper component that detects clicks outside of the elements by attaching event listener to `window` or `document` objects. Useful for components that require an action being triggered when a click outside has occurred, for example closing an overlay or popup.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/utilities-clickoutsidewrapper--docs",
+    "sourcePath": "components/ClickOutsideWrapper/ClickOutsideWrapper.tsx"
+  },
+  "clipboard-button": {
+    "description": "A control for allowing the user to copy text to their clipboard. Uses native APIs on modern browsers, falling back to the old `document.execCommand('copy')` API on other browsers. The text to be copied should be provided via `getText` prop.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-clipboardbutton--docs",
+    "sourcePath": "components/ClipboardButton/ClipboardButton.tsx"
+  },
+  "code-editor": {
+    "description": "Monaco Code editor.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-codeeditor--docs",
+    "sourcePath": "components/Monaco/CodeEditor.tsx"
+  },
+  "collapsable-section": {
+    "description": "A simple container for enabling collapsing/expanding of content.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/layout-collapsablesection--docs",
+    "sourcePath": "components/Collapse/CollapsableSection.tsx"
+  },
+  "collapse": {
+    "description": "A content area, which can be horizontally collapsed and expanded. Can be used to hide extra information on the page.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/layout-collapse--docs",
+    "sourcePath": "components/Collapse/Collapse.tsx"
+  },
+  "color-picker": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/pickers-colorpicker--docs",
+    "sourcePath": "components/ColorPicker/ColorPicker.tsx"
+  },
+  "color-picker-input": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/pickers-colorpickerinput--docs",
+    "sourcePath": "components/ColorPicker/ColorPickerInput.tsx"
+  },
+  "combobox": {
+    "description": "A performant and accessible combobox component that supports both synchronous and asynchronous options loading. It provides type-ahead filtering, keyboard navigation, and virtual scrolling for handling large datasets efficiently.\nReplaces the Select component, and has better performance.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-combobox--docs",
+    "sourcePath": "components/Combobox/Combobox.tsx"
+  },
+  "confirm-button": {
+    "description": "The ConfirmButton is an interactive component that adds a double-confirm option to a clickable action. When clicked, the action is replaced by an inline confirmation with the option to cancel. In Grafana, this is used, for example, for editing values in settings tables.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-confirmbutton--docs",
+    "sourcePath": "components/ConfirmButton/ConfirmButton.tsx"
+  },
+  "confirm-modal": {
+    "description": "Used to request user for action confirmation, e.g. deleting items. Triggers provided `onConfirm` callback.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-confirmmodal--docs",
+    "sourcePath": "components/ConfirmModal/ConfirmModal.tsx"
+  },
+  "context-menu": {
+    "description": "A menu displaying additional options when it's not possible to show them at all times due to a space constraint.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-contextmenu--docs",
+    "sourcePath": "components/ContextMenu/ContextMenu.tsx"
+  },
+  "custom-headers-settings": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/DataSourceSettings/CustomHeadersSettings.tsx"
+  },
+  "custom-scrollbar": {
+    "description": "Wraps component into <Scrollbars> component from `react-custom-scrollbars`",
+    "sourcePath": "components/CustomScrollbar/CustomScrollbar.tsx"
+  },
+  "date-picker": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/DateTimePickers/DatePicker/DatePicker.tsx"
+  },
+  "date-picker-with-input": {
+    "description": "An input with a calendar view, used to select a date.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/date-time-pickers-datepickerwithinput--docs",
+    "sourcePath": "components/DateTimePickers/DatePickerWithInput/DatePickerWithInput.tsx"
+  },
+  "date-time-picker": {
+    "description": "A component for selecting a date *and* time.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/date-time-pickers-datetimepicker--docs",
+    "sourcePath": "components/DateTimePickers/DateTimePicker/DateTimePicker.tsx"
+  },
+  "divider": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/layout-divider--docs",
+    "sourcePath": "components/Divider/Divider.tsx"
+  },
+  "drawer": {
+    "description": "Drawer is a slide in overlay that can be used to display additional information without hiding the main page content. It can be anchored to the left or right edge of the screen.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-drawer--docs",
+    "sourcePath": "components/Drawer/Drawer.tsx"
+  },
+  "dropdown": {
+    "description": "Hook up a menu or other overlay to any trigger.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-dropdown--docs",
+    "sourcePath": "components/Dropdown/Dropdown.tsx"
+  },
+  "element-selection-context": {
+    "description": "Context lets components pass information deep down without explicitly\npassing props.\n\nCreated from {@link createContext}",
+    "sourcePath": "components/ElementSelectionContext/ElementSelectionContext.tsx"
+  },
+  "empty-state": {
+    "description": "The EmptyState component consists of a message and optionally an image, button, and additional information.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-emptystate--docs",
+    "sourcePath": "components/EmptyState/EmptyState.tsx"
+  },
+  "feature-badge": {
+    "description": "A component for displaying information about different release stages of features, in accordance with the guidelines provided at [Grafana's Release Life Cycle](https://grafana.com/docs/release-life-cycle).\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-featurebadge--docs",
+    "sourcePath": "components/FeatureBadge/FeatureBadge.tsx"
+  },
+  "feature-info-box": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/InfoBox/FeatureInfoBox.tsx"
+  },
+  "field": {
+    "description": "Field is the basic component for rendering form elements together with labels and description.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/forms-field--docs",
+    "sourcePath": "components/Forms/Field.tsx"
+  },
+  "field-set": {
+    "description": "Component used to group form elements inside a form, equivalent to HTML's [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag. Accepts optional label, which, if provided, is used as a text for the set's legend.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/forms-fieldset--docs",
+    "sourcePath": "components/Forms/FieldSet.tsx"
+  },
+  "field-validation-message": {
+    "description": "Component for displaying a validation error message under an element.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/forms-fieldvalidationmessage--docs",
+    "sourcePath": "components/Forms/FieldValidationMessage.tsx"
+  },
+  "file-dropzone": {
+    "description": "A dropzone component to use for file uploads.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-filedropzone--docs",
+    "sourcePath": "components/FileDropzone/FileDropzone.tsx"
+  },
+  "file-list-item": {
+    "description": "A FileListItem component used for the FileDropzone component to show uploaded files.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-filelistitem--docs",
+    "sourcePath": "components/FileDropzone/FileListItem.tsx"
+  },
+  "file-upload": {
+    "description": "A button-styled input that triggers file upload popup. Button text and accepted file extensions can be customized via `label` and `accepted` props respectively.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-fileupload--docs",
+    "sourcePath": "components/FileUpload/FileUpload.tsx"
+  },
+  "filter-pill": {
+    "description": "A component used for quick toggling on/off filters. Mostly used in inline form components and transformation/query editors.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-filterpill--docs",
+    "sourcePath": "components/FilterPill/FilterPill.tsx"
+  },
+  "formatted-value-display": {
+    "description": "Used to display a value, which also supports prefix and suffix.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/plugins-formattedvaluedisplay--docs",
+    "sourcePath": "components/FormattedValueDisplay/FormattedValueDisplay.tsx"
+  },
+  "grid": {
+    "description": "The Grid component is a layout component that allows you to create a grid of columns and rows to organize content and elements. It is a wrapper around the [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) specification.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/layout-grid--docs",
+    "sourcePath": "components/Layout/Grid/Grid.tsx"
+  },
+  "icon": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/Icon/Icon.tsx"
+  },
+  "icon-button": {
+    "description": "This component looks just like an icon but behaves like a button.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-iconbutton--docs",
+    "sourcePath": "components/IconButton/IconButton.tsx"
+  },
+  "info-box": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/InfoBox/InfoBox.tsx"
+  },
+  "inline-field": {
+    "description": "A basic component for rendering form elements, like `Input`, `Checkbox`, `Combobox`, etc, inline together with `InlineLabel`. If the child element has `id` specified, the label's `htmlFor` attribute, pointing to the id, will be added.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/forms-inlinefield--docs",
+    "sourcePath": "components/Forms/InlineField.tsx"
+  },
+  "inline-field-row": {
+    "description": "Used to align multiple InlineField components in one row. The row will wrap if the width of the children exceeds its own. Equivalent to the div with gf-form-inline class name. Multiple InlineFieldRows vertically stack on each other.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/forms-inlinefieldrow--docs",
+    "sourcePath": "components/Forms/InlineFieldRow.tsx"
+  },
+  "inline-label": {
+    "description": "A horizontal variant of Label, primarily used in query editors. Can be combined with form components that expect a label, eg. `Input`, `Checkbox`, `Combobox`.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/forms-inlinelabel--docs",
+    "sourcePath": "components/Forms/InlineLabel.tsx"
+  },
+  "inline-toast": {
+    "description": "Used to indicate temporal status near fields/components, such as a *Saved* indicator next to a field, or a little *Copied!* indicator above a button.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-inlinetoast--docs",
+    "sourcePath": "components/InlineToast/InlineToast.tsx"
+  },
+  "input": {
+    "description": "Used for regular text input. For an array of data or tree-structured data, consider using `Combobox` or `Cascader` respectively.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-input--docs",
+    "sourcePath": "components/Input/Input.tsx"
+  },
+  "interactive-table": {
+    "description": "The InteractiveTable is used to display and select data efficiently. It allows for the display and modification of detailed information.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/layout-interactivetable--docs",
+    "sourcePath": "components/InteractiveTable/InteractiveTable.tsx"
+  },
+  "jsonformatter": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/JSONFormatter/JSONFormatter.tsx"
+  },
+  "label": {
+    "description": "The label component can be used to label form inputs with a heading/\"Option name\" and a description. To automatically have the right arrangement of this component with a form input, use the `Field` component.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/forms-label--docs",
+    "sourcePath": "components/Forms/Label.tsx"
+  },
+  "legend": {
+    "description": "Legend should be used to add a caption to a group of related form elements that have been grouped toegheter into a `FieldSet`.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/forms-legend--docs",
+    "sourcePath": "components/Forms/Legend.tsx"
+  },
+  "loading-bar": {
+    "description": "The LoadingBar is used as a simple loading slider animation in the top of its container.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-loadingbar--docs",
+    "sourcePath": "components/LoadingBar/LoadingBar.tsx"
+  },
+  "loading-placeholder": {
+    "description": "Loading indicator with a text. Used to alert a user to wait for an activity to complete.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-loadingplaceholder--docs",
+    "sourcePath": "components/LoadingPlaceholder/LoadingPlaceholder.tsx"
+  },
+  "menu-item": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/Menu/MenuItem.tsx"
+  },
+  "modal": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-modal--docs",
+    "sourcePath": "components/Modal/Modal.tsx"
+  },
+  "modals-context": {
+    "description": "Context lets components pass information deep down without explicitly\npassing props.\n\nCreated from {@link createContext}",
+    "sourcePath": "components/Modal/ModalsContext.tsx"
+  },
+  "modals-controller": {
+    "description": "An object masquerading as a component. These are created by functions\nlike {@link forwardRef}, {@link memo}, and {@link createContext}.\n\nIn order to make TypeScript work, we pretend that they are normal\ncomponents.\n\nBut they are, in fact, not callable - instead, they are objects which\nare treated specially by the renderer.",
+    "sourcePath": "components/Modal/ModalsContext.tsx"
+  },
+  "multi-combobox": {
+    "description": "The behavior of the MultiCombobox is similar to that of the Combobox, but it allows you to select multiple options. For all non-multi behaviors, see the Combobox documentation.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-multicombobox--docs",
+    "sourcePath": "components/Combobox/MultiCombobox.tsx"
+  },
+  "pagination": {
+    "description": "Component used for rendering a page selector below paginated content.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/navigation-pagination--docs",
+    "sourcePath": "components/Pagination/Pagination.tsx"
+  },
+  "panel-context-provider": {
+    "description": "An {@link ExoticComponent} with a `propTypes` property applied to it.",
+    "sourcePath": "components/PanelChrome/PanelContext.ts"
+  },
+  "panel-context-root": {
+    "description": "Context lets components pass information deep down without explicitly\npassing props.\n\nCreated from {@link createContext}",
+    "sourcePath": "components/PanelChrome/PanelContext.ts"
+  },
+  "plot-legend": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/uPlot/PlotLegend.tsx"
+  },
+  "plugin-signature-badge": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/information-pluginsignaturebadge--docs",
+    "sourcePath": "components/PluginSignatureBadge/PluginSignatureBadge.tsx"
+  },
+  "query-field": {
+    "description": "Renders an editor field.\nPass initial value as initialQuery and listen to changes in props.onValueChanged.\nThis component can only process strings. Internally it uses Slate Value.\nImplement props.onTypeahead to use suggestions.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-deprecated-queryfield--docs",
+    "sourcePath": "components/QueryField/QueryField.tsx"
+  },
+  "radio-button-group": {
+    "description": "RadioButtonGroup is used to select a single value from multiple mutually exclusive options.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-radiobuttongroup--docs",
+    "sourcePath": "components/Forms/RadioButtonGroup/RadioButtonGroup.tsx"
+  },
+  "radio-button-list": {
+    "description": "RadioButtonList is used to select a single value from multiple mutually exclusive options usually in a vertical manner.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-radiobuttonlist--docs",
+    "sourcePath": "components/Forms/RadioButtonList/RadioButtonList.tsx"
+  },
+  "relative-time-range-picker": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/date-time-pickers-relativetimerangepicker--docs",
+    "sourcePath": "components/DateTimePickers/RelativeTimeRangePicker/RelativeTimeRangePicker.tsx"
+  },
+  "render-user-content-as-html": {
+    "description": "Abstraction layer component for sanitizing and rendering an html content.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/utilities-renderusercontentashtml--docs",
+    "sourcePath": "components/RenderUserContentAsHTML/RenderUserContentAsHTML.tsx"
+  },
+  "scroll-container": {
+    "description": "This component is used to create a scrollable container. It uses native scrollbars, has an option to show scroll indicators, and supports most `Box` properties.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/layout-scrollcontainer--docs",
+    "sourcePath": "components/ScrollContainer/ScrollContainer.tsx"
+  },
+  "secret-input": {
+    "description": "Used for secret/password input.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-secretinput--docs",
+    "sourcePath": "components/SecretInput/SecretInput.tsx"
+  },
+  "secret-text-area": {
+    "description": "Text area that does not disclose an already configured value but lets the user reset the current value and enter a new one.\nTypically useful for asymmetric cryptography keys.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-secrettextarea--docs",
+    "sourcePath": "components/SecretTextArea/SecretTextArea.tsx"
+  },
+  "segment": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-segment--docs",
+    "sourcePath": "components/Segment/Segment.tsx"
+  },
+  "segment-async": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-segmentasync--docs",
+    "sourcePath": "components/Segment/SegmentAsync.tsx"
+  },
+  "segment-input": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-segmentinput--docs",
+    "sourcePath": "components/Segment/SegmentInput.tsx"
+  },
+  "segment-section": {
+    "description": "Horizontal section for editor components.",
+    "sourcePath": "components/Segment/SegmentSection.tsx"
+  },
+  "series-color-picker-popover": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/pickers-seriescolorpicker--docs",
+    "sourcePath": "components/ColorPicker/SeriesColorPickerPopover.tsx"
+  },
+  "series-icon": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/VizLegend/SeriesIcon.tsx"
+  },
+  "space": {
+    "description": "The Space component is a component used to add space between elements. Horizontal space is added using the `h` prop, while vertical space is added using the `v` prop. When adding horizontal space between inline or inline-block elements, the `layout` prop should be set to `\"inline\"`, otherwise the `\"block\"` value of the prop can be used.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/layout-space--docs",
+    "sourcePath": "components/Layout/Space.tsx"
+  },
+  "stack": {
+    "description": "The Stack component is a simple wrapper around the flexbox layout model that allows to easily create responsive and flexible layouts. It provides a simple and intuitive way to align and distribute items within a container either horizontally or vertically.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/layout-stack--docs",
+    "sourcePath": "components/Layout/Stack/Stack.tsx"
+  },
+  "stats-picker": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/StatsPicker/StatsPicker.tsx"
+  },
+  "switch": {
+    "description": "Switch is a representation of an on-off state – like a light switch. So you can use Switch to toggle binary states.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-switch--docs",
+    "sourcePath": "components/Switch/Switch.tsx"
+  },
+  "tab": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/navigation-tabs--docs",
+    "sourcePath": "components/Tabs/Tab.tsx"
+  },
+  "tab-content": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/navigation-tabs--docs",
+    "sourcePath": "components/Tabs/TabContent.tsx"
+  },
+  "table": {
+    "description": "Used for displaying tabular data\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/plugins-table--docs",
+    "sourcePath": "components/Table/TableRT/Table.tsx"
+  },
+  "tabs-bar": {
+    "description": "A composition component for rendering a TabBar with Tabs for navigation.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/navigation-tabs--docs",
+    "sourcePath": "components/Tabs/TabsBar.tsx"
+  },
+  "tag": {
+    "description": "Used for displaying metadata, for example to add more details to search results. Background and border colors are generated from the tag name.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-tag--docs",
+    "sourcePath": "components/Tags/Tag.tsx"
+  },
+  "tag-list": {
+    "description": "List of tags with predefined margins and positioning.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/information-taglist--docs",
+    "sourcePath": "components/Tags/TagList.tsx"
+  },
+  "tags-input": {
+    "description": "A set of an input field and a button next to it that allows the user to add new tags. The added tags are previewed next to the input and can be removed by clicking the \"X\" icon. You can customize the width of the input.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-tagsinput--docs",
+    "sourcePath": "components/TagsInput/TagsInput.tsx"
+  },
+  "text": {
+    "description": "The Text component can be used to apply typography styles in a simple way, without the need of extra css.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/foundations-text--docs",
+    "sourcePath": "components/Text/Text.tsx"
+  },
+  "text-area": {
+    "description": "Use for multi line inputs like descriptions.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/inputs-textarea--docs",
+    "sourcePath": "components/TextArea/TextArea.tsx"
+  },
+  "text-link": {
+    "description": "The TextLink component renders an anchor tag `<a>` that takes users to another page, external or internal to Grafana.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/foundations-textlink--docs",
+    "sourcePath": "components/Link/TextLink.tsx"
+  },
+  "time-range-input": {
+    "description": "A variant of TimeRangePicker for use in forms.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/date-time-pickers-timerangeinput--docs",
+    "sourcePath": "components/DateTimePickers/TimeRangeInput.tsx"
+  },
+  "time-range-label": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/DateTimePickers/TimeRangePicker/TimeRangeLabel.tsx"
+  },
+  "time-range-picker": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/date-time-pickers-timerangepicker--docs",
+    "sourcePath": "components/DateTimePickers/TimeRangePicker.tsx"
+  },
+  "time-zone-picker": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/date-time-pickers-timezonepicker--docs",
+    "sourcePath": "components/DateTimePickers/TimeZonePicker.tsx"
+  },
+  "toggletip": {
+    "description": "Toggletips, similar to Tooltips, provide contextual support for users when needed. They are hidden by default, a UI trigger or text link are clicked to set them to their visible state. Toggletips, unlike tooltips, are persistent until a user takes action to dismiss them by clicking on the required “X” (close) trigger. Toggletips are capable of containing varying types of complex content including interactive components, buttons, and dropdowns.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-toggletip--docs",
+    "sourcePath": "components/Toggletip/Toggletip.tsx"
+  },
+  "toolbar-button": {
+    "description": "Multiple buttons that form a toolbar. Each button can contain an icon, image and text. There are three variants of the ToolbarButton: default, primary and destructive.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/navigation-toolbarbutton--docs",
+    "sourcePath": "components/ToolbarButton/ToolbarButton.tsx"
+  },
+  "toolbar-button-row": {
+    "description": "A container for multiple ToolbarButtons. Provides automatic overflow behaviour when the buttons no longer fit in the container.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/navigation-toolbarbuttonrow--docs",
+    "sourcePath": "components/ToolbarButton/ToolbarButtonRow.tsx"
+  },
+  "tooltip": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/overlays-tooltip--docs",
+    "sourcePath": "components/Tooltip/Tooltip.tsx"
+  },
+  "unit-picker": {
+    "description": "An {@link ExoticComponent} with a `displayName` property applied to it.",
+    "sourcePath": "components/UnitPicker/UnitPicker.tsx"
+  },
+  "user-icon": {
+    "description": "UserIcon renders a user icon and displays the user's name or initials along with the user's active status or last viewed date.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/iconography-usericon--docs",
+    "sourcePath": "components/UsersIndicator/UserIcon.tsx"
+  },
+  "users-indicator": {
+    "description": "A component that displays a set of user icons indicating which users are currently active. If there are too many users to display all the icons, it will collapse the icons into a single icon with a number indicating the number of additional users.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/iconography-usersindicator--docs",
+    "sourcePath": "components/UsersIndicator/UsersIndicator.tsx"
+  },
+  "value-picker": {
+    "description": "A component that looks like a button but transforms into a select when clicked.\n\nhttps://developers.grafana.com/ui/latest/index.html?path=/docs/pickers-valuepicker--docs",
+    "sourcePath": "components/ValuePicker/ValuePicker.tsx"
+  },
+  "week-start-picker": {
+    "description": "https://developers.grafana.com/ui/latest/index.html?path=/docs/date-time-pickers-weekstartpicker--docs",
+    "sourcePath": "components/DateTimePickers/WeekStartPicker.tsx"
+  },
+  "with-error-boundary": {
+    "description": "HOC for wrapping a component in an error boundary.",
+    "sourcePath": "components/ErrorBoundary/ErrorBoundary.tsx"
+  },
+  "xycanvas": {
+    "description": "Renders absolutely positioned element on top of the uPlot's plotting area (axes are not included!).\nUseful when you want to render some overlay with canvas-independent elements on top of the plot.",
+    "sourcePath": "components/uPlot/geometries/XYCanvas.tsx"
+  }
+}

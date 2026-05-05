@@ -1,0 +1,304 @@
+{
+  "data-source-picker": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "alerting",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "annotations",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "autoFocus",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "current",
+        "required": true,
+        "type": "any"
+      },
+      {
+        "name": "dashboard",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "disabled",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "filter",
+        "required": false,
+        "type": "(dataSource: DataSourceInstanceSettings) => boolean"
+      },
+      {
+        "name": "hideTextValue",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "inputId",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "invalid",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "isLoading",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "logs",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "metrics",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "mixed",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "noDefault",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "onBlur",
+        "required": false,
+        "type": "() => void"
+      },
+      {
+        "name": "onChange",
+        "required": true,
+        "type": "(ds: DataSourceInstanceSettings) => void"
+      },
+      {
+        "name": "onClear",
+        "required": false,
+        "type": "() => void"
+      },
+      {
+        "name": "openMenuOnFocus",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "placeholder",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "pluginId",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "tracing",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "type",
+        "required": false,
+        "type": "string | string[]"
+      },
+      {
+        "name": "variables",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "width",
+        "required": false,
+        "type": "number"
+      }
+    ],
+    "sourcePath": "components/DataSourcePicker.tsx"
+  },
+  "folder-picker": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "clearable",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "excludeUIDs",
+        "required": false,
+        "type": "string[]"
+      },
+      {
+        "name": "invalid",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "onChange",
+        "required": false,
+        "type": "(folderUID: string | undefined, folderName: string | undefined) => void"
+      },
+      {
+        "name": "permission",
+        "required": false,
+        "type": "\"view\" | \"edit\""
+      },
+      {
+        "name": "rootFolderUID",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "showRootFolder",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "value",
+        "required": false,
+        "type": "string"
+      }
+    ],
+    "sourcePath": "components/FolderPicker.tsx"
+  },
+  "location-service-provider": {
+    "linkedTypes": [
+      {
+        "definition": "export interface LocationService {\n  partial: (query: Record<string, any>, replace?: boolean) => void;\n  push: (location: H.Path | H.LocationDescriptor<any>) => void;\n  replace: (location: H.Path | H.LocationDescriptor<any>) => void;\n  reload: () => void;\n  getLocation: () => H.Location;\n  getHistory: () => H.History;\n  getSearch: () => URLSearchParams;\n  getSearchObject: () => UrlQueryMap;\n  getLocationObservable: () => Observable<H.Location>;\n\n  /**\n   * This is from the old LocationSrv interface\n   * @deprecated use partial, push or replace instead */\n  update: (update: LocationUpdate) => void;\n}",
+        "lineEnd": 31,
+        "lineStart": 16,
+        "name": "LocationService",
+        "sourcePath": "services/LocationService.tsx"
+      },
+      {
+        "definition": "export interface LocationSrv {\n  update(options: LocationUpdate): void;\n}",
+        "lineEnd": 49,
+        "lineStart": 47,
+        "name": "LocationSrv",
+        "sourcePath": "services/LocationSrv.ts"
+      },
+      {
+        "definition": "export interface LocationUpdate {\n  /**\n   * Target path where you automatically wants to navigate the user.\n   */\n  path?: string;\n\n  /**\n   * Specify this value if you want to add values to the query string of the URL.\n   */\n  query?: UrlQueryMap;\n\n  /**\n   * If set to true, the query argument will be added to the existing URL.\n   */\n  partial?: boolean;\n\n  /**\n   * Used internally to sync the Redux state from Angular to make sure that the Redux location\n   * state is in sync when navigating using the Angular router.\n   *\n   * @remarks\n   * Do not change this unless you are the Angular router.\n   *\n   * @internal\n   */\n  routeParams?: UrlQueryMap;\n\n  /*\n   * If set to true, this will replace URL state (ie. cause no new browser history).\n   */\n  replace?: boolean;\n}",
+        "lineEnd": 38,
+        "lineStart": 7,
+        "name": "LocationUpdate",
+        "sourcePath": "services/LocationSrv.ts"
+      }
+    ],
+    "props": [
+      {
+        "name": "service",
+        "required": true,
+        "type": "export interface LocationService { partial: (query: Record<string, any>, replace?: boolean) => void; push: (location: H.Path | H.LocationDescriptor<any>) => void; replace: (location: H.Path | H.LocationDescriptor<any>) => void; reload: () => void; getLocation: () => H.Location; getHistory: () => H.History; getSearch: () => URLSearchParams; getSearchObject: () => UrlQueryMap; getLocationObservable: () => Observable<H.Location>; /** * This is from the old LocationSrv interface * @deprecated use partial, push or replace instead */ update: (update: LocationUpdate) => void; }"
+      }
+    ],
+    "sourcePath": "services/LocationService.tsx"
+  },
+  "query-editor-with-migration": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "__@hasInstance@17939",
+        "required": true,
+        "type": "(value: any) => boolean"
+      },
+      {
+        "name": "apply",
+        "required": true,
+        "type": "{ <T>(this: new () => T, thisArg: T): void; <T, A extends any[]>(this: new (...args: A) => T, thisArg: T, args: A): void; } | { <T, R>(this: (this: T) => R, thisArg: T): R; <T, A extends any[], R>(this: (this: T, ...args: A) => R, thisArg: T, args: A): R; }"
+      },
+      {
+        "name": "arguments",
+        "required": true,
+        "type": "any"
+      },
+      {
+        "name": "bind",
+        "required": true,
+        "type": "{ <T>(this: T, thisArg: any): T; <A extends any[], B extends any[], R>(this: new (...args: [...A, ...B]) => R, thisArg: any, ...args: A): new (...args: B) => R; } | { <T>(this: T, thisArg: ThisParameterType<T>): OmitThisParameter<...>; <T, A extends any[], B extends any[], R>(this: (this: T, ...args: [......]) => R,..."
+      },
+      {
+        "name": "call",
+        "required": true,
+        "type": "(<T, A extends any[]>(this: new (...args: A) => T, thisArg: T, ...args: A) => void) | (<T, A extends any[], R>(this: (this: T, ...args: A) => R, thisArg: T, ...args: A) => R)"
+      },
+      {
+        "name": "caller",
+        "required": true,
+        "type": "interface Function { /** * Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function. * @param thisArg The object to be used as the this object. * @param argArray A set of arguments to be passed to the function. */ apply(this: Function, thisArg: any, argArray?: any): any; /** * Calls a method of an object, substituting another object for the current object. * @param thisArg The object to be used as the current object. * @param argArray A list of arguments to be passed to the method. */ call(this: Function, thisArg: any, ...argArray: any[]): any; /** * For a given function, creates a bound function that has the same body as the original function. * The this object of the bound function is associated with the specified object, and has the specified initial parameters. * @param thisArg An object to which the this keyword can refer inside the new function. * @param argArray A list of arguments to be passed to the new function. */ bind(this: Function, thisArg: any, ...argArray: any[]): any; /** Returns a string representation of a function. */ toString(): string; prototype: any; readonly length: number; // Non-standard extensions arguments: any; caller: Function; }"
+      },
+      {
+        "name": "displayName",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "length",
+        "required": true,
+        "type": "number"
+      },
+      {
+        "name": "name",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "name": "propTypes",
+        "required": false,
+        "type": "any"
+      },
+      {
+        "name": "prototype",
+        "required": true,
+        "type": "any"
+      },
+      {
+        "name": "toString",
+        "required": false,
+        "type": "() => string"
+      }
+    ],
+    "sourcePath": "components/QueryEditorWithMigration.tsx"
+  },
+  "render-limited-components": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "components",
+        "required": true,
+        "type": "ComponentTypeWithExtensionMeta<Props>[]"
+      },
+      {
+        "name": "limit",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "pluginId",
+        "required": false,
+        "type": "string | RegExp | string[]"
+      },
+      {
+        "name": "props",
+        "required": true,
+        "type": "Props"
+      }
+    ],
+    "sourcePath": "services/pluginExtensions/utils.tsx"
+  }
+}

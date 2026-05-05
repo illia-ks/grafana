@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/ui",
+      "@test-plugins/extensions-test-app",
+      "@test-plugins/grafana-e2etest-datasource",
+      "@test-plugins/grafana-e2etest-panel"
+    ]
+  },
+  "packages": {
+    "@grafana/alerting": {
+      "records": {}
+    },
+    "@grafana/api-clients": {
+      "records": {
+        "folder": {
+          "count": 1,
+          "files": [
+            "src/handlers/apis/folder.grafana.app/v1beta1/handlers.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 137,
+              "lineStart": 137,
+              "snippet": "<Folder, 'spec' | 'metadata'>",
+              "sourcePath": "src/handlers/apis/folder.grafana.app/v1beta1/handlers.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/data": {
+      "records": {}
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {}
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {}
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/runtime": {
+      "records": {}
+    },
+    "@grafana/schema": {
+      "records": {}
+    },
+    "@grafana/sql": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {}
+    },
+    "@test-plugins/extensions-test-app": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-datasource": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-panel": {
+      "records": {}
+    }
+  }
+}

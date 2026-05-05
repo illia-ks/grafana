@@ -1,0 +1,51 @@
+{
+  "t": [
+    {
+      "content": "# Grafana Internationalization Library\n\n> **@grafana/i18n is currently in ALPHA**.\n\nThis package holds internationalization type functions and types\n",
+      "docPath": "README.md",
+      "kind": "doc",
+      "lineEnd": 1,
+      "lineStart": 1,
+      "score": 80,
+      "title": "Grafana Internationalization Library"
+    },
+    {
+      "content": "# Grafana Internationalization ESLint Rules\n\nThis package also contains custom i18n eslint rules for use within the Grafana codebase and plugins.\n\n## Rules\n\n### `no-untranslated-strings`\n\nCheck if strings are marked for translation inside JSX Elements, in certain JSX props, and in certain object properties.\n\n### Options\n\n#### `basePaths`\n\nAllows specifying base paths that should be stripped when generating i18n keys. Defaults to `['src']`.\n\n#### Example\n\n```tsx\n// For a file located at public/app/features/search/EmptyState.tsx\n\n// Specifying basePaths:\n// {\n//   '@grafana/i18n/no-untranslated-strings': ['error', { basePaths: ['public/app/features'] }],\n// }\n\n<Trans i18nKey=\"search.empty-state.no-results-found\">No results found</Trans>\n\n// Without basePaths:\n// {\n//   '@grafana/i18n/no-untranslated-strings': ['error'],\n// }\n\n<Trans i18nKey=\"public.app.features.search.empty-state.no-results-found\">No results found</Trans>\n```\n\n#### `forceFix`\n\nAllows specifying directories that, if the file is present within, then the rule will automatically fix the errors. This is primarily a workaround to allow for automatic mark up of new violations as the rule evolves.\n\n#### Example:\n\n```ts\n{\n  '@grafana/i18n/no-untranslated-strings': ['error', { forceFix: ['app/features/some-feature'] }],\n}\n```\n\n#### `calleesToIgnore`\n\nAllows specifying regexes for methods that should be ignored when checking if object properties are untranslated.\n\nThis is particularly useful to exclude references to properties such as `label` inside `css()` calls.\n\n#### Example:\n\n```ts\n{\n  '@grafana/i18n/no-untranslated-strings': ['error', { calleesToIgnore: ['^css$'] }],\n}\n\n// The below would not be reported as an error\nconst foo = css({\n  label: 'test',\n});\n\n// The below would still be reported as an error\nconst bar = {\n  label: 'test',\n};\n```\n\n#### `namespace`\n\nAllows specifying a namespace prefix that will be added to all auto-generated translation keys when using ESLint's auto-fix feature. The namespace is separated from the key with a colon (:).\n\nThis is useful for organizing translation keys by feature area or preventing key collisions between different parts of the application.\n\n#### Example:\n\n```tsx\n// Configuration:\n{\n  '@grafana/i18n/no-untranslated-strings': ['error', { namespace: 'dashboard' }],\n}\n\n// For a file located at src/features/search/EmptyState.tsx\n\n// Without namespace, auto-fix generates:\n<Trans i18nKey=\"features.search.empty-state.no-results-found\">No results found</Trans>\n\n// With namespace: 'dashboard', auto-fix generates:\n<Trans i18nKey=\"dashboard:features.search.empty-state.no-results-found\">No results found</Trans>\n\n// For JSX attributes, auto-fix generates:\n<div title={t(\"dashboard:features.search.empty-state.title-no-results\", \"No results\")} />\n```\n\n#### JSXText\n\n```tsx\n// Bad ❌\n<InlineToast placement=\"top\" referenceElement={buttonRef.current}>\n  Copied\n</InlineToast>\n\n// Good ✅\n<InlineToast placement=\"top\" referenceElement={buttonRef.current}>\n  <Trans i18nKey=\"clipboard-button.inline-toast.success\">Copied</Trans>\n</InlineToast>\n```\n\n#### JSXAttributes\n\n```tsx\n// Bad ❌\n<div title=\"foo bar\" />\n\n// Good ✅\n<div title={t('some.key.foo-bar', 'foo bar')} />\n```\n\n#### Object properties\n\n```tsx\n// Bad ❌\nconst someConfig = {\n  label: 'Some label',\n};\n\n// Good ✅\nconst getSomeConfig = () => ({\n  label: t('some.key.label', 'Some label'),\n});\n```\n\n#### Passing variables to translations\n\n```tsx\n// Bad ❌\nconst SearchTitle = ({ term }) => <div>Results for {term}</div>;\n\n// Good ✅\nconst SearchTitle = ({ term }) => <Trans i18nKey=\"search-page.results-title\">Results for {{ term }}</Trans>;\n\n// Good ✅ (if you need to interpolate variables inside nested components)\nconst SearchTerm = ({ term }) => <Text color=\"success\">{term}</Text>;\nconst SearchTitle = ({ term }) => (\n  <Trans i18nKey=\"search-page.results-title\">\n    Results for <SearchTerm term={term} />\n  </Trans>\n);\n\n// Good ✅ (if you need to interpolate variables and additional translated strings inside nested components)\nconst SearchTitle = ({ term }) => (\n  <Trans i18nKey=\"search-page.results-title\" values={{ myVariable: term }}>\n    Results for <Text color=\"success\">{'{{ myVariable }}'} and this translated text is also in green</Text>\n  </Trans>\n);\n```\n\n#### How to translate props or attributes\n\nThis rule checks if a string is wrapped up by the `Trans` tag, or if certain props contain untranslated strings.\nWe ask for such props to be translated with the `t()` function.\n\nThe below props are checked for untranslated strings:\n\n- `label`\n- `description`\n- `placeholder`\n- `aria-label`\n- `title`\n- `subTitle`\n- `text`\n- `tooltip`\n- `message`\n- `name`\n\n```tsx\n// Bad ❌\n<input type=\"value\" placeholder={'Username'} />;\n\n// Good ✅\nconst placeholder = t('form.username-placeholder', 'Username');\nreturn <input type=\"value\" placeholder={placeholder} />;\n```\n\nCheck more info about how translations work in Grafana in [Internationalization.md](https://github.com/grafana/grafana/blob/main/contribute/internationalization.md)\n\n### `no-translation-top-level`\n\nEnsure that `t()` translation method is not used at the top level of a file, outside of a component of method.\nThis is to prevent calling the translation method before it's been instantiated.\n\nThis does not cause an error if a file is lazily loaded, but refactors can cause errors, and it can cause problems in tests.\n\n```tsx\n// Bad ❌\nconst someTranslatedText = t('some.key', 'Some text');\nconst SomeComponent = () => {\n  return <div title={someTranslatedText} />;\n};\n\n// Good ✅\nconst SomeComponent = () => {\n  const someTranslatedText = t('some.key', 'Some text');\n  return <div title={someTranslatedText} />;\n};\n\n// Bad ❌\nconst someConfigThatHasToBeShared = [{ foo: t('some.key', 'Some text') }];\nconst SomeComponent = () => {\n  return (\n    <div>\n      {someConfigThatHasToBeShared.map((cfg) => {\n        return <div>{cfg.foo}</div>;\n      })}\n    </div>\n  );\n};\n\n// Good ✅\nconst getSomeConfigThatHasToBeShared = () => [{ foo: t('some.key', 'Some text') }];\nconst SomeComponent = () => {\n  const configs = getSomeConfigThatHasToBeShared();\n  return (\n    <div>\n      {configs.map((cfg) => {\n        return <div>{cfg.foo}</div>;\n      })}\n    </div>\n  );\n};\n```\n",
+      "docPath": "src/eslint/README.md",
+      "kind": "doc",
+      "lineEnd": 96,
+      "lineStart": 96,
+      "score": 80,
+      "title": "Grafana Internationalization ESLint Rules"
+    }
+  ],
+  "trans": [
+    {
+      "docPath": "src/eslint/README.md",
+      "kind": "reference",
+      "lineEnd": 27,
+      "lineStart": 27,
+      "score": 20,
+      "snippet": "<Trans i18nKey=\"search.empty-state.no-results-found\">No results found</Trans>",
+      "title": "Grafana Internationalization ESLint Rules"
+    },
+    {
+      "docPath": "src/eslint/README.md",
+      "kind": "reference",
+      "lineEnd": 27,
+      "lineStart": 27,
+      "score": 20,
+      "snippet": "<Trans i18nKey=\"search.empty-state.no-results-found\">No results found</Trans>",
+      "title": "Grafana Internationalization ESLint Rules"
+    },
+    {
+      "docPath": "src/eslint/README.md",
+      "kind": "reference",
+      "lineEnd": 35,
+      "lineStart": 34,
+      "score": 20,
+      "snippet": "<Trans i18nKey=\"public.app.features.search.empty-state.no-results-found\">No results found</Trans>\n```",
+      "title": "Grafana Internationalization ESLint Rules"
+    }
+  ]
+}

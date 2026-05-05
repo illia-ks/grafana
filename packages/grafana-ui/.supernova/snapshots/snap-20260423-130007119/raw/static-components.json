@@ -1,0 +1,2340 @@
+[
+  {
+    "componentKey": "alert",
+    "componentPath": "components/Alert/Alert.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Alert",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "alerting-color",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ALERTING_COLOR",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "alerting-settings",
+    "componentPath": "components/DataSourceSettings/AlertingSettings.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "AlertingSettings",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "async-multi-select",
+    "componentPath": "components/Select/Select.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "AsyncMultiSelect",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "async-select",
+    "componentPath": "components/Select/Select.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "AsyncSelect",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "async-virtualized-select",
+    "componentPath": "components/Select/Select.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "AsyncVirtualizedSelect",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "attach-debugger",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "attachDebugger",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "auto-save-field",
+    "componentPath": "components/AutoSaveField/AutoSaveField.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "AutoSaveField",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "auto-size-input",
+    "componentPath": "components/Input/AutoSizeInput.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "AutoSizeInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "avatar",
+    "componentPath": "components/UsersIndicator/Avatar.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Avatar",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "axis-placement",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "AxisPlacement",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "badge",
+    "componentPath": "components/Badge/Badge.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Badge",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "bar-alignment",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BarAlignment",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "bar-gauge",
+    "componentPath": "components/BarGauge/BarGauge.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "BarGauge",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "bar-gauge-display-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BarGaugeDisplayMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "bar-value-visibility",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BarValueVisibility",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "big-value",
+    "componentPath": "components/BigValue/BigValue.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "BigValue",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "big-value-color-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BigValueColorMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "big-value-graph-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BigValueGraphMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "big-value-justify-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BigValueJustifyMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "big-value-text-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BigValueTextMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "box",
+    "componentPath": "components/Layout/Box/Box.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Box",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "braces-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BracesPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "browser-label",
+    "componentPath": "components/BrowserLabel/Label.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "BrowserLabel",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "build-scale-key",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "buildScaleKey",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "build-scope-options",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "buildScopeOptions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "button",
+    "componentPath": "components/Button/Button.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Button",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "button-cascader",
+    "componentPath": "components/ButtonCascader/ButtonCascader.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ButtonCascader",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "button-group",
+    "componentPath": "components/Button/ButtonGroup.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ButtonGroup",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "button-select",
+    "componentPath": "components/Dropdown/ButtonSelect.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ButtonSelect",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "calculate-font-size",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "calculateFontSize",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "call-to-action-card",
+    "componentPath": "components/CallToActionCard/CallToActionCard.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "CallToActionCard",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "card",
+    "componentPath": "components/Card/Card.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Card",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "card-container",
+    "componentPath": "components/Card/CardContainer.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "CardContainer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "carousel",
+    "componentPath": "components/Carousel/Carousel.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Carousel",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "cascader",
+    "componentPath": "components/Cascader/Cascader.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Cascader",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "certification-key",
+    "componentPath": "components/DataSourceSettings/CertificationKey.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "CertificationKey",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "checkbox",
+    "componentPath": "components/Forms/Checkbox.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Checkbox",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "clear-button-styles",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "clearButtonStyles",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "clear-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ClearPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "click-outside-wrapper",
+    "componentPath": "components/ClickOutsideWrapper/ClickOutsideWrapper.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ClickOutsideWrapper",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "clipboard-button",
+    "componentPath": "components/ClipboardButton/ClipboardButton.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ClipboardButton",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "clipboard-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ClipboardPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "code-editor",
+    "componentPath": "components/Monaco/CodeEditor.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "CodeEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "code-editor-suggestion-item-kind",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CodeEditorSuggestionItemKind",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "collapsable-section",
+    "componentPath": "components/Collapse/CollapsableSection.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "CollapsableSection",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "collapse",
+    "componentPath": "components/Collapse/Collapse.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Collapse",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "color-picker",
+    "componentPath": "components/ColorPicker/ColorPicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ColorPicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "color-picker-input",
+    "componentPath": "components/ColorPicker/ColorPickerInput.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ColorPickerInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "colors",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "colors",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "combobox",
+    "componentPath": "components/Combobox/Combobox.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Combobox",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "completion-item-kind",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CompletionItemKind",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "confirm-button",
+    "componentPath": "components/ConfirmButton/ConfirmButton.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ConfirmButton",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "confirm-modal",
+    "componentPath": "components/ConfirmModal/ConfirmModal.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ConfirmModal",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "container",
+    "componentPath": "components/Layout/Layout.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Container",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "context-menu",
+    "componentPath": "components/ContextMenu/ContextMenu.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ContextMenu",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "controlled-collapse",
+    "componentPath": "components/Collapse/Collapse.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ControlledCollapse",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "convert-old-angular-value-mapping",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "convertOldAngularValueMapping",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "counter",
+    "componentPath": "components/Tabs/Counter.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Counter",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "create-logger",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createLogger",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "create-pointer-distance",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createPointerDistance",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "custom-headers-settings",
+    "componentPath": "components/DataSourceSettings/CustomHeadersSettings.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "CustomHeadersSettings",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "custom-scrollbar",
+    "componentPath": "components/CustomScrollbar/CustomScrollbar.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "CustomScrollbar",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-link-button",
+    "componentPath": "components/DataLinks/DataLinkButton.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DataLinkButton",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-link-input",
+    "componentPath": "components/DataLinks/DataLinkInput.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DataLinkInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-links-context-menu",
+    "componentPath": "components/DataLinks/DataLinksContextMenu.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DataLinksContextMenu",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-links-inline-editor",
+    "componentPath": "components/DataLinks/DataLinksInlineEditor/DataLinksInlineEditor.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DataLinksInlineEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-links-inline-editor-base",
+    "componentPath": "components/DataLinks/DataLinksInlineEditor/DataLinksInlineEditorBase.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DataLinksInlineEditorBase",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-source-http-settings",
+    "componentPath": "components/DataSourceSettings/DataSourceHttpSettings.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DataSourceHttpSettings",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "date-picker",
+    "componentPath": "components/DateTimePickers/DatePicker/DatePicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "DatePicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "date-picker-with-input",
+    "componentPath": "components/DateTimePickers/DatePickerWithInput/DatePickerWithInput.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "DatePickerWithInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "date-time-picker",
+    "componentPath": "components/DateTimePickers/DateTimePicker/DateTimePicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "DateTimePicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "default-annotation-color",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DEFAULT_ANNOTATION_COLOR",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "default-intervals",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "defaultIntervals",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "delete-button",
+    "componentPath": "components/ConfirmButton/DeleteButton.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DeleteButton",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "divider",
+    "componentPath": "components/Divider/Divider.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Divider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "draw-style",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DrawStyle",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "drawer",
+    "componentPath": "components/Drawer/Drawer.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Drawer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "dropdown",
+    "componentPath": "components/Dropdown/Dropdown.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Dropdown",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "element-selection-context",
+    "componentPath": "components/ElementSelectionContext/ElementSelectionContext.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ElementSelectionContext",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "empty-search-result",
+    "componentPath": "components/EmptySearchResult/EmptySearchResult.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "EmptySearchResult",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "empty-state",
+    "componentPath": "components/EmptyState/EmptyState.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "EmptyState",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "error-boundary",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ErrorBoundary",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "error-boundary-alert",
+    "componentPath": "components/ErrorBoundary/ErrorBoundary.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ErrorBoundaryAlert",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "error-with-stack",
+    "componentPath": "components/ErrorBoundary/ErrorWithStack.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ErrorWithStack",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "event-bus-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "EventBusPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "events-canvas",
+    "componentPath": "components/uPlot/geometries/EventsCanvas.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "EventsCanvas",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "events-with-validation",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "EventsWithValidation",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "fade-transition",
+    "componentPath": "components/transitions/FadeTransition.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "FadeTransition",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "feature-badge",
+    "componentPath": "components/FeatureBadge/FeatureBadge.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FeatureBadge",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "feature-info-box",
+    "componentPath": "components/InfoBox/FeatureInfoBox.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FeatureInfoBox",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "field",
+    "componentPath": "components/Forms/Field.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Field",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "field-array",
+    "componentPath": "components/Forms/FieldArray.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "FieldArray",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "field-link-list",
+    "componentPath": "components/DataLinks/FieldLinkList.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "FieldLinkList",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "field-matchers-ui",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "fieldMatchersUI",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-set",
+    "componentPath": "components/Forms/FieldSet.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FieldSet",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "field-validation-message",
+    "componentPath": "components/Forms/FieldValidationMessage.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FieldValidationMessage",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "file-dropzone",
+    "componentPath": "components/FileDropzone/FileDropzone.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FileDropzone",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "file-dropzone-default-children",
+    "componentPath": "components/FileDropzone/FileDropzone.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "FileDropzoneDefaultChildren",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "file-list-item",
+    "componentPath": "components/FileDropzone/FileListItem.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FileListItem",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "file-upload",
+    "componentPath": "components/FileUpload/FileUpload.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FileUpload",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "filter-input",
+    "componentPath": "components/FilterInput/FilterInput.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "FilterInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "filter-pill",
+    "componentPath": "components/FilterPill/FilterPill.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FilterPill",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "fixed-unit",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FIXED_UNIT",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "form",
+    "componentPath": "components/Forms/Form.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Form",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "formatted-value-display",
+    "componentPath": "components/FormattedValueDisplay/FormattedValueDisplay.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "FormattedValueDisplay",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "full-width-button-container",
+    "componentPath": "components/Button/FullWidthButtonContainer.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "FullWidthButtonContainer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "fuzzy-match",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "fuzzyMatch",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-available-icons",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getAvailableIcons",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-canvas-context",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getCanvasContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-card-styles",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getCardStyles",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-cell-links",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getCellLinks",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-drag-styles",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDragStyles",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-type-icon",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldTypeIcon",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-type-icon-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldTypeIconName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-graph-field-options",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getGraphFieldOptions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-input-styles",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getInputStyles",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-portal-container",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getPortalContainer",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-scrollbar-width",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getScrollbarWidth",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-select-styles",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getSelectStyles",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-tag-color",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTagColor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-tag-color-index-from-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTagColorIndexFromName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-tag-colors-from-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTagColorsFromName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-text-color-for-alpha-background",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTextColorForAlphaBackground",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-text-color-for-background",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTextColorForBackground",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-theme",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTheme",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-unique-matcher-scopes",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getUniqueMatcherScopes",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-week-start",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getWeekStart",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "global-styles",
+    "componentPath": "themes/GlobalStyles/GlobalStyles.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "GlobalStyles",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "graph-field-options",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "graphFieldOptions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "graph-gradient-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "GraphGradientMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "graph-ng",
+    "componentPath": "graveyard/GraphNG/GraphNG.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "GraphNG",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "graph-thresholds-style-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "GraphThresholdsStyleMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "grid",
+    "componentPath": "components/Layout/Grid/Grid.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Grid",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "has-validation-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasValidationEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "horizontal-group",
+    "componentPath": "components/Layout/Layout.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "HorizontalGroup",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "icon",
+    "componentPath": "components/Icon/Icon.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Icon",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "icon-button",
+    "componentPath": "components/IconButton/IconButton.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "IconButton",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "indentation-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "IndentationPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "info-box",
+    "componentPath": "components/InfoBox/InfoBox.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "InfoBox",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "inline-field",
+    "componentPath": "components/Forms/InlineField.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "InlineField",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "inline-field-row",
+    "componentPath": "components/Forms/InlineFieldRow.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "InlineFieldRow",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "inline-form-label",
+    "componentPath": "components/FormLabel/FormLabel.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "InlineFormLabel",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "inline-label",
+    "componentPath": "components/Forms/InlineLabel.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "InlineLabel",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "inline-segment-group",
+    "componentPath": "components/Forms/InlineSegmentGroup.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "InlineSegmentGroup",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "inline-switch",
+    "componentPath": "components/Switch/Switch.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "InlineSwitch",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "inline-toast",
+    "componentPath": "components/InlineToast/InlineToast.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "InlineToast",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "input",
+    "componentPath": "components/Input/Input.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Input",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "input-control",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "InputControl",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "interactive-table",
+    "componentPath": "components/InteractiveTable/InteractiveTable.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "InteractiveTable",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "is-icon-size",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isIconSize",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-week-start",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isWeekStart",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "json-explorer",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "JsonExplorer",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "jsonformatter",
+    "componentPath": "components/JSONFormatter/JSONFormatter.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "JSONFormatter",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "keyboard-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "KeyboardPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "label",
+    "componentPath": "components/Forms/Label.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Label",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "legend",
+    "componentPath": "components/Forms/Legend.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Legend",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "legend-display-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LegendDisplayMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "line-interpolation",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LineInterpolation",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "link",
+    "componentPath": "components/Link/Link.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Link",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "link-button",
+    "componentPath": "components/Button/Button.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "LinkButton",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "link-model-to-context-menu-items",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "linkModelToContextMenuItems",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "list",
+    "componentPath": "components/List/List.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "List",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "loading-bar",
+    "componentPath": "components/LoadingBar/LoadingBar.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "LoadingBar",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "loading-placeholder",
+    "componentPath": "components/LoadingPlaceholder/LoadingPlaceholder.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "LoadingPlaceholder",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "log-options",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "logOptions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "make-fragment",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "makeFragment",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "make-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "makeValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "marker",
+    "componentPath": "components/uPlot/geometries/Marker.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Marker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "matcher-scope-selector",
+    "componentPath": "components/MatchersUI/MatcherScopeSelector.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MatcherScopeSelector",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "measure-text",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "measureText",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "menu",
+    "componentPath": "components/Menu/Menu.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Menu",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "menu-group",
+    "componentPath": "components/Menu/MenuGroup.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MenuGroup",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "menu-item",
+    "componentPath": "components/Menu/MenuItem.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "MenuItem",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "mock-theme",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "mockTheme",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "mock-theme-context",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "mockThemeContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "modal",
+    "componentPath": "components/Modal/Modal.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Modal",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "modal-header",
+    "componentPath": "components/Modal/ModalHeader.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ModalHeader",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "modal-root",
+    "componentPath": "components/Modal/ModalsContext.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "ModalRoot",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "modal-tab-content",
+    "componentPath": "components/Modal/ModalTabContent.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ModalTabContent",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "modal-tabs-header",
+    "componentPath": "components/Modal/ModalTabsHeader.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ModalTabsHeader",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "modals-context",
+    "componentPath": "components/Modal/ModalsContext.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ModalsContext",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "modals-controller",
+    "componentPath": "components/Modal/ModalsContext.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ModalsController",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "modals-provider",
+    "componentPath": "components/Modal/ModalsContext.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "ModalsProvider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "multi-combobox",
+    "componentPath": "components/Combobox/MultiCombobox.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "MultiCombobox",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "multi-select",
+    "componentPath": "components/Select/Select.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MultiSelect",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "newline-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "NewlinePlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "no-data-color",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "NO_DATA_COLOR",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "node-graph-data-frame-field-names",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "NodeGraphDataFrameFieldNames",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "ok-color",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "OK_COLOR",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "page-toolbar",
+    "componentPath": "components/PageLayout/PageToolbar.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PageToolbar",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "pagination",
+    "componentPath": "components/Pagination/Pagination.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Pagination",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "panel-chrome",
+    "componentPath": "components/PanelChrome/index.ts",
+    "enrichmentStatus": "partial",
+    "exportName": "PanelChrome",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "panel-chrome-loading-indicator",
+    "componentPath": "components/PanelChrome/LoadingIndicator.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PanelChromeLoadingIndicator",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "panel-container",
+    "componentPath": "components/PanelContainer/PanelContainer.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PanelContainer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "panel-context-provider",
+    "componentPath": "components/PanelChrome/PanelContext.ts",
+    "enrichmentStatus": "partial",
+    "exportName": "PanelContextProvider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "panel-context-root",
+    "componentPath": "components/PanelChrome/PanelContext.ts",
+    "enrichmentStatus": "partial",
+    "exportName": "PanelContextRoot",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "pending-color",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PENDING_COLOR",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plot-legend",
+    "componentPath": "components/uPlot/PlotLegend.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "PlotLegend",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "plugin-signature-badge",
+    "componentPath": "components/PluginSignatureBadge/PluginSignatureBadge.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "PluginSignatureBadge",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "point-visibility",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PointVisibility",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "popover",
+    "componentPath": "components/Tooltip/Popover.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Popover",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "popover-controller",
+    "componentPath": "components/Tooltip/PopoverController.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PopoverController",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "portal",
+    "componentPath": "components/Portal/Portal.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Portal",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "portal-container",
+    "componentPath": "components/Portal/Portal.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "PortalContainer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prepare-plot-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "preparePlotFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "query-field",
+    "componentPath": "components/QueryField/QueryField.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "QueryField",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "radio-button-dot",
+    "componentPath": "components/Forms/RadioButtonList/RadioButtonDot.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "RadioButtonDot",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "radio-button-group",
+    "componentPath": "components/Forms/RadioButtonGroup/RadioButtonGroup.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "RadioButtonGroup",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "radio-button-list",
+    "componentPath": "components/Forms/RadioButtonList/RadioButtonList.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "RadioButtonList",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "range-slider",
+    "componentPath": "components/Slider/RangeSlider.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "RangeSlider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "react-monaco-editor",
+    "componentPath": "components/Monaco/ReactMonacoEditorLazy.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "ReactMonacoEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "refresh-picker",
+    "componentPath": "components/RefreshPicker/RefreshPicker.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "RefreshPicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "regex-validation",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "regexValidation",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "region-fill-alpha",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "REGION_FILL_ALPHA",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "relative-time-range-picker",
+    "componentPath": "components/DateTimePickers/RelativeTimeRangePicker/RelativeTimeRangePicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "RelativeTimeRangePicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "render-user-content-as-html",
+    "componentPath": "components/RenderUserContentAsHTML/RenderUserContentAsHTML.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "RenderUserContentAsHTML",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "reset-select-styles",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "resetSelectStyles",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "runner-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "RunnerPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "scale-direction",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ScaleDirection",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "scale-distribution",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ScaleDistribution",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "scale-orientation",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ScaleOrientation",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "schema",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SCHEMA",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "scroll-container",
+    "componentPath": "components/ScrollContainer/ScrollContainer.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ScrollContainer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "search-function-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SearchFunctionType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "secret-input",
+    "componentPath": "components/SecretInput/SecretInput.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "SecretInput",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "secret-text-area",
+    "componentPath": "components/SecretTextArea/SecretTextArea.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "SecretTextArea",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "secure-socks-proxy-settings",
+    "componentPath": "components/DataSourceSettings/SecureSocksProxySettings.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SecureSocksProxySettings",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "segment",
+    "componentPath": "components/Segment/Segment.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Segment",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "segment-async",
+    "componentPath": "components/Segment/SegmentAsync.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "SegmentAsync",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "segment-input",
+    "componentPath": "components/Segment/SegmentInput.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "SegmentInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "segment-section",
+    "componentPath": "components/Segment/SegmentSection.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "SegmentSection",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "segment-select",
+    "componentPath": "components/Segment/SegmentSelect.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SegmentSelect",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "select",
+    "componentPath": "components/Select/Select.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Select",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "select-container",
+    "componentPath": "components/Select/SelectContainer.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "SelectContainer",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "select-menu-options",
+    "componentPath": "components/Select/SelectMenu.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SelectMenuOptions",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "selection-shortcuts-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SelectionShortcutsPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "series-color-picker",
+    "componentPath": "components/ColorPicker/ColorPicker.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SeriesColorPicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "series-color-picker-popover",
+    "componentPath": "components/ColorPicker/SeriesColorPickerPopover.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "SeriesColorPickerPopover",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "series-color-picker-popover-with-theme",
+    "componentPath": "components/ColorPicker/SeriesColorPickerPopover.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SeriesColorPickerPopoverWithTheme",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "series-icon",
+    "componentPath": "components/VizLegend/SeriesIcon.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "SeriesIcon",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "series-table",
+    "componentPath": "components/VizTooltip/SeriesTable.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SeriesTable",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "series-table-row",
+    "componentPath": "components/VizTooltip/SeriesTable.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SeriesTableRow",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "series-visibility-change-behavior",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SeriesVisibilityChangeBehavior",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-interval",
+    "componentPath": "components/SetInterval/SetInterval.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SetInterval",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "shared-input-style",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "sharedInputStyle",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "shared-single-stat-migration-handler",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "sharedSingleStatMigrationHandler",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "shared-single-stat-panel-changed-handler",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "sharedSingleStatPanelChangedHandler",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "sidebar",
+    "componentPath": "components/Sidebar/Sidebar.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Sidebar",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "slate-prism",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SlatePrism",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "slide-out-transition",
+    "componentPath": "components/transitions/SlideOutTransition.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SlideOutTransition",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "slider",
+    "componentPath": "components/Slider/Slider.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Slider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "sorted-colors",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "sortedColors",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "space",
+    "componentPath": "components/Layout/Space.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Space",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "sparkline",
+    "componentPath": "components/Sparkline/Sparkline.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Sparkline",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "spinner",
+    "componentPath": "components/Spinner/Spinner.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Spinner",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "stack",
+    "componentPath": "components/Layout/Stack/Stack.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Stack",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "stacking-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "StackingMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "stats-picker",
+    "componentPath": "components/StatsPicker/StatsPicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "StatsPicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "styles-factory",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "stylesFactory",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "suggestions-plugin",
+    "componentPath": "slate-plugins/suggestions.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SuggestionsPlugin",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "switch",
+    "componentPath": "components/Switch/Switch.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Switch",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tab",
+    "componentPath": "components/Tabs/Tab.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Tab",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tab-content",
+    "componentPath": "components/Tabs/TabContent.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TabContent",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tabbed-container",
+    "componentPath": "components/TabbedContainer/TabbedContainer.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TabbedContainer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "table",
+    "componentPath": "components/Table/TableRT/Table.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Table",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "table-cell-display-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TableCellDisplayMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "table-cell-inspector",
+    "componentPath": "components/Table/TableCellInspector.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TableCellInspector",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "table-cell-inspector-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TableCellInspectorMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "table-input-csv",
+    "componentPath": "components/TableInputCSV/TableInputCSV.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TableInputCSV",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tabs-bar",
+    "componentPath": "components/Tabs/TabsBar.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TabsBar",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tag",
+    "componentPath": "components/Tags/Tag.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Tag",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tag-list",
+    "componentPath": "components/Tags/TagList.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TagList",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tags-input",
+    "componentPath": "components/TagsInput/TagsInput.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TagsInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "text",
+    "componentPath": "components/Text/Text.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Text",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "text-area",
+    "componentPath": "components/TextArea/TextArea.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TextArea",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "text-link",
+    "componentPath": "components/Link/TextLink.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TextLink",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "theme-context",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ThemeContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "time-of-day-picker",
+    "componentPath": "components/DateTimePickers/TimeOfDayPicker.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TimeOfDayPicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "time-picker-tooltip",
+    "componentPath": "components/DateTimePickers/TimeRangePicker.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TimePickerTooltip",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "time-range-input",
+    "componentPath": "components/DateTimePickers/TimeRangeInput.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TimeRangeInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "time-range-label",
+    "componentPath": "components/DateTimePickers/TimeRangePicker/TimeRangeLabel.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TimeRangeLabel",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "time-range-picker",
+    "componentPath": "components/DateTimePickers/TimeRangePicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TimeRangePicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "time-range-provider",
+    "componentPath": "components/DateTimePickers/TimeRangeContext.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "TimeRangeProvider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "time-series",
+    "componentPath": "graveyard/TimeSeries/TimeSeries.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TimeSeries",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "time-zone-picker",
+    "componentPath": "components/DateTimePickers/TimeZonePicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "TimeZonePicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tlsauth-settings",
+    "componentPath": "components/DataSourceSettings/TLSAuthSettings.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TLSAuthSettings",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "to-icon-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toIconName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "toggletip",
+    "componentPath": "components/Toggletip/Toggletip.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Toggletip",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "toolbar-button",
+    "componentPath": "components/ToolbarButton/ToolbarButton.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ToolbarButton",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "toolbar-button-row",
+    "componentPath": "components/ToolbarButton/ToolbarButtonRow.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ToolbarButtonRow",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tooltip",
+    "componentPath": "components/Tooltip/Tooltip.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "Tooltip",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tooltip-display-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TooltipDisplayMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "tooltip-plugin",
+    "componentPath": "graveyard/uPlot/plugins/TooltipPlugin.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TooltipPlugin",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "tooltip-plugin2",
+    "componentPath": "components/uPlot/plugins/TooltipPlugin2.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TooltipPlugin2",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "unit-picker",
+    "componentPath": "components/UnitPicker/UnitPicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "UnitPicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "uplot-axis-font-size",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "UPLOT_AXIS_FONT_SIZE",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "uplot-chart",
+    "componentPath": "components/uPlot/Plot.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "UPlotChart",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "uplot-config-builder",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "UPlotConfigBuilder",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-element-selection",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useElementSelection",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-force-update",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useForceUpdate",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-graph-ngcontext",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useGraphNGContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-panel-context",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "usePanelContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-pointer-distance",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "usePointerDistance",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-sidebar",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useSidebar",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-sidebar-context",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useSidebarContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-splitter",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useSplitter",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-styles",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useStyles",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-styles2",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useStyles2",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-theme",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useTheme",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-theme2",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useTheme2",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "user-icon",
+    "componentPath": "components/UsersIndicator/UserIcon.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "UserIcon",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "users-indicator",
+    "componentPath": "components/UsersIndicator/UsersIndicator.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "UsersIndicator",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "validate",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "validate",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "value-picker",
+    "componentPath": "components/ValuePicker/ValuePicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "ValuePicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "variable-suggestion-to-code-editor-suggestion",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "variableSuggestionToCodeEditorSuggestion",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "variables-input-modal",
+    "componentPath": "components/Actions/VariablesInputModal.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VariablesInputModal",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "vertical-group",
+    "componentPath": "components/Layout/Layout.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VerticalGroup",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "vertical-tab",
+    "componentPath": "components/Tabs/VerticalTab.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VerticalTab",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "virtualized-select",
+    "componentPath": "components/Select/Select.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VirtualizedSelect",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "viz-layout",
+    "componentPath": "components/VizLayout/VizLayout.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VizLayout",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "viz-legend",
+    "componentPath": "components/VizLegend/VizLegend.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VizLegend",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "viz-legend-list-item",
+    "componentPath": "components/VizLegend/VizLegendListItem.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VizLegendListItem",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "viz-repeater",
+    "componentPath": "components/VizRepeater/VizRepeater.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VizRepeater",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "viz-tooltip",
+    "componentPath": "components/VizTooltip/VizTooltip.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VizTooltip",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "viz-tooltip-container",
+    "componentPath": "components/VizTooltip/VizTooltipContainer.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "VizTooltipContainer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "week-start-picker",
+    "componentPath": "components/DateTimePickers/WeekStartPicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "WeekStartPicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "with-context-menu",
+    "componentPath": "components/ContextMenu/WithContextMenu.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "WithContextMenu",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "with-error-boundary",
+    "componentPath": "components/ErrorBoundary/ErrorBoundary.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "withErrorBoundary",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "with-theme",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "withTheme",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "with-theme2",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "withTheme2",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "xaxis-interaction-area-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "XAxisInteractionAreaPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "xycanvas",
+    "componentPath": "components/uPlot/geometries/XYCanvas.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "XYCanvas",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "zoom-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ZoomPlugin",
+    "exportType": "inferred-export"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "componentKey": "alert-label",
+    "componentPath": "grafana/rules/components/labels/AlertLabel.tsx",
+    "exportName": "AlertLabel"
+  },
+  {
+    "componentKey": "alert-labels",
+    "componentPath": "grafana/rules/components/labels/AlertLabels.tsx",
+    "exportName": "AlertLabels"
+  }
+]

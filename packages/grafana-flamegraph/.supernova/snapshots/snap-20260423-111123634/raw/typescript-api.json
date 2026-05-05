@@ -1,0 +1,98 @@
+{
+  "flame-graph": {
+    "linkedTypes": [
+      {
+        "definition": "export type ExtraContextMenuButton = {\n  label: string;\n  icon: IconName;\n  onClick: () => void;\n};",
+        "lineEnd": 25,
+        "lineStart": 21,
+        "name": "ExtraContextMenuButton",
+        "sourcePath": "FlameGraph/FlameGraphContextMenu.tsx"
+      },
+      {
+        "definition": "export type GetExtraContextMenuButtonsFunction = (\n  clickedItemData: ClickedItemData,\n  data: DataFrame,\n  state: {\n    selectedView?: SelectedView;\n    viewMode?: ViewMode;\n    paneView?: PaneView;\n    isDiff: boolean;\n    search: string;\n    collapseConfig?: CollapseConfig;\n  }\n) => ExtraContextMenuButton[];",
+        "lineEnd": 19,
+        "lineStart": 8,
+        "name": "GetExtraContextMenuButtonsFunction",
+        "sourcePath": "FlameGraph/FlameGraphContextMenu.tsx"
+      }
+    ],
+    "props": [
+      {
+        "name": "data",
+        "required": false,
+        "type": "any"
+      },
+      {
+        "name": "disableCollapsing",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "enableNewUI",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "extraHeaderElements",
+        "required": false,
+        "type": "ReactNode"
+      },
+      {
+        "name": "getExtraContextMenuButtons",
+        "required": false,
+        "type": "GetExtraContextMenuButtonsFunction"
+      },
+      {
+        "name": "getTheme",
+        "required": true,
+        "type": "() => GrafanaTheme2"
+      },
+      {
+        "name": "keepFocusOnDataChange",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "onTableSort",
+        "required": false,
+        "type": "(sort: string) => void"
+      },
+      {
+        "name": "onTableSymbolClick",
+        "required": false,
+        "type": "(symbol: string) => void"
+      },
+      {
+        "name": "onTextAlignSelected",
+        "required": false,
+        "type": "(align: string) => void"
+      },
+      {
+        "name": "onViewSelected",
+        "required": false,
+        "type": "(view: string) => void"
+      },
+      {
+        "name": "showAnalyzeWithAssistant",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "showFlameGraphOnly",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "stickyHeader",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "vertical",
+        "required": false,
+        "type": "boolean"
+      }
+    ],
+    "sourcePath": "FlameGraphContainer.tsx"
+  }
+}

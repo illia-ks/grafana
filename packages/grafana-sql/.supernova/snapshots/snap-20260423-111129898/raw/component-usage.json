@@ -1,0 +1,3863 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@grafana/ui/internal"
+    ]
+  },
+  "packages": {
+    "@grafana/alerting": {
+      "records": {}
+    },
+    "@grafana/api-clients": {
+      "records": {}
+    },
+    "@grafana/data": {
+      "records": {
+        "on-update-datasource-secure-json-data-option": {
+          "count": 3,
+          "files": [
+            "src/components/configuration/TLSSecretsConfig.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 56,
+              "lineStart": 56,
+              "snippet": "onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsClientCert')}",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 95,
+              "lineStart": 95,
+              "snippet": "onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsCACert')}",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 132,
+              "lineStart": 132,
+              "snippet": "onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsClientKey')}",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            }
+          ]
+        },
+        "update-datasource-plugin-reset-option": {
+          "count": 3,
+          "files": [
+            "src/components/configuration/TLSSecretsConfig.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 58,
+              "lineStart": 58,
+              "snippet": "updateDatasourcePluginResetOption(editorProps, 'tlsClientCert');",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 97,
+              "lineStart": 97,
+              "snippet": "updateDatasourcePluginResetOption(editorProps, 'tlsCACert');",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 134,
+              "lineStart": 134,
+              "snippet": "updateDatasourcePluginResetOption(editorProps, 'tlsClientKey');",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            }
+          ]
+        },
+        "formatted-value-to-string": {
+          "count": 1,
+          "files": [
+            "src/components/query-editor-raw/QueryValidator.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 93,
+              "lineStart": 93,
+              "snippet": "values={{ bytes: formattedValueToString(valueFormatter(state.value.statistics.TotalBytesProcessed)) }}",
+              "sourcePath": "src/components/query-editor-raw/QueryValidator.tsx"
+            }
+          ]
+        },
+        "get-value-format": {
+          "count": 1,
+          "files": [
+            "src/components/query-editor-raw/QueryValidator.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 21,
+              "lineStart": 21,
+              "snippet": "const valueFormatter = useMemo(() => getValueFormat('bytes'), []);",
+              "sourcePath": "src/components/query-editor-raw/QueryValidator.tsx"
+            }
+          ]
+        },
+        "date-time": {
+          "count": 2,
+          "files": [
+            "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 80,
+              "lineStart": 80,
+              "snippet": "const dateValue = dateTime(props?.value).isValid() ? dateTime(props?.value).utc() : undefined;",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 80,
+              "lineStart": 80,
+              "snippet": "const dateValue = dateTime(props?.value).isValid() ? dateTime(props?.value).utc() : undefined;",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            }
+          ]
+        },
+        "selectable-value": {
+          "count": 12,
+          "files": [
+            "src/components/visual-query-builder/GroupByRow.tsx",
+            "src/components/visual-query-builder/OrderByRow.tsx",
+            "src/components/visual-query-builder/SelectColumn.tsx",
+            "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectRow.tsx",
+            "src/types.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 15,
+              "lineStart": 15,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/GroupByRow.tsx"
+            },
+            {
+              "lineEnd": 40,
+              "lineStart": 40,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/GroupByRow.tsx"
+            },
+            {
+              "lineEnd": 16,
+              "lineStart": 16,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 10,
+              "lineStart": 10,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/SelectColumn.tsx"
+            },
+            {
+              "lineEnd": 16,
+              "lineStart": 16,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 21,
+              "lineStart": 21,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 30,
+              "lineStart": 30,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 37,
+              "lineStart": 37,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 22,
+              "lineStart": 22,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 28,
+              "lineStart": 28,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 95,
+              "lineStart": 95,
+              "snippet": "<SelectableValue<string>",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 147,
+              "lineStart": 147,
+              "snippet": "<SelectableValue[]>",
+              "sourcePath": "src/types.ts"
+            }
+          ]
+        },
+        "to-option": {
+          "count": 5,
+          "files": [
+            "src/components/visual-query-builder/GroupByRow.tsx",
+            "src/components/visual-query-builder/OrderByRow.tsx",
+            "src/components/visual-query-builder/SelectRow.tsx",
+            "src/utils/sql.utils.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 49,
+              "lineStart": 49,
+              "snippet": "value={item.property?.name ? toOption(item.property.name) : null}",
+              "sourcePath": "src/components/visual-query-builder/GroupByRow.tsx"
+            },
+            {
+              "lineEnd": 68,
+              "lineStart": 68,
+              "snippet": "value={sql.orderBy?.property.name ? toOption(sql.orderBy.property.name) : null}",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 124,
+              "lineStart": 124,
+              "snippet": "value={item.name ? toOption(item.name) : null}",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 145,
+              "lineStart": 145,
+              "snippet": "value={item.alias ? toOption(item.alias) : null}",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 84,
+              "lineStart": 84,
+              "snippet": "return toOption(column.name);",
+              "sourcePath": "src/utils/sql.utils.ts"
+            }
+          ]
+        },
+        "get-default-time-range": {
+          "count": 1,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 226,
+              "lineStart": 226,
+              "snippet": "const range = getDefaultTimeRange();",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "data-frame": {
+          "count": 1,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 231,
+              "lineStart": 231,
+              "snippet": "<DataFrame>",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "data-query-response": {
+          "count": 2,
+          "files": [
+            "src/datasource/SqlDatasource.ts",
+            "src/SQLVariableSupport.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 127,
+              "lineStart": 127,
+              "snippet": "<DataQueryResponse>",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            },
+            {
+              "lineEnd": 18,
+              "lineStart": 18,
+              "snippet": "<DataQueryResponse>",
+              "sourcePath": "src/SQLVariableSupport.ts"
+            }
+          ]
+        },
+        "metric-find-value": {
+          "count": 1,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 186,
+              "lineStart": 186,
+              "snippet": "<MetricFindValue[]>",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "get-search-filter-scoped-var": {
+          "count": 1,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 200,
+              "lineStart": 200,
+              "snippet": "...getSearchFilterScopedVar({ query, wildcardChar: '%', options }),",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "time-range": {
+          "count": 1,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 226,
+              "lineStart": 226,
+              "snippet": "const range = getDefaultTimeRange();",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "custom-variable-model": {
+          "count": 1,
+          "files": [
+            "src/utils/testHelpers.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 3,
+              "lineStart": 3,
+              "snippet": "<CustomVariableModel>",
+              "sourcePath": "src/utils/testHelpers.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {
+        "t": {
+          "count": 65,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx",
+            "src/components/ConfirmModal.tsx",
+            "src/components/DatasetSelector.tsx",
+            "src/components/query-editor-raw/QueryToolbox.tsx",
+            "src/components/query-editor-raw/RawEditor.tsx",
+            "src/components/QueryEditorLazy.tsx",
+            "src/components/QueryHeader.tsx",
+            "src/components/TableSelector.tsx",
+            "src/components/visual-query-builder/AwesomeQueryBuilder.tsx",
+            "src/components/visual-query-builder/GroupByRow.tsx",
+            "src/components/visual-query-builder/OrderByRow.tsx",
+            "src/components/visual-query-builder/Preview.tsx",
+            "src/components/visual-query-builder/SelectColumn.tsx",
+            "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectRow.tsx",
+            "src/components/visual-query-builder/VisualEditor.tsx",
+            "src/SQLVariableEditor.tsx",
+            "src/utils/getColumnsWithIndices.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 90,
+              "lineStart": 90,
+              "snippet": "title={t('grafana-sql.components.connection-limits.title-connection-limits', 'Connection limits')}",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 116,
+              "lineStart": 116,
+              "snippet": "set to the default ({'{{defaultMaxIdle}}'}).",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 19,
+              "lineStart": 19,
+              "snippet": "useEffect(() => {",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 36,
+              "lineStart": 36,
+              "snippet": "ariaLabel={t('grafana-sql.components.confirm-modal.warning', 'Warning')}",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 56,
+              "lineStart": 56,
+              "snippet": "aria-label={t('grafana-sql.components.dataset-selector.aria-label-dataset-selector', 'Dataset selector')}",
+              "sourcePath": "src/components/DatasetSelector.tsx"
+            },
+            {
+              "lineEnd": 65,
+              "lineStart": 65,
+              "snippet": "setValidationResult(result);",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 84,
+              "lineStart": 84,
+              "snippet": "tooltip={t('grafana-sql.components.query-toolbox.tooltip-format-query', 'Format query')}",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 101,
+              "lineStart": 101,
+              "snippet": "? t('grafana-sql.components.query-toolbox.tooltip-collapse', 'Collapse editor')",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 102,
+              "lineStart": 102,
+              "snippet": ": t('grafana-sql.components.query-toolbox.tooltip-expand', 'Expand editor')",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 107,
+              "lineStart": 107,
+              "snippet": "content={t(",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 97,
+              "lineStart": 97,
+              "snippet": "title={t('grafana-sql.components.raw-editor.title-query-num', 'Query {{queryNum}}', {",
+              "sourcePath": "src/components/query-editor-raw/RawEditor.tsx"
+            },
+            {
+              "lineEnd": 9,
+              "lineStart": 9,
+              "snippet": "const QueryEditor = lazy(() => import(/* webpackChunkName: \"sql-query-editor\" */ './QueryEditor'));",
+              "sourcePath": "src/components/QueryEditorLazy.tsx"
+            },
+            {
+              "lineEnd": 18,
+              "lineStart": 18,
+              "snippet": "text={t('grafana-sql.components.sql-query-editor-lazy.text-loading-editor', 'Loading editor')}",
+              "sourcePath": "src/components/QueryEditorLazy.tsx"
+            },
+            {
+              "lineEnd": 72,
+              "lineStart": 72,
+              "snippet": "label: t('grafana-sql.components.query-header.editor-modes.label-builder', 'Builder'),",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 75,
+              "lineStart": 75,
+              "snippet": "{ label: t('grafana-sql.components.query-header.editor-modes.label-code', 'Code'), value: EditorMode.Code },",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 160,
+              "lineStart": 160,
+              "snippet": "label={t('grafana-sql.components.query-header.label-format', 'Format')}",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 162,
+              "lineStart": 162,
+              "snippet": "placeholder={t('grafana-sql.components.query-header.placeholder-select-format', 'Select format')}",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 173,
+              "lineStart": 173,
+              "snippet": "label={t('grafana-sql.components.query-header.label-filter', 'Filter')}",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 194,
+              "lineStart": 194,
+              "snippet": "label={t('grafana-sql.components.query-header.label-group', 'Group')}",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 215,
+              "lineStart": 215,
+              "snippet": "label={t('grafana-sql.components.query-header.label-order', 'Order')}",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 236,
+              "lineStart": 236,
+              "snippet": "label={t('grafana-sql.components.query-header.label-preview', 'Preview')}",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 331,
+              "lineStart": 331,
+              "snippet": "<EditorField label={t('grafana-sql.components.query-header.label-dataset', 'Dataset')} width={25}>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 342,
+              "lineStart": 342,
+              "snippet": "<EditorField label={t('grafana-sql.components.query-header.label-table', 'Table')} width={25}>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 33,
+              "lineStart": 33,
+              "snippet": "aria-label={t('grafana-sql.components.table-selector.aria-label-table-selector', 'Table selector')}",
+              "sourcePath": "src/components/TableSelector.tsx"
+            },
+            {
+              "lineEnd": 43,
+              "lineStart": 43,
+              "snippet": "? t('grafana-sql.components.table-selector.placeholder-loading', 'Loading tables')",
+              "sourcePath": "src/components/TableSelector.tsx"
+            },
+            {
+              "lineEnd": 44,
+              "lineStart": 44,
+              "snippet": ": t('grafana-sql.components.table-selector.placeholder-select-table', 'Select table')",
+              "sourcePath": "src/components/TableSelector.tsx"
+            },
+            {
+              "lineEnd": 42,
+              "lineStart": 42,
+              "snippet": "factory: function TextInput(props: WidgetProps) {",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 54,
+              "lineStart": 54,
+              "snippet": "factory: function NumberInput(props: WidgetProps) {",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 60,
+              "lineStart": 60,
+              "snippet": "onChange={(e) => props?.setValue(Number.parseInt(e.currentTarget.value, 10))}",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 67,
+              "lineStart": 67,
+              "snippet": "factory: function DateTimeInput(props: WidgetProps) {",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 72,
+              "lineStart": 72,
+              "snippet": "aria-label={t('grafana-sql.components.widgets.aria-label-macros-value-selector', 'Macros value selector')}",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 84,
+              "lineStart": 84,
+              "snippet": "props?.setValue(e?.format(BasicConfig.widgets.datetime.valueFormat));",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 128,
+              "lineStart": 128,
+              "snippet": "aria-label={t('grafana-sql.components.settings.aria-label-conjunction', 'Conjunction')}",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 144,
+              "lineStart": 144,
+              "snippet": "aria-label={t('grafana-sql.components.settings.aria-label-field', 'Field')}",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 168,
+              "lineStart": 168,
+              "snippet": "aria-label={t('grafana-sql.components.settings.title-button-filter', '{{ buttonLabel }} filter', {",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 183,
+              "lineStart": 183,
+              "snippet": "aria-label={t('grafana-sql.components.settings.aria-label-operator', 'Operator')}",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 307,
+              "lineStart": 307,
+              "snippet": "label: t('grafana-sql.components.get-custom-operators.custom-operators.label.macros', 'Macros'),",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 323,
+              "lineStart": 323,
+              "snippet": "return value.split(',');",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 50,
+              "lineStart": 50,
+              "snippet": "aria-label={t('grafana-sql.components.make-render-column.render-column.aria-label-group-by', 'Group by')}",
+              "sourcePath": "src/components/visual-query-builder/GroupByRow.tsx"
+            },
+            {
+              "lineEnd": 56,
+              "lineStart": 56,
+              "snippet": "aria-label={t(",
+              "sourcePath": "src/components/visual-query-builder/GroupByRow.tsx"
+            },
+            {
+              "lineEnd": 36,
+              "lineStart": 36,
+              "snippet": "const newSql: SQLExpression = { ...sql, limit: Number.parseInt(event.currentTarget.value, 10) };",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 44,
+              "lineStart": 44,
+              "snippet": "const newSql: SQLExpression = { ...sql, offset: Number.parseInt(event.currentTarget.value, 10) };",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 63,
+              "lineStart": 63,
+              "snippet": "<EditorField label={t('grafana-sql.components.order-by-row.label-order-by', 'Order by')} width={25}>",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 66,
+              "lineStart": 66,
+              "snippet": "aria-label={t('grafana-sql.components.order-by-row.aria-label-order-by', 'Order by')}",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 84,
+              "lineStart": 84,
+              "snippet": "<EditorField label={t('grafana-sql.components.order-by-row.label-limit', 'Limit')} optional width={25}>",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 88,
+              "lineStart": 88,
+              "snippet": "<EditorField label={t('grafana-sql.components.order-by-row.label-offset', 'Offset')} optional width={25}>",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 34,
+              "lineStart": 34,
+              "snippet": "tooltip={t('grafana-sql.components.preview.label-element.tooltip-copy-to-clipboard', 'Copy to clipboard')}",
+              "sourcePath": "src/components/visual-query-builder/Preview.tsx"
+            },
+            {
+              "lineEnd": 19,
+              "lineStart": 19,
+              "snippet": "<EditorField label={t('grafana-sql.components.select-column.label-column', 'Column')} width={25}>",
+              "sourcePath": "src/components/visual-query-builder/SelectColumn.tsx"
+            },
+            {
+              "lineEnd": 89,
+              "lineStart": 89,
+              "snippet": "aria-label={t(",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 97,
+              "lineStart": 97,
+              "snippet": "aria-label={t(",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 130,
+              "lineStart": 130,
+              "snippet": "aria-label={t('grafana-sql.components.select-custom-function-parameters.title-add-parameter', 'Add parameter')}",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 33,
+              "lineStart": 33,
+              "snippet": "timeSeriesAliasOpts.push({ label: t('grafana-sql.components.select-row.label.time', 'time'), value: 'time' });",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 34,
+              "lineStart": 34,
+              "snippet": "timeSeriesAliasOpts.push({ label: t('grafana-sql.components.select-row.label.value', 'value'), value: 'value' });",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 97,
+              "lineStart": 97,
+              "snippet": "label: t('grafana-sql.components.select-row.aggregate-options.options.label.aggregations', 'Aggregations'),",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 100,
+              "lineStart": 100,
+              "snippet": "{ label: t('grafana-sql.components.select-row.aggregate-options.options.label.macros', 'Macros'), options: [] },",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 119,
+              "lineStart": 119,
+              "snippet": "label={t('grafana-sql.components.select-row.label-data-operations', 'Data operations')}",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 143,
+              "lineStart": 143,
+              "snippet": "<EditorField label={t('grafana-sql.components.select-row.label-alias', 'Alias')} optional width={15}>",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 156,
+              "lineStart": 156,
+              "snippet": "aria-label={t('grafana-sql.components.select-row.title-remove-column', 'Remove column')}",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 170,
+              "lineStart": 170,
+              "snippet": "aria-label={t('grafana-sql.components.select-row.title-add-column', 'Add column')}",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 36,
+              "lineStart": 36,
+              "snippet": "label={t('grafana-sql.components.visual-editor.label-filter-by-column-value', 'Filter by column value')}",
+              "sourcePath": "src/components/visual-query-builder/VisualEditor.tsx"
+            },
+            {
+              "lineEnd": 45,
+              "lineStart": 45,
+              "snippet": "<EditorField label={t('grafana-sql.components.visual-editor.label-group-by-column', 'Group by column')}>",
+              "sourcePath": "src/components/visual-query-builder/VisualEditor.tsx"
+            },
+            {
+              "lineEnd": 41,
+              "lineStart": 41,
+              "snippet": "useEffect(() => {",
+              "sourcePath": "src/SQLVariableEditor.tsx"
+            },
+            {
+              "lineEnd": 73,
+              "lineStart": 73,
+              "snippet": "<EditorField label={t('grafana-sql.components.query-meta.variables.valueField', 'Value Field')}>",
+              "sourcePath": "src/SQLVariableEditor.tsx"
+            },
+            {
+              "lineEnd": 82,
+              "lineStart": 82,
+              "snippet": "<EditorField label={t('grafana-sql.components.query-meta.variables.textField', 'Text Field')}>",
+              "sourcePath": "src/SQLVariableEditor.tsx"
+            },
+            {
+              "lineEnd": 24,
+              "lineStart": 24,
+              "snippet": "label: t('grafana-sql.utils.get-columns-width-indices.label-selected-columns', 'Selected columns'),",
+              "sourcePath": "src/utils/getColumnsWithIndices.ts"
+            }
+          ]
+        },
+        "trans": {
+          "count": 28,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx",
+            "src/components/configuration/MaxLifetimeField.tsx",
+            "src/components/configuration/MaxOpenConnectionsField.tsx",
+            "src/components/configuration/TLSSecretsConfig.tsx",
+            "src/components/ConfirmModal.tsx",
+            "src/components/ErrorBoundary.tsx",
+            "src/components/query-editor-raw/QueryValidator.tsx",
+            "src/components/query-editor-raw/RawEditor.tsx",
+            "src/components/QueryHeader.tsx",
+            "src/components/visual-query-builder/Preview.tsx"
+          ],
+          "propUsage": {
+            "i18nKey": {
+              "count": 28,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"grafana-sql.components.query-header.run-query\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.confirm-modal.builder-mode\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.confirm-modal.cancel\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.confirm-modal.clipboard\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.confirm-modal.copy-code-and-switch\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.confirm-modal.discard-code-and-switch\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.confirm-modal.warning\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.connection-limits.auto-max-idle\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.connection-limits.content-auto-max-idle\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.connection-limits.content-max-idle\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.connection-limits.content-max-lifetime\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.connection-limits.content-max-open\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.connection-limits.max-idle\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.connection-limits.max-lifetime\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.connection-limits.max-open\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.error-boundary.fall-back.error\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.preview.label-element.preview\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.query-header.content-invalid-query\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.query-validator.query-will-process\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.query-validator.validating-query\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.raw-editor.render-placeholder.editing-in-expanded-code-editor\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-certificate\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-key\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.tlssecrets-config.content-tlsssl-root-certificate\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.tlssecrets-config.tlsssl-client-certificate\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.tlssecrets-config.tlsssl-client-key\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"grafana-sql.components.tlssecrets-config.tlsssl-root-certificate\""
+                }
+              ]
+            },
+            "values": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{{ bytes: formattedValueToString(valueFormatter(state.value.statistics.TotalBytesProcessed)) }}"
+                },
+                {
+                  "count": 1,
+                  "value": "{{ defaultMaxIdle: config.sqlConnectionLimits.maxIdleConns }}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 105,
+              "lineStart": 105,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.connection-limits.auto-max-idle\">Auto max idle</Trans>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 117,
+              "lineStart": 110,
+              "snippet": "<Trans\n                        i18nKey=\"grafana-sql.components.connection-limits.content-auto-max-idle\"\n                        values={{ defaultMaxIdle: config.sqlConnectionLimits.maxIdleConns }}\n                      >\n                        If enabled, automatically set the number of <i>Maximum idle connections</i> to the same value as\n                        <i> Max open connections</i>. If the number of maximum open connections is not set it will be\n                        set to the default ({'{{defaultMaxIdle}}'}).\n                      </Trans>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 136,
+              "lineStart": 136,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.connection-limits.max-idle\">Max idle</Trans>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 146,
+              "lineStart": 141,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-idle\">\n                        The maximum number of connections in the idle connection pool.If <i>Max open connections</i> is\n                        greater than 0 but less than the <i>Max idle connections</i>, then the{' '}\n                        <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If\n                        set to 0, no idle connections are retained.\n                      </Trans>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 22,
+              "lineStart": 22,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.connection-limits.max-lifetime\">Max lifetime</Trans>",
+              "sourcePath": "src/components/configuration/MaxLifetimeField.tsx"
+            },
+            {
+              "lineEnd": 30,
+              "lineStart": 27,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-lifetime\">\n                    The maximum amount of time in seconds a connection may be reused. If set to 0, connections are\n                    reused forever.\n                  </Trans>",
+              "sourcePath": "src/components/configuration/MaxLifetimeField.tsx"
+            },
+            {
+              "lineEnd": 23,
+              "lineStart": 23,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.connection-limits.max-open\">Max open</Trans>",
+              "sourcePath": "src/components/configuration/MaxOpenConnectionsField.tsx"
+            },
+            {
+              "lineEnd": 33,
+              "lineStart": 28,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-open\">\n                    The maximum number of open connections to the database. If <i>Max idle connections</i> is greater\n                    than 0 and the <i>Max open connections</i> is less than <i>Max idle connections</i>, then\n                    <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If set\n                    to 0, there is no limit on the number of open connections.\n                  </Trans>",
+              "sourcePath": "src/components/configuration/MaxOpenConnectionsField.tsx"
+            },
+            {
+              "lineEnd": 33,
+              "lineStart": 31,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-certificate\">\n                    TLS/SSL Client Certificate\n                  </Trans>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 40,
+              "lineStart": 38,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-certificate\">\n                        To authenticate with an TLS/SSL client certificate, provide the client certificate here.\n                      </Trans>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 72,
+              "lineStart": 70,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-root-certificate\">\n                    TLS/SSL Root Certificate\n                  </Trans>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 79,
+              "lineStart": 77,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-root-certificate\">\n                        If the selected TLS/SSL mode requires a server root certificate, provide it here\n                      </Trans>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 109,
+              "lineStart": 109,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-key\">TLS/SSL Client Key</Trans>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 116,
+              "lineStart": 114,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-key\">\n                        To authenticate with a client TLS/SSL certificate, provide the key here.\n                      </Trans>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 32,
+              "lineStart": 32,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.confirm-modal.warning\">Warning</Trans>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 44,
+              "lineStart": 41,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.confirm-modal.builder-mode\">\n          Builder mode does not display changes made in code. The query builder will display the last changes you made\n          in builder mode.\n        </Trans>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 49,
+              "lineStart": 47,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.confirm-modal.clipboard\">\n          Do you want to copy your code to the clipboard?\n        </Trans>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 53,
+              "lineStart": 53,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.confirm-modal.cancel\">Cancel</Trans>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 56,
+              "lineStart": 56,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.confirm-modal.discard-code-and-switch\">Discard code and switch</Trans>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 59,
+              "lineStart": 59,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.confirm-modal.copy-code-and-switch\">Copy code and switch</Trans>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 23,
+              "lineStart": 23,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.error-boundary.fall-back.error\">Error</Trans>",
+              "sourcePath": "src/components/ErrorBoundary.tsx"
+            },
+            {
+              "lineEnd": 83,
+              "lineStart": 83,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.query-validator.validating-query\">Validating query...</Trans>",
+              "sourcePath": "src/components/query-editor-raw/QueryValidator.tsx"
+            },
+            {
+              "lineEnd": 96,
+              "lineStart": 91,
+              "snippet": "<Trans\n                  i18nKey=\"grafana-sql.components.query-validator.query-will-process\"\n                  values={{ bytes: formattedValueToString(valueFormatter(state.value.statistics.TotalBytesProcessed)) }}\n                >\n                  <Icon name=\"check\" /> This query will process <strong>{'{{bytes}}'}</strong> when run.\n                </Trans>",
+              "sourcePath": "src/components/query-editor-raw/QueryValidator.tsx"
+            },
+            {
+              "lineEnd": 87,
+              "lineStart": 85,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.raw-editor.render-placeholder.editing-in-expanded-code-editor\">\n          Editing in expanded code editor\n        </Trans>",
+              "sourcePath": "src/components/query-editor-raw/RawEditor.tsx"
+            },
+            {
+              "lineEnd": 262,
+              "lineStart": 262,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.query-header.run-query\">Run query</Trans>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 271,
+              "lineStart": 268,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.query-header.content-invalid-query\">\n                  Your query is invalid. Check below for details. <br />\n                  However, you can still run this query.\n                </Trans>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 276,
+              "lineStart": 276,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.query-header.run-query\">Run query</Trans>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 31,
+              "lineStart": 31,
+              "snippet": "<Trans i18nKey=\"grafana-sql.components.preview.label-element.preview\">Preview</Trans>",
+              "sourcePath": "src/components/visual-query-builder/Preview.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {}
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/runtime": {
+      "records": {
+        "report-interaction": {
+          "count": 14,
+          "files": [
+            "src/components/query-editor-raw/QueryToolbox.tsx",
+            "src/components/query-editor-raw/RawEditor.tsx",
+            "src/components/QueryHeader.tsx",
+            "src/components/visual-query-builder/Preview.tsx",
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 77,
+              "lineStart": 77,
+              "snippet": "reportInteraction('grafana_sql_query_formatted', {",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 90,
+              "lineStart": 90,
+              "snippet": "reportInteraction('grafana_sql_editor_expand', {",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 106,
+              "lineStart": 106,
+              "snippet": "reportInteraction('grafana_sql_editor_expand', {",
+              "sourcePath": "src/components/query-editor-raw/RawEditor.tsx"
+            },
+            {
+              "lineEnd": 81,
+              "lineStart": 81,
+              "snippet": "reportInteraction('grafana_sql_editor_mode_changed', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 99,
+              "lineStart": 99,
+              "snippet": "reportInteraction('grafana_sql_format_changed', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 183,
+              "lineStart": 183,
+              "snippet": "reportInteraction('grafana_sql_filter_toggled', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 204,
+              "lineStart": 204,
+              "snippet": "reportInteraction('grafana_sql_group_toggled', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 225,
+              "lineStart": 225,
+              "snippet": "reportInteraction('grafana_sql_order_toggled', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 246,
+              "lineStart": 246,
+              "snippet": "reportInteraction('grafana_sql_preview_toggled', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 286,
+              "lineStart": 286,
+              "snippet": "reportInteraction('grafana_sql_editor_mode_changed', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 301,
+              "lineStart": 301,
+              "snippet": "reportInteraction('grafana_sql_editor_mode_changed', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 315,
+              "lineStart": 315,
+              "snippet": "reportInteraction('grafana_sql_editor_mode_changed', {",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 23,
+              "lineStart": 23,
+              "snippet": "reportInteraction('grafana_sql_preview_copied', {",
+              "sourcePath": "src/components/visual-query-builder/Preview.tsx"
+            },
+            {
+              "lineEnd": 141,
+              "lineStart": 141,
+              "snippet": "reportInteraction('grafana_sql_query_executed', {",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "get-template-srv": {
+          "count": 2,
+          "files": [
+            "src/components/visual-query-builder/SQLWhereRow.tsx",
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 34,
+              "lineStart": 34,
+              "snippet": "const templateVars = getTemplateSrv().getVariables();",
+              "sourcePath": "src/components/visual-query-builder/SQLWhereRow.tsx"
+            },
+            {
+              "lineEnd": 49,
+              "lineStart": 49,
+              "snippet": "protected readonly templateSrv: TemplateSrv = getTemplateSrv()",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "backend-data-source-response": {
+          "count": 2,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 237,
+              "lineStart": 237,
+              "snippet": "<BackendDataSourceResponse>",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            },
+            {
+              "lineEnd": 249,
+              "lineStart": 249,
+              "snippet": "<BackendDataSourceResponse>",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "get-backend-srv": {
+          "count": 1,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 236,
+              "lineStart": 236,
+              "snippet": "getBackendSrv()",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "to-data-query-response": {
+          "count": 1,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 250,
+              "lineStart": 250,
+              "snippet": "const rsp = toDataQueryResponse(res, queries);",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "template-srv": {
+          "count": 1,
+          "files": [
+            "src/datasource/SqlDatasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 49,
+              "lineStart": 49,
+              "snippet": "protected readonly templateSrv: TemplateSrv = getTemplateSrv()",
+              "sourcePath": "src/datasource/SqlDatasource.ts"
+            }
+          ]
+        },
+        "create-monitoring-logger": {
+          "count": 1,
+          "files": [
+            "src/utils/logging.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 3,
+              "lineStart": 3,
+              "snippet": "export const sqlPluginLogger: MonitoringLogger = createMonitoringLogger('features.plugins.sql');",
+              "sourcePath": "src/utils/logging.ts"
+            }
+          ]
+        },
+        "monitoring-logger": {
+          "count": 1,
+          "files": [
+            "src/utils/logging.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 3,
+              "lineStart": 3,
+              "snippet": "export const sqlPluginLogger: MonitoringLogger = createMonitoringLogger('features.plugins.sql');",
+              "sourcePath": "src/utils/logging.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/schema": {
+      "records": {}
+    },
+    "@grafana/test-utils": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {
+        "field": {
+          "count": 8,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx",
+            "src/components/configuration/MaxLifetimeField.tsx",
+            "src/components/configuration/MaxOpenConnectionsField.tsx",
+            "src/components/configuration/TLSSecretsConfig.tsx",
+            "src/components/visual-query-builder/Preview.tsx"
+          ],
+          "propUsage": {
+            "label": {
+              "count": 8,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{<Label> <Stack gap={0.5}> <span> <Trans i18nKey=\"grafana-sql.components.connection-limits.auto-max-idle\">Auto max idle<…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<Label> <Stack gap={0.5}> <span> <Trans i18nKey=\"grafana-sql.components.connection-limits.max-idle\">Max idle</Trans> </…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<Label> <Stack gap={0.5}> <span> <Trans i18nKey=\"grafana-sql.components.connection-limits.max-lifetime\">Max lifetime</T…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<Label> <Stack gap={0.5}> <span> <Trans i18nKey=\"grafana-sql.components.connection-limits.max-open\">Max open</Trans> </…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<Label> <Stack gap={0.5}> <span> <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-certificate\"> T…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<Label> <Stack gap={0.5}> <span> <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-key\">TLS/SSL Cl…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<Label> <Stack gap={0.5}> <span> <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-root-certificate\"> TLS…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{labelElement}"
+                }
+              ]
+            },
+            "noMargin": {
+              "count": 7,
+              "values": [
+                {
+                  "count": 7,
+                  "value": "{true}"
+                }
+              ]
+            },
+            "className": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{styles.grow}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 128,
+              "lineStart": 99,
+              "snippet": "<Field\n          noMargin\n          label={\n            <Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.auto-max-idle\">Auto max idle</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans\n                        i18nKey=\"grafana-sql.components.connection-limits.content-auto-max-idle\"\n                        values={{ defaultMaxIdle: config.sqlConnectionLimits.maxIdleConns }}\n                      >\n                        If enabled, automatically set the number of <i>Maximum idle connections</i> to the same value as\n                        <i> Max open connections</i>. If the number of maximum open connections is not set it will be\n                        set to the default ({'{{defaultMaxIdle}}'}).\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>\n          }\n        >\n          <Switch value={autoIdle} onChange={onConnectionIdleAutoChanged} />\n        </Field>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 168,
+              "lineStart": 130,
+              "snippet": "<Field\n          noMargin\n          label={\n            <Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.max-idle\">Max idle</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-idle\">\n                        The maximum number of connections in the idle connection pool.If <i>Max open connections</i> is\n                        greater than 0 but less than the <i>Max idle connections</i>, then the{' '}\n                        <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If\n                        set to 0, no idle connections are retained.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>\n          }\n        >\n          {autoIdle ? (\n            <InlineLabel width={labelWidth}>{options.jsonData.maxIdleConns}</InlineLabel>\n          ) : (\n            <NumberInput\n              value={jsonData.maxIdleConns}\n              defaultValue={config.sqlConnectionLimits.maxIdleConns}\n              onChange={(value) => {\n                onJSONDataNumberChanged('maxIdleConns')(value);\n              }}\n              width={labelWidth}\n            />\n          )}\n        </Field>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 46,
+              "lineStart": 16,
+              "snippet": "<Field\n      noMargin\n      label={\n        <Label>\n          <Stack gap={0.5}>\n            <span>\n              <Trans i18nKey=\"grafana-sql.components.connection-limits.max-lifetime\">Max lifetime</Trans>\n            </span>\n            <Tooltip\n              content={\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-lifetime\">\n                    The maximum amount of time in seconds a connection may be reused. If set to 0, connections are\n                    reused forever.\n                  </Trans>\n                </span>\n              }\n            >\n              <Icon name=\"info-circle\" size=\"sm\" />\n            </Tooltip>\n          </Stack>\n        </Label>\n      }\n    >\n      <NumberInput\n        value={jsonData.connMaxLifetime}\n        defaultValue={config.sqlConnectionLimits.connMaxLifetime}\n        onChange={onMaxLifetimeChanged}\n        width={labelWidth}\n      />\n    </Field>",
+              "sourcePath": "src/components/configuration/MaxLifetimeField.tsx"
+            },
+            {
+              "lineEnd": 49,
+              "lineStart": 17,
+              "snippet": "<Field\n      noMargin\n      label={\n        <Label>\n          <Stack gap={0.5}>\n            <span>\n              <Trans i18nKey=\"grafana-sql.components.connection-limits.max-open\">Max open</Trans>\n            </span>\n            <Tooltip\n              content={\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-open\">\n                    The maximum number of open connections to the database. If <i>Max idle connections</i> is greater\n                    than 0 and the <i>Max open connections</i> is less than <i>Max idle connections</i>, then\n                    <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If set\n                    to 0, there is no limit on the number of open connections.\n                  </Trans>\n                </span>\n              }\n            >\n              <Icon name=\"info-circle\" size=\"sm\" />\n            </Tooltip>\n          </Stack>\n        </Label>\n      }\n    >\n      <NumberInput\n        value={jsonData.maxOpenConns}\n        defaultValue={config.sqlConnectionLimits.maxOpenConns}\n        onChange={onMaxConnectionsChanged}\n        width={labelWidth}\n      />\n    </Field>",
+              "sourcePath": "src/components/configuration/MaxOpenConnectionsField.tsx"
+            },
+            {
+              "lineEnd": 61,
+              "lineStart": 25,
+              "snippet": "<Field\n          noMargin\n          label={\n            <Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-certificate\">\n                    TLS/SSL Client Certificate\n                  </Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-certificate\">\n                        To authenticate with an TLS/SSL client certificate, provide the client certificate here.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>\n          }\n        >\n          <SecretTextArea\n            // eslint-disable-next-line @grafana/i18n/no-untranslated-strings\n            placeholder=\"-----BEGIN CERTIFICATE-----\"\n            cols={45}\n            rows={7}\n            isConfigured={secureJsonFields && secureJsonFields.tlsClientCert}\n            onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsClientCert')}\n            onReset={() => {\n              updateDatasourcePluginResetOption(editorProps, 'tlsClientCert');\n            }}\n          />\n        </Field>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 100,
+              "lineStart": 64,
+              "snippet": "<Field\n          noMargin\n          label={\n            <Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-root-certificate\">\n                    TLS/SSL Root Certificate\n                  </Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-root-certificate\">\n                        If the selected TLS/SSL mode requires a server root certificate, provide it here\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>\n          }\n        >\n          <SecretTextArea\n            // eslint-disable-next-line @grafana/i18n/no-untranslated-strings\n            placeholder=\"-----BEGIN CERTIFICATE-----\"\n            cols={45}\n            rows={7}\n            isConfigured={secureJsonFields && secureJsonFields.tlsCACert}\n            onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsCACert')}\n            onReset={() => {\n              updateDatasourcePluginResetOption(editorProps, 'tlsCACert');\n            }}\n          />\n        </Field>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 137,
+              "lineStart": 103,
+              "snippet": "<Field\n          noMargin\n          label={\n            <Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-key\">TLS/SSL Client Key</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-key\">\n                        To authenticate with a client TLS/SSL certificate, provide the key here.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>\n          }\n        >\n          <SecretTextArea\n            // eslint-disable-next-line @grafana/i18n/no-untranslated-strings\n            placeholder=\"-----BEGIN RSA PRIVATE KEY-----\"\n            cols={45}\n            rows={7}\n            isConfigured={secureJsonFields && secureJsonFields.tlsClientKey}\n            onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsClientKey')}\n            onReset={() => {\n              updateDatasourcePluginResetOption(editorProps, 'tlsClientKey');\n            }}\n          />\n        </Field>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 51,
+              "lineStart": 42,
+              "snippet": "<Field label={labelElement} className={styles.grow}>\n      <CodeEditor\n        language=\"sql\"\n        height={80}\n        value={formatSQL(rawSql)}\n        monacoOptions={{ scrollbar: { vertical: 'hidden' }, scrollBeyondLastLine: false }}\n        readOnly={true}\n        showMiniMap={false}\n      />\n    </Field>",
+              "sourcePath": "src/components/visual-query-builder/Preview.tsx"
+            }
+          ]
+        },
+        "icon": {
+          "count": 10,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx",
+            "src/components/configuration/MaxLifetimeField.tsx",
+            "src/components/configuration/MaxOpenConnectionsField.tsx",
+            "src/components/configuration/TLSSecretsConfig.tsx",
+            "src/components/ConfirmModal.tsx",
+            "src/components/query-editor-raw/QueryToolbox.tsx",
+            "src/components/query-editor-raw/QueryValidator.tsx"
+          ],
+          "propUsage": {
+            "name": {
+              "count": 10,
+              "values": [
+                {
+                  "count": 7,
+                  "value": "\"info-circle\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"check\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"exclamation-triangle\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"keyboard\""
+                }
+              ]
+            },
+            "size": {
+              "count": 8,
+              "values": [
+                {
+                  "count": 7,
+                  "value": "\"sm\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"lg\""
+                }
+              ]
+            },
+            "className": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{styles.hint}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 121,
+              "lineStart": 121,
+              "snippet": "<Icon name=\"info-circle\" size=\"sm\" />",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 150,
+              "lineStart": 150,
+              "snippet": "<Icon name=\"info-circle\" size=\"sm\" />",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 34,
+              "lineStart": 34,
+              "snippet": "<Icon name=\"info-circle\" size=\"sm\" />",
+              "sourcePath": "src/components/configuration/MaxLifetimeField.tsx"
+            },
+            {
+              "lineEnd": 37,
+              "lineStart": 37,
+              "snippet": "<Icon name=\"info-circle\" size=\"sm\" />",
+              "sourcePath": "src/components/configuration/MaxOpenConnectionsField.tsx"
+            },
+            {
+              "lineEnd": 44,
+              "lineStart": 44,
+              "snippet": "<Icon name=\"info-circle\" size=\"sm\" />",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 83,
+              "lineStart": 83,
+              "snippet": "<Icon name=\"info-circle\" size=\"sm\" />",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 120,
+              "lineStart": 120,
+              "snippet": "<Icon name=\"info-circle\" size=\"sm\" />",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 30,
+              "lineStart": 30,
+              "snippet": "<Icon name=\"exclamation-triangle\" size=\"lg\" />",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 112,
+              "lineStart": 112,
+              "snippet": "<Icon className={styles.hint} name=\"keyboard\" />",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 95,
+              "lineStart": 95,
+              "snippet": "<Icon name=\"check\" />",
+              "sourcePath": "src/components/query-editor-raw/QueryValidator.tsx"
+            }
+          ]
+        },
+        "inline-label": {
+          "count": 7,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx",
+            "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+          ],
+          "propUsage": {
+            "className": {
+              "count": 6,
+              "values": [
+                {
+                  "count": 6,
+                  "value": "{styles.label}"
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{labelWidth}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 157,
+              "lineStart": 157,
+              "snippet": "<InlineLabel width={labelWidth}>{options.jsonData.maxIdleConns}</InlineLabel>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 85,
+              "lineStart": 85,
+              "snippet": "<InlineLabel className={styles.label}>,</InlineLabel>",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 117,
+              "lineStart": 117,
+              "snippet": "<InlineLabel className={styles.label}>(</InlineLabel>",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 132,
+              "lineStart": 132,
+              "snippet": "<InlineLabel className={styles.label}>)</InlineLabel>",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 118,
+              "lineStart": 118,
+              "snippet": "<InlineLabel className={styles.label}>,</InlineLabel>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 152,
+              "lineStart": 152,
+              "snippet": "<InlineLabel className={styles.label}>(</InlineLabel>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 154,
+              "lineStart": 154,
+              "snippet": "<InlineLabel className={styles.label}>)</InlineLabel>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            }
+          ]
+        },
+        "label": {
+          "count": 7,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx",
+            "src/components/configuration/MaxLifetimeField.tsx",
+            "src/components/configuration/MaxOpenConnectionsField.tsx",
+            "src/components/configuration/TLSSecretsConfig.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 124,
+              "lineStart": 102,
+              "snippet": "<Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.auto-max-idle\">Auto max idle</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans\n                        i18nKey=\"grafana-sql.components.connection-limits.content-auto-max-idle\"\n                        values={{ defaultMaxIdle: config.sqlConnectionLimits.maxIdleConns }}\n                      >\n                        If enabled, automatically set the number of <i>Maximum idle connections</i> to the same value as\n                        <i> Max open connections</i>. If the number of maximum open connections is not set it will be\n                        set to the default ({'{{defaultMaxIdle}}'}).\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 153,
+              "lineStart": 133,
+              "snippet": "<Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.max-idle\">Max idle</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-idle\">\n                        The maximum number of connections in the idle connection pool.If <i>Max open connections</i> is\n                        greater than 0 but less than the <i>Max idle connections</i>, then the{' '}\n                        <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If\n                        set to 0, no idle connections are retained.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 37,
+              "lineStart": 19,
+              "snippet": "<Label>\n          <Stack gap={0.5}>\n            <span>\n              <Trans i18nKey=\"grafana-sql.components.connection-limits.max-lifetime\">Max lifetime</Trans>\n            </span>\n            <Tooltip\n              content={\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-lifetime\">\n                    The maximum amount of time in seconds a connection may be reused. If set to 0, connections are\n                    reused forever.\n                  </Trans>\n                </span>\n              }\n            >\n              <Icon name=\"info-circle\" size=\"sm\" />\n            </Tooltip>\n          </Stack>\n        </Label>",
+              "sourcePath": "src/components/configuration/MaxLifetimeField.tsx"
+            },
+            {
+              "lineEnd": 40,
+              "lineStart": 20,
+              "snippet": "<Label>\n          <Stack gap={0.5}>\n            <span>\n              <Trans i18nKey=\"grafana-sql.components.connection-limits.max-open\">Max open</Trans>\n            </span>\n            <Tooltip\n              content={\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-open\">\n                    The maximum number of open connections to the database. If <i>Max idle connections</i> is greater\n                    than 0 and the <i>Max open connections</i> is less than <i>Max idle connections</i>, then\n                    <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If set\n                    to 0, there is no limit on the number of open connections.\n                  </Trans>\n                </span>\n              }\n            >\n              <Icon name=\"info-circle\" size=\"sm\" />\n            </Tooltip>\n          </Stack>\n        </Label>",
+              "sourcePath": "src/components/configuration/MaxOpenConnectionsField.tsx"
+            },
+            {
+              "lineEnd": 47,
+              "lineStart": 28,
+              "snippet": "<Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-certificate\">\n                    TLS/SSL Client Certificate\n                  </Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-certificate\">\n                        To authenticate with an TLS/SSL client certificate, provide the client certificate here.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 86,
+              "lineStart": 67,
+              "snippet": "<Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-root-certificate\">\n                    TLS/SSL Root Certificate\n                  </Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-root-certificate\">\n                        If the selected TLS/SSL mode requires a server root certificate, provide it here\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 123,
+              "lineStart": 106,
+              "snippet": "<Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-key\">TLS/SSL Client Key</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-key\">\n                        To authenticate with a client TLS/SSL certificate, provide the key here.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            }
+          ]
+        },
+        "stack": {
+          "count": 13,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx",
+            "src/components/configuration/MaxLifetimeField.tsx",
+            "src/components/configuration/MaxOpenConnectionsField.tsx",
+            "src/components/configuration/TLSSecretsConfig.tsx",
+            "src/components/query-editor-raw/QueryToolbox.tsx",
+            "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectRow.tsx"
+          ],
+          "propUsage": {
+            "gap": {
+              "count": 13,
+              "values": [
+                {
+                  "count": 7,
+                  "value": "0.5"
+                },
+                {
+                  "count": 5,
+                  "value": "2"
+                },
+                {
+                  "count": 1,
+                  "value": "1"
+                }
+              ]
+            },
+            "alignItems": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"end\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"flex-end\""
+                }
+              ]
+            },
+            "direction": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"column\""
+                }
+              ]
+            },
+            "key": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{index}"
+                }
+              ]
+            },
+            "wrap": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"wrap\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 175,
+              "lineStart": 92,
+              "snippet": "<Stack direction=\"column\" gap={2}>\n        <MaxOpenConnectionsField\n          labelWidth={labelWidth}\n          onMaxConnectionsChanged={onMaxConnectionsChanged}\n          jsonData={jsonData}\n        />\n\n        <Field\n          noMargin\n          label={\n            <Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.auto-max-idle\">Auto max idle</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans\n                        i18nKey=\"grafana-sql.components.connection-limits.content-auto-max-idle\"\n                        values={{ defaultMaxIdle: config.sqlConnectionLimits.maxIdleConns }}\n                      >\n                        If enabled, automatically set the number of <i>Maximum idle connections</i> to the same value as\n                        <i> Max open connections</i>. If the number of maximum open connections is not set it will be\n                        set to the default ({'{{defaultMaxIdle}}'}).\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>\n          }\n        >\n          <Switch value={autoIdle} onChange={onConnectionIdleAutoChanged} />\n        </Field>\n\n        <Field\n          noMargin\n          label={\n            <Label>\n              <Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.max-idle\">Max idle</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-idle\">\n                        The maximum number of connections in the idle connection pool.If <i>Max open connections</i> is\n                        greater than 0 but less than the <i>Max idle connections</i>, then the{' '}\n                        <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If\n                        set to 0, no idle connections are retained.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>\n            </Label>\n          }\n        >\n          {autoIdle ? (\n            <InlineLabel width={labelWidth}>{options.jsonData.maxIdleConns}</InlineLabel>\n          ) : (\n            <NumberInput\n              value={jsonData.maxIdleConns}\n              defaultValue={config.sqlConnectionLimits.maxIdleConns}\n              onChange={(value) => {\n                onJSONDataNumberChanged('maxIdleConns')(value);\n              }}\n              width={labelWidth}\n            />\n          )}\n        </Field>\n\n        <MaxLifetimeField\n          labelWidth={labelWidth}\n          onMaxLifetimeChanged={onJSONDataNumberChanged('connMaxLifetime')}\n          jsonData={jsonData}\n        />\n      </Stack>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 123,
+              "lineStart": 103,
+              "snippet": "<Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.auto-max-idle\">Auto max idle</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans\n                        i18nKey=\"grafana-sql.components.connection-limits.content-auto-max-idle\"\n                        values={{ defaultMaxIdle: config.sqlConnectionLimits.maxIdleConns }}\n                      >\n                        If enabled, automatically set the number of <i>Maximum idle connections</i> to the same value as\n                        <i> Max open connections</i>. If the number of maximum open connections is not set it will be\n                        set to the default ({'{{defaultMaxIdle}}'}).\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 152,
+              "lineStart": 134,
+              "snippet": "<Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.max-idle\">Max idle</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-idle\">\n                        The maximum number of connections in the idle connection pool.If <i>Max open connections</i> is\n                        greater than 0 but less than the <i>Max idle connections</i>, then the{' '}\n                        <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If\n                        set to 0, no idle connections are retained.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 36,
+              "lineStart": 20,
+              "snippet": "<Stack gap={0.5}>\n            <span>\n              <Trans i18nKey=\"grafana-sql.components.connection-limits.max-lifetime\">Max lifetime</Trans>\n            </span>\n            <Tooltip\n              content={\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-lifetime\">\n                    The maximum amount of time in seconds a connection may be reused. If set to 0, connections are\n                    reused forever.\n                  </Trans>\n                </span>\n              }\n            >\n              <Icon name=\"info-circle\" size=\"sm\" />\n            </Tooltip>\n          </Stack>",
+              "sourcePath": "src/components/configuration/MaxLifetimeField.tsx"
+            },
+            {
+              "lineEnd": 39,
+              "lineStart": 21,
+              "snippet": "<Stack gap={0.5}>\n            <span>\n              <Trans i18nKey=\"grafana-sql.components.connection-limits.max-open\">Max open</Trans>\n            </span>\n            <Tooltip\n              content={\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-open\">\n                    The maximum number of open connections to the database. If <i>Max idle connections</i> is greater\n                    than 0 and the <i>Max open connections</i> is less than <i>Max idle connections</i>, then\n                    <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If set\n                    to 0, there is no limit on the number of open connections.\n                  </Trans>\n                </span>\n              }\n            >\n              <Icon name=\"info-circle\" size=\"sm\" />\n            </Tooltip>\n          </Stack>",
+              "sourcePath": "src/components/configuration/MaxOpenConnectionsField.tsx"
+            },
+            {
+              "lineEnd": 46,
+              "lineStart": 29,
+              "snippet": "<Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-certificate\">\n                    TLS/SSL Client Certificate\n                  </Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-certificate\">\n                        To authenticate with an TLS/SSL client certificate, provide the client certificate here.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 85,
+              "lineStart": 68,
+              "snippet": "<Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-root-certificate\">\n                    TLS/SSL Root Certificate\n                  </Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-root-certificate\">\n                        If the selected TLS/SSL mode requires a server root certificate, provide it here\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 122,
+              "lineStart": 107,
+              "snippet": "<Stack gap={0.5}>\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.tlsssl-client-key\">TLS/SSL Client Key</Trans>\n                </span>\n                <Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-key\">\n                        To authenticate with a client TLS/SSL certificate, provide the key here.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>\n              </Stack>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 114,
+              "lineStart": 73,
+              "snippet": "<Stack gap={1}>\n            {onFormatCode && (\n              <IconButton\n                onClick={() => {\n                  reportInteraction('grafana_sql_query_formatted', {\n                    datasource: validatorProps.query.datasource?.type,\n                  });\n                  onFormatCode();\n                }}\n                name=\"brackets-curly\"\n                size=\"xs\"\n                tooltip={t('grafana-sql.components.query-toolbox.tooltip-format-query', 'Format query')}\n              />\n            )}\n            {onExpand && (\n              <IconButton\n                onClick={() => {\n                  reportInteraction('grafana_sql_editor_expand', {\n                    datasource: validatorProps.query.datasource?.type,\n                    expanded: !isExpanded,\n                  });\n\n                  onExpand(!isExpanded);\n                }}\n                name={isExpanded ? 'angle-up' : 'angle-down'}\n                size=\"xs\"\n                tooltip={\n                  isExpanded\n                    ? t('grafana-sql.components.query-toolbox.tooltip-collapse', 'Collapse editor')\n                    : t('grafana-sql.components.query-toolbox.tooltip-expand', 'Expand editor')\n                }\n              />\n            )}\n            <Tooltip\n              content={t(\n                'grafana-sql.components.query-toolbox.content-hit-ctrlcmdreturn-to-run-query',\n                'Hit CTRL/CMD+Return to run query'\n              )}\n            >\n              <Icon className={styles.hint} name=\"keyboard\" />\n            </Tooltip>\n          </Stack>",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 109,
+              "lineStart": 84,
+              "snippet": "<Stack key={index} gap={2}>\n          <InlineLabel className={styles.label}>,</InlineLabel>\n          <Input\n            onChange={(e) => onParameterChange(index)(e.currentTarget.value)}\n            value={param.name}\n            aria-label={t(\n              'grafana-sql.components.select-custom-function-parameters.aria-label-parameter',\n              'Parameter {{index}} for column {{columnIndex}}',\n              { index, columnIndex }\n            )}\n            data-testid={selectors.components.SQLQueryEditor.selectInputParameter}\n            addonAfter={\n              <Button\n                aria-label={t(\n                  'grafana-sql.components.select-custom-function-parameters.render-parameters.params.title-remove-parameter',\n                  'Remove parameter'\n                )}\n                type=\"button\"\n                icon=\"times\"\n                variant=\"secondary\"\n                size=\"md\"\n                onClick={() => removeParameter(columnIndex, index)}\n              />\n            }\n          />\n        </Stack>",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 119,
+              "lineStart": 95,
+              "snippet": "<Stack key={index} alignItems=\"flex-end\" gap={2}>\n          <EditorField label={funcParam.name} width={25} optional={!funcParam.required}>\n            <>\n              {funcParam.options ? (\n                <Select\n                  value={getColumnValue(macroOrFunction?.parameters![index])}\n                  options={fieldsFromFunction?.[index]}\n                  data-testid={selectors.components.SQLQueryEditor.selectFunctionParameter(funcParam.name)}\n                  inputId={selectInputId}\n                  menuShouldPortal\n                  allowCustomValue\n                  isClearable\n                  onChange={(s) => onParameterChange(index, true)(s?.value)}\n                />\n              ) : (\n                <Input\n                  onChange={(e) => onParameterChange(index, true)(e.currentTarget.value)}\n                  value={macroOrFunction?.parameters![index]?.name}\n                  data-testid={selectors.components.SQLQueryEditor.selectInputParameter}\n                />\n              )}\n            </>\n          </EditorField>\n          {func.parameters!.length !== index + 1 && <InlineLabel className={styles.label}>,</InlineLabel>}\n        </Stack>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 175,
+              "lineStart": 114,
+              "snippet": "<Stack gap={2} wrap=\"wrap\" direction=\"column\">\n      {query.sql?.columns?.map((item, index) => (\n        <div key={index}>\n          <Stack gap={2} alignItems=\"end\">\n            <EditorField\n              label={t('grafana-sql.components.select-row.label-data-operations', 'Data operations')}\n              optional\n              width={25}\n            >\n              <Select\n                value={item.name ? toOption(item.name) : null}\n                inputId={`select-aggregation-${index}-${uniqueId()}`}\n                data-testid={selectors.components.SQLQueryEditor.selectAggregation}\n                isClearable\n                menuShouldPortal\n                allowCustomValue\n                options={aggregateOptions()}\n                onChange={onAggregationChange(item, index)}\n              />\n            </EditorField>\n\n            <SelectFunctionParameters\n              currentColumnIndex={index}\n              columns={columns}\n              onSqlChange={onSqlChange}\n              query={query}\n              db={db}\n            />\n\n            <EditorField label={t('grafana-sql.components.select-row.label-alias', 'Alias')} optional width={15}>\n              <Select\n                value={item.alias ? toOption(item.alias) : null}\n                inputId={`select-alias-${index}-${uniqueId()}`}\n                data-testid={selectors.components.SQLQueryEditor.selectAlias}\n                options={timeSeriesAliasOpts}\n                onChange={onAliasChange(item, index)}\n                isClearable\n                menuShouldPortal\n                allowCustomValue\n              />\n            </EditorField>\n            <Button\n              aria-label={t('grafana-sql.components.select-row.title-remove-column', 'Remove column')}\n              type=\"button\"\n              icon=\"trash-alt\"\n              variant=\"secondary\"\n              size=\"md\"\n              onClick={removeColumn(index)}\n            />\n          </Stack>\n        </div>\n      ))}\n      <Button\n        type=\"button\"\n        onClick={addColumn}\n        variant=\"secondary\"\n        aria-label={t('grafana-sql.components.select-row.title-add-column', 'Add column')}\n        size=\"md\"\n        icon=\"plus\"\n        className={styles.addButton}\n      />\n    </Stack>",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 163,
+              "lineStart": 117,
+              "snippet": "<Stack gap={2} alignItems=\"end\">\n            <EditorField\n              label={t('grafana-sql.components.select-row.label-data-operations', 'Data operations')}\n              optional\n              width={25}\n            >\n              <Select\n                value={item.name ? toOption(item.name) : null}\n                inputId={`select-aggregation-${index}-${uniqueId()}`}\n                data-testid={selectors.components.SQLQueryEditor.selectAggregation}\n                isClearable\n                menuShouldPortal\n                allowCustomValue\n                options={aggregateOptions()}\n                onChange={onAggregationChange(item, index)}\n              />\n            </EditorField>\n\n            <SelectFunctionParameters\n              currentColumnIndex={index}\n              columns={columns}\n              onSqlChange={onSqlChange}\n              query={query}\n              db={db}\n            />\n\n            <EditorField label={t('grafana-sql.components.select-row.label-alias', 'Alias')} optional width={15}>\n              <Select\n                value={item.alias ? toOption(item.alias) : null}\n                inputId={`select-alias-${index}-${uniqueId()}`}\n                data-testid={selectors.components.SQLQueryEditor.selectAlias}\n                options={timeSeriesAliasOpts}\n                onChange={onAliasChange(item, index)}\n                isClearable\n                menuShouldPortal\n                allowCustomValue\n              />\n            </EditorField>\n            <Button\n              aria-label={t('grafana-sql.components.select-row.title-remove-column', 'Remove column')}\n              type=\"button\"\n              icon=\"trash-alt\"\n              variant=\"secondary\"\n              size=\"md\"\n              onClick={removeColumn(index)}\n            />\n          </Stack>",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            }
+          ]
+        },
+        "switch": {
+          "count": 1,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx"
+          ],
+          "propUsage": {
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{onConnectionIdleAutoChanged}"
+                }
+              ]
+            },
+            "value": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{autoIdle}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 127,
+              "lineStart": 127,
+              "snippet": "<Switch value={autoIdle} onChange={onConnectionIdleAutoChanged} />",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            }
+          ]
+        },
+        "tooltip": {
+          "count": 9,
+          "files": [
+            "src/components/configuration/ConnectionLimits.tsx",
+            "src/components/configuration/MaxLifetimeField.tsx",
+            "src/components/configuration/MaxOpenConnectionsField.tsx",
+            "src/components/configuration/TLSSecretsConfig.tsx",
+            "src/components/query-editor-raw/QueryToolbox.tsx",
+            "src/components/QueryHeader.tsx"
+          ],
+          "propUsage": {
+            "content": {
+              "count": 9,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{<span> <Trans i18nKey=\"grafana-sql.components.connection-limits.content-auto-max-idle\" values={{ defaultMaxIdle: config…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<span> <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-idle\"> The maximum number of connections in…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<span> <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-lifetime\"> The maximum amount of time in se…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<span> <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-open\"> The maximum number of open connectio…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<span> <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-certificate\"> To authenticate wit…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<span> <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-key\"> To authenticate with a clie…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<span> <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-root-certificate\"> If the selected TLS/S…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{<Trans i18nKey=\"grafana-sql.components.query-header.content-invalid-query\"> Your query is invalid. Check below for deta…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t( 'grafana-sql.components.query-toolbox.content-hit-ctrlcmdreturn-to-run-query', 'Hit CTRL/CMD+Return to run query' )}"
+                }
+              ]
+            },
+            "placement": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"top\""
+                }
+              ]
+            },
+            "theme": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"error\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 122,
+              "lineStart": 107,
+              "snippet": "<Tooltip\n                  content={\n                    <span>\n                      <Trans\n                        i18nKey=\"grafana-sql.components.connection-limits.content-auto-max-idle\"\n                        values={{ defaultMaxIdle: config.sqlConnectionLimits.maxIdleConns }}\n                      >\n                        If enabled, automatically set the number of <i>Maximum idle connections</i> to the same value as\n                        <i> Max open connections</i>. If the number of maximum open connections is not set it will be\n                        set to the default ({'{{defaultMaxIdle}}'}).\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 151,
+              "lineStart": 138,
+              "snippet": "<Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-idle\">\n                        The maximum number of connections in the idle connection pool.If <i>Max open connections</i> is\n                        greater than 0 but less than the <i>Max idle connections</i>, then the{' '}\n                        <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If\n                        set to 0, no idle connections are retained.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>",
+              "sourcePath": "src/components/configuration/ConnectionLimits.tsx"
+            },
+            {
+              "lineEnd": 35,
+              "lineStart": 24,
+              "snippet": "<Tooltip\n              content={\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-lifetime\">\n                    The maximum amount of time in seconds a connection may be reused. If set to 0, connections are\n                    reused forever.\n                  </Trans>\n                </span>\n              }\n            >\n              <Icon name=\"info-circle\" size=\"sm\" />\n            </Tooltip>",
+              "sourcePath": "src/components/configuration/MaxLifetimeField.tsx"
+            },
+            {
+              "lineEnd": 38,
+              "lineStart": 25,
+              "snippet": "<Tooltip\n              content={\n                <span>\n                  <Trans i18nKey=\"grafana-sql.components.connection-limits.content-max-open\">\n                    The maximum number of open connections to the database. If <i>Max idle connections</i> is greater\n                    than 0 and the <i>Max open connections</i> is less than <i>Max idle connections</i>, then\n                    <i>Max idle connections</i> will be reduced to match the <i>Max open connections</i> limit. If set\n                    to 0, there is no limit on the number of open connections.\n                  </Trans>\n                </span>\n              }\n            >\n              <Icon name=\"info-circle\" size=\"sm\" />\n            </Tooltip>",
+              "sourcePath": "src/components/configuration/MaxOpenConnectionsField.tsx"
+            },
+            {
+              "lineEnd": 45,
+              "lineStart": 35,
+              "snippet": "<Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-certificate\">\n                        To authenticate with an TLS/SSL client certificate, provide the client certificate here.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 84,
+              "lineStart": 74,
+              "snippet": "<Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-root-certificate\">\n                        If the selected TLS/SSL mode requires a server root certificate, provide it here\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 121,
+              "lineStart": 111,
+              "snippet": "<Tooltip\n                  content={\n                    <span>\n                      <Trans i18nKey=\"grafana-sql.components.tlssecrets-config.content-tlsssl-client-key\">\n                        To authenticate with a client TLS/SSL certificate, provide the key here.\n                      </Trans>\n                    </span>\n                  }\n                >\n                  <Icon name=\"info-circle\" size=\"sm\" />\n                </Tooltip>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 113,
+              "lineStart": 106,
+              "snippet": "<Tooltip\n              content={t(\n                'grafana-sql.components.query-toolbox.content-hit-ctrlcmdreturn-to-run-query',\n                'Hit CTRL/CMD+Return to run query'\n              )}\n            >\n              <Icon className={styles.hint} name=\"keyboard\" />\n            </Tooltip>",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 278,
+              "lineStart": 265,
+              "snippet": "<Tooltip\n              theme=\"error\"\n              content={\n                <Trans i18nKey=\"grafana-sql.components.query-header.content-invalid-query\">\n                  Your query is invalid. Check below for details. <br />\n                  However, you can still run this query.\n                </Trans>\n              }\n              placement=\"top\"\n            >\n              <Button icon=\"exclamation-triangle\" variant=\"secondary\" size=\"sm\" onClick={() => onRunQuery()}>\n                <Trans i18nKey=\"grafana-sql.components.query-header.run-query\">Run query</Trans>\n              </Button>\n            </Tooltip>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            }
+          ]
+        },
+        "use-styles2": {
+          "count": 8,
+          "files": [
+            "src/components/configuration/Divider.tsx",
+            "src/components/ConfirmModal.tsx",
+            "src/components/query-editor-raw/RawEditor.tsx",
+            "src/components/QueryEditorLazy.tsx",
+            "src/components/visual-query-builder/Preview.tsx",
+            "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectRow.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 8,
+              "lineStart": 8,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/components/configuration/Divider.tsx"
+            },
+            {
+              "lineEnd": 16,
+              "lineStart": 16,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 25,
+              "lineStart": 25,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/components/query-editor-raw/RawEditor.tsx"
+            },
+            {
+              "lineEnd": 12,
+              "lineStart": 12,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/components/QueryEditorLazy.tsx"
+            },
+            {
+              "lineEnd": 19,
+              "lineStart": 19,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/components/visual-query-builder/Preview.tsx"
+            },
+            {
+              "lineEnd": 30,
+              "lineStart": 30,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 27,
+              "lineStart": 27,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 26,
+              "lineStart": 26,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            }
+          ]
+        },
+        "input": {
+          "count": 7,
+          "files": [
+            "src/components/configuration/NumberInput.tsx",
+            "src/components/visual-query-builder/AwesomeQueryBuilder.tsx",
+            "src/components/visual-query-builder/OrderByRow.tsx",
+            "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+          ],
+          "propUsage": {
+            "onChange": {
+              "count": 7,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(e) => { if (e.currentTarget.value?.trim() === '') { setIsEmpty(true); onChange(defaultValue); } else { setIsEmpty(fals…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(e) => onParameterChange(index, true)(e.currentTarget.value)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(e) => onParameterChange(index)(e.currentTarget.value)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(e) => props?.setValue(e.currentTarget.value)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(e) => props?.setValue(Number.parseInt(e.currentTarget.value, 10))}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onLimitChange}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onOffsetChange}"
+                }
+              ]
+            },
+            "value": {
+              "count": 7,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{isEmpty ? '' : value}"
+                },
+                {
+                  "count": 1,
+                  "value": "{macroOrFunction?.parameters![index]?.name}"
+                },
+                {
+                  "count": 1,
+                  "value": "{param.name}"
+                },
+                {
+                  "count": 1,
+                  "value": "{props?.value || ''}"
+                },
+                {
+                  "count": 1,
+                  "value": "{props?.value}"
+                },
+                {
+                  "count": 1,
+                  "value": "{sql.limit || ''}"
+                },
+                {
+                  "count": 1,
+                  "value": "{sql.offset || ''}"
+                }
+              ]
+            },
+            "type": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 4,
+                  "value": "\"number\""
+                }
+              ]
+            },
+            "placeholder": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{props?.placeholder}"
+                },
+                {
+                  "count": 1,
+                  "value": "{String(defaultValue)}"
+                }
+              ]
+            },
+            "data-testid": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{selectors.components.SQLQueryEditor.selectInputParameter}"
+                }
+              ]
+            },
+            "id": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{uniqueId('limit-')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{uniqueId('offset-')}"
+                }
+              ]
+            },
+            "addonAfter": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{<Button aria-label={t( 'grafana-sql.components.select-custom-function-parameters.render-parameters.params.title-remove-…}"
+                }
+              ]
+            },
+            "aria-label": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t( 'grafana-sql.components.select-custom-function-parameters.aria-label-parameter', 'Parameter {{index}} for column {{c…}"
+                }
+              ]
+            },
+            "min": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "0"
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{width}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 19,
+              "lineStart": 15,
+              "snippet": "<Input\n      type=\"number\"\n      placeholder={String(defaultValue)}\n      value={isEmpty ? '' : value}\n      onChange={(e) =>",
+              "sourcePath": "src/components/configuration/NumberInput.tsx"
+            },
+            {
+              "lineEnd": 47,
+              "lineStart": 44,
+              "snippet": "<Input\n          value={props?.value || ''}\n          placeholder={props?.placeholder}\n          onChange={(e) =>",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 60,
+              "lineStart": 56,
+              "snippet": "<Input\n          value={props?.value}\n          placeholder={props?.placeholder}\n          type=\"number\"\n          onChange={(e) =>",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 85,
+              "lineStart": 85,
+              "snippet": "<Input type=\"number\" min={0} id={uniqueId('limit-')} value={sql.limit || ''} onChange={onLimitChange} />",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 89,
+              "lineStart": 89,
+              "snippet": "<Input type=\"number\" id={uniqueId('offset-')} value={sql.offset || ''} onChange={onOffsetChange} />",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 87,
+              "lineStart": 86,
+              "snippet": "<Input\n            onChange={(e) =>",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 111,
+              "lineStart": 110,
+              "snippet": "<Input\n                  onChange={(e) =>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            }
+          ]
+        },
+        "secret-text-area": {
+          "count": 3,
+          "files": [
+            "src/components/configuration/TLSSecretsConfig.tsx"
+          ],
+          "propUsage": {
+            "cols": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 3,
+                  "value": "45"
+                }
+              ]
+            },
+            "isConfigured": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{secureJsonFields && secureJsonFields.tlsCACert}"
+                },
+                {
+                  "count": 1,
+                  "value": "{secureJsonFields && secureJsonFields.tlsClientCert}"
+                },
+                {
+                  "count": 1,
+                  "value": "{secureJsonFields && secureJsonFields.tlsClientKey}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsCACert')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsClientCert')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsClientKey')}"
+                }
+              ]
+            },
+            "onReset": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{() => { updateDatasourcePluginResetOption(editorProps, 'tlsCACert'); }}"
+                },
+                {
+                  "count": 1,
+                  "value": "{() => { updateDatasourcePluginResetOption(editorProps, 'tlsClientCert'); }}"
+                },
+                {
+                  "count": 1,
+                  "value": "{() => { updateDatasourcePluginResetOption(editorProps, 'tlsClientKey'); }}"
+                }
+              ]
+            },
+            "placeholder": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"-----BEGIN CERTIFICATE-----\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"-----BEGIN RSA PRIVATE KEY-----\""
+                }
+              ]
+            },
+            "rows": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 3,
+                  "value": "7"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 57,
+              "lineStart": 50,
+              "snippet": "<SecretTextArea\n            // eslint-disable-next-line @grafana/i18n/no-untranslated-strings\n            placeholder=\"-----BEGIN CERTIFICATE-----\"\n            cols={45}\n            rows={7}\n            isConfigured={secureJsonFields && secureJsonFields.tlsClientCert}\n            onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsClientCert')}\n            onReset={() =>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 96,
+              "lineStart": 89,
+              "snippet": "<SecretTextArea\n            // eslint-disable-next-line @grafana/i18n/no-untranslated-strings\n            placeholder=\"-----BEGIN CERTIFICATE-----\"\n            cols={45}\n            rows={7}\n            isConfigured={secureJsonFields && secureJsonFields.tlsCACert}\n            onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsCACert')}\n            onReset={() =>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            },
+            {
+              "lineEnd": 133,
+              "lineStart": 126,
+              "snippet": "<SecretTextArea\n            // eslint-disable-next-line @grafana/i18n/no-untranslated-strings\n            placeholder=\"-----BEGIN RSA PRIVATE KEY-----\"\n            cols={45}\n            rows={7}\n            isConfigured={secureJsonFields && secureJsonFields.tlsClientKey}\n            onChange={onUpdateDatasourceSecureJsonDataOption(editorProps, 'tlsClientKey')}\n            onReset={() =>",
+              "sourcePath": "src/components/configuration/TLSSecretsConfig.tsx"
+            }
+          ]
+        },
+        "button": {
+          "count": 10,
+          "files": [
+            "src/components/ConfirmModal.tsx",
+            "src/components/QueryHeader.tsx",
+            "src/components/visual-query-builder/AwesomeQueryBuilder.tsx",
+            "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectRow.tsx"
+          ],
+          "propUsage": {
+            "onClick": {
+              "count": 10,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{() => onRunQuery()}"
+                },
+                {
+                  "count": 1,
+                  "value": "{() => addParameter(currentColumnIndex)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{() => removeParameter(columnIndex, index)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{addColumn}"
+                },
+                {
+                  "count": 1,
+                  "value": "{buttonProps?.onClick}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onCancel}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onCopy}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onDiscard}"
+                },
+                {
+                  "count": 1,
+                  "value": "{removeColumn(index)}"
+                }
+              ]
+            },
+            "variant": {
+              "count": 10,
+              "values": [
+                {
+                  "count": 7,
+                  "value": "\"secondary\""
+                },
+                {
+                  "count": 2,
+                  "value": "\"primary\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"destructive\""
+                }
+              ]
+            },
+            "icon": {
+              "count": 7,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"plus\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"exclamation-triangle\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"play\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"times\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"trash-alt\""
+                },
+                {
+                  "count": 1,
+                  "value": "{buttonProps?.label === buttonLabels.add ? 'plus' : 'times'}"
+                }
+              ]
+            },
+            "size": {
+              "count": 7,
+              "values": [
+                {
+                  "count": 5,
+                  "value": "\"md\""
+                },
+                {
+                  "count": 2,
+                  "value": "\"sm\""
+                }
+              ]
+            },
+            "type": {
+              "count": 7,
+              "values": [
+                {
+                  "count": 7,
+                  "value": "\"button\""
+                }
+              ]
+            },
+            "aria-label": {
+              "count": 5,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t( 'grafana-sql.components.select-custom-function-parameters.render-parameters.params.title-remove-parameter', 'Remove …}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.select-custom-function-parameters.title-add-parameter', 'Add parameter')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.select-row.title-add-column', 'Add column')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.select-row.title-remove-column', 'Remove column')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.settings.title-button-filter', '{{ buttonLabel }} filter', { buttonLabel: buttonProps?.label,…}"
+                }
+              ]
+            },
+            "className": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{styles.addButton}"
+                }
+              ]
+            },
+            "fill": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"outline\""
+                }
+              ]
+            },
+            "ref": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{buttonRef}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 54,
+              "lineStart": 52,
+              "snippet": "<Button type=\"button\" variant=\"secondary\" onClick={onCancel} fill=\"outline\">\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.cancel\">Cancel</Trans>\n        </Button>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 57,
+              "lineStart": 55,
+              "snippet": "<Button variant=\"destructive\" type=\"button\" onClick={onDiscard} ref={buttonRef}>\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.discard-code-and-switch\">Discard code and switch</Trans>\n        </Button>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 60,
+              "lineStart": 58,
+              "snippet": "<Button variant=\"primary\" onClick={onCopy}>\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.copy-code-and-switch\">Copy code and switch</Trans>\n        </Button>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 263,
+              "lineStart": 261,
+              "snippet": "<Button icon=\"play\" variant=\"primary\" size=\"sm\" onClick={() => onRunQuery()}>\n              <Trans i18nKey=\"grafana-sql.components.query-header.run-query\">Run query</Trans>\n            </Button>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 277,
+              "lineStart": 275,
+              "snippet": "<Button icon=\"exclamation-triangle\" variant=\"secondary\" size=\"sm\" onClick={() => onRunQuery()}>\n                <Trans i18nKey=\"grafana-sql.components.query-header.run-query\">Run query</Trans>\n              </Button>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 175,
+              "lineStart": 166,
+              "snippet": "<Button\n        type=\"button\"\n        aria-label={t('grafana-sql.components.settings.title-button-filter', '{{ buttonLabel }} filter', {\n          buttonLabel: buttonProps?.label,\n        })}\n        onClick={buttonProps?.onClick}\n        variant=\"secondary\"\n        size=\"md\"\n        icon={buttonProps?.label === buttonLabels.add ? 'plus' : 'times'}\n      />",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 105,
+              "lineStart": 96,
+              "snippet": "<Button\n                aria-label={t(\n                  'grafana-sql.components.select-custom-function-parameters.render-parameters.params.title-remove-parameter',\n                  'Remove parameter'\n                )}\n                type=\"button\"\n                icon=\"times\"\n                variant=\"secondary\"\n                size=\"md\"\n                onClick={() =>",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 126,
+              "lineStart": 124,
+              "snippet": "<Button\n        type=\"button\"\n        onClick={() =>",
+              "sourcePath": "src/components/visual-query-builder/SelectCustomFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 162,
+              "lineStart": 155,
+              "snippet": "<Button\n              aria-label={t('grafana-sql.components.select-row.title-remove-column', 'Remove column')}\n              type=\"button\"\n              icon=\"trash-alt\"\n              variant=\"secondary\"\n              size=\"md\"\n              onClick={removeColumn(index)}\n            />",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 174,
+              "lineStart": 166,
+              "snippet": "<Button\n        type=\"button\"\n        onClick={addColumn}\n        variant=\"secondary\"\n        aria-label={t('grafana-sql.components.select-row.title-add-column', 'Add column')}\n        size=\"md\"\n        icon=\"plus\"\n        className={styles.addButton}\n      />",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            }
+          ]
+        },
+        "modal": {
+          "count": 3,
+          "files": [
+            "src/components/ConfirmModal.tsx",
+            "src/components/query-editor-raw/RawEditor.tsx"
+          ],
+          "propUsage": {
+            "isOpen": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{isExpanded}"
+                },
+                {
+                  "count": 1,
+                  "value": "{isOpen}"
+                }
+              ]
+            },
+            "onDismiss": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{() => { reportInteraction('grafana_sql_editor_expand', { datasource: query.datasource?.type, expanded: false, }); setIs…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onCancel}"
+                }
+              ]
+            },
+            "title": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{<div className={styles.modalHeaderTitle}> <Icon name=\"exclamation-triangle\" size=\"lg\" /> <span className={styles.titleT…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.raw-editor.title-query-num', 'Query {{queryNum}}', { queryNum: query.refId, })}"
+                }
+              ]
+            },
+            "ariaLabel": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.confirm-modal.warning', 'Warning')}"
+                }
+              ]
+            },
+            "className": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{styles.modal}"
+                }
+              ]
+            },
+            "closeOnBackdropClick": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "false"
+                }
+              ]
+            },
+            "closeOnEscape": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "false"
+                }
+              ]
+            },
+            "contentClassName": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{styles.modalContent}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 62,
+              "lineStart": 27,
+              "snippet": "<Modal\n      title={\n        <div className={styles.modalHeaderTitle}>\n          <Icon name=\"exclamation-triangle\" size=\"lg\" />\n          <span className={styles.titleText}>\n            <Trans i18nKey=\"grafana-sql.components.confirm-modal.warning\">Warning</Trans>\n          </span>\n        </div>\n      }\n      ariaLabel={t('grafana-sql.components.confirm-modal.warning', 'Warning')}\n      onDismiss={onCancel}\n      isOpen={isOpen}\n    >\n      <p>\n        <Trans i18nKey=\"grafana-sql.components.confirm-modal.builder-mode\">\n          Builder mode does not display changes made in code. The query builder will display the last changes you made\n          in builder mode.\n        </Trans>\n      </p>\n      <p>\n        <Trans i18nKey=\"grafana-sql.components.confirm-modal.clipboard\">\n          Do you want to copy your code to the clipboard?\n        </Trans>\n      </p>\n      <Modal.ButtonRow>\n        <Button type=\"button\" variant=\"secondary\" onClick={onCancel} fill=\"outline\">\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.cancel\">Cancel</Trans>\n        </Button>\n        <Button variant=\"destructive\" type=\"button\" onClick={onDiscard} ref={buttonRef}>\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.discard-code-and-switch\">Discard code and switch</Trans>\n        </Button>\n        <Button variant=\"primary\" onClick={onCopy}>\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.copy-code-and-switch\">Copy code and switch</Trans>\n        </Button>\n      </Modal.ButtonRow>\n    </Modal>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 61,
+              "lineStart": 51,
+              "snippet": "<Modal.ButtonRow>\n        <Button type=\"button\" variant=\"secondary\" onClick={onCancel} fill=\"outline\">\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.cancel\">Cancel</Trans>\n        </Button>\n        <Button variant=\"destructive\" type=\"button\" onClick={onDiscard} ref={buttonRef}>\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.discard-code-and-switch\">Discard code and switch</Trans>\n        </Button>\n        <Button variant=\"primary\" onClick={onCopy}>\n          <Trans i18nKey=\"grafana-sql.components.confirm-modal.copy-code-and-switch\">Copy code and switch</Trans>\n        </Button>\n      </Modal.ButtonRow>",
+              "sourcePath": "src/components/ConfirmModal.tsx"
+            },
+            {
+              "lineEnd": 114,
+              "lineStart": 96,
+              "snippet": "<Modal\n          title={t('grafana-sql.components.raw-editor.title-query-num', 'Query {{queryNum}}', {\n            queryNum: query.refId,\n          })}\n          closeOnBackdropClick={false}\n          closeOnEscape={false}\n          className={styles.modal}\n          contentClassName={styles.modalContent}\n          isOpen={isExpanded}\n          onDismiss={() => {\n            reportInteraction('grafana_sql_editor_expand', {\n              datasource: query.datasource?.type,\n              expanded: false,\n            });\n            setIsExpanded(false);\n          }}\n        >\n          {renderEditor(true)}\n        </Modal>",
+              "sourcePath": "src/components/query-editor-raw/RawEditor.tsx"
+            }
+          ]
+        },
+        "select": {
+          "count": 12,
+          "files": [
+            "src/components/DatasetSelector.tsx",
+            "src/components/TableSelector.tsx",
+            "src/components/visual-query-builder/AwesomeQueryBuilder.tsx",
+            "src/components/visual-query-builder/GroupByRow.tsx",
+            "src/components/visual-query-builder/OrderByRow.tsx",
+            "src/components/visual-query-builder/SelectColumn.tsx",
+            "src/components/visual-query-builder/SelectFunctionParameters.tsx",
+            "src/components/visual-query-builder/SelectRow.tsx"
+          ],
+          "propUsage": {
+            "menuShouldPortal": {
+              "count": 12,
+              "values": [
+                {
+                  "count": 10,
+                  "value": "{true}"
+                },
+                {
+                  "count": 2,
+                  "value": "true"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 12,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{onChange}"
+                },
+                {
+                  "count": 1,
+                  "value": "{({ value }) => value && onChangeItem(setGroupByField(value))}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(s) => onParameterChange(index, true)(s?.value)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(s) => onParameterChange(s.value)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(val) => { fieldProps?.setField(val.label!); }}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(val) => { operatorProps?.setField(val.value || ''); }}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(val) => conjProps?.setConjunction(val.value!)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(val) => props.setValue(val.value)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onAggregationChange(item, index)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onAliasChange(item, index)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onOrderByChange}"
+                }
+              ]
+            },
+            "options": {
+              "count": 12,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{state.value}"
+                },
+                {
+                  "count": 1,
+                  "value": "{[{ label: '*', value: '*' }, ...columns]}"
+                },
+                {
+                  "count": 1,
+                  "value": "{aggregateOptions()}"
+                },
+                {
+                  "count": 1,
+                  "value": "{columns}"
+                },
+                {
+                  "count": 1,
+                  "value": "{conjProps?.conjunctionOptions ? Object.keys(conjProps?.conjunctionOptions).map(toOption) : undefined}"
+                },
+                {
+                  "count": 1,
+                  "value": "{fieldProps?.items.map((f) => { // @ts-ignore const icon = fields[f.key].mainWidgetProps?.customProps?.icon; return { la…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{fieldsFromFunction?.[index]}"
+                },
+                {
+                  "count": 1,
+                  "value": "{macros.map(toOption)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{operatorProps?.items.map((op) => ({ label: op.label, value: op.key }))}"
+                },
+                {
+                  "count": 1,
+                  "value": "{options}"
+                },
+                {
+                  "count": 1,
+                  "value": "{timeSeriesAliasOpts}"
+                }
+              ]
+            },
+            "value": {
+              "count": 12,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{conjProps?.selectedConjunction}"
+                },
+                {
+                  "count": 1,
+                  "value": "{dataset}"
+                },
+                {
+                  "count": 1,
+                  "value": "{fieldProps?.selectedKey}"
+                },
+                {
+                  "count": 1,
+                  "value": "{getColumnValue(macroOrFunction?.parameters![index])}"
+                },
+                {
+                  "count": 1,
+                  "value": "{item.alias ? toOption(item.alias) : null}"
+                },
+                {
+                  "count": 1,
+                  "value": "{item.name ? toOption(item.name) : null}"
+                },
+                {
+                  "count": 1,
+                  "value": "{item.property?.name ? toOption(item.property.name) : null}"
+                },
+                {
+                  "count": 1,
+                  "value": "{operatorProps?.selectedKey}"
+                },
+                {
+                  "count": 1,
+                  "value": "{props?.value}"
+                },
+                {
+                  "count": 1,
+                  "value": "{sql.orderBy?.property.name ? toOption(sql.orderBy.property.name) : null}"
+                },
+                {
+                  "count": 1,
+                  "value": "{table}"
+                },
+                {
+                  "count": 1,
+                  "value": "{value}"
+                }
+              ]
+            },
+            "aria-label": {
+              "count": 8,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.dataset-selector.aria-label-dataset-selector', 'Dataset selector')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.make-render-column.render-column.aria-label-group-by', 'Group by')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.order-by-row.aria-label-order-by', 'Order by')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.settings.aria-label-conjunction', 'Conjunction')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.settings.aria-label-field', 'Field')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.settings.aria-label-operator', 'Operator')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.table-selector.aria-label-table-selector', 'Table selector')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.widgets.aria-label-macros-value-selector', 'Macros value selector')}"
+                }
+              ]
+            },
+            "data-testid": {
+              "count": 8,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.filterConjunction}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.filterField}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.filterOperator}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.headerTableSelector}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.selectAggregation}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.selectAlias}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.selectColumn}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.selectFunctionParameter(funcParam.name)}"
+                }
+              ]
+            },
+            "inputId": {
+              "count": 6,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{inputId}"
+                },
+                {
+                  "count": 2,
+                  "value": "{selectInputId}"
+                },
+                {
+                  "count": 1,
+                  "value": "{`select-aggregation-${index}-${uniqueId()}`}"
+                },
+                {
+                  "count": 1,
+                  "value": "{`select-alias-${index}-${uniqueId()}`}"
+                }
+              ]
+            },
+            "allowCustomValue": {
+              "count": 5,
+              "values": [
+                {
+                  "count": 4,
+                  "value": "{true}"
+                },
+                {
+                  "count": 1,
+                  "value": "true"
+                }
+              ]
+            },
+            "isClearable": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 4,
+                  "value": "{true}"
+                }
+              ]
+            },
+            "id": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{conjProps?.id}"
+                },
+                {
+                  "count": 1,
+                  "value": "{fieldProps?.id}"
+                },
+                {
+                  "count": 1,
+                  "value": "{props.id}"
+                }
+              ]
+            },
+            "disabled": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{state.loading}"
+                }
+              ]
+            },
+            "isLoading": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{state.loading}"
+                }
+              ]
+            },
+            "className": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{className}"
+                }
+              ]
+            },
+            "placeholder": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{state.loading ? t('grafana-sql.components.table-selector.placeholder-loading', 'Loading tables') : t('grafana-sql.compo…}"
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "25"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 64,
+              "lineStart": 55,
+              "snippet": "<Select\n      aria-label={t('grafana-sql.components.dataset-selector.aria-label-dataset-selector', 'Dataset selector')}\n      inputId={inputId}\n      value={dataset}\n      options={state.value}\n      onChange={onChange}\n      disabled={state.loading}\n      isLoading={state.loading}\n      menuShouldPortal={true}\n    />",
+              "sourcePath": "src/components/DatasetSelector.tsx"
+            },
+            {
+              "lineEnd": 47,
+              "lineStart": 30,
+              "snippet": "<Select\n      className={className}\n      disabled={state.loading}\n      aria-label={t('grafana-sql.components.table-selector.aria-label-table-selector', 'Table selector')}\n      inputId={inputId}\n      data-testid={selectors.components.SQLQueryEditor.headerTableSelector}\n      value={table}\n      options={state.value}\n      onChange={onChange}\n      isLoading={state.loading}\n      menuShouldPortal={true}\n      placeholder={\n        state.loading\n          ? t('grafana-sql.components.table-selector.placeholder-loading', 'Loading tables')\n          : t('grafana-sql.components.table-selector.placeholder-select-table', 'Select table')\n      }\n      allowCustomValue={true}\n    />",
+              "sourcePath": "src/components/TableSelector.tsx"
+            },
+            {
+              "lineEnd": 76,
+              "lineStart": 70,
+              "snippet": "<Select\n            id={props.id}\n            aria-label={t('grafana-sql.components.widgets.aria-label-macros-value-selector', 'Macros value selector')}\n            menuShouldPortal\n            options={macros.map(toOption)}\n            value={props?.value}\n            onChange={(val) =>",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 133,
+              "lineStart": 126,
+              "snippet": "<Select\n        id={conjProps?.id}\n        aria-label={t('grafana-sql.components.settings.aria-label-conjunction', 'Conjunction')}\n        data-testid={selectors.components.SQLQueryEditor.filterConjunction}\n        menuShouldPortal\n        options={conjProps?.conjunctionOptions ? Object.keys(conjProps?.conjunctionOptions).map(toOption) : undefined}\n        value={conjProps?.selectedConjunction}\n        onChange={(val) =>",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 147,
+              "lineStart": 141,
+              "snippet": "<Select\n        id={fieldProps?.id}\n        width={25}\n        aria-label={t('grafana-sql.components.settings.aria-label-field', 'Field')}\n        data-testid={selectors.components.SQLQueryEditor.filterField}\n        menuShouldPortal\n        options={fieldProps?.items.map((f) =>",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 182,
+              "lineStart": 181,
+              "snippet": "<Select\n        options={operatorProps?.items.map((op) =>",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            },
+            {
+              "lineEnd": 53,
+              "lineStart": 48,
+              "snippet": "<Select\n          value={item.property?.name ? toOption(item.property.name) : null}\n          aria-label={t('grafana-sql.components.make-render-column.render-column.aria-label-group-by', 'Group by')}\n          options={options}\n          menuShouldPortal\n          onChange={({ value }) =>",
+              "sourcePath": "src/components/visual-query-builder/GroupByRow.tsx"
+            },
+            {
+              "lineEnd": 72,
+              "lineStart": 65,
+              "snippet": "<Select\n            aria-label={t('grafana-sql.components.order-by-row.aria-label-order-by', 'Order by')}\n            options={columns}\n            value={sql.orderBy?.property.name ? toOption(sql.orderBy.property.name) : null}\n            isClearable\n            menuShouldPortal\n            onChange={onOrderByChange}\n          />",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            },
+            {
+              "lineEnd": 27,
+              "lineStart": 20,
+              "snippet": "<Select\n        value={value}\n        data-testid={selectors.components.SQLQueryEditor.selectColumn}\n        inputId={selectInputId}\n        menuShouldPortal\n        options={[{ label: '*', value: '*' }, ...columns]}\n        allowCustomValue\n        onChange={(s) =>",
+              "sourcePath": "src/components/visual-query-builder/SelectColumn.tsx"
+            },
+            {
+              "lineEnd": 107,
+              "lineStart": 99,
+              "snippet": "<Select\n                  value={getColumnValue(macroOrFunction?.parameters![index])}\n                  options={fieldsFromFunction?.[index]}\n                  data-testid={selectors.components.SQLQueryEditor.selectFunctionParameter(funcParam.name)}\n                  inputId={selectInputId}\n                  menuShouldPortal\n                  allowCustomValue\n                  isClearable\n                  onChange={(s) =>",
+              "sourcePath": "src/components/visual-query-builder/SelectFunctionParameters.tsx"
+            },
+            {
+              "lineEnd": 132,
+              "lineStart": 123,
+              "snippet": "<Select\n                value={item.name ? toOption(item.name) : null}\n                inputId={`select-aggregation-${index}-${uniqueId()}`}\n                data-testid={selectors.components.SQLQueryEditor.selectAggregation}\n                isClearable\n                menuShouldPortal\n                allowCustomValue\n                options={aggregateOptions()}\n                onChange={onAggregationChange(item, index)}\n              />",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            },
+            {
+              "lineEnd": 153,
+              "lineStart": 144,
+              "snippet": "<Select\n                value={item.alias ? toOption(item.alias) : null}\n                inputId={`select-alias-${index}-${uniqueId()}`}\n                data-testid={selectors.components.SQLQueryEditor.selectAlias}\n                options={timeSeriesAliasOpts}\n                onChange={onAliasChange(item, index)}\n                isClearable\n                menuShouldPortal\n                allowCustomValue\n              />",
+              "sourcePath": "src/components/visual-query-builder/SelectRow.tsx"
+            }
+          ]
+        },
+        "icon-button": {
+          "count": 3,
+          "files": [
+            "src/components/query-editor-raw/QueryToolbox.tsx",
+            "src/components/visual-query-builder/Preview.tsx"
+          ],
+          "propUsage": {
+            "name": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"brackets-curly\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"copy\""
+                },
+                {
+                  "count": 1,
+                  "value": "{isExpanded ? 'angle-up' : 'angle-down'}"
+                }
+              ]
+            },
+            "onClick": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{() => { reportInteraction('grafana_sql_editor_expand', { datasource: validatorProps.query.datasource?.type, expanded: !…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{() => { reportInteraction('grafana_sql_query_formatted', { datasource: validatorProps.query.datasource?.type, }); onFor…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{() => copyPreview(rawSql)}"
+                }
+              ]
+            },
+            "tooltip": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{isExpanded ? t('grafana-sql.components.query-toolbox.tooltip-collapse', 'Collapse editor') : t('grafana-sql.components.…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.preview.label-element.tooltip-copy-to-clipboard', 'Copy to clipboard')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.query-toolbox.tooltip-format-query', 'Format query')}"
+                }
+              ]
+            },
+            "size": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"xs\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 76,
+              "lineStart": 75,
+              "snippet": "<IconButton\n                onClick={() =>",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 89,
+              "lineStart": 88,
+              "snippet": "<IconButton\n                onClick={() =>",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 35,
+              "lineStart": 33,
+              "snippet": "<IconButton\n        tooltip={t('grafana-sql.components.preview.label-element.tooltip-copy-to-clipboard', 'Copy to clipboard')}\n        onClick={() =>",
+              "sourcePath": "src/components/visual-query-builder/Preview.tsx"
+            }
+          ]
+        },
+        "use-theme2": {
+          "count": 3,
+          "files": [
+            "src/components/query-editor-raw/QueryToolbox.tsx",
+            "src/components/query-editor-raw/QueryValidator.tsx",
+            "src/components/query-editor-raw/RawEditor.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 19,
+              "lineStart": 19,
+              "snippet": "const theme = useTheme2();",
+              "sourcePath": "src/components/query-editor-raw/QueryToolbox.tsx"
+            },
+            {
+              "lineEnd": 20,
+              "lineStart": 20,
+              "snippet": "const theme = useTheme2();",
+              "sourcePath": "src/components/query-editor-raw/QueryValidator.tsx"
+            },
+            {
+              "lineEnd": 24,
+              "lineStart": 24,
+              "snippet": "const theme = useTheme2();",
+              "sourcePath": "src/components/query-editor-raw/RawEditor.tsx"
+            }
+          ]
+        },
+        "spinner": {
+          "count": 1,
+          "files": [
+            "src/components/query-editor-raw/QueryValidator.tsx"
+          ],
+          "propUsage": {
+            "inline": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "true"
+                }
+              ]
+            },
+            "size": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"xs\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 82,
+              "lineStart": 82,
+              "snippet": "<Spinner inline={true} size=\"xs\" />",
+              "sourcePath": "src/components/query-editor-raw/QueryValidator.tsx"
+            }
+          ]
+        },
+        "space": {
+          "count": 3,
+          "files": [
+            "src/components/QueryEditor.tsx",
+            "src/components/QueryHeader.tsx",
+            "src/components/visual-query-builder/OrderByRow.tsx"
+          ],
+          "propUsage": {
+            "v": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "0.5"
+                }
+              ]
+            },
+            "h": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "1.5"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 109,
+              "lineStart": 109,
+              "snippet": "<Space v={0.5} />",
+              "sourcePath": "src/components/QueryEditor.tsx"
+            },
+            {
+              "lineEnd": 328,
+              "lineStart": 328,
+              "snippet": "<Space v={0.5} />",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 74,
+              "lineStart": 74,
+              "snippet": "<Space h={1.5} />",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            }
+          ]
+        },
+        "loading-placeholder": {
+          "count": 1,
+          "files": [
+            "src/components/QueryEditorLazy.tsx"
+          ],
+          "propUsage": {
+            "className": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{styles.container}"
+                }
+              ]
+            },
+            "text": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.sql-query-editor-lazy.text-loading-editor', 'Loading editor')}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 20,
+              "lineStart": 17,
+              "snippet": "<LoadingPlaceholder\n          text={t('grafana-sql.components.sql-query-editor-lazy.text-loading-editor', 'Loading editor')}\n          className={styles.container}\n        />",
+              "sourcePath": "src/components/QueryEditorLazy.tsx"
+            }
+          ]
+        },
+        "inline-switch": {
+          "count": 4,
+          "files": [
+            "src/components/QueryHeader.tsx"
+          ],
+          "propUsage": {
+            "data-testid": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.headerFilterSwitch}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.headerGroupSwitch}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.headerOrderSwitch}"
+                },
+                {
+                  "count": 1,
+                  "value": "{selectors.components.SQLQueryEditor.headerPreviewSwitch}"
+                }
+              ]
+            },
+            "id": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{`sql-filter-${htmlId}`}"
+                },
+                {
+                  "count": 1,
+                  "value": "{`sql-group-${htmlId}`}"
+                },
+                {
+                  "count": 1,
+                  "value": "{`sql-order-${htmlId}`}"
+                },
+                {
+                  "count": 1,
+                  "value": "{`sql-preview-${htmlId}`}"
+                }
+              ]
+            },
+            "label": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.query-header.label-filter', 'Filter')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.query-header.label-group', 'Group')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.query-header.label-order', 'Order')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('grafana-sql.components.query-header.label-preview', 'Preview')}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(ev) => { if (!(ev.target instanceof HTMLInputElement)) { return; } reportInteraction('grafana_sql_filter_toggled', { d…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(ev) => { if (!(ev.target instanceof HTMLInputElement)) { return; } reportInteraction('grafana_sql_group_toggled', { da…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(ev) => { if (!(ev.target instanceof HTMLInputElement)) { return; } reportInteraction('grafana_sql_order_toggled', { da…}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(ev) => { if (!(ev.target instanceof HTMLInputElement)) { return; } reportInteraction('grafana_sql_preview_toggled', { …}"
+                }
+              ]
+            },
+            "showLabel": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 4,
+                  "value": "true"
+                }
+              ]
+            },
+            "transparent": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 4,
+                  "value": "true"
+                }
+              ]
+            },
+            "value": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{queryRowFilter.filter}"
+                },
+                {
+                  "count": 1,
+                  "value": "{queryRowFilter.group}"
+                },
+                {
+                  "count": 1,
+                  "value": "{queryRowFilter.order}"
+                },
+                {
+                  "count": 1,
+                  "value": "{queryRowFilter.preview}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 178,
+              "lineStart": 171,
+              "snippet": "<InlineSwitch\n              id={`sql-filter-${htmlId}`}\n              label={t('grafana-sql.components.query-header.label-filter', 'Filter')}\n              data-testid={selectors.components.SQLQueryEditor.headerFilterSwitch}\n              transparent={true}\n              showLabel={true}\n              value={queryRowFilter.filter}\n              onChange={(ev) =>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 199,
+              "lineStart": 192,
+              "snippet": "<InlineSwitch\n              id={`sql-group-${htmlId}`}\n              label={t('grafana-sql.components.query-header.label-group', 'Group')}\n              data-testid={selectors.components.SQLQueryEditor.headerGroupSwitch}\n              transparent={true}\n              showLabel={true}\n              value={queryRowFilter.group}\n              onChange={(ev) =>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 220,
+              "lineStart": 213,
+              "snippet": "<InlineSwitch\n              id={`sql-order-${htmlId}`}\n              label={t('grafana-sql.components.query-header.label-order', 'Order')}\n              data-testid={selectors.components.SQLQueryEditor.headerOrderSwitch}\n              transparent={true}\n              showLabel={true}\n              value={queryRowFilter.order}\n              onChange={(ev) =>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 241,
+              "lineStart": 234,
+              "snippet": "<InlineSwitch\n              id={`sql-preview-${htmlId}`}\n              label={t('grafana-sql.components.query-header.label-preview', 'Preview')}\n              data-testid={selectors.components.SQLQueryEditor.headerPreviewSwitch}\n              transparent={true}\n              showLabel={true}\n              value={queryRowFilter.preview}\n              onChange={(ev) =>",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            }
+          ]
+        },
+        "radio-button-group": {
+          "count": 2,
+          "files": [
+            "src/components/QueryHeader.tsx",
+            "src/components/visual-query-builder/OrderByRow.tsx"
+          ],
+          "propUsage": {
+            "onChange": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{onEditorModeChange}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onSortOrderChange}"
+                }
+              ]
+            },
+            "options": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{editorModes}"
+                },
+                {
+                  "count": 1,
+                  "value": "{sortOrderOptions}"
+                }
+              ]
+            },
+            "value": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{editorMode}"
+                },
+                {
+                  "count": 1,
+                  "value": "{sql.orderByDirection}"
+                }
+              ]
+            },
+            "disabled": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{!sql?.orderBy?.property.name}"
+                }
+              ]
+            },
+            "size": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"sm\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 281,
+              "lineStart": 281,
+              "snippet": "<RadioButtonGroup options={editorModes} size=\"sm\" value={editorMode} onChange={onEditorModeChange} />",
+              "sourcePath": "src/components/QueryHeader.tsx"
+            },
+            {
+              "lineEnd": 81,
+              "lineStart": 76,
+              "snippet": "<RadioButtonGroup\n            options={sortOrderOptions}\n            disabled={!sql?.orderBy?.property.name}\n            value={sql.orderByDirection}\n            onChange={onSortOrderChange}\n          />",
+              "sourcePath": "src/components/visual-query-builder/OrderByRow.tsx"
+            }
+          ]
+        },
+        "date-time-picker": {
+          "count": 1,
+          "files": [
+            "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+          ],
+          "propUsage": {
+            "date": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{dateValue}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(e) => { props?.setValue(e?.format(BasicConfig.widgets.datetime.valueFormat)); }}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 83,
+              "lineStart": 82,
+              "snippet": "<DateTimePicker\n          onChange={(e) =>",
+              "sourcePath": "src/components/visual-query-builder/AwesomeQueryBuilder.tsx"
+            }
+          ]
+        },
+        "code-editor": {
+          "count": 1,
+          "files": [
+            "src/components/visual-query-builder/Preview.tsx"
+          ],
+          "propUsage": {
+            "height": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "80"
+                }
+              ]
+            },
+            "language": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"sql\""
+                }
+              ]
+            },
+            "monacoOptions": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{{ scrollbar: { vertical: 'hidden' }, scrollBeyondLastLine: false }}"
+                }
+              ]
+            },
+            "readOnly": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "true"
+                }
+              ]
+            },
+            "showMiniMap": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "false"
+                }
+              ]
+            },
+            "value": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{formatSQL(rawSql)}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 50,
+              "lineStart": 43,
+              "snippet": "<CodeEditor\n        language=\"sql\"\n        height={80}\n        value={formatSQL(rawSql)}\n        monacoOptions={{ scrollbar: { vertical: 'hidden' }, scrollBeyondLastLine: false }}\n        readOnly={true}\n        showMiniMap={false}\n      />",
+              "sourcePath": "src/components/visual-query-builder/Preview.tsx"
+            }
+          ]
+        },
+        "combobox": {
+          "count": 2,
+          "files": [
+            "src/SQLVariableEditor.tsx"
+          ],
+          "propUsage": {
+            "isClearable": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{true}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(e) => onMetaPropChange('textField', e?.value)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{(e) => onMetaPropChange('valueField', e?.value)}"
+                }
+              ]
+            },
+            "options": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{choices}"
+                }
+              ]
+            },
+            "value": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{query.meta?.textField}"
+                },
+                {
+                  "count": 1,
+                  "value": "{query.meta?.valueField}"
+                }
+              ]
+            },
+            "width": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "40"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 77,
+              "lineStart": 74,
+              "snippet": "<Combobox\n            isClearable\n            value={query.meta?.valueField}\n            onChange={(e) =>",
+              "sourcePath": "src/SQLVariableEditor.tsx"
+            },
+            {
+              "lineEnd": 86,
+              "lineStart": 83,
+              "snippet": "<Combobox\n            isClearable\n            value={query.meta?.textField}\n            onChange={(e) =>",
+              "sourcePath": "src/SQLVariableEditor.tsx"
+            }
+          ]
+        },
+        "combobox-option": {
+          "count": 1,
+          "files": [
+            "src/SQLVariableEditor.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 32,
+              "lineStart": 32,
+              "snippet": "<ComboboxOption[]>",
+              "sourcePath": "src/SQLVariableEditor.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/ui/internal": {
+      "records": {}
+    }
+  }
+}

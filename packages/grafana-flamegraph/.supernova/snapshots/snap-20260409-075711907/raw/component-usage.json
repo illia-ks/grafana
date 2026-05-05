@@ -1,0 +1,1742 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/ui",
+      "@grafana/ui/internal"
+    ]
+  },
+  "records": {
+    "dropdown": {
+      "count": 4,
+      "files": [
+        "src/CallTree/ActionsCell.tsx",
+        "src/ColorSchemeButton.tsx",
+        "src/FlameGraphHeader.tsx"
+      ],
+      "propUsage": {
+        "overlay": {
+          "count": 4,
+          "values": [
+            {
+              "count": 2,
+              "value": "{menu}"
+            },
+            {
+              "count": 1,
+              "value": "{<Menu> {paneViewOptions.map((option) => ( <Menu.Item key={option.value} label={option.label ?? ''} active={props.leftPa…}"
+            },
+            {
+              "count": 1,
+              "value": "{<Menu> {paneViewOptions.map((option) => ( <Menu.Item key={option.value} label={option.label ?? ''} active={props.rightP…}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 116,
+          "lineStart": 114,
+          "snippet": "<Dropdown overlay={menu}>\n        <IconButton name=\"ellipsis-v\" aria-label=\"Actions\" size=\"sm\" onClick={(e) => e.stopPropagation()} />\n      </Dropdown>",
+          "sourcePath": "src/CallTree/ActionsCell.tsx"
+        },
+        {
+          "lineEnd": 65,
+          "lineStart": 53,
+          "snippet": "<Dropdown overlay={menu}>\n      <Button\n        variant={'secondary'}\n        fill={'outline'}\n        size={'sm'}\n        tooltip={'Change color scheme'}\n        onClick={() => {}}\n        className={styles.buttonSpacing}\n        aria-label={'Change color scheme'}\n      >\n        {contents}\n      </Button>\n    </Dropdown>",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 143,
+          "lineStart": 126,
+          "snippet": "<Dropdown\n                  overlay={\n                    <Menu>\n                      {paneViewOptions.map((option) => (\n                        <Menu.Item\n                          key={option.value}\n                          label={option.label ?? ''}\n                          active={props.leftPaneView === option.value}\n                          onClick={() => option.value && props.setLeftPaneView(option.value)}\n                        />\n                      ))}\n                    </Menu>\n                  }\n                >\n                  <Button variant=\"secondary\" size=\"sm\" className={styles.paneDropdownButton}>\n                    {paneViewOptions.find((o) => o.value === props.leftPaneView)?.label}\n                  </Button>\n                </Dropdown>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 162,
+          "lineStart": 145,
+          "snippet": "<Dropdown\n                  overlay={\n                    <Menu>\n                      {paneViewOptions.map((option) => (\n                        <Menu.Item\n                          key={option.value}\n                          label={option.label ?? ''}\n                          active={props.rightPaneView === option.value}\n                          onClick={() => option.value && props.setRightPaneView(option.value)}\n                        />\n                      ))}\n                    </Menu>\n                  }\n                >\n                  <Button variant=\"secondary\" size=\"sm\" className={styles.paneDropdownButton}>\n                    {paneViewOptions.find((o) => o.value === props.rightPaneView)?.label}\n                  </Button>\n                </Dropdown>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        }
+      ]
+    },
+    "icon-button": {
+      "count": 9,
+      "files": [
+        "src/CallTree/ActionsCell.tsx",
+        "src/CallTree/FlameGraphCallTreeContainer.tsx",
+        "src/FlameGraph/FlameGraphMetadata.tsx",
+        "src/FlameGraphHeader.tsx",
+        "src/TopTable/FlameGraphTopTableContainer.tsx"
+      ],
+      "propUsage": {
+        "name": {
+          "count": 9,
+          "values": [
+            {
+              "count": 2,
+              "value": "'times'"
+            },
+            {
+              "count": 2,
+              "value": "\"exchange-alt\""
+            },
+            {
+              "count": 2,
+              "value": "\"times\""
+            },
+            {
+              "count": 1,
+              "value": "'gf-show-context'"
+            },
+            {
+              "count": 1,
+              "value": "'search'"
+            },
+            {
+              "count": 1,
+              "value": "\"ellipsis-v\""
+            }
+          ]
+        },
+        "onClick": {
+          "count": 9,
+          "values": [
+            {
+              "count": 2,
+              "value": "{props.onSwapPanes}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { props.onSandwich(isSandwiched ? undefined : symbol); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { props.onSearch(isSearched ? '' : symbol); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => handleSetCallersMode(undefined)}"
+            },
+            {
+              "count": 1,
+              "value": "{() => handleSetFocusMode(undefined)}"
+            },
+            {
+              "count": 1,
+              "value": "{(e) => e.stopPropagation()}"
+            },
+            {
+              "count": 1,
+              "value": "{onFocusPillClick}"
+            },
+            {
+              "count": 1,
+              "value": "{onSandwichPillClick}"
+            }
+          ]
+        },
+        "tooltip": {
+          "count": 8,
+          "values": [
+            {
+              "count": 2,
+              "value": "\"Swap views\""
+            },
+            {
+              "count": 1,
+              "value": "'Remove focus'"
+            },
+            {
+              "count": 1,
+              "value": "'Remove sandwich view'"
+            },
+            {
+              "count": 1,
+              "value": "\"Clear callees view\""
+            },
+            {
+              "count": 1,
+              "value": "\"Clear callers view\""
+            },
+            {
+              "count": 1,
+              "value": "{isSandwiched ? 'Remove from sandwich view' : 'Show in sandwich view'}"
+            },
+            {
+              "count": 1,
+              "value": "{isSearched ? 'Clear from search' : 'Search for symbol'}"
+            }
+          ]
+        },
+        "aria-label": {
+          "count": 7,
+          "values": [
+            {
+              "count": 1,
+              "value": "'Remove focus'"
+            },
+            {
+              "count": 1,
+              "value": "'Remove sandwich view'"
+            },
+            {
+              "count": 1,
+              "value": "\"Actions\""
+            },
+            {
+              "count": 1,
+              "value": "\"Clear callees view\""
+            },
+            {
+              "count": 1,
+              "value": "\"Clear callers view\""
+            },
+            {
+              "count": 1,
+              "value": "{isSandwiched ? 'Remove from sandwich view' : 'Show in sandwich view'}"
+            },
+            {
+              "count": 1,
+              "value": "{isSearched ? 'Clear from search' : 'Search for symbol'}"
+            }
+          ]
+        },
+        "size": {
+          "count": 7,
+          "values": [
+            {
+              "count": 5,
+              "value": "\"sm\""
+            },
+            {
+              "count": 2,
+              "value": "'sm'"
+            }
+          ]
+        },
+        "className": {
+          "count": 6,
+          "values": [
+            {
+              "count": 2,
+              "value": "{styles.actionCellButton}"
+            },
+            {
+              "count": 2,
+              "value": "{styles.modePillCloseButton}"
+            },
+            {
+              "count": 2,
+              "value": "{styles.pillCloseButton}"
+            }
+          ]
+        },
+        "variant": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "{isSandwiched ? 'primary' : 'secondary'}"
+            },
+            {
+              "count": 1,
+              "value": "{isSearched ? 'primary' : 'secondary'}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 115,
+          "lineStart": 115,
+          "snippet": "<IconButton name=\"ellipsis-v\" aria-label=\"Actions\" size=\"sm\" onClick={(e) =>",
+          "sourcePath": "src/CallTree/ActionsCell.tsx"
+        },
+        {
+          "lineEnd": 666,
+          "lineStart": 662,
+          "snippet": "<IconButton\n                    className={styles.modePillCloseButton}\n                    name=\"times\"\n                    size=\"sm\"\n                    onClick={() =>",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 685,
+          "lineStart": 681,
+          "snippet": "<IconButton\n                    className={styles.modePillCloseButton}\n                    name=\"times\"\n                    size=\"sm\"\n                    onClick={() =>",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 60,
+          "lineStart": 53,
+          "snippet": "<IconButton\n                className={styles.pillCloseButton}\n                name={'times'}\n                size={'sm'}\n                onClick={onSandwichPillClick}\n                tooltip={'Remove sandwich view'}\n                aria-label={'Remove sandwich view'}\n              />",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        },
+        {
+          "lineEnd": 85,
+          "lineStart": 78,
+          "snippet": "<IconButton\n                className={styles.pillCloseButton}\n                name={'times'}\n                size={'sm'}\n                onClick={onFocusPillClick}\n                tooltip={'Remove focus'}\n                aria-label={'Remove focus'}\n              />",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        },
+        {
+          "lineEnd": 115,
+          "lineStart": 115,
+          "snippet": "<IconButton name=\"exchange-alt\" size=\"sm\" tooltip=\"Swap views\" onClick={props.onSwapPanes} />",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 144,
+          "lineStart": 144,
+          "snippet": "<IconButton name=\"exchange-alt\" size=\"sm\" tooltip=\"Swap views\" onClick={props.onSwapPanes} />",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 348,
+          "lineStart": 342,
+          "snippet": "<IconButton\n        className={styles.actionCellButton}\n        name={'search'}\n        variant={isSearched ? 'primary' : 'secondary'}\n        tooltip={isSearched ? 'Clear from search' : 'Search for symbol'}\n        aria-label={isSearched ? 'Clear from search' : 'Search for symbol'}\n        onClick={() =>",
+          "sourcePath": "src/TopTable/FlameGraphTopTableContainer.tsx"
+        },
+        {
+          "lineEnd": 358,
+          "lineStart": 352,
+          "snippet": "<IconButton\n        className={styles.actionCellButton}\n        name={'gf-show-context'}\n        tooltip={isSandwiched ? 'Remove from sandwich view' : 'Show in sandwich view'}\n        variant={isSandwiched ? 'primary' : 'secondary'}\n        aria-label={isSandwiched ? 'Remove from sandwich view' : 'Show in sandwich view'}\n        onClick={() =>",
+          "sourcePath": "src/TopTable/FlameGraphTopTableContainer.tsx"
+        }
+      ]
+    },
+    "menu": {
+      "count": 15,
+      "files": [
+        "src/CallTree/ActionsCell.tsx",
+        "src/ColorSchemeButton.tsx",
+        "src/FlameGraphHeader.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 88,
+          "lineStart": 88,
+          "snippet": "<Menu>",
+          "sourcePath": "src/CallTree/ActionsCell.tsx"
+        },
+        {
+          "lineEnd": 93,
+          "lineStart": 90,
+          "snippet": "<Menu.Item\n          label=\"Focus on callees\"\n          icon=\"compress-arrows\"\n          onClick={() =>",
+          "sourcePath": "src/CallTree/ActionsCell.tsx"
+        },
+        {
+          "lineEnd": 103,
+          "lineStart": 103,
+          "snippet": "<Menu.Item label=\"Show callers\" icon=\"expand-arrows-alt\" onClick={() =>",
+          "sourcePath": "src/CallTree/ActionsCell.tsx"
+        },
+        {
+          "lineEnd": 109,
+          "lineStart": 105,
+          "snippet": "<Menu.Item label=\"Search\" icon=\"search\" onClick={() => onSearch!(label)} />}\n      {extraButtons.map(({ label: btnLabel, icon, onClick }) => (\n        <Menu.Item key={btnLabel} label={btnLabel} icon={icon} onClick={onClick} />\n      ))}\n    </Menu>",
+          "sourcePath": "src/CallTree/ActionsCell.tsx"
+        },
+        {
+          "lineEnd": 107,
+          "lineStart": 107,
+          "snippet": "<Menu.Item key={btnLabel} label={btnLabel} icon={icon} onClick={onClick} />",
+          "sourcePath": "src/CallTree/ActionsCell.tsx"
+        },
+        {
+          "lineEnd": 18,
+          "lineStart": 18,
+          "snippet": "<Menu>",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 19,
+          "lineStart": 19,
+          "snippet": "<Menu.Item label=\"By package name\" onClick={() =>",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 21,
+          "lineStart": 20,
+          "snippet": "<Menu.Item label=\"By value\" onClick={() => props.onChange(ColorScheme.ValueBased)} />\n    </Menu>",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 37,
+          "lineStart": 37,
+          "snippet": "<Menu>",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 38,
+          "lineStart": 38,
+          "snippet": "<Menu.Item label=\"Default (green to red)\" onClick={() =>",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 40,
+          "lineStart": 39,
+          "snippet": "<Menu.Item label=\"Color blind (blue to red)\" onClick={() => props.onChange(ColorSchemeDiff.DiffColorBlind)} />\n      </Menu>",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 128,
+          "lineStart": 128,
+          "snippet": "<Menu>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 137,
+          "lineStart": 130,
+          "snippet": "<Menu.Item\n                          key={option.value}\n                          label={option.label ?? ''}\n                          active={props.leftPaneView === option.value}\n                          onClick={() => option.value && props.setLeftPaneView(option.value)}\n                        />\n                      ))}\n                    </Menu>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 147,
+          "lineStart": 147,
+          "snippet": "<Menu>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 156,
+          "lineStart": 149,
+          "snippet": "<Menu.Item\n                          key={option.value}\n                          label={option.label ?? ''}\n                          active={props.rightPaneView === option.value}\n                          onClick={() => option.value && props.setRightPaneView(option.value)}\n                        />\n                      ))}\n                    </Menu>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        }
+      ]
+    },
+    "icon": {
+      "count": 9,
+      "files": [
+        "src/CallTree/CallTreeTable.tsx",
+        "src/CallTree/FlameGraphCallTreeContainer.tsx",
+        "src/FlameGraph/FlameGraph.tsx",
+        "src/FlameGraph/FlameGraphMetadata.tsx"
+      ],
+      "propUsage": {
+        "name": {
+          "count": 9,
+          "values": [
+            {
+              "count": 2,
+              "value": "'angle-right'"
+            },
+            {
+              "count": 1,
+              "value": "'arrow-down'"
+            },
+            {
+              "count": 1,
+              "value": "'arrow-up'"
+            },
+            {
+              "count": 1,
+              "value": "'gf-show-context'"
+            },
+            {
+              "count": 1,
+              "value": "\"compress-arrows\""
+            },
+            {
+              "count": 1,
+              "value": "\"expand-arrows-alt\""
+            },
+            {
+              "count": 1,
+              "value": "{column.isSortedDesc ? 'arrow-down' : 'arrow-up'}"
+            },
+            {
+              "count": 1,
+              "value": "{iconName}"
+            }
+          ]
+        },
+        "size": {
+          "count": 7,
+          "values": [
+            {
+              "count": 4,
+              "value": "'sm'"
+            },
+            {
+              "count": 2,
+              "value": "\"sm\""
+            },
+            {
+              "count": 1,
+              "value": "\"lg\""
+            }
+          ]
+        },
+        "className": {
+          "count": 3,
+          "values": [
+            {
+              "count": 2,
+              "value": "{canvasStyles.sandwichMarkerIcon}"
+            },
+            {
+              "count": 1,
+              "value": "{styles.sortIcon}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 102,
+          "lineStart": 98,
+          "snippet": "<Icon\n                          name={column.isSortedDesc ? 'arrow-down' : 'arrow-up'}\n                          size=\"lg\"\n                          className={styles.sortIcon}\n                        />",
+          "sourcePath": "src/CallTree/CallTreeTable.tsx"
+        },
+        {
+          "lineEnd": 658,
+          "lineStart": 658,
+          "snippet": "<Icon size=\"sm\" name=\"compress-arrows\" />",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 677,
+          "lineStart": 677,
+          "snippet": "<Icon size=\"sm\" name=\"expand-arrows-alt\" />",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 179,
+          "lineStart": 179,
+          "snippet": "<Icon className={canvasStyles.sandwichMarkerIcon} name={'arrow-down'} />",
+          "sourcePath": "src/FlameGraph/FlameGraph.tsx"
+        },
+        {
+          "lineEnd": 193,
+          "lineStart": 193,
+          "snippet": "<Icon className={canvasStyles.sandwichMarkerIcon} name={'arrow-up'} />",
+          "sourcePath": "src/FlameGraph/FlameGraph.tsx"
+        },
+        {
+          "lineEnd": 47,
+          "lineStart": 47,
+          "snippet": "<Icon size={'sm'} name={'angle-right'} />",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        },
+        {
+          "lineEnd": 49,
+          "lineStart": 49,
+          "snippet": "<Icon size={'sm'} name={'gf-show-context'} />",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        },
+        {
+          "lineEnd": 74,
+          "lineStart": 74,
+          "snippet": "<Icon size={'sm'} name={'angle-right'} />",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        },
+        {
+          "lineEnd": 76,
+          "lineStart": 76,
+          "snippet": "<Icon size={'sm'} name={iconName} />",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        }
+      ]
+    },
+    "use-styles2": {
+      "count": 10,
+      "files": [
+        "src/CallTree/CallTreeTable.tsx",
+        "src/CallTree/ColorBarCell.tsx",
+        "src/CallTree/FlameGraphCallTreeContainer.tsx",
+        "src/CallTree/FunctionCellWithExpander.tsx",
+        "src/ColorSchemeButton.tsx",
+        "src/FlameGraph/FlameGraph.tsx",
+        "src/FlameGraph/FlameGraphMetadata.tsx",
+        "src/FlameGraph/FlameGraphTooltip.tsx",
+        "src/FlameGraphHeader.tsx",
+        "src/TopTable/FlameGraphTopTableContainer.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 54,
+          "lineStart": 54,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/CallTree/CallTreeTable.tsx"
+        },
+        {
+          "lineEnd": 24,
+          "lineStart": 24,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/CallTree/ColorBarCell.tsx"
+        },
+        {
+          "lineEnd": 65,
+          "lineStart": 65,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 30,
+          "lineStart": 30,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/CallTree/FunctionCellWithExpander.tsx"
+        },
+        {
+          "lineEnd": 16,
+          "lineStart": 16,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 107,
+          "lineStart": 107,
+          "snippet": "const newStyles = useStyles2(getStylesNew);",
+          "sourcePath": "src/FlameGraph/FlameGraph.tsx"
+        },
+        {
+          "lineEnd": 22,
+          "lineStart": 22,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        },
+        {
+          "lineEnd": 17,
+          "lineStart": 17,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/FlameGraph/FlameGraphTooltip.tsx"
+        },
+        {
+          "lineEnd": 69,
+          "lineStart": 69,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 59,
+          "lineStart": 59,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/TopTable/FlameGraphTopTableContainer.tsx"
+        }
+      ]
+    },
+    "button": {
+      "count": 13,
+      "files": [
+        "src/CallTree/FlameGraphCallTreeContainer.tsx",
+        "src/CallTree/FunctionCellWithExpander.tsx",
+        "src/ColorSchemeButton.tsx",
+        "src/FlameGraph/FlameGraph.tsx",
+        "src/FlameGraphHeader.tsx"
+      ],
+      "propUsage": {
+        "size": {
+          "count": 13,
+          "values": [
+            {
+              "count": 7,
+              "value": "'sm'"
+            },
+            {
+              "count": 6,
+              "value": "\"sm\""
+            }
+          ]
+        },
+        "fill": {
+          "count": 11,
+          "values": [
+            {
+              "count": 7,
+              "value": "'outline'"
+            },
+            {
+              "count": 4,
+              "value": "\"text\""
+            }
+          ]
+        },
+        "onClick": {
+          "count": 11,
+          "values": [
+            {
+              "count": 2,
+              "value": "{() => { setCollapsedMap(collapsedMap.setAllCollapsedStatus(false)); }}"
+            },
+            {
+              "count": 2,
+              "value": "{() => { setCollapsedMap(collapsedMap.setAllCollapsedStatus(true)); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { // We could set only one and wait them to sync but there is no need to debounce this. props.setSearch(''); setL…}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { onReset(); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { props.onReset(); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => {}}"
+            },
+            {
+              "count": 1,
+              "value": "{handleClick}"
+            },
+            {
+              "count": 1,
+              "value": "{navigateToNextMatch}"
+            },
+            {
+              "count": 1,
+              "value": "{navigateToPrevMatch}"
+            }
+          ]
+        },
+        "aria-label": {
+          "count": 9,
+          "values": [
+            {
+              "count": 2,
+              "value": "'Collapse all groups'"
+            },
+            {
+              "count": 2,
+              "value": "'Expand all groups'"
+            },
+            {
+              "count": 2,
+              "value": "'Reset focus and sandwich state'"
+            },
+            {
+              "count": 1,
+              "value": "'Change color scheme'"
+            },
+            {
+              "count": 1,
+              "value": "\"Next match\""
+            },
+            {
+              "count": 1,
+              "value": "\"Previous match\""
+            }
+          ]
+        },
+        "icon": {
+          "count": 9,
+          "values": [
+            {
+              "count": 2,
+              "value": "'angle-double-down'"
+            },
+            {
+              "count": 2,
+              "value": "'angle-double-up'"
+            },
+            {
+              "count": 2,
+              "value": "'history-alt'"
+            },
+            {
+              "count": 1,
+              "value": "\"angle-down\""
+            },
+            {
+              "count": 1,
+              "value": "\"angle-up\""
+            },
+            {
+              "count": 1,
+              "value": "\"times\""
+            }
+          ]
+        },
+        "tooltip": {
+          "count": 9,
+          "values": [
+            {
+              "count": 2,
+              "value": "'Collapse all groups'"
+            },
+            {
+              "count": 2,
+              "value": "'Expand all groups'"
+            },
+            {
+              "count": 2,
+              "value": "'Reset focus and sandwich state'"
+            },
+            {
+              "count": 1,
+              "value": "'Change color scheme'"
+            },
+            {
+              "count": 1,
+              "value": "\"Next match\""
+            },
+            {
+              "count": 1,
+              "value": "\"Previous match\""
+            }
+          ]
+        },
+        "variant": {
+          "count": 9,
+          "values": [
+            {
+              "count": 7,
+              "value": "'secondary'"
+            },
+            {
+              "count": 2,
+              "value": "\"secondary\""
+            }
+          ]
+        },
+        "className": {
+          "count": 6,
+          "values": [
+            {
+              "count": 3,
+              "value": "{styles.buttonSpacing}"
+            },
+            {
+              "count": 2,
+              "value": "{styles.paneDropdownButton}"
+            },
+            {
+              "count": 1,
+              "value": "{styles.functionButton}"
+            }
+          ]
+        },
+        "disabled": {
+          "count": 2,
+          "values": [
+            {
+              "count": 2,
+              "value": "{selectedView === SelectedView.TopTable}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 637,
+          "lineStart": 630,
+          "snippet": "<Button\n                      icon=\"angle-up\"\n                      fill=\"text\"\n                      size=\"sm\"\n                      onClick={navigateToPrevMatch}\n                      tooltip=\"Previous match\"\n                      aria-label=\"Previous match\"\n                    />",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 645,
+          "lineStart": 638,
+          "snippet": "<Button\n                      icon=\"angle-down\"\n                      fill=\"text\"\n                      size=\"sm\"\n                      onClick={navigateToNextMatch}\n                      tooltip=\"Next match\"\n                      aria-label=\"Next match\"\n                    />",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 136,
+          "lineStart": 134,
+          "snippet": "<Button fill=\"text\" size=\"sm\" onClick={handleClick} className={styles.functionButton}>\n          {value}\n        </Button>",
+          "sourcePath": "src/CallTree/FunctionCellWithExpander.tsx"
+        },
+        {
+          "lineEnd": 64,
+          "lineStart": 54,
+          "snippet": "<Button\n        variant={'secondary'}\n        fill={'outline'}\n        size={'sm'}\n        tooltip={'Change color scheme'}\n        onClick={() => {}}\n        className={styles.buttonSpacing}\n        aria-label={'Change color scheme'}\n      >\n        {contents}\n      </Button>",
+          "sourcePath": "src/ColorSchemeButton.tsx"
+        },
+        {
+          "lineEnd": 234,
+          "lineStart": 229,
+          "snippet": "<Button\n                variant={'secondary'}\n                fill={'outline'}\n                size={'sm'}\n                tooltip={'Expand all groups'}\n                onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraph.tsx"
+        },
+        {
+          "lineEnd": 245,
+          "lineStart": 240,
+          "snippet": "<Button\n                variant={'secondary'}\n                fill={'outline'}\n                size={'sm'}\n                tooltip={'Collapse all groups'}\n                onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraph.tsx"
+        },
+        {
+          "lineEnd": 85,
+          "lineStart": 74,
+          "snippet": "<Button\n        icon=\"times\"\n        fill=\"text\"\n        size=\"sm\"\n        onClick={() => {\n          // We could set only one and wait them to sync but there is no need to debounce this.\n          props.setSearch('');\n          setLocalSearch('');\n        }}\n      >\n        Clear\n      </Button>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 142,
+          "lineStart": 140,
+          "snippet": "<Button variant=\"secondary\" size=\"sm\" className={styles.paneDropdownButton}>\n                    {paneViewOptions.find((o) => o.value === props.leftPaneView)?.label}\n                  </Button>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 161,
+          "lineStart": 159,
+          "snippet": "<Button variant=\"secondary\" size=\"sm\" className={styles.paneDropdownButton}>\n                    {paneViewOptions.find((o) => o.value === props.rightPaneView)?.label}\n                  </Button>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 185,
+          "lineStart": 179,
+          "snippet": "<Button\n              variant={'secondary'}\n              fill={'outline'}\n              size={'sm'}\n              icon={'history-alt'}\n              tooltip={'Reset focus and sandwich state'}\n              onClick={() =>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 266,
+          "lineStart": 260,
+          "snippet": "<Button\n            variant={'secondary'}\n            fill={'outline'}\n            size={'sm'}\n            icon={'history-alt'}\n            tooltip={'Reset focus and sandwich state'}\n            onClick={() =>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 280,
+          "lineStart": 275,
+          "snippet": "<Button\n            variant={'secondary'}\n            fill={'outline'}\n            size={'sm'}\n            tooltip={'Expand all groups'}\n            onClick={() =>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 292,
+          "lineStart": 287,
+          "snippet": "<Button\n            variant={'secondary'}\n            fill={'outline'}\n            size={'sm'}\n            tooltip={'Collapse all groups'}\n            onClick={() =>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        }
+      ]
+    },
+    "tooltip": {
+      "count": 4,
+      "files": [
+        "src/CallTree/FlameGraphCallTreeContainer.tsx",
+        "src/FlameGraph/FlameGraphMetadata.tsx"
+      ],
+      "propUsage": {
+        "content": {
+          "count": 4,
+          "values": [
+            {
+              "count": 1,
+              "value": "{callersNodeLabel || ''}"
+            },
+            {
+              "count": 1,
+              "value": "{focusedItem.label}"
+            },
+            {
+              "count": 1,
+              "value": "{focusedNode.label}"
+            },
+            {
+              "count": 1,
+              "value": "{sandwichedLabel}"
+            }
+          ]
+        },
+        "placement": {
+          "count": 4,
+          "values": [
+            {
+              "count": 4,
+              "value": "\"top\""
+            }
+          ]
+        },
+        "key": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "'focus'"
+            },
+            {
+              "count": 1,
+              "value": "'sandwich'"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 671,
+          "lineStart": 656,
+          "snippet": "<Tooltip content={focusedNode.label} placement=\"top\">\n                <div className={styles.focusedItem}>\n                  <Icon size=\"sm\" name=\"compress-arrows\" />\n                  <span className={styles.focusedItemLabel}>\n                    {focusedNode.label.substring(focusedNode.label.lastIndexOf('/') + 1)}\n                  </span>\n                  <IconButton\n                    className={styles.modePillCloseButton}\n                    name=\"times\"\n                    size=\"sm\"\n                    onClick={() => handleSetFocusMode(undefined)}\n                    tooltip=\"Clear callees view\"\n                    aria-label=\"Clear callees view\"\n                  />\n                </div>\n              </Tooltip>",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 690,
+          "lineStart": 675,
+          "snippet": "<Tooltip content={callersNodeLabel || ''} placement=\"top\">\n                <div className={styles.callersItem}>\n                  <Icon size=\"sm\" name=\"expand-arrows-alt\" />\n                  <span className={styles.callersItemLabel}>\n                    {(callersNodeLabel || '').substring((callersNodeLabel || '').lastIndexOf('/') + 1)}\n                  </span>\n                  <IconButton\n                    className={styles.modePillCloseButton}\n                    name=\"times\"\n                    size=\"sm\"\n                    onClick={() => handleSetCallersMode(undefined)}\n                    tooltip=\"Clear callers view\"\n                    aria-label=\"Clear callers view\"\n                  />\n                </div>\n              </Tooltip>",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 63,
+          "lineStart": 45,
+          "snippet": "<Tooltip key={'sandwich'} content={sandwichedLabel} placement=\"top\">\n          <div>\n            <Icon size={'sm'} name={'angle-right'} />\n            <div className={styles.metadataPill}>\n              <Icon size={'sm'} name={'gf-show-context'} />{' '}\n              <span className={styles.metadataPillName}>\n                {sandwichedLabel.substring(sandwichedLabel.lastIndexOf('/') + 1)}\n              </span>\n              <IconButton\n                className={styles.pillCloseButton}\n                name={'times'}\n                size={'sm'}\n                onClick={onSandwichPillClick}\n                tooltip={'Remove sandwich view'}\n                aria-label={'Remove sandwich view'}\n              />\n            </div>\n          </div>\n        </Tooltip>",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        },
+        {
+          "lineEnd": 88,
+          "lineStart": 72,
+          "snippet": "<Tooltip key={'focus'} content={focusedItem.label} placement=\"top\">\n          <div>\n            <Icon size={'sm'} name={'angle-right'} />\n            <div className={styles.metadataPill}>\n              <Icon size={'sm'} name={iconName} />\n              &nbsp;{percentValue}% of total\n              <IconButton\n                className={styles.pillCloseButton}\n                name={'times'}\n                size={'sm'}\n                onClick={onFocusPillClick}\n                tooltip={'Remove focus'}\n                aria-label={'Remove focus'}\n              />\n            </div>\n          </div>\n        </Tooltip>",
+          "sourcePath": "src/FlameGraph/FlameGraphMetadata.tsx"
+        }
+      ]
+    },
+    "use-theme2": {
+      "count": 4,
+      "files": [
+        "src/CallTree/FlameGraphCallTreeContainer.tsx",
+        "src/FlameGraph/rendering.ts",
+        "src/FlameGraphContainer.story.tsx",
+        "src/TopTable/FlameGraphTopTableContainer.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 66,
+          "lineStart": 66,
+          "snippet": "const theme = useTheme2();",
+          "sourcePath": "src/CallTree/FlameGraphCallTreeContainer.tsx"
+        },
+        {
+          "lineEnd": 73,
+          "lineStart": 73,
+          "snippet": "const theme = useTheme2();",
+          "sourcePath": "src/FlameGraph/rendering.ts"
+        },
+        {
+          "lineEnd": 10,
+          "lineStart": 10,
+          "snippet": "const theme = useTheme2();",
+          "sourcePath": "src/FlameGraphContainer.story.tsx"
+        },
+        {
+          "lineEnd": 60,
+          "lineStart": 60,
+          "snippet": "const theme = useTheme2();",
+          "sourcePath": "src/TopTable/FlameGraphTopTableContainer.tsx"
+        }
+      ]
+    },
+    "button-group": {
+      "count": 2,
+      "files": [
+        "src/FlameGraph/FlameGraph.tsx",
+        "src/FlameGraphHeader.tsx"
+      ],
+      "propUsage": {
+        "className": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "{newStyles.buttonSpacing}"
+            },
+            {
+              "count": 1,
+              "value": "{styles.buttonSpacing}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 251,
+          "lineStart": 228,
+          "snippet": "<ButtonGroup className={newStyles.buttonSpacing}>\n              <Button\n                variant={'secondary'}\n                fill={'outline'}\n                size={'sm'}\n                tooltip={'Expand all groups'}\n                onClick={() => {\n                  setCollapsedMap(collapsedMap.setAllCollapsedStatus(false));\n                }}\n                aria-label={'Expand all groups'}\n                icon={'angle-double-down'}\n              />\n              <Button\n                variant={'secondary'}\n                fill={'outline'}\n                size={'sm'}\n                tooltip={'Collapse all groups'}\n                onClick={() => {\n                  setCollapsedMap(collapsedMap.setAllCollapsedStatus(true));\n                }}\n                aria-label={'Collapse all groups'}\n                icon={'angle-double-up'}\n              />\n            </ButtonGroup>",
+          "sourcePath": "src/FlameGraph/FlameGraph.tsx"
+        },
+        {
+          "lineEnd": 299,
+          "lineStart": 274,
+          "snippet": "<ButtonGroup className={styles.buttonSpacing}>\n          <Button\n            variant={'secondary'}\n            fill={'outline'}\n            size={'sm'}\n            tooltip={'Expand all groups'}\n            onClick={() => {\n              setCollapsedMap(collapsedMap.setAllCollapsedStatus(false));\n            }}\n            aria-label={'Expand all groups'}\n            icon={'angle-double-down'}\n            disabled={selectedView === SelectedView.TopTable}\n          />\n          <Button\n            variant={'secondary'}\n            fill={'outline'}\n            size={'sm'}\n            tooltip={'Collapse all groups'}\n            onClick={() => {\n              setCollapsedMap(collapsedMap.setAllCollapsedStatus(true));\n            }}\n            aria-label={'Collapse all groups'}\n            icon={'angle-double-up'}\n            disabled={selectedView === SelectedView.TopTable}\n          />\n        </ButtonGroup>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        }
+      ]
+    },
+    "radio-button-group": {
+      "count": 7,
+      "files": [
+        "src/FlameGraph/FlameGraph.tsx",
+        "src/FlameGraphHeader.tsx"
+      ],
+      "propUsage": {
+        "onChange": {
+          "count": 7,
+          "values": [
+            {
+              "count": 2,
+              "value": "{onTextAlignChange}"
+            },
+            {
+              "count": 1,
+              "value": "{props.setLeftPaneView}"
+            },
+            {
+              "count": 1,
+              "value": "{props.setRightPaneView}"
+            },
+            {
+              "count": 1,
+              "value": "{props.setSingleView}"
+            },
+            {
+              "count": 1,
+              "value": "{props.setViewMode}"
+            },
+            {
+              "count": 1,
+              "value": "{setSelectedView}"
+            }
+          ]
+        },
+        "options": {
+          "count": 7,
+          "values": [
+            {
+              "count": 3,
+              "value": "{paneViewOptions}"
+            },
+            {
+              "count": 2,
+              "value": "{alignOptions}"
+            },
+            {
+              "count": 1,
+              "value": "{getViewOptions(containerWidth, vertical)}"
+            },
+            {
+              "count": 1,
+              "value": "{viewModeOptions}"
+            }
+          ]
+        },
+        "size": {
+          "count": 7,
+          "values": [
+            {
+              "count": 7,
+              "value": "\"sm\""
+            }
+          ]
+        },
+        "value": {
+          "count": 7,
+          "values": [
+            {
+              "count": 2,
+              "value": "{textAlign}"
+            },
+            {
+              "count": 1,
+              "value": "{props.leftPaneView}"
+            },
+            {
+              "count": 1,
+              "value": "{props.rightPaneView}"
+            },
+            {
+              "count": 1,
+              "value": "{props.singleView}"
+            },
+            {
+              "count": 1,
+              "value": "{props.viewMode}"
+            },
+            {
+              "count": 1,
+              "value": "{selectedView}"
+            }
+          ]
+        },
+        "className": {
+          "count": 5,
+          "values": [
+            {
+              "count": 5,
+              "value": "{styles.buttonSpacing}"
+            }
+          ]
+        },
+        "disabled": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{selectedView === SelectedView.TopTable}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 253,
+          "lineStart": 253,
+          "snippet": "<RadioButtonGroup<TextAlign>",
+          "sourcePath": "src/FlameGraph/FlameGraph.tsx"
+        },
+        {
+          "lineEnd": 108,
+          "lineStart": 108,
+          "snippet": "<RadioButtonGroup<PaneView>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 116,
+          "lineStart": 116,
+          "snippet": "<RadioButtonGroup<PaneView>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 193,
+          "lineStart": 193,
+          "snippet": "<RadioButtonGroup<PaneView>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 202,
+          "lineStart": 202,
+          "snippet": "<RadioButtonGroup<ViewMode>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 300,
+          "lineStart": 300,
+          "snippet": "<RadioButtonGroup<TextAlign>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 308,
+          "lineStart": 308,
+          "snippet": "<RadioButtonGroup<SelectedView>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        }
+      ]
+    },
+    "menu-item": {
+      "count": 8,
+      "files": [
+        "src/FlameGraph/FlameGraphContextMenu.tsx"
+      ],
+      "propUsage": {
+        "icon": {
+          "count": 8,
+          "values": [
+            {
+              "count": 2,
+              "value": "'angle-double-down'"
+            },
+            {
+              "count": 2,
+              "value": "'angle-double-up'"
+            },
+            {
+              "count": 1,
+              "value": "'copy'"
+            },
+            {
+              "count": 1,
+              "value": "'eye'"
+            },
+            {
+              "count": 1,
+              "value": "'gf-show-context'"
+            },
+            {
+              "count": 1,
+              "value": "{icon}"
+            }
+          ]
+        },
+        "label": {
+          "count": 8,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"Collapse all groups\""
+            },
+            {
+              "count": 1,
+              "value": "\"Collapse group\""
+            },
+            {
+              "count": 1,
+              "value": "\"Copy function name\""
+            },
+            {
+              "count": 1,
+              "value": "\"Expand all groups\""
+            },
+            {
+              "count": 1,
+              "value": "\"Expand group\""
+            },
+            {
+              "count": 1,
+              "value": "\"Focus block\""
+            },
+            {
+              "count": 1,
+              "value": "\"Sandwich view\""
+            },
+            {
+              "count": 1,
+              "value": "{label}"
+            }
+          ]
+        },
+        "onClick": {
+          "count": 8,
+          "values": [
+            {
+              "count": 1,
+              "value": "{() => { navigator.clipboard.writeText(itemData.label).then(() => { onMenuItemClick(); }); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { onCollapseAllGroups(); onMenuItemClick(); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { onCollapseGroup(); onMenuItemClick(); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { onExpandAllGroups(); onMenuItemClick(); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { onExpandGroup(); onMenuItemClick(); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { onItemFocus(); onMenuItemClick(); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { onSandwich(); onMenuItemClick(); }}"
+            },
+            {
+              "count": 1,
+              "value": "{() => onClick()}"
+            }
+          ]
+        },
+        "key": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{label}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 83,
+          "lineStart": 80,
+          "snippet": "<MenuItem\n          label=\"Focus block\"\n          icon={'eye'}\n          onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        },
+        {
+          "lineEnd": 91,
+          "lineStart": 88,
+          "snippet": "<MenuItem\n          label=\"Copy function name\"\n          icon={'copy'}\n          onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        },
+        {
+          "lineEnd": 100,
+          "lineStart": 97,
+          "snippet": "<MenuItem\n          label=\"Sandwich view\"\n          icon={'gf-show-context'}\n          onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        },
+        {
+          "lineEnd": 106,
+          "lineStart": 106,
+          "snippet": "<MenuItem label={label} icon={icon} onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        },
+        {
+          "lineEnd": 115,
+          "lineStart": 112,
+          "snippet": "<MenuItem\n                  label=\"Expand group\"\n                  icon={'angle-double-down'}\n                  onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        },
+        {
+          "lineEnd": 124,
+          "lineStart": 121,
+          "snippet": "<MenuItem\n                  label=\"Collapse group\"\n                  icon={'angle-double-up'}\n                  onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        },
+        {
+          "lineEnd": 135,
+          "lineStart": 132,
+          "snippet": "<MenuItem\n                label=\"Expand all groups\"\n                icon={'angle-double-down'}\n                onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        },
+        {
+          "lineEnd": 145,
+          "lineStart": 142,
+          "snippet": "<MenuItem\n                label=\"Collapse all groups\"\n                icon={'angle-double-up'}\n                onClick={() =>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        }
+      ]
+    },
+    "menu-group": {
+      "count": 1,
+      "files": [
+        "src/FlameGraph/FlameGraphContextMenu.tsx"
+      ],
+      "propUsage": {
+        "label": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "'Grouping'"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 151,
+          "lineStart": 109,
+          "snippet": "<MenuGroup label={'Grouping'}>\n            {collapseConfig ? (\n              collapseConfig.collapsed ? (\n                <MenuItem\n                  label=\"Expand group\"\n                  icon={'angle-double-down'}\n                  onClick={() => {\n                    onExpandGroup();\n                    onMenuItemClick();\n                  }}\n                />\n              ) : (\n                <MenuItem\n                  label=\"Collapse group\"\n                  icon={'angle-double-up'}\n                  onClick={() => {\n                    onCollapseGroup();\n                    onMenuItemClick();\n                  }}\n                />\n              )\n            ) : null}\n            {!allGroupsExpanded && (\n              <MenuItem\n                label=\"Expand all groups\"\n                icon={'angle-double-down'}\n                onClick={() => {\n                  onExpandAllGroups();\n                  onMenuItemClick();\n                }}\n              />\n            )}\n            {!allGroupsCollapsed && (\n              <MenuItem\n                label=\"Collapse all groups\"\n                icon={'angle-double-up'}\n                onClick={() => {\n                  onCollapseAllGroups();\n                  onMenuItemClick();\n                }}\n              />\n            )}\n          </MenuGroup>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        }
+      ]
+    },
+    "context-menu": {
+      "count": 1,
+      "files": [
+        "src/FlameGraph/FlameGraphContextMenu.tsx"
+      ],
+      "propUsage": {
+        "focusOnOpen": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "false"
+            }
+          ]
+        },
+        "renderMenuItems": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{renderItems}"
+            }
+          ]
+        },
+        "x": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{itemData.posX + 10}"
+            }
+          ]
+        },
+        "y": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{itemData.posY}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 164,
+          "lineStart": 159,
+          "snippet": "<ContextMenu\n        renderMenuItems={renderItems}\n        x={itemData.posX + 10}\n        y={itemData.posY}\n        focusOnOpen={false}\n      ></ContextMenu>",
+          "sourcePath": "src/FlameGraph/FlameGraphContextMenu.tsx"
+        }
+      ]
+    },
+    "interactive-table": {
+      "count": 1,
+      "files": [
+        "src/FlameGraph/FlameGraphTooltip.tsx"
+      ],
+      "propUsage": {
+        "className": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{styles.tooltipTable}"
+            }
+          ]
+        },
+        "columns": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{[ { id: 'label', header: '' }, { id: 'baseline', header: 'Baseline' }, { id: 'comparison', header: 'Comparison' }, { id…}"
+            }
+          ]
+        },
+        "data": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{tableData}"
+            }
+          ]
+        },
+        "getRowId": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{(originalRow) => originalRow.rowId}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 37,
+          "lineStart": 28,
+          "snippet": "<InteractiveTable\n        className={styles.tooltipTable}\n        columns={[\n          { id: 'label', header: '' },\n          { id: 'baseline', header: 'Baseline' },\n          { id: 'comparison', header: 'Comparison' },\n          { id: 'diff', header: 'Diff' },\n        ]}\n        data={tableData}\n        getRowId={(originalRow) =>",
+          "sourcePath": "src/FlameGraph/FlameGraphTooltip.tsx"
+        }
+      ]
+    },
+    "portal": {
+      "count": 1,
+      "files": [
+        "src/FlameGraph/FlameGraphTooltip.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 73,
+          "lineStart": 56,
+          "snippet": "<Portal>\n      <VizTooltipContainer className={styles.tooltipContainer} position={position} offset={{ x: 15, y: 0 }}>\n        <div className={styles.tooltipContent}>\n          <p className={styles.tooltipName}>\n            {data.getLabel(item.itemIndexes[0])}\n            {collapseConfig && collapseConfig.collapsed ? (\n              <span>\n                <br />\n                and {collapseConfig.items.length} similar items\n              </span>\n            ) : (\n              ''\n            )}\n          </p>\n          {content}\n        </div>\n      </VizTooltipContainer>\n    </Portal>",
+          "sourcePath": "src/FlameGraph/FlameGraphTooltip.tsx"
+        }
+      ]
+    },
+    "viz-tooltip-container": {
+      "count": 1,
+      "files": [
+        "src/FlameGraph/FlameGraphTooltip.tsx"
+      ],
+      "propUsage": {
+        "className": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{styles.tooltipContainer}"
+            }
+          ]
+        },
+        "offset": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{{ x: 15, y: 0 }}"
+            }
+          ]
+        },
+        "position": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{position}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 72,
+          "lineStart": 57,
+          "snippet": "<VizTooltipContainer className={styles.tooltipContainer} position={position} offset={{ x: 15, y: 0 }}>\n        <div className={styles.tooltipContent}>\n          <p className={styles.tooltipName}>\n            {data.getLabel(item.itemIndexes[0])}\n            {collapseConfig && collapseConfig.collapsed ? (\n              <span>\n                <br />\n                and {collapseConfig.items.length} similar items\n              </span>\n            ) : (\n              ''\n            )}\n          </p>\n          {content}\n        </div>\n      </VizTooltipContainer>",
+          "sourcePath": "src/FlameGraph/FlameGraphTooltip.tsx"
+        }
+      ]
+    },
+    "theme-context": {
+      "count": 2,
+      "files": [
+        "src/FlameGraphContainer.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 428,
+          "lineStart": 392,
+          "snippet": "<ThemeContext.Provider value={theme}>\n      <div ref={sizeRef} className={styles.container}>\n        {!showFlameGraphOnly && (\n          <FlameGraphHeader\n            search={search}\n            setSearch={setSearch}\n            selectedView={selectedView}\n            setSelectedView={(view) => {\n              setSelectedView(view);\n              onViewSelected?.(view);\n            }}\n            containerWidth={containerWidth}\n            onReset={() => {\n              resetFocus();\n              resetSandwich();\n            }}\n            textAlign={textAlign}\n            onTextAlignChange={(align) => {\n              setTextAlign(align);\n              onTextAlignSelected?.(align);\n            }}\n            showResetButton={Boolean(focusedItemData || sandwichItem)}\n            colorScheme={colorScheme}\n            onColorSchemeChange={setColorScheme}\n            stickyHeader={Boolean(stickyHeader)}\n            extraHeaderElements={extraHeaderElements}\n            vertical={vertical}\n            isDiffMode={dataContainer.isDiffFlamegraph()}\n            setCollapsedMap={setCollapsedMap}\n            collapsedMap={collapsedMap}\n            assistantContext={data && showAnalyzeWithAssistant ? getAssistantContextFromDataFrame(data) : undefined}\n          />\n        )}\n\n        <div className={styles.body}>{body}</div>\n      </div>\n    </ThemeContext.Provider>",
+          "sourcePath": "src/FlameGraphContainer.tsx"
+        },
+        {
+          "lineEnd": 646,
+          "lineStart": 605,
+          "snippet": "<ThemeContext.Provider value={theme}>\n      <div ref={sizeRef} className={styles.container}>\n        {!showFlameGraphOnly && (\n          <FlameGraphHeader\n            enableNewUI={true}\n            search={search}\n            setSearch={setSearch}\n            viewMode={viewMode}\n            setViewMode={(mode) => {\n              setViewMode(mode);\n              onViewSelected?.(mode === ViewMode.Split ? 'split' : singleView);\n            }}\n            canShowSplitView={canShowSplitView}\n            containerWidth={containerWidth}\n            leftPaneView={panesSwapped ? rightPaneView : leftPaneView}\n            setLeftPaneView={panesSwapped ? setRightPaneView : setLeftPaneView}\n            rightPaneView={panesSwapped ? leftPaneView : rightPaneView}\n            setRightPaneView={panesSwapped ? setLeftPaneView : setRightPaneView}\n            singleView={singleView}\n            setSingleView={(view) => {\n              setSingleView(view);\n              if (viewMode === ViewMode.Single) {\n                onViewSelected?.(view);\n              }\n            }}\n            onSwapPanes={() => setPanesSwapped((s) => !s)}\n            onReset={() => {\n              setSearch('');\n              setFocusedItemIndexes(undefined);\n              setSharedSandwichItem(undefined);\n              setResetKey((k) => k + 1);\n            }}\n            showResetButton={Boolean(search)}\n            stickyHeader={Boolean(stickyHeader)}\n            extraHeaderElements={extraHeaderElements}\n            assistantContext={data && showAnalyzeWithAssistant ? getAssistantContextFromDataFrame(data) : undefined}\n          />\n        )}\n\n        <div className={styles.body}>{body}</div>\n      </div>\n    </ThemeContext.Provider>",
+          "sourcePath": "src/FlameGraphContainer.tsx"
+        }
+      ]
+    },
+    "input": {
+      "count": 2,
+      "files": [
+        "src/FlameGraphHeader.tsx"
+      ],
+      "propUsage": {
+        "onChange": {
+          "count": 2,
+          "values": [
+            {
+              "count": 2,
+              "value": "{(v) => { setLocalSearch(v.currentTarget.value); }}"
+            }
+          ]
+        },
+        "placeholder": {
+          "count": 2,
+          "values": [
+            {
+              "count": 2,
+              "value": "'Search...'"
+            }
+          ]
+        },
+        "suffix": {
+          "count": 2,
+          "values": [
+            {
+              "count": 2,
+              "value": "{suffix}"
+            }
+          ]
+        },
+        "value": {
+          "count": 2,
+          "values": [
+            {
+              "count": 2,
+              "value": "{localSearch || ''}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 96,
+          "lineStart": 94,
+          "snippet": "<Input\n            value={localSearch || ''}\n            onChange={(v) =>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        },
+        {
+          "lineEnd": 241,
+          "lineStart": 239,
+          "snippet": "<Input\n          value={localSearch || ''}\n          onChange={(v) =>",
+          "sourcePath": "src/FlameGraphHeader.tsx"
+        }
+      ]
+    },
+    "table": {
+      "count": 1,
+      "files": [
+        "src/TopTable/FlameGraphTopTableContainer.tsx"
+      ],
+      "propUsage": {
+        "data": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{frame}"
+            }
+          ]
+        },
+        "height": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{height}"
+            }
+          ]
+        },
+        "initialSortBy": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{sort}"
+            }
+          ]
+        },
+        "onSortByChange": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{(s) => { if (s && s.length) { onTableSort?.(s[0].displayName + '_' + (s[0].desc ? 'desc' : 'asc')); } setSort(s); }}"
+            }
+          ]
+        },
+        "width": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{width}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 87,
+          "lineStart": 85,
+          "snippet": "<Table\n                initialSortBy={sort}\n                onSortByChange={(s) =>",
+          "sourcePath": "src/TopTable/FlameGraphTopTableContainer.tsx"
+        }
+      ]
+    },
+    "table-sort-by-field-state": {
+      "count": 1,
+      "files": [
+        "src/TopTable/FlameGraphTopTableContainer.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 62,
+          "lineStart": 62,
+          "snippet": "<TableSortByFieldState[]>",
+          "sourcePath": "src/TopTable/FlameGraphTopTableContainer.tsx"
+        }
+      ]
+    },
+    "global-styles": {
+      "count": 1,
+      "files": [
+        "src/utils/storybook/withTheme.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 25,
+          "lineStart": 25,
+          "snippet": "<GlobalStyles />",
+          "sourcePath": "src/utils/storybook/withTheme.tsx"
+        }
+      ]
+    }
+  }
+}

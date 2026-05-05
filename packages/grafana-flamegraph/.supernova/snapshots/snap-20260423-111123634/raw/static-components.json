@@ -1,0 +1,30 @@
+[
+  {
+    "componentKey": "check-fields",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "checkFields",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "data",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "flame-graph",
+    "componentPath": "FlameGraphContainer.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "FlameGraph",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "get-message-check-fields-result",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getMessageCheckFieldsResult",
+    "exportType": "inferred-export"
+  }
+]

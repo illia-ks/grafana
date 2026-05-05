@@ -1,0 +1,79 @@
+[
+  {
+    "componentKey": "alert-label",
+    "componentPath": "grafana/rules/components/labels/AlertLabel.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "AlertLabel",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "alert-labels",
+    "componentPath": "grafana/rules/components/labels/AlertLabels.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "AlertLabels",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "base64-url-encode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "base64UrlEncode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "compute-inherited-tree",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "computeInheritedTree",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "find-matching-routes",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "findMatchingRoutes",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-inherited-properties",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getInheritedProperties",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-default-routing-tree",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isDefaultRoutingTree",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "match-instances-to-route",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "matchInstancesToRoute",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "match-instances-to-route-trees",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "matchInstancesToRouteTrees",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-match-instances-to-route-trees",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useMatchInstancesToRouteTrees",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "user-defined-tree-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "USER_DEFINED_TREE_NAME",
+    "exportType": "inferred-export"
+  }
+]

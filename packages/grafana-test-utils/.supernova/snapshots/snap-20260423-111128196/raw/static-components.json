@@ -1,0 +1,16 @@
+[
+  {
+    "componentKey": "matchers",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "matchers",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "mock-bounding-client-rect",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "mockBoundingClientRect",
+    "exportType": "inferred-export"
+  }
+]

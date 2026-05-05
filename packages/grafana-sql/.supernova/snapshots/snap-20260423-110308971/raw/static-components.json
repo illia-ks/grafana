@@ -1,0 +1,42 @@
+[
+  {
+    "componentKey": "connection-limits",
+    "componentPath": "components/configuration/ConnectionLimits.tsx",
+    "exportName": "ConnectionLimits"
+  },
+  {
+    "componentKey": "divider",
+    "componentPath": "components/configuration/Divider.tsx",
+    "exportName": "Divider"
+  },
+  {
+    "componentKey": "max-lifetime-field",
+    "componentPath": "components/configuration/MaxLifetimeField.tsx",
+    "exportName": "MaxLifetimeField"
+  },
+  {
+    "componentKey": "max-open-connections-field",
+    "componentPath": "components/configuration/MaxOpenConnectionsField.tsx",
+    "exportName": "MaxOpenConnectionsField"
+  },
+  {
+    "componentKey": "number-input",
+    "componentPath": "components/configuration/NumberInput.tsx",
+    "exportName": "NumberInput"
+  },
+  {
+    "componentKey": "preview",
+    "componentPath": "components/visual-query-builder/Preview.tsx",
+    "exportName": "Preview"
+  },
+  {
+    "componentKey": "sql-query-editor-lazy",
+    "componentPath": "components/QueryEditorLazy.tsx",
+    "exportName": "SqlQueryEditorLazy"
+  },
+  {
+    "componentKey": "tlssecrets-config",
+    "componentPath": "components/configuration/TLSSecretsConfig.tsx",
+    "exportName": "TLSSecretsConfig"
+  }
+]

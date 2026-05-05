@@ -1,0 +1,93 @@
+[
+  {
+    "componentKey": "interval-input",
+    "componentPath": "IntervalInput/IntervalInput.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "IntervalInput",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "node-graph-section",
+    "componentPath": "NodeGraph/NodeGraphSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "NodeGraphSection",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "node-graph-settings",
+    "componentPath": "NodeGraph/NodeGraphSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "NodeGraphSettings",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "span-bar-section",
+    "componentPath": "SpanBar/SpanBarSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "SpanBarSection",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "span-bar-settings",
+    "componentPath": "SpanBar/SpanBarSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "SpanBarSettings",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "tag-mapping-input",
+    "componentPath": "TraceToLogs/TagMappingInput.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TagMappingInput",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "temporary-alert",
+    "componentPath": "TemporaryAlert.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TemporaryAlert",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "trace-to-logs-section",
+    "componentPath": "TraceToLogs/TraceToLogsSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "TraceToLogsSection",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "trace-to-logs-settings",
+    "componentPath": "TraceToLogs/TraceToLogsSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "TraceToLogsSettings",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "trace-to-metrics-section",
+    "componentPath": "TraceToMetrics/TraceToMetricsSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "TraceToMetricsSection",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "trace-to-metrics-settings",
+    "componentPath": "TraceToMetrics/TraceToMetricsSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "TraceToMetricsSettings",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "trace-to-profiles-section",
+    "componentPath": "TraceToProfiles/TraceToProfilesSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "TraceToProfilesSection",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "trace-to-profiles-settings",
+    "componentPath": "TraceToProfiles/TraceToProfilesSettings.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "TraceToProfilesSettings",
+    "exportType": "star-export"
+  }
+]

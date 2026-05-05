@@ -1,0 +1,31 @@
+{
+  "trans": [
+    {
+      "docPath": "src/eslint/README.md",
+      "kind": "reference",
+      "lineEnd": 27,
+      "lineStart": 27,
+      "score": 20,
+      "snippet": "<Trans i18nKey=\"search.empty-state.no-results-found\">No results found</Trans>",
+      "title": "Grafana Internationalization ESLint Rules"
+    },
+    {
+      "docPath": "src/eslint/README.md",
+      "kind": "reference",
+      "lineEnd": 27,
+      "lineStart": 27,
+      "score": 20,
+      "snippet": "<Trans i18nKey=\"search.empty-state.no-results-found\">No results found</Trans>",
+      "title": "Grafana Internationalization ESLint Rules"
+    },
+    {
+      "docPath": "src/eslint/README.md",
+      "kind": "reference",
+      "lineEnd": 35,
+      "lineStart": 34,
+      "score": 20,
+      "snippet": "<Trans i18nKey=\"public.app.features.search.empty-state.no-results-found\">No results found</Trans>\n```",
+      "title": "Grafana Internationalization ESLint Rules"
+    }
+  ]
+}

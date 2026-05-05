@@ -1,0 +1,182 @@
+[
+  {
+    "componentKey": "alerting-settings-overhaul",
+    "componentPath": "configuration/AlertingSettingsOverhaul.tsx",
+    "exportName": "AlertingSettingsOverhaul"
+  },
+  {
+    "componentKey": "annotation-query-editor",
+    "componentPath": "components/AnnotationQueryEditor.tsx",
+    "exportName": "AnnotationQueryEditor"
+  },
+  {
+    "componentKey": "config-editor",
+    "componentPath": "configuration/ConfigEditor.tsx",
+    "exportName": "ConfigEditor"
+  },
+  {
+    "componentKey": "data-source-http-settings-overhaul",
+    "componentPath": "configuration/DataSourceHttpSettingsOverhaul.tsx",
+    "exportName": "DataSourceHttpSettingsOverhaul"
+  },
+  {
+    "componentKey": "docs-tip",
+    "componentPath": "configuration/shared/utils.tsx",
+    "exportName": "docsTip"
+  },
+  {
+    "componentKey": "exemplar-setting",
+    "componentPath": "configuration/ExemplarSetting.tsx",
+    "exportName": "ExemplarSetting"
+  },
+  {
+    "componentKey": "exemplars-settings",
+    "componentPath": "configuration/ExemplarsSettings.tsx",
+    "exportName": "ExemplarsSettings"
+  },
+  {
+    "componentKey": "label-filter-item",
+    "componentPath": "querybuilder/components/LabelFilterItem.tsx",
+    "exportName": "LabelFilterItem"
+  },
+  {
+    "componentKey": "label-filters",
+    "componentPath": "querybuilder/components/LabelFilters.tsx",
+    "exportName": "LabelFilters"
+  },
+  {
+    "componentKey": "label-param-editor",
+    "componentPath": "querybuilder/components/LabelParamEditor.tsx",
+    "exportName": "LabelParamEditor"
+  },
+  {
+    "componentKey": "metric-combobox",
+    "componentPath": "querybuilder/components/MetricCombobox.tsx",
+    "exportName": "MetricCombobox"
+  },
+  {
+    "componentKey": "metrics-browser",
+    "componentPath": "components/metrics-browser/MetricsBrowser.tsx",
+    "exportName": "MetricsBrowser"
+  },
+  {
+    "componentKey": "metrics-labels-section",
+    "componentPath": "querybuilder/components/MetricsLabelsSection.tsx",
+    "exportName": "MetricsLabelsSection"
+  },
+  {
+    "componentKey": "metrics-modal",
+    "componentPath": "querybuilder/components/metrics-modal/MetricsModal.tsx",
+    "exportName": "MetricsModal"
+  },
+  {
+    "componentKey": "monaco-query-field-lazy",
+    "componentPath": "components/monaco-query-field/MonacoQueryFieldLazy.tsx",
+    "exportName": "MonacoQueryFieldLazy"
+  },
+  {
+    "componentKey": "nested-query",
+    "componentPath": "querybuilder/components/NestedQuery.tsx",
+    "exportName": "NestedQuery"
+  },
+  {
+    "componentKey": "nested-query-list",
+    "componentPath": "querybuilder/components/NestedQueryList.tsx",
+    "exportName": "NestedQueryList"
+  },
+  {
+    "componentKey": "prom-cheat-sheet",
+    "componentPath": "components/PromCheatSheet.tsx",
+    "exportName": "PromCheatSheet"
+  },
+  {
+    "componentKey": "prom-exemplar-field",
+    "componentPath": "components/PromExemplarField.tsx",
+    "exportName": "PromExemplarField"
+  },
+  {
+    "componentKey": "prom-explore-extra-field",
+    "componentPath": "components/PromExploreExtraField.tsx",
+    "exportName": "PromExploreExtraField"
+  },
+  {
+    "componentKey": "prom-query-builder",
+    "componentPath": "querybuilder/components/PromQueryBuilder.tsx",
+    "exportName": "PromQueryBuilder"
+  },
+  {
+    "componentKey": "prom-query-builder-container",
+    "componentPath": "querybuilder/components/PromQueryBuilderContainer.tsx",
+    "exportName": "PromQueryBuilderContainer"
+  },
+  {
+    "componentKey": "prom-query-builder-explained",
+    "componentPath": "querybuilder/components/PromQueryBuilderExplained.tsx",
+    "exportName": "PromQueryBuilderExplained"
+  },
+  {
+    "componentKey": "prom-query-builder-options",
+    "componentPath": "querybuilder/components/PromQueryBuilderOptions.tsx",
+    "exportName": "PromQueryBuilderOptions"
+  },
+  {
+    "componentKey": "prom-query-code-editor",
+    "componentPath": "querybuilder/components/PromQueryCodeEditor.tsx",
+    "exportName": "PromQueryCodeEditor"
+  },
+  {
+    "componentKey": "prom-query-editor-by-app",
+    "componentPath": "components/PromQueryEditorByApp.tsx",
+    "exportName": "PromQueryEditorByApp"
+  },
+  {
+    "componentKey": "prom-query-editor-for-alerting",
+    "componentPath": "components/PromQueryEditorForAlerting.tsx",
+    "exportName": "PromQueryEditorForAlerting"
+  },
+  {
+    "componentKey": "prom-query-editor-selector",
+    "componentPath": "querybuilder/components/PromQueryEditorSelector.tsx",
+    "exportName": "PromQueryEditorSelector"
+  },
+  {
+    "componentKey": "prom-query-field",
+    "componentPath": "components/PromQueryField.tsx",
+    "exportName": "PromQueryField"
+  },
+  {
+    "componentKey": "prom-query-legend-editor",
+    "componentPath": "querybuilder/components/PromQueryLegendEditor.tsx",
+    "exportName": "PromQueryLegendEditor"
+  },
+  {
+    "componentKey": "prom-settings",
+    "componentPath": "configuration/PromSettings.tsx",
+    "exportName": "PromSettings"
+  },
+  {
+    "componentKey": "prom-variable-query-editor",
+    "componentPath": "components/VariableQueryEditor.tsx",
+    "exportName": "PromVariableQueryEditor"
+  },
+  {
+    "componentKey": "query-pattern",
+    "componentPath": "querybuilder/QueryPattern.tsx",
+    "exportName": "QueryPattern"
+  },
+  {
+    "componentKey": "query-patterns-modal",
+    "componentPath": "querybuilder/QueryPatternsModal.tsx",
+    "exportName": "QueryPatternsModal"
+  },
+  {
+    "componentKey": "query-preview",
+    "componentPath": "querybuilder/components/QueryPreview.tsx",
+    "exportName": "QueryPreview"
+  },
+  {
+    "componentKey": "validate-input",
+    "componentPath": "configuration/shared/utils.tsx",
+    "exportName": "validateInput"
+  }
+]

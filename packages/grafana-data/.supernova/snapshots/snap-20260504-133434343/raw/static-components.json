@@ -1,0 +1,3005 @@
+[
+  {
+    "componentKey": "abstract-label-operator",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "AbstractLabelOperator",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "action-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ActionType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "action-variable-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ActionVariableType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "add-duration-to-date",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "addDurationToDate",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "add-row",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "addRow",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "alert-state",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "AlertState",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "align-time-range-compare-data",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "alignTimeRangeCompareData",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "amend-table",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "amendTable",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "annotation-change-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "AnnotationChangeEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "annotation-event-field-source",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "AnnotationEventFieldSource",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "any-series-with-time-field",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "anySeriesWithTimeField",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "any-to-number",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "anyToNumber",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "app-events",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "AppEvents",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "app-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "AppPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "apply-field-overrides",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "applyFieldOverrides",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "apply-null-insert-threshold",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "applyNullInsertThreshold",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "apply-raw-field-overrides",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "applyRawFieldOverrides",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "array-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ArrayDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "array-to-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "arrayToDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "array-vector",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ArrayVector",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "available-icons-index",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "availableIconsIndex",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "binary-operation-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BinaryOperationID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "binary-operators",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "binaryOperators",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "boolean-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "booleanOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "boolean-value-formatter",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "booleanValueFormatter",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "bus-event-base",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BusEventBase",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "bus-event-with-payload",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BusEventWithPayload",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "by-names-matcher-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ByNamesMatcherMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "cache-field-display-names",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "cacheFieldDisplayNames",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "circular-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CircularDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "circular-vector",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CircularVector",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "classic-colors",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "classicColors",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "closest-idx",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "closestIdx",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "color-manipulator",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "colorManipulator",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "compare-array-values",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "compareArrayValues",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "compare-data-frame-structures",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "compareDataFrameStructures",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "contains-search-filter",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "containsSearchFilter",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "content-type-options",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "contentTypeOptions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "convert-old-angular-value-mappings",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "convertOldAngularValueMappings",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "core-app",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CoreApp",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "create-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "create-dimension",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createDimension",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "create-field-config-registry",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createFieldConfigRegistry",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "create-theme",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createTheme",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "csvheader-style",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CSVHeaderStyle",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "csvreader",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CSVReader",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "custom-variable-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CustomVariableSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "dashboard-cursor-sync",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DashboardCursorSync",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "dashboard-loaded-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DashboardLoadedEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-frame-from-json",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dataFrameFromJSON",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-frame-to-json",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dataFrameToJSON",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-frame-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataFrameType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-frame-view",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataFrameView",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-hover-clear-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataHoverClearEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-hover-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataHoverEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-link-built-in-vars",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataLinkBuiltInVars",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-link-config-origin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataLinkConfigOrigin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-links-context",
+    "componentPath": "field/fieldOverrides.ts",
+    "enrichmentStatus": "partial",
+    "exportName": "DataLinksContext",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-links-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dataLinksOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-query-error-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataQueryErrorType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-select-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataSelectEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-source-api",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataSourceApi",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-source-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataSourcePlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-source-plugin-context-provider",
+    "componentPath": "context/plugins/DataSourcePluginContextProvider.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DataSourcePluginContextProvider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-source-test-failed",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataSourceTestFailed",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-source-test-succeeded",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataSourceTestSucceeded",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-source-updated-successfully",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataSourceUpdatedSuccessfully",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-source-variable-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataSourceVariableSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-topic",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataTopic",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-transformer-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataTransformerID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "date-time",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dateTime",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "date-time-as-moment",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dateTimeAsMoment",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "date-time-for-time-zone",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dateTimeForTimeZone",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "date-time-format",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dateTimeFormat",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "date-time-format-iso",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dateTimeFormatISO",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "date-time-format-time-ago",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dateTimeFormatTimeAgo",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "date-time-format-with-abbrevation",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dateTimeFormatWithAbbrevation",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "date-time-parse",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "dateTimeParse",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "decode-field-value-entities",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "decodeFieldValueEntities",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "decode-field-value-enums",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "decodeFieldValueEnums",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "default-action-config",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "defaultActionConfig",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "default-calcs",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "defaultCalcs",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "default-field-display-values-limit",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DEFAULT_FIELD_DISPLAY_VALUES_LIMIT",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "default-saml-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DEFAULT_SAML_NAME",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "default-time-zone",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DefaultTimeZone",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "deprecation-warning",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "deprecationWarning",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "display-name-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "displayNameOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "do-standard-calcs",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "doStandardCalcs",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "docs-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DocsId",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "duration-to-milliseconds",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "durationToMilliseconds",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "ensure-time-field",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ensureTimeField",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "escape-regex",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "escapeRegex",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "escape-string-for-regex",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "escapeStringForRegex",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "event-bus-srv",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "EventBusSrv",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "event-factory",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "eventFactory",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "explore-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ExploreMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "extract-faceted-labels",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "extractFacetedLabels",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "fallback-color",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FALLBACK_COLOR",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "feature-state",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FeatureState",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-cache",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FieldCache",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-color-mode-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FieldColorModeId",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-color-mode-registry",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "fieldColorModeRegistry",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-config-editor-builder",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FieldConfigEditorBuilder",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-config-options-registry",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FieldConfigOptionsRegistry",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-config-property",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FieldConfigProperty",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-matcher-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FieldMatcherID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-matchers",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "fieldMatchers",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-name-facet-key",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FIELD_NAME_FACET_KEY",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-name-picker-base-name-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FieldNamePickerBaseNameMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-reducers",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "fieldReducers",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "field-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FieldType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "filter-field-config-overrides",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "filterFieldConfigOverrides",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "find-common-labels",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "findCommonLabels",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "find-highlight-chunks-in-text",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "findHighlightChunksInText",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "find-matches-in-text",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "findMatchesInText",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "find-unique-labels",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "findUniqueLabels",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "fix-cell-template-expressions",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "fixCellTemplateExpressions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "format-labels",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "formatLabels",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "formatted-value-to-string",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "formattedValueToString",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "frame-geometry-source-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FrameGeometrySourceMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "frame-matcher-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FrameMatcherID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "frame-matchers",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "frameMatchers",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "fuzzy-search",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "fuzzySearch",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "gauge-default-maximum",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "GAUGE_DEFAULT_MAXIMUM",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "gauge-default-minimum",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "GAUGE_DEFAULT_MINIMUM",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-active-threshold",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getActiveThreshold",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-all-values-from-dimension",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getAllValuesFromDimension",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-built-in-themes",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getBuiltInThemes",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-color-by-string-hash",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getColorByStringHash",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-column-from-dimension",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getColumnFromDimension",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-columns-from-dimension",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getColumnsFromDimension",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-data-frame-row",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDataFrameRow",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-data-source-ref",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDataSourceRef",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-data-source-uid",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDataSourceUID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-default-relative-time-range",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDefaultRelativeTimeRange",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-default-time-range",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDefaultTimeRange",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-dimension-by-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDimensionByName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-display-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDisplayProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-display-value-alignment-factors",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getDisplayValueAlignmentFactors",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-color-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldColorMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-color-mode-for-field",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldColorModeForField",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-config-with-min-max",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldConfigWithMinMax",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-data-context-clone",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldDataContextClone",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-display-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldDisplayName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-display-values",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldDisplayValues",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-display-values-proxy",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldDisplayValuesProxy",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-matcher",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldMatcher",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-series-color",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldSeriesColor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-field-type-from-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFieldTypeFromValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-flot-pairs",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFlotPairs",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-flot-pairs-constant",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFlotPairsConstant",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-frame-display-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFrameDisplayName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-frame-matchers",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getFrameMatchers",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-links-supplier",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getLinksSupplier",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-locale",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getLocale",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-locale-data",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getLocaleData",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-min-max-and-delta",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getMinMaxAndDelta",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-next-ref-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getNextRefId",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-panel-data-summary",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getPanelDataSummary",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-panel-options-with-defaults",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getPanelOptionsWithDefaults",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-processed-data-frames",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getProcessedDataFrames",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-raw-display-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getRawDisplayProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-row-unique-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getRowUniqueId",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-scale-calculator",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getScaleCalculator",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-search-filter-scoped-var",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getSearchFilterScopedVar",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-series-time-step",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getSeriesTimeStep",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-theme-by-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getThemeById",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-time-field",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTimeField",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-time-zone",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTimeZone",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-time-zone-groups",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTimeZoneGroups",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-time-zone-info",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTimeZoneInfo",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-time-zones",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getTimeZones",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-unique-field-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getUniqueFieldName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-value-format",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getValueFormat",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-value-formats",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getValueFormats",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-value-formatter-index",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getValueFormatterIndex",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-value-from-dimension",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getValueFromDimension",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-value-matcher",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getValueMatcher",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-weekday-index",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getWeekdayIndex",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-weekday-index-by-english-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getWeekdayIndexByEnglishName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-zone",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getZone",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "grafana-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "GrafanaPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "grafana-theme-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "GrafanaThemeType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "guess-decimals",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "guessDecimals",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "guess-field-type-for-field",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "guessFieldTypeForField",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "guess-field-type-from-name-and-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "guessFieldTypeFromNameAndValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "guess-field-type-from-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "guessFieldTypeFromValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "guess-field-types",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "guessFieldTypes",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-links",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasLinks",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-logs-context-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasLogsContextSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-logs-context-ui-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasLogsContextUiSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-logs-label-types-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasLogsLabelTypesSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-ms-resolution",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasMsResolution",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-query-export-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasQueryExportSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-query-import-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasQueryImportSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-query-modification-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasQueryModificationSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-supplementary-query-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasSupplementaryQuerySupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-time-field",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasTimeField",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-toggleable-query-filters-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasToggleableQueryFiltersSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "http-method-options",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "httpMethodOptions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "http-request-method",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "HttpRequestMethod",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "identity-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "identityOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "internal-time-zones",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "InternalTimeZones",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "interval-to-abbreviated-duration-string",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "intervalToAbbreviatedDurationString",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-boolean-unit",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isBooleanUnit",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-custom-field-prop",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isCustomFieldProp",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-data-frame-with-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isDataFrameWithValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-data-source-plugin-context",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isDataSourcePluginContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-data-source-ref",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isDataSourceRef",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-date-time",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isDateTime",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-date-time-input",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isDateTimeInput",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-empty-object",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isEmptyObject",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-equality-or-multi-operator",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isEqualityOrMultiOperator",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-icon-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isIconName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-likely-ascending-vector",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isLikelyAscendingVector",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-live-channel-join-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isLiveChannelJoinEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-live-channel-leave-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isLiveChannelLeaveEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-live-channel-message-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isLiveChannelMessageEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-live-channel-status-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isLiveChannelStatusEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-object",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isObject",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-reducer-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isReducerID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-standard-field-prop",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isStandardFieldProp",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-system-override",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isSystemOverride",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-system-override-with-ref",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isSystemOverrideWithRef",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-table-data",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isTableData",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-time-series-field",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isTimeSeriesField",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-time-series-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isTimeSeriesFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-time-series-frames",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isTimeSeriesFrames",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-truthy",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isTruthy",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-unsigned-plugin-signature",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isUnsignedPluginSignature",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-valid-date",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isValidDate",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-valid-duration",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isValidDuration",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-valid-go-duration",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isValidGoDuration",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-valid-grafana-duration",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isValidGrafanaDuration",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-valid-live-channel-address",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isValidLiveChannelAddress",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "iso-8601",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ISO_8601",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "language-provider",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LanguageProvider",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "layout-modes",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LayoutModes",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "legacy-graph-hover-clear-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LegacyGraphHoverClearEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "legacy-graph-hover-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LegacyGraphHoverEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "legacy-mapping-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LegacyMappingType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "live-channel-connection-state",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LiveChannelConnectionState",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "live-channel-event-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LiveChannelEventType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "live-channel-scope",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LiveChannelScope",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "live-channel-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LiveChannelType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "loading-state",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LoadingState",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "local-storage-value-provider",
+    "componentPath": "utils/LocalStorageValueProvider.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "LocalStorageValueProvider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "local-time-format",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "localTimeFormat",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "locale",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "locale",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "location-util",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "locationUtil",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "log-level",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LogLevel",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "log-row-context-query-direction",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LogRowContextQueryDirection",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "log-sort-order-change-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LogSortOrderChangeEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "logs-dedup-description",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LogsDedupDescription",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "logs-dedup-strategy",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LogsDedupStrategy",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "logs-meta-kind",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LogsMetaKind",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "logs-sort-order",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LogsSortOrder",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "logs-volume-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LogsVolumeType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "make-class-es5-compatible",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "makeClassES5Compatible",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "make-time-range",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "makeTimeRange",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "map-internal-link-to-explore",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "mapInternalLinkToExplore",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "mapping-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "MappingType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "match-all-labels",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "matchAllLabels",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "match-plugin-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "matchPluginId",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "matcher-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "MatcherID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "missing-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "MISSING_VALUE",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "monaco-language-registry",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "monacoLanguageRegistry",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "mutable-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "MutableDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "node-graph-data-frame-field-names",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "NodeGraphDataFrameFieldNames",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "null-to-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "nullToValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "null-value-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "NullValueMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "number-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "numberOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "numeric-log-level",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "NumericLogLevel",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "obj-remove-undefined",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "objRemoveUndefined",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "on-update-datasource-json-data-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "onUpdateDatasourceJsonDataOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "on-update-datasource-json-data-option-checked",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "onUpdateDatasourceJsonDataOptionChecked",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "on-update-datasource-json-data-option-select",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "onUpdateDatasourceJsonDataOptionSelect",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "on-update-datasource-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "onUpdateDatasourceOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "on-update-datasource-reset-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "onUpdateDatasourceResetOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "on-update-datasource-secure-json-data-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "onUpdateDatasourceSecureJsonDataOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "on-update-datasource-secure-json-data-option-select",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "onUpdateDatasourceSecureJsonDataOptionSelect",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "one-click-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "OneClickMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "org-role",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "OrgRole",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "outer-join-data-frames",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "outerJoinDataFrames",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "page-layout-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PageLayoutType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "panel-events",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PanelEvents",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "panel-options-editor-builder",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PanelOptionsEditorBuilder",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "panel-plugin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PanelPlugin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "parse-duration",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "parseDuration",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "parse-flags",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "parseFlags",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "parse-labels",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "parseLabels",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "parse-live-channel-address",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "parseLiveChannelAddress",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "patch-array-vector-prorotype-methods",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "patchArrayVectorProrotypeMethods",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "path-validation-error",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PathValidationError",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-context",
+    "componentPath": "context/plugins/PluginContext.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PluginContext",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "plugin-context-provider",
+    "componentPath": "context/plugins/PluginContextProvider.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PluginContextProvider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "plugin-error-code",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginErrorCode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-extension-exposed-components",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginExtensionExposedComponents",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-extension-point-patterns",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginExtensionPointPatterns",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-extension-points",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginExtensionPoints",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-extension-types",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginExtensionTypes",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-include-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginIncludeType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-loading-strategy",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginLoadingStrategy",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-signature-status",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginSignatureStatus",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-signature-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginSignatureType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-state",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginState",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "plugin-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PluginType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "pre-process-panel-data",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "preProcessPanelData",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "preferred-visualization-types",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "preferredVisualizationTypes",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "read-csv",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "readCSV",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "reduce-field",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "reduceField",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "reducer-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ReducerID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "registry",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "Registry",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "render-legend-format",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "renderLegendFormat",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "render-markdown",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "renderMarkdown",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "render-text-panel-markdown",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "renderTextPanelMarkdown",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "resolve-faceted-filter-names",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "resolveFacetedFilterNames",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "restore-custom-override-rules",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "restoreCustomOverrideRules",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "restricted-grafana-apis-context",
+    "componentPath": "context/plugins/RestrictedGrafanaApis.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "RestrictedGrafanaApisContext",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "restricted-grafana-apis-context-provider",
+    "componentPath": "context/plugins/RestrictedGrafanaApis.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "RestrictedGrafanaApisContextProvider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "reverse-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "reverseDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "reverse-parse-duration",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "reverseParseDuration",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "reverse-scope-filter-operator-map",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "reverseScopeFilterOperatorMap",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "round-decimals",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "roundDecimals",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "scaled-units",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "scaledUnits",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "scope-filter-operator-map",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "scopeFilterOperatorMap",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "select-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "selectOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "serialize-state-to-url-param",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "serializeStateToUrlParam",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-locale",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setLocale",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-panel-attention-event",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SetPanelAttentionEvent",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-time-zone-resolver",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setTimeZoneResolver",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-week-start",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setWeekStart",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "shallow-compare",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "shallowCompare",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "should-align-time-compare",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "shouldAlignTimeCompare",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "simple-count-unit",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "simpleCountUnit",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "sort-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "sortDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "sort-thresholds",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "sortThresholds",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "special-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SpecialValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "special-value-match",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SpecialValueMatch",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "standard-editors-registry",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "standardEditorsRegistry",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "standard-field-config-editor-registry",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "standardFieldConfigEditorRegistry",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "standard-transformers",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "standardTransformers",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "standard-transformers-registry",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "standardTransformersRegistry",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "standard-variable-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "StandardVariableSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "store",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "store",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "store-a123ab",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "Store",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "streaming-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "StreamingDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "streaming-frame-action",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "StreamingFrameAction",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "string-formater",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "stringFormater",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "string-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "stringOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "string-starts-as-reg-ex",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "stringStartsAsRegEx",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "string-to-js-regex",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "stringToJsRegex",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "string-to-ms",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "stringToMs",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "supplementary-query-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SupplementaryQueryType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "supported-transformation-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SupportedTransformationType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "system-date-formats",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "systemDateFormats",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "system-date-formats-state",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SystemDateFormatsState",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "text-util",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "textUtil",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "theme-context",
+    "componentPath": "themes/context.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ThemeContext",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "thresholds-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ThresholdsMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "thresholds-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "thresholdsOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "throw-if-angular",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "throwIfAngular",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "time-format",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TIME_FORMAT",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "time-series-metric-field-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TIME_SERIES_METRIC_FIELD_NAME",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "time-series-time-field-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TIME_SERIES_TIME_FIELD_NAME",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "time-series-value-field-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TIME_SERIES_VALUE_FIELD_NAME",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "time-zone-abbrevation",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "timeZoneAbbrevation",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "time-zone-format-user-friendly",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "timeZoneFormatUserFriendly",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-csv",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toCSV",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-data-frame-dto",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toDataFrameDTO",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-duration",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toDuration",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-filtered-data-frame-dto",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toFilteredDataFrameDTO",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-fixed",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toFixed",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-fixed-scaled",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toFixedScaled",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-fixed-unit",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toFixedUnit",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-float-or-undefined",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toFloatOrUndefined",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-icon-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toIconName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-integer-or-undefined",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toIntegerOrUndefined",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-legacy-response-data",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toLegacyResponseData",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-live-channel-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toLiveChannelId",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-number-string",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toNumberString",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-pascal-case",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toPascalCase",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-urlrange",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toURLRange",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-utc",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toUtc",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "transform-data-frame",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "transformDataFrame",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "transformation-applicability-levels",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TransformationApplicabilityLevels",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "transformer-category",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TransformerCategory",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "trim-table",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "trimTable",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "un-escape-string-from-regex",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "unEscapeStringFromRegex",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "unary-operation-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "UnaryOperationID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "unary-operators",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "unaryOperators",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "unit-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "unitOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "update-datasource-plugin-json-data-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "updateDatasourcePluginJsonDataOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "update-datasource-plugin-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "updateDatasourcePluginOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "update-datasource-plugin-reset-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "updateDatasourcePluginResetOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "update-datasource-plugin-secure-json-data-option",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "updateDatasourcePluginSecureJsonDataOption",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "url-util",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "urlUtil",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-data-links-context",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useDataLinksContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-field-overrides",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useFieldOverrides",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-plugin-context",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "usePluginContext",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-restricted-grafana-apis",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useRestrictedGrafanaApis",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "user-has-all-permissions",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "userHasAllPermissions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "user-has-any-permission",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "userHasAnyPermission",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "user-has-permission",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "userHasPermission",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "user-has-permission-in-metadata",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "userHasPermissionInMetadata",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "validate-field-config",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "validateFieldConfig",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "validate-path",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "validatePath",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "value-mappings-override-processor",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "valueMappingsOverrideProcessor",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "value-matcher-id",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ValueMatcherID",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "value-matchers",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "valueMatchers",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "var-calc",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VAR_CALC",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "var-cell-prefix",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VAR_CELL_PREFIX",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "var-field-labels",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VAR_FIELD_LABELS",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "var-field-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VAR_FIELD_NAME",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "var-series-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VAR_SERIES_NAME",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "variable-hide",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VariableHide",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "variable-origin",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VariableOrigin",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "variable-refresh",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VariableRefresh",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "variable-sort",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VariableSort",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "variable-suggestions-scope",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VariableSuggestionsScope",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "variable-support-base",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VariableSupportBase",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "variable-support-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VariableSupportType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "vectorator",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "vectorator",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "visualization-suggestion-score",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VisualizationSuggestionScore",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "viz-orientation",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "VizOrientation",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "with-loading-indicator",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "withLoadingIndicator",
+    "exportType": "inferred-export"
+  }
+]

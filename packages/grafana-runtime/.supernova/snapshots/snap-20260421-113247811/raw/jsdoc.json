@@ -1,0 +1,18 @@
+{
+  "embedded-dashboard": {
+    "description": "Represents any user-defined component, either as a function or a class.\n\nSimilar to {@link JSXElementConstructor}, but with extra properties like\n{@link FunctionComponent.defaultProps defaultProps }.",
+    "sourcePath": "components/EmbeddedDashboard.tsx"
+  },
+  "panel-data-error-view": {
+    "description": "Simplified type with defaults that describes the PanelDataErrorView.",
+    "sourcePath": "components/PanelDataErrorView.tsx"
+  },
+  "panel-renderer": {
+    "description": "Simplified type with defaults that describes the PanelRenderer.",
+    "sourcePath": "components/PanelRenderer.tsx"
+  },
+  "scopes-context": {
+    "description": "Context lets components pass information deep down without explicitly\npassing props.\n\nCreated from {@link createContext}",
+    "sourcePath": "services/ScopesContext.ts"
+  }
+}

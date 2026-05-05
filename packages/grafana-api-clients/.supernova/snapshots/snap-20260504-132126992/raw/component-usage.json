@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@test-plugins/extensions-test-app",
+      "@test-plugins/grafana-e2etest-datasource",
+      "@test-plugins/grafana-e2etest-panel"
+    ]
+  },
+  "packages": {
+    "@grafana/alerting": {
+      "records": {}
+    },
+    "@grafana/data": {
+      "records": {}
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {}
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {}
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/runtime": {
+      "records": {
+        "get-backend-srv": {
+          "count": 2,
+          "files": [
+            "src/clients/rtkq/createBaseQuery.ts",
+            "src/clients/rtkq/folder/v1beta1/folderApiVersionResolver.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 39,
+              "lineStart": 39,
+              "snippet": "getBackendSrv().fetch({",
+              "sourcePath": "src/clients/rtkq/createBaseQuery.ts"
+            },
+            {
+              "lineEnd": 51,
+              "lineStart": 51,
+              "snippet": "const group = await getBackendSrv().get<K8sAPIGroup>(`/apis/${FOLDER_API_GROUP}/`, undefined, undefined, {",
+              "sourcePath": "src/clients/rtkq/folder/v1beta1/folderApiVersionResolver.ts"
+            }
+          ]
+        },
+        "is-fetch-error": {
+          "count": 3,
+          "files": [
+            "src/clients/rtkq/playlist/v1/baseAPI.ts",
+            "src/utils/utils.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 27,
+              "lineStart": 27,
+              "snippet": "if (result.error && isFetchError(result.error) && result.error.status === 404) {",
+              "sourcePath": "src/clients/rtkq/playlist/v1/baseAPI.ts"
+            },
+            {
+              "lineEnd": 39,
+              "lineStart": 39,
+              "snippet": "} else if (isFetchError(e.error)) {",
+              "sourcePath": "src/utils/utils.ts"
+            },
+            {
+              "lineEnd": 57,
+              "lineStart": 57,
+              "snippet": "if (isFetchError(error) || error instanceof Error) {",
+              "sourcePath": "src/utils/utils.ts"
+            }
+          ]
+        },
+        "backend-srv": {
+          "count": 1,
+          "files": [
+            "src/utils/backendSrv.mock.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 11,
+              "lineStart": 11,
+              "snippet": "<BackendSrv>",
+              "sourcePath": "src/utils/backendSrv.mock.ts"
+            }
+          ]
+        },
+        "fetch-response": {
+          "count": 1,
+          "files": [
+            "src/utils/backendSrv.mock.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 12,
+              "lineStart": 12,
+              "snippet": "<FetchResponse<T>",
+              "sourcePath": "src/utils/backendSrv.mock.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/schema": {
+      "records": {}
+    },
+    "@grafana/sql": {
+      "records": {}
+    },
+    "@grafana/test-utils": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {}
+    },
+    "@test-plugins/extensions-test-app": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-datasource": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-panel": {
+      "records": {}
+    }
+  }
+}

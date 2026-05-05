@@ -1,0 +1,1037 @@
+[
+  {
+    "componentKey": "alert",
+    "componentPath": "components/Alert/Alert.tsx",
+    "exportName": "Alert"
+  },
+  {
+    "componentKey": "alerting-settings",
+    "componentPath": "components/DataSourceSettings/AlertingSettings.tsx",
+    "exportName": "AlertingSettings"
+  },
+  {
+    "componentKey": "async-multi-select",
+    "componentPath": "components/Select/Select.tsx",
+    "exportName": "AsyncMultiSelect"
+  },
+  {
+    "componentKey": "async-select",
+    "componentPath": "components/Select/Select.tsx",
+    "exportName": "AsyncSelect"
+  },
+  {
+    "componentKey": "async-virtualized-select",
+    "componentPath": "components/Select/Select.tsx",
+    "exportName": "AsyncVirtualizedSelect"
+  },
+  {
+    "componentKey": "auto-save-field",
+    "componentPath": "components/AutoSaveField/AutoSaveField.tsx",
+    "exportName": "AutoSaveField"
+  },
+  {
+    "componentKey": "auto-size-input",
+    "componentPath": "components/Input/AutoSizeInput.tsx",
+    "exportName": "AutoSizeInput"
+  },
+  {
+    "componentKey": "avatar",
+    "componentPath": "components/UsersIndicator/Avatar.tsx",
+    "exportName": "Avatar"
+  },
+  {
+    "componentKey": "badge",
+    "componentPath": "components/Badge/Badge.tsx",
+    "exportName": "Badge"
+  },
+  {
+    "componentKey": "bar-gauge",
+    "componentPath": "components/BarGauge/BarGauge.tsx",
+    "exportName": "BarGauge"
+  },
+  {
+    "componentKey": "big-value",
+    "componentPath": "components/BigValue/BigValue.tsx",
+    "exportName": "BigValue"
+  },
+  {
+    "componentKey": "box",
+    "componentPath": "components/Layout/Box/Box.tsx",
+    "exportName": "Box"
+  },
+  {
+    "componentKey": "browser-label",
+    "componentPath": "components/BrowserLabel/Label.tsx",
+    "exportName": "BrowserLabel"
+  },
+  {
+    "componentKey": "button",
+    "componentPath": "components/Button/Button.tsx",
+    "exportName": "Button"
+  },
+  {
+    "componentKey": "button-cascader",
+    "componentPath": "components/ButtonCascader/ButtonCascader.tsx",
+    "exportName": "ButtonCascader"
+  },
+  {
+    "componentKey": "button-group",
+    "componentPath": "components/Button/ButtonGroup.tsx",
+    "exportName": "ButtonGroup"
+  },
+  {
+    "componentKey": "button-select",
+    "componentPath": "components/Dropdown/ButtonSelect.tsx",
+    "exportName": "ButtonSelect"
+  },
+  {
+    "componentKey": "call-to-action-card",
+    "componentPath": "components/CallToActionCard/CallToActionCard.tsx",
+    "exportName": "CallToActionCard"
+  },
+  {
+    "componentKey": "card",
+    "componentPath": "components/Card/Card.tsx",
+    "exportName": "Card"
+  },
+  {
+    "componentKey": "card-container",
+    "componentPath": "components/Card/CardContainer.tsx",
+    "exportName": "CardContainer"
+  },
+  {
+    "componentKey": "carousel",
+    "componentPath": "components/Carousel/Carousel.tsx",
+    "exportName": "Carousel"
+  },
+  {
+    "componentKey": "cascader",
+    "componentPath": "components/Cascader/Cascader.tsx",
+    "exportName": "Cascader"
+  },
+  {
+    "componentKey": "certification-key",
+    "componentPath": "components/DataSourceSettings/CertificationKey.tsx",
+    "exportName": "CertificationKey"
+  },
+  {
+    "componentKey": "checkbox",
+    "componentPath": "components/Forms/Checkbox.tsx",
+    "exportName": "Checkbox"
+  },
+  {
+    "componentKey": "click-outside-wrapper",
+    "componentPath": "components/ClickOutsideWrapper/ClickOutsideWrapper.tsx",
+    "exportName": "ClickOutsideWrapper"
+  },
+  {
+    "componentKey": "clipboard-button",
+    "componentPath": "components/ClipboardButton/ClipboardButton.tsx",
+    "exportName": "ClipboardButton"
+  },
+  {
+    "componentKey": "code-editor",
+    "componentPath": "components/Monaco/CodeEditor.tsx",
+    "exportName": "CodeEditor"
+  },
+  {
+    "componentKey": "collapsable-section",
+    "componentPath": "components/Collapse/CollapsableSection.tsx",
+    "exportName": "CollapsableSection"
+  },
+  {
+    "componentKey": "collapse",
+    "componentPath": "components/Collapse/Collapse.tsx",
+    "exportName": "Collapse"
+  },
+  {
+    "componentKey": "color-picker",
+    "componentPath": "components/ColorPicker/ColorPicker.tsx",
+    "exportName": "ColorPicker"
+  },
+  {
+    "componentKey": "color-picker-input",
+    "componentPath": "components/ColorPicker/ColorPickerInput.tsx",
+    "exportName": "ColorPickerInput"
+  },
+  {
+    "componentKey": "combobox",
+    "componentPath": "components/Combobox/Combobox.tsx",
+    "exportName": "Combobox"
+  },
+  {
+    "componentKey": "confirm-button",
+    "componentPath": "components/ConfirmButton/ConfirmButton.tsx",
+    "exportName": "ConfirmButton"
+  },
+  {
+    "componentKey": "confirm-modal",
+    "componentPath": "components/ConfirmModal/ConfirmModal.tsx",
+    "exportName": "ConfirmModal"
+  },
+  {
+    "componentKey": "container",
+    "componentPath": "components/Layout/Layout.tsx",
+    "exportName": "Container"
+  },
+  {
+    "componentKey": "context-menu",
+    "componentPath": "components/ContextMenu/ContextMenu.tsx",
+    "exportName": "ContextMenu"
+  },
+  {
+    "componentKey": "controlled-collapse",
+    "componentPath": "components/Collapse/Collapse.tsx",
+    "exportName": "ControlledCollapse"
+  },
+  {
+    "componentKey": "counter",
+    "componentPath": "components/Tabs/Counter.tsx",
+    "exportName": "Counter"
+  },
+  {
+    "componentKey": "custom-headers-settings",
+    "componentPath": "components/DataSourceSettings/CustomHeadersSettings.tsx",
+    "exportName": "CustomHeadersSettings"
+  },
+  {
+    "componentKey": "custom-scrollbar",
+    "componentPath": "components/CustomScrollbar/CustomScrollbar.tsx",
+    "exportName": "CustomScrollbar"
+  },
+  {
+    "componentKey": "data-link-button",
+    "componentPath": "components/DataLinks/DataLinkButton.tsx",
+    "exportName": "DataLinkButton"
+  },
+  {
+    "componentKey": "data-link-input",
+    "componentPath": "components/DataLinks/DataLinkInput.tsx",
+    "exportName": "DataLinkInput"
+  },
+  {
+    "componentKey": "data-links-context-menu",
+    "componentPath": "components/DataLinks/DataLinksContextMenu.tsx",
+    "exportName": "DataLinksContextMenu"
+  },
+  {
+    "componentKey": "data-links-inline-editor",
+    "componentPath": "components/DataLinks/DataLinksInlineEditor/DataLinksInlineEditor.tsx",
+    "exportName": "DataLinksInlineEditor"
+  },
+  {
+    "componentKey": "data-links-inline-editor-base",
+    "componentPath": "components/DataLinks/DataLinksInlineEditor/DataLinksInlineEditorBase.tsx",
+    "exportName": "DataLinksInlineEditorBase"
+  },
+  {
+    "componentKey": "data-source-http-settings",
+    "componentPath": "components/DataSourceSettings/DataSourceHttpSettings.tsx",
+    "exportName": "DataSourceHttpSettings"
+  },
+  {
+    "componentKey": "date-picker",
+    "componentPath": "components/DateTimePickers/DatePicker/DatePicker.tsx",
+    "exportName": "DatePicker"
+  },
+  {
+    "componentKey": "date-picker-with-input",
+    "componentPath": "components/DateTimePickers/DatePickerWithInput/DatePickerWithInput.tsx",
+    "exportName": "DatePickerWithInput"
+  },
+  {
+    "componentKey": "date-time-picker",
+    "componentPath": "components/DateTimePickers/DateTimePicker/DateTimePicker.tsx",
+    "exportName": "DateTimePicker"
+  },
+  {
+    "componentKey": "delete-button",
+    "componentPath": "components/ConfirmButton/DeleteButton.tsx",
+    "exportName": "DeleteButton"
+  },
+  {
+    "componentKey": "divider",
+    "componentPath": "components/Divider/Divider.tsx",
+    "exportName": "Divider"
+  },
+  {
+    "componentKey": "drawer",
+    "componentPath": "components/Drawer/Drawer.tsx",
+    "exportName": "Drawer"
+  },
+  {
+    "componentKey": "dropdown",
+    "componentPath": "components/Dropdown/Dropdown.tsx",
+    "exportName": "Dropdown"
+  },
+  {
+    "componentKey": "element-selection-context",
+    "componentPath": "components/ElementSelectionContext/ElementSelectionContext.tsx",
+    "exportName": "ElementSelectionContext"
+  },
+  {
+    "componentKey": "empty-search-result",
+    "componentPath": "components/EmptySearchResult/EmptySearchResult.tsx",
+    "exportName": "EmptySearchResult"
+  },
+  {
+    "componentKey": "empty-state",
+    "componentPath": "components/EmptyState/EmptyState.tsx",
+    "exportName": "EmptyState"
+  },
+  {
+    "componentKey": "error-boundary-alert",
+    "componentPath": "components/ErrorBoundary/ErrorBoundary.tsx",
+    "exportName": "ErrorBoundaryAlert"
+  },
+  {
+    "componentKey": "error-with-stack",
+    "componentPath": "components/ErrorBoundary/ErrorWithStack.tsx",
+    "exportName": "ErrorWithStack"
+  },
+  {
+    "componentKey": "events-canvas",
+    "componentPath": "components/uPlot/geometries/EventsCanvas.tsx",
+    "exportName": "EventsCanvas"
+  },
+  {
+    "componentKey": "fade-transition",
+    "componentPath": "components/transitions/FadeTransition.tsx",
+    "exportName": "FadeTransition"
+  },
+  {
+    "componentKey": "feature-badge",
+    "componentPath": "components/FeatureBadge/FeatureBadge.tsx",
+    "exportName": "FeatureBadge"
+  },
+  {
+    "componentKey": "feature-info-box",
+    "componentPath": "components/InfoBox/FeatureInfoBox.tsx",
+    "exportName": "FeatureInfoBox"
+  },
+  {
+    "componentKey": "field",
+    "componentPath": "components/Forms/Field.tsx",
+    "exportName": "Field"
+  },
+  {
+    "componentKey": "field-array",
+    "componentPath": "components/Forms/FieldArray.tsx",
+    "exportName": "FieldArray"
+  },
+  {
+    "componentKey": "field-link-list",
+    "componentPath": "components/DataLinks/FieldLinkList.tsx",
+    "exportName": "FieldLinkList"
+  },
+  {
+    "componentKey": "field-set",
+    "componentPath": "components/Forms/FieldSet.tsx",
+    "exportName": "FieldSet"
+  },
+  {
+    "componentKey": "field-validation-message",
+    "componentPath": "components/Forms/FieldValidationMessage.tsx",
+    "exportName": "FieldValidationMessage"
+  },
+  {
+    "componentKey": "file-dropzone",
+    "componentPath": "components/FileDropzone/FileDropzone.tsx",
+    "exportName": "FileDropzone"
+  },
+  {
+    "componentKey": "file-dropzone-default-children",
+    "componentPath": "components/FileDropzone/FileDropzone.tsx",
+    "exportName": "FileDropzoneDefaultChildren"
+  },
+  {
+    "componentKey": "file-list-item",
+    "componentPath": "components/FileDropzone/FileListItem.tsx",
+    "exportName": "FileListItem"
+  },
+  {
+    "componentKey": "file-upload",
+    "componentPath": "components/FileUpload/FileUpload.tsx",
+    "exportName": "FileUpload"
+  },
+  {
+    "componentKey": "filter-input",
+    "componentPath": "components/FilterInput/FilterInput.tsx",
+    "exportName": "FilterInput"
+  },
+  {
+    "componentKey": "filter-pill",
+    "componentPath": "components/FilterPill/FilterPill.tsx",
+    "exportName": "FilterPill"
+  },
+  {
+    "componentKey": "form",
+    "componentPath": "components/Forms/Form.tsx",
+    "exportName": "Form"
+  },
+  {
+    "componentKey": "formatted-value-display",
+    "componentPath": "components/FormattedValueDisplay/FormattedValueDisplay.tsx",
+    "exportName": "FormattedValueDisplay"
+  },
+  {
+    "componentKey": "full-width-button-container",
+    "componentPath": "components/Button/FullWidthButtonContainer.tsx",
+    "exportName": "FullWidthButtonContainer"
+  },
+  {
+    "componentKey": "global-styles",
+    "componentPath": "themes/GlobalStyles/GlobalStyles.tsx",
+    "exportName": "GlobalStyles"
+  },
+  {
+    "componentKey": "grid",
+    "componentPath": "components/Layout/Grid/Grid.tsx",
+    "exportName": "Grid"
+  },
+  {
+    "componentKey": "horizontal-group",
+    "componentPath": "components/Layout/Layout.tsx",
+    "exportName": "HorizontalGroup"
+  },
+  {
+    "componentKey": "icon",
+    "componentPath": "components/Icon/Icon.tsx",
+    "exportName": "Icon"
+  },
+  {
+    "componentKey": "icon-button",
+    "componentPath": "components/IconButton/IconButton.tsx",
+    "exportName": "IconButton"
+  },
+  {
+    "componentKey": "info-box",
+    "componentPath": "components/InfoBox/InfoBox.tsx",
+    "exportName": "InfoBox"
+  },
+  {
+    "componentKey": "inline-field",
+    "componentPath": "components/Forms/InlineField.tsx",
+    "exportName": "InlineField"
+  },
+  {
+    "componentKey": "inline-field-row",
+    "componentPath": "components/Forms/InlineFieldRow.tsx",
+    "exportName": "InlineFieldRow"
+  },
+  {
+    "componentKey": "inline-form-label",
+    "componentPath": "components/FormLabel/FormLabel.tsx",
+    "exportName": "InlineFormLabel"
+  },
+  {
+    "componentKey": "inline-label",
+    "componentPath": "components/Forms/InlineLabel.tsx",
+    "exportName": "InlineLabel"
+  },
+  {
+    "componentKey": "inline-segment-group",
+    "componentPath": "components/Forms/InlineSegmentGroup.tsx",
+    "exportName": "InlineSegmentGroup"
+  },
+  {
+    "componentKey": "inline-switch",
+    "componentPath": "components/Switch/Switch.tsx",
+    "exportName": "InlineSwitch"
+  },
+  {
+    "componentKey": "inline-toast",
+    "componentPath": "components/InlineToast/InlineToast.tsx",
+    "exportName": "InlineToast"
+  },
+  {
+    "componentKey": "input",
+    "componentPath": "components/Input/Input.tsx",
+    "exportName": "Input"
+  },
+  {
+    "componentKey": "interactive-table",
+    "componentPath": "components/InteractiveTable/InteractiveTable.tsx",
+    "exportName": "InteractiveTable"
+  },
+  {
+    "componentKey": "jsonformatter",
+    "componentPath": "components/JSONFormatter/JSONFormatter.tsx",
+    "exportName": "JSONFormatter"
+  },
+  {
+    "componentKey": "label",
+    "componentPath": "components/Forms/Label.tsx",
+    "exportName": "Label"
+  },
+  {
+    "componentKey": "legend",
+    "componentPath": "components/Forms/Legend.tsx",
+    "exportName": "Legend"
+  },
+  {
+    "componentKey": "link",
+    "componentPath": "components/Link/Link.tsx",
+    "exportName": "Link"
+  },
+  {
+    "componentKey": "link-button",
+    "componentPath": "components/Button/Button.tsx",
+    "exportName": "LinkButton"
+  },
+  {
+    "componentKey": "list",
+    "componentPath": "components/List/List.tsx",
+    "exportName": "List"
+  },
+  {
+    "componentKey": "loading-bar",
+    "componentPath": "components/LoadingBar/LoadingBar.tsx",
+    "exportName": "LoadingBar"
+  },
+  {
+    "componentKey": "loading-placeholder",
+    "componentPath": "components/LoadingPlaceholder/LoadingPlaceholder.tsx",
+    "exportName": "LoadingPlaceholder"
+  },
+  {
+    "componentKey": "marker",
+    "componentPath": "components/uPlot/geometries/Marker.tsx",
+    "exportName": "Marker"
+  },
+  {
+    "componentKey": "matcher-scope-selector",
+    "componentPath": "components/MatchersUI/MatcherScopeSelector.tsx",
+    "exportName": "MatcherScopeSelector"
+  },
+  {
+    "componentKey": "menu",
+    "componentPath": "components/Menu/Menu.tsx",
+    "exportName": "Menu"
+  },
+  {
+    "componentKey": "menu-group",
+    "componentPath": "components/Menu/MenuGroup.tsx",
+    "exportName": "MenuGroup"
+  },
+  {
+    "componentKey": "menu-item",
+    "componentPath": "components/Menu/MenuItem.tsx",
+    "exportName": "MenuItem"
+  },
+  {
+    "componentKey": "modal",
+    "componentPath": "components/Modal/Modal.tsx",
+    "exportName": "Modal"
+  },
+  {
+    "componentKey": "modal-header",
+    "componentPath": "components/Modal/ModalHeader.tsx",
+    "exportName": "ModalHeader"
+  },
+  {
+    "componentKey": "modal-root",
+    "componentPath": "components/Modal/ModalsContext.tsx",
+    "exportName": "ModalRoot"
+  },
+  {
+    "componentKey": "modal-tab-content",
+    "componentPath": "components/Modal/ModalTabContent.tsx",
+    "exportName": "ModalTabContent"
+  },
+  {
+    "componentKey": "modal-tabs-header",
+    "componentPath": "components/Modal/ModalTabsHeader.tsx",
+    "exportName": "ModalTabsHeader"
+  },
+  {
+    "componentKey": "modals-context",
+    "componentPath": "components/Modal/ModalsContext.tsx",
+    "exportName": "ModalsContext"
+  },
+  {
+    "componentKey": "modals-controller",
+    "componentPath": "components/Modal/ModalsContext.tsx",
+    "exportName": "ModalsController"
+  },
+  {
+    "componentKey": "modals-provider",
+    "componentPath": "components/Modal/ModalsContext.tsx",
+    "exportName": "ModalsProvider"
+  },
+  {
+    "componentKey": "multi-combobox",
+    "componentPath": "components/Combobox/MultiCombobox.tsx",
+    "exportName": "MultiCombobox"
+  },
+  {
+    "componentKey": "multi-select",
+    "componentPath": "components/Select/Select.tsx",
+    "exportName": "MultiSelect"
+  },
+  {
+    "componentKey": "page-toolbar",
+    "componentPath": "components/PageLayout/PageToolbar.tsx",
+    "exportName": "PageToolbar"
+  },
+  {
+    "componentKey": "pagination",
+    "componentPath": "components/Pagination/Pagination.tsx",
+    "exportName": "Pagination"
+  },
+  {
+    "componentKey": "panel-chrome",
+    "componentPath": "components/PanelChrome/index.ts",
+    "exportName": "PanelChrome"
+  },
+  {
+    "componentKey": "panel-chrome-loading-indicator",
+    "componentPath": "components/PanelChrome/LoadingIndicator.tsx",
+    "exportName": "PanelChromeLoadingIndicator"
+  },
+  {
+    "componentKey": "panel-container",
+    "componentPath": "components/PanelContainer/PanelContainer.tsx",
+    "exportName": "PanelContainer"
+  },
+  {
+    "componentKey": "panel-context-provider",
+    "componentPath": "components/PanelChrome/PanelContext.ts",
+    "exportName": "PanelContextProvider"
+  },
+  {
+    "componentKey": "panel-context-root",
+    "componentPath": "components/PanelChrome/PanelContext.ts",
+    "exportName": "PanelContextRoot"
+  },
+  {
+    "componentKey": "plot-legend",
+    "componentPath": "components/uPlot/PlotLegend.tsx",
+    "exportName": "PlotLegend"
+  },
+  {
+    "componentKey": "plugin-signature-badge",
+    "componentPath": "components/PluginSignatureBadge/PluginSignatureBadge.tsx",
+    "exportName": "PluginSignatureBadge"
+  },
+  {
+    "componentKey": "popover",
+    "componentPath": "components/Tooltip/Popover.tsx",
+    "exportName": "Popover"
+  },
+  {
+    "componentKey": "popover-controller",
+    "componentPath": "components/Tooltip/PopoverController.tsx",
+    "exportName": "PopoverController"
+  },
+  {
+    "componentKey": "portal-container",
+    "componentPath": "components/Portal/Portal.tsx",
+    "exportName": "PortalContainer"
+  },
+  {
+    "componentKey": "query-field",
+    "componentPath": "components/QueryField/QueryField.tsx",
+    "exportName": "QueryField"
+  },
+  {
+    "componentKey": "radio-button-dot",
+    "componentPath": "components/Forms/RadioButtonList/RadioButtonDot.tsx",
+    "exportName": "RadioButtonDot"
+  },
+  {
+    "componentKey": "radio-button-group",
+    "componentPath": "components/Forms/RadioButtonGroup/RadioButtonGroup.tsx",
+    "exportName": "RadioButtonGroup"
+  },
+  {
+    "componentKey": "radio-button-list",
+    "componentPath": "components/Forms/RadioButtonList/RadioButtonList.tsx",
+    "exportName": "RadioButtonList"
+  },
+  {
+    "componentKey": "range-slider",
+    "componentPath": "components/Slider/RangeSlider.tsx",
+    "exportName": "RangeSlider"
+  },
+  {
+    "componentKey": "react-monaco-editor",
+    "componentPath": "components/Monaco/ReactMonacoEditorLazy.tsx",
+    "exportName": "ReactMonacoEditor"
+  },
+  {
+    "componentKey": "refresh-picker",
+    "componentPath": "components/RefreshPicker/RefreshPicker.tsx",
+    "exportName": "RefreshPicker"
+  },
+  {
+    "componentKey": "relative-time-range-picker",
+    "componentPath": "components/DateTimePickers/RelativeTimeRangePicker/RelativeTimeRangePicker.tsx",
+    "exportName": "RelativeTimeRangePicker"
+  },
+  {
+    "componentKey": "render-user-content-as-html",
+    "componentPath": "components/RenderUserContentAsHTML/RenderUserContentAsHTML.tsx",
+    "exportName": "RenderUserContentAsHTML"
+  },
+  {
+    "componentKey": "scroll-container",
+    "componentPath": "components/ScrollContainer/ScrollContainer.tsx",
+    "exportName": "ScrollContainer"
+  },
+  {
+    "componentKey": "secret-input",
+    "componentPath": "components/SecretInput/SecretInput.tsx",
+    "exportName": "SecretInput"
+  },
+  {
+    "componentKey": "secret-text-area",
+    "componentPath": "components/SecretTextArea/SecretTextArea.tsx",
+    "exportName": "SecretTextArea"
+  },
+  {
+    "componentKey": "secure-socks-proxy-settings",
+    "componentPath": "components/DataSourceSettings/SecureSocksProxySettings.tsx",
+    "exportName": "SecureSocksProxySettings"
+  },
+  {
+    "componentKey": "segment",
+    "componentPath": "components/Segment/Segment.tsx",
+    "exportName": "Segment"
+  },
+  {
+    "componentKey": "segment-async",
+    "componentPath": "components/Segment/SegmentAsync.tsx",
+    "exportName": "SegmentAsync"
+  },
+  {
+    "componentKey": "segment-input",
+    "componentPath": "components/Segment/SegmentInput.tsx",
+    "exportName": "SegmentInput"
+  },
+  {
+    "componentKey": "segment-section",
+    "componentPath": "components/Segment/SegmentSection.tsx",
+    "exportName": "SegmentSection"
+  },
+  {
+    "componentKey": "segment-select",
+    "componentPath": "components/Segment/SegmentSelect.tsx",
+    "exportName": "SegmentSelect"
+  },
+  {
+    "componentKey": "select",
+    "componentPath": "components/Select/Select.tsx",
+    "exportName": "Select"
+  },
+  {
+    "componentKey": "select-container",
+    "componentPath": "components/Select/SelectContainer.tsx",
+    "exportName": "SelectContainer"
+  },
+  {
+    "componentKey": "select-menu-options",
+    "componentPath": "components/Select/SelectMenu.tsx",
+    "exportName": "SelectMenuOptions"
+  },
+  {
+    "componentKey": "series-color-picker",
+    "componentPath": "components/ColorPicker/ColorPicker.tsx",
+    "exportName": "SeriesColorPicker"
+  },
+  {
+    "componentKey": "series-color-picker-popover",
+    "componentPath": "components/ColorPicker/SeriesColorPickerPopover.tsx",
+    "exportName": "SeriesColorPickerPopover"
+  },
+  {
+    "componentKey": "series-color-picker-popover-with-theme",
+    "componentPath": "components/ColorPicker/SeriesColorPickerPopover.tsx",
+    "exportName": "SeriesColorPickerPopoverWithTheme"
+  },
+  {
+    "componentKey": "series-icon",
+    "componentPath": "components/VizLegend/SeriesIcon.tsx",
+    "exportName": "SeriesIcon"
+  },
+  {
+    "componentKey": "series-table",
+    "componentPath": "components/VizTooltip/SeriesTable.tsx",
+    "exportName": "SeriesTable"
+  },
+  {
+    "componentKey": "series-table-row",
+    "componentPath": "components/VizTooltip/SeriesTable.tsx",
+    "exportName": "SeriesTableRow"
+  },
+  {
+    "componentKey": "set-interval",
+    "componentPath": "components/SetInterval/SetInterval.tsx",
+    "exportName": "SetInterval"
+  },
+  {
+    "componentKey": "sidebar",
+    "componentPath": "components/Sidebar/Sidebar.tsx",
+    "exportName": "Sidebar"
+  },
+  {
+    "componentKey": "slide-out-transition",
+    "componentPath": "components/transitions/SlideOutTransition.tsx",
+    "exportName": "SlideOutTransition"
+  },
+  {
+    "componentKey": "slider",
+    "componentPath": "components/Slider/Slider.tsx",
+    "exportName": "Slider"
+  },
+  {
+    "componentKey": "space",
+    "componentPath": "components/Layout/Space.tsx",
+    "exportName": "Space"
+  },
+  {
+    "componentKey": "sparkline",
+    "componentPath": "components/Sparkline/Sparkline.tsx",
+    "exportName": "Sparkline"
+  },
+  {
+    "componentKey": "spinner",
+    "componentPath": "components/Spinner/Spinner.tsx",
+    "exportName": "Spinner"
+  },
+  {
+    "componentKey": "stack",
+    "componentPath": "components/Layout/Stack/Stack.tsx",
+    "exportName": "Stack"
+  },
+  {
+    "componentKey": "stats-picker",
+    "componentPath": "components/StatsPicker/StatsPicker.tsx",
+    "exportName": "StatsPicker"
+  },
+  {
+    "componentKey": "switch",
+    "componentPath": "components/Switch/Switch.tsx",
+    "exportName": "Switch"
+  },
+  {
+    "componentKey": "tab",
+    "componentPath": "components/Tabs/Tab.tsx",
+    "exportName": "Tab"
+  },
+  {
+    "componentKey": "tab-content",
+    "componentPath": "components/Tabs/TabContent.tsx",
+    "exportName": "TabContent"
+  },
+  {
+    "componentKey": "tabbed-container",
+    "componentPath": "components/TabbedContainer/TabbedContainer.tsx",
+    "exportName": "TabbedContainer"
+  },
+  {
+    "componentKey": "table",
+    "componentPath": "components/Table/TableRT/Table.tsx",
+    "exportName": "Table"
+  },
+  {
+    "componentKey": "table-cell-inspector",
+    "componentPath": "components/Table/TableCellInspector.tsx",
+    "exportName": "TableCellInspector"
+  },
+  {
+    "componentKey": "table-input-csv",
+    "componentPath": "components/TableInputCSV/TableInputCSV.tsx",
+    "exportName": "TableInputCSV"
+  },
+  {
+    "componentKey": "tabs-bar",
+    "componentPath": "components/Tabs/TabsBar.tsx",
+    "exportName": "TabsBar"
+  },
+  {
+    "componentKey": "tag",
+    "componentPath": "components/Tags/Tag.tsx",
+    "exportName": "Tag"
+  },
+  {
+    "componentKey": "tag-list",
+    "componentPath": "components/Tags/TagList.tsx",
+    "exportName": "TagList"
+  },
+  {
+    "componentKey": "tags-input",
+    "componentPath": "components/TagsInput/TagsInput.tsx",
+    "exportName": "TagsInput"
+  },
+  {
+    "componentKey": "text",
+    "componentPath": "components/Text/Text.tsx",
+    "exportName": "Text"
+  },
+  {
+    "componentKey": "text-area",
+    "componentPath": "components/TextArea/TextArea.tsx",
+    "exportName": "TextArea"
+  },
+  {
+    "componentKey": "text-link",
+    "componentPath": "components/Link/TextLink.tsx",
+    "exportName": "TextLink"
+  },
+  {
+    "componentKey": "time-of-day-picker",
+    "componentPath": "components/DateTimePickers/TimeOfDayPicker.tsx",
+    "exportName": "TimeOfDayPicker"
+  },
+  {
+    "componentKey": "time-picker-tooltip",
+    "componentPath": "components/DateTimePickers/TimeRangePicker.tsx",
+    "exportName": "TimePickerTooltip"
+  },
+  {
+    "componentKey": "time-range-input",
+    "componentPath": "components/DateTimePickers/TimeRangeInput.tsx",
+    "exportName": "TimeRangeInput"
+  },
+  {
+    "componentKey": "time-range-label",
+    "componentPath": "components/DateTimePickers/TimeRangePicker/TimeRangeLabel.tsx",
+    "exportName": "TimeRangeLabel"
+  },
+  {
+    "componentKey": "time-range-picker",
+    "componentPath": "components/DateTimePickers/TimeRangePicker.tsx",
+    "exportName": "TimeRangePicker"
+  },
+  {
+    "componentKey": "time-range-provider",
+    "componentPath": "components/DateTimePickers/TimeRangeContext.tsx",
+    "exportName": "TimeRangeProvider"
+  },
+  {
+    "componentKey": "time-series",
+    "componentPath": "graveyard/TimeSeries/TimeSeries.tsx",
+    "exportName": "TimeSeries"
+  },
+  {
+    "componentKey": "time-zone-picker",
+    "componentPath": "components/DateTimePickers/TimeZonePicker.tsx",
+    "exportName": "TimeZonePicker"
+  },
+  {
+    "componentKey": "tlsauth-settings",
+    "componentPath": "components/DataSourceSettings/TLSAuthSettings.tsx",
+    "exportName": "TLSAuthSettings"
+  },
+  {
+    "componentKey": "toggletip",
+    "componentPath": "components/Toggletip/Toggletip.tsx",
+    "exportName": "Toggletip"
+  },
+  {
+    "componentKey": "toolbar-button",
+    "componentPath": "components/ToolbarButton/ToolbarButton.tsx",
+    "exportName": "ToolbarButton"
+  },
+  {
+    "componentKey": "toolbar-button-row",
+    "componentPath": "components/ToolbarButton/ToolbarButtonRow.tsx",
+    "exportName": "ToolbarButtonRow"
+  },
+  {
+    "componentKey": "tooltip",
+    "componentPath": "components/Tooltip/Tooltip.tsx",
+    "exportName": "Tooltip"
+  },
+  {
+    "componentKey": "tooltip-plugin",
+    "componentPath": "graveyard/uPlot/plugins/TooltipPlugin.tsx",
+    "exportName": "TooltipPlugin"
+  },
+  {
+    "componentKey": "unit-picker",
+    "componentPath": "components/UnitPicker/UnitPicker.tsx",
+    "exportName": "UnitPicker"
+  },
+  {
+    "componentKey": "user-icon",
+    "componentPath": "components/UsersIndicator/UserIcon.tsx",
+    "exportName": "UserIcon"
+  },
+  {
+    "componentKey": "users-indicator",
+    "componentPath": "components/UsersIndicator/UsersIndicator.tsx",
+    "exportName": "UsersIndicator"
+  },
+  {
+    "componentKey": "value-picker",
+    "componentPath": "components/ValuePicker/ValuePicker.tsx",
+    "exportName": "ValuePicker"
+  },
+  {
+    "componentKey": "variables-input-modal",
+    "componentPath": "components/Actions/VariablesInputModal.tsx",
+    "exportName": "VariablesInputModal"
+  },
+  {
+    "componentKey": "vertical-group",
+    "componentPath": "components/Layout/Layout.tsx",
+    "exportName": "VerticalGroup"
+  },
+  {
+    "componentKey": "vertical-tab",
+    "componentPath": "components/Tabs/VerticalTab.tsx",
+    "exportName": "VerticalTab"
+  },
+  {
+    "componentKey": "virtualized-select",
+    "componentPath": "components/Select/Select.tsx",
+    "exportName": "VirtualizedSelect"
+  },
+  {
+    "componentKey": "viz-layout",
+    "componentPath": "components/VizLayout/VizLayout.tsx",
+    "exportName": "VizLayout"
+  },
+  {
+    "componentKey": "viz-legend",
+    "componentPath": "components/VizLegend/VizLegend.tsx",
+    "exportName": "VizLegend"
+  },
+  {
+    "componentKey": "viz-legend-list-item",
+    "componentPath": "components/VizLegend/VizLegendListItem.tsx",
+    "exportName": "VizLegendListItem"
+  },
+  {
+    "componentKey": "viz-tooltip",
+    "componentPath": "components/VizTooltip/VizTooltip.tsx",
+    "exportName": "VizTooltip"
+  },
+  {
+    "componentKey": "viz-tooltip-container",
+    "componentPath": "components/VizTooltip/VizTooltipContainer.tsx",
+    "exportName": "VizTooltipContainer"
+  },
+  {
+    "componentKey": "week-start-picker",
+    "componentPath": "components/DateTimePickers/WeekStartPicker.tsx",
+    "exportName": "WeekStartPicker"
+  },
+  {
+    "componentKey": "with-context-menu",
+    "componentPath": "components/ContextMenu/WithContextMenu.tsx",
+    "exportName": "WithContextMenu"
+  },
+  {
+    "componentKey": "with-error-boundary",
+    "componentPath": "components/ErrorBoundary/ErrorBoundary.tsx",
+    "exportName": "withErrorBoundary"
+  },
+  {
+    "componentKey": "xycanvas",
+    "componentPath": "components/uPlot/geometries/XYCanvas.tsx",
+    "exportName": "XYCanvas"
+  }
+]

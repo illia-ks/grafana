@@ -1,0 +1,1146 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@test-plugins/extensions-test-app",
+      "@test-plugins/grafana-e2etest-datasource",
+      "@test-plugins/grafana-e2etest-panel"
+    ]
+  },
+  "packages": {
+    "@grafana/alerting": {
+      "records": {}
+    },
+    "@grafana/api-clients": {
+      "records": {}
+    },
+    "@grafana/data": {
+      "records": {
+        "is-data-source-plugin-context": {
+          "count": 1,
+          "files": [
+            "src/analytics/plugins/usePluginInteractionReporter.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 22,
+              "lineStart": 22,
+              "snippet": "const info = isDataSourcePluginContext(context)",
+              "sourcePath": "src/analytics/plugins/usePluginInteractionReporter.ts"
+            }
+          ]
+        },
+        "use-plugin-context": {
+          "count": 2,
+          "files": [
+            "src/analytics/plugins/usePluginInteractionReporter.ts",
+            "src/utils/userStorage.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 12,
+              "lineStart": 12,
+              "snippet": "const context = usePluginContext();",
+              "sourcePath": "src/analytics/plugins/usePluginInteractionReporter.ts"
+            },
+            {
+              "lineEnd": 299,
+              "lineStart": 299,
+              "snippet": "const context = usePluginContext();",
+              "sourcePath": "src/utils/userStorage.tsx"
+            }
+          ]
+        },
+        "get-data-source-uid": {
+          "count": 1,
+          "files": [
+            "src/components/DataSourcePicker.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 124,
+              "lineStart": 124,
+              "snippet": "const uid = getDataSourceUID(current);",
+              "sourcePath": "src/components/DataSourcePicker.tsx"
+            }
+          ]
+        },
+        "is-unsigned-plugin-signature": {
+          "count": 1,
+          "files": [
+            "src/components/DataSourcePicker.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 210,
+              "lineStart": 210,
+              "snippet": "if (o.meta && isUnsignedPluginSignature(o.meta.signature) && o !== value) {",
+              "sourcePath": "src/components/DataSourcePicker.tsx"
+            }
+          ]
+        },
+        "query-editor-props": {
+          "count": 1,
+          "files": [
+            "src/components/QueryEditorWithMigration.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 22,
+              "lineStart": 22,
+              "snippet": "<QueryEditorProps<DSType, TQuery, TOptions>",
+              "sourcePath": "src/components/QueryEditorWithMigration.tsx"
+            }
+          ]
+        },
+        "get-theme-by-id": {
+          "count": 1,
+          "files": [
+            "src/config.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 296,
+              "lineStart": 296,
+              "snippet": "this.theme2 = getThemeById(this.bootData.user.theme);",
+              "sourcePath": "src/config.ts"
+            }
+          ]
+        },
+        "grafana-theme2": {
+          "count": 1,
+          "files": [
+            "src/services/appEvents.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 24,
+              "lineStart": 24,
+              "snippet": "<GrafanaTheme2>",
+              "sourcePath": "src/services/appEvents.ts"
+            }
+          ]
+        },
+        "panel-model": {
+          "count": 1,
+          "files": [
+            "src/services/appEvents.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 42,
+              "lineStart": 42,
+              "snippet": "<PanelModel>",
+              "sourcePath": "src/services/appEvents.ts"
+            }
+          ]
+        },
+        "time-range": {
+          "count": 2,
+          "files": [
+            "src/services/appEvents.ts",
+            "src/services/templateSrv.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 33,
+              "lineStart": 33,
+              "snippet": "<TimeRange>",
+              "sourcePath": "src/services/appEvents.ts"
+            },
+            {
+              "lineEnd": 58,
+              "lineStart": 58,
+              "snippet": "updateTimeRange(timeRange: TimeRange): void;",
+              "sourcePath": "src/services/templateSrv.ts"
+            }
+          ]
+        },
+        "data-source-api": {
+          "count": 1,
+          "files": [
+            "src/services/dataSourceSrv.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 24,
+              "lineStart": 24,
+              "snippet": "<DataSourceApi>",
+              "sourcePath": "src/services/dataSourceSrv.ts"
+            }
+          ]
+        },
+        "data-source-ref": {
+          "count": 2,
+          "files": [
+            "src/services/dataSourceSrv.ts",
+            "src/utils/DataSourceWithBackend.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 21,
+              "lineStart": 21,
+              "snippet": "* @param ref - The datasource identifier, it can be a name, UID or DataSourceRef (an object with UID),",
+              "sourcePath": "src/services/dataSourceSrv.ts"
+            },
+            {
+              "lineEnd": 199,
+              "lineStart": 199,
+              "snippet": "const dsRef = ds.rawRef ?? getDataSourceRef(ds);",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            }
+          ]
+        },
+        "data-query-response": {
+          "count": 7,
+          "files": [
+            "src/services/live.ts",
+            "src/utils/DataSourceWithBackend.ts",
+            "src/utils/publicDashboardQueryHandler.ts",
+            "src/utils/queryResponse.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 73,
+              "lineStart": 73,
+              "snippet": "<DataQueryResponse>",
+              "sourcePath": "src/services/live.ts"
+            },
+            {
+              "lineEnd": 165,
+              "lineStart": 165,
+              "snippet": "<DataQueryResponse>",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            },
+            {
+              "lineEnd": 481,
+              "lineStart": 481,
+              "snippet": "<DataQueryResponse>",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            },
+            {
+              "lineEnd": 488,
+              "lineStart": 488,
+              "snippet": "<DataQueryResponse>",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            },
+            {
+              "lineEnd": 10,
+              "lineStart": 10,
+              "snippet": "<DataQueryResponse>",
+              "sourcePath": "src/utils/publicDashboardQueryHandler.ts"
+            },
+            {
+              "lineEnd": 60,
+              "lineStart": 60,
+              "snippet": "export function toDataQueryResponse(",
+              "sourcePath": "src/utils/queryResponse.ts"
+            },
+            {
+              "lineEnd": 201,
+              "lineStart": 201,
+              "snippet": "const queryResponse = toDataQueryResponse(err);",
+              "sourcePath": "src/utils/queryResponse.ts"
+            }
+          ]
+        },
+        "live-channel-event": {
+          "count": 1,
+          "files": [
+            "src/services/live.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 68,
+              "lineStart": 68,
+              "snippet": "<LiveChannelEvent<T>",
+              "sourcePath": "src/services/live.ts"
+            }
+          ]
+        },
+        "live-channel-presence-status": {
+          "count": 1,
+          "files": [
+            "src/services/live.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 80,
+              "lineStart": 80,
+              "snippet": "<LiveChannelPresenceStatus>",
+              "sourcePath": "src/services/live.ts"
+            }
+          ]
+        },
+        "streaming-frame-options": {
+          "count": 1,
+          "files": [
+            "src/services/live.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 30,
+              "lineStart": 30,
+              "snippet": "<StreamingFrameOptions>",
+              "sourcePath": "src/services/live.ts"
+            }
+          ]
+        },
+        "deprecation-warning": {
+          "count": 1,
+          "files": [
+            "src/services/LocationService.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 120,
+              "lineStart": 120,
+              "snippet": "deprecationWarning('LocationSrv', 'update', 'partial, push or replace');",
+              "sourcePath": "src/services/LocationService.tsx"
+            }
+          ]
+        },
+        "plugin-extension-component": {
+          "count": 3,
+          "files": [
+            "src/services/pluginExtensions/getObservablePluginComponents.ts",
+            "src/services/pluginExtensions/utils.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 13,
+              "lineStart": 13,
+              "snippet": "<PluginExtensionComponent[]>",
+              "sourcePath": "src/services/pluginExtensions/getObservablePluginComponents.ts"
+            },
+            {
+              "lineEnd": 30,
+              "lineStart": 30,
+              "snippet": "<PluginExtensionComponent[]>",
+              "sourcePath": "src/services/pluginExtensions/getObservablePluginComponents.ts"
+            },
+            {
+              "lineEnd": 18,
+              "lineStart": 18,
+              "snippet": "export function isPluginExtensionComponent(",
+              "sourcePath": "src/services/pluginExtensions/utils.tsx"
+            }
+          ]
+        },
+        "plugin-extension-link": {
+          "count": 3,
+          "files": [
+            "src/services/pluginExtensions/getObservablePluginLinks.ts",
+            "src/services/pluginExtensions/utils.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 11,
+              "lineStart": 11,
+              "snippet": "<PluginExtensionLink[]>",
+              "sourcePath": "src/services/pluginExtensions/getObservablePluginLinks.ts"
+            },
+            {
+              "lineEnd": 24,
+              "lineStart": 24,
+              "snippet": "<PluginExtensionLink[]>",
+              "sourcePath": "src/services/pluginExtensions/getObservablePluginLinks.ts"
+            },
+            {
+              "lineEnd": 11,
+              "lineStart": 11,
+              "snippet": "export function isPluginExtensionLink(extension: PluginExtension | undefined): extension is PluginExtensionLink {",
+              "sourcePath": "src/services/pluginExtensions/utils.tsx"
+            }
+          ]
+        },
+        "component-type-with-extension-meta": {
+          "count": 4,
+          "files": [
+            "src/services/pluginExtensions/usePluginComponents.ts",
+            "src/services/pluginExtensions/utils.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 9,
+              "lineStart": 9,
+              "snippet": "<ComponentTypeWithExtensionMeta<Props>",
+              "sourcePath": "src/services/pluginExtensions/usePluginComponents.ts"
+            },
+            {
+              "lineEnd": 34,
+              "lineStart": 34,
+              "snippet": "<ComponentTypeWithExtensionMeta<Props>",
+              "sourcePath": "src/services/pluginExtensions/utils.tsx"
+            },
+            {
+              "lineEnd": 42,
+              "lineStart": 42,
+              "snippet": "<ComponentTypeWithExtensionMeta<Props>",
+              "sourcePath": "src/services/pluginExtensions/utils.tsx"
+            },
+            {
+              "lineEnd": 86,
+              "lineStart": 86,
+              "snippet": "<ComponentTypeWithExtensionMeta<Props>",
+              "sourcePath": "src/services/pluginExtensions/utils.tsx"
+            }
+          ]
+        },
+        "plugin-extension-function": {
+          "count": 1,
+          "files": [
+            "src/services/pluginExtensions/usePluginFunctions.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 10,
+              "lineStart": 10,
+              "snippet": "<PluginExtensionFunction<Signature>",
+              "sourcePath": "src/services/pluginExtensions/usePluginFunctions.ts"
+            }
+          ]
+        },
+        "app-plugin-config": {
+          "count": 2,
+          "files": [
+            "src/services/pluginMeta/apps.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 47,
+              "lineStart": 47,
+              "snippet": "<AppPluginConfig[]>",
+              "sourcePath": "src/services/pluginMeta/apps.ts"
+            },
+            {
+              "lineEnd": 55,
+              "lineStart": 55,
+              "snippet": "<AppPluginConfig | null>",
+              "sourcePath": "src/services/pluginMeta/apps.ts"
+            }
+          ]
+        },
+        "panel-plugin-meta": {
+          "count": 3,
+          "files": [
+            "src/services/pluginMeta/panels.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 76,
+              "lineStart": 76,
+              "snippet": "<PanelPluginMeta[]>",
+              "sourcePath": "src/services/pluginMeta/panels.ts"
+            },
+            {
+              "lineEnd": 84,
+              "lineStart": 84,
+              "snippet": "<PanelPluginMeta[]>",
+              "sourcePath": "src/services/pluginMeta/panels.ts"
+            },
+            {
+              "lineEnd": 111,
+              "lineStart": 111,
+              "snippet": "<PanelPluginMeta | null>",
+              "sourcePath": "src/services/pluginMeta/panels.ts"
+            }
+          ]
+        },
+        "panel-data": {
+          "count": 1,
+          "files": [
+            "src/services/QueryRunner.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 41,
+              "lineStart": 41,
+              "snippet": "<PanelData>",
+              "sourcePath": "src/services/QueryRunner.ts"
+            }
+          ]
+        },
+        "test-data-source-response": {
+          "count": 2,
+          "files": [
+            "src/services/RuntimeDataSource.ts",
+            "src/utils/DataSourceWithBackend.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 47,
+              "lineStart": 47,
+              "snippet": "<TestDataSourceResponse>",
+              "sourcePath": "src/services/RuntimeDataSource.ts"
+            },
+            {
+              "lineEnd": 456,
+              "lineStart": 456,
+              "snippet": "<TestDataSourceResponse>",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            }
+          ]
+        },
+        "current-user": {
+          "count": 2,
+          "files": [
+            "src/services/user.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 11,
+              "lineStart": 11,
+              "snippet": "export function setCurrentUser(instance: CurrentUser) {",
+              "sourcePath": "src/services/user.ts"
+            },
+            {
+              "lineEnd": 24,
+              "lineStart": 24,
+              "snippet": "export function getCurrentUser(): CurrentUser {",
+              "sourcePath": "src/services/user.ts"
+            }
+          ]
+        },
+        "data-frame-to-json": {
+          "count": 1,
+          "files": [
+            "src/utils/DataSourceWithBackend.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 497,
+              "lineStart": 497,
+              "snippet": "frame: dataFrameToJSON(f),",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            }
+          ]
+        },
+        "get-data-source-ref": {
+          "count": 1,
+          "files": [
+            "src/utils/DataSourceWithBackend.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 199,
+              "lineStart": 199,
+              "snippet": "const dsRef = ds.rawRef ?? getDataSourceRef(ds);",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            }
+          ]
+        },
+        "make-class-es5-compatible": {
+          "count": 1,
+          "files": [
+            "src/utils/DataSourceWithBackend.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 540,
+              "lineStart": 540,
+              "snippet": "DataSourceWithBackend = makeClassES5Compatible(DataSourceWithBackend);",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            }
+          ]
+        },
+        "parse-live-channel-address": {
+          "count": 1,
+          "files": [
+            "src/utils/DataSourceWithBackend.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 490,
+              "lineStart": 490,
+              "snippet": "const addr = parseLiveChannelAddress(f.meta?.channel);",
+              "sourcePath": "src/utils/DataSourceWithBackend.ts"
+            }
+          ]
+        },
+        "data-query-request": {
+          "count": 1,
+          "files": [
+            "src/utils/migrationHandler.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 66,
+              "lineStart": 66,
+              "snippet": "<DataQueryRequest<TQuery>",
+              "sourcePath": "src/utils/migrationHandler.ts"
+            }
+          ]
+        },
+        "panel-plugin": {
+          "count": 1,
+          "files": [
+            "src/utils/plugin.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 33,
+              "lineStart": 33,
+              "snippet": "<PanelPlugin>",
+              "sourcePath": "src/utils/plugin.ts"
+            }
+          ]
+        },
+        "data-query": {
+          "count": 1,
+          "files": [
+            "src/utils/publicDashboardQueryHandler.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 10,
+              "lineStart": 10,
+              "snippet": "<DataQuery>",
+              "sourcePath": "src/utils/publicDashboardQueryHandler.ts"
+            }
+          ]
+        },
+        "data-query-error": {
+          "count": 2,
+          "files": [
+            "src/utils/queryResponse.ts",
+            "src/utils/toDataQueryError.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 153,
+              "lineStart": 153,
+              "snippet": "rsp.error = toDataQueryError(res);",
+              "sourcePath": "src/utils/queryResponse.ts"
+            },
+            {
+              "lineEnd": 9,
+              "lineStart": 9,
+              "snippet": "export function toDataQueryError(err: DataQueryError | string | unknown): DataQueryError {",
+              "sourcePath": "src/utils/toDataQueryError.ts"
+            }
+          ]
+        },
+        "to-data-frame": {
+          "count": 2,
+          "files": [
+            "src/utils/queryResponse.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 132,
+              "lineStart": 132,
+              "snippet": "rsp.data.push(toDataFrame(s));",
+              "sourcePath": "src/utils/queryResponse.ts"
+            },
+            {
+              "lineEnd": 141,
+              "lineStart": 141,
+              "snippet": "rsp.data.push(toDataFrame(s));",
+              "sourcePath": "src/utils/queryResponse.ts"
+            }
+          ]
+        },
+        "data-frame": {
+          "count": 2,
+          "files": [
+            "src/utils/queryResponse.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 132,
+              "lineStart": 132,
+              "snippet": "rsp.data.push(toDataFrame(s));",
+              "sourcePath": "src/utils/queryResponse.ts"
+            },
+            {
+              "lineEnd": 141,
+              "lineStart": 141,
+              "snippet": "rsp.data.push(toDataFrame(s));",
+              "sourcePath": "src/utils/queryResponse.ts"
+            }
+          ]
+        },
+        "metric-find-value": {
+          "count": 1,
+          "files": [
+            "src/utils/queryResponse.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 226,
+              "lineStart": 226,
+              "snippet": "export function frameToMetricFindValue(frame: DataFrame): MetricFindValue[] {",
+              "sourcePath": "src/utils/queryResponse.ts"
+            }
+          ]
+        },
+        "data-frame-from-json": {
+          "count": 1,
+          "files": [
+            "src/utils/queryResponse.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 118,
+              "lineStart": 118,
+              "snippet": "const df = dataFrameFromJSON(js);",
+              "sourcePath": "src/utils/queryResponse.ts"
+            }
+          ]
+        },
+        "user-has-permission": {
+          "count": 1,
+          "files": [
+            "src/utils/rbac.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 11,
+              "lineStart": 11,
+              "snippet": "export const hasPermission = (action: string) => userHasPermission(action, getCurrentUser());",
+              "sourcePath": "src/utils/rbac.ts"
+            }
+          ]
+        },
+        "user-has-permission-in-metadata": {
+          "count": 1,
+          "files": [
+            "src/utils/rbac.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 14,
+              "lineStart": 14,
+              "snippet": "userHasPermissionInMetadata(action, object);",
+              "sourcePath": "src/utils/rbac.ts"
+            }
+          ]
+        },
+        "user-has-all-permissions": {
+          "count": 1,
+          "files": [
+            "src/utils/rbac.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 16,
+              "lineStart": 16,
+              "snippet": "export const hasAllPermissions = (actions: string[]) => userHasAllPermissions(actions, getCurrentUser());",
+              "sourcePath": "src/utils/rbac.ts"
+            }
+          ]
+        },
+        "user-has-any-permission": {
+          "count": 1,
+          "files": [
+            "src/utils/rbac.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 18,
+              "lineStart": 18,
+              "snippet": "export const hasAnyPermission = (actions: string[]) => userHasAnyPermission(actions, getCurrentUser());",
+              "sourcePath": "src/utils/rbac.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {}
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {}
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/schema": {
+      "records": {}
+    },
+    "@grafana/sql": {
+      "records": {}
+    },
+    "@grafana/test-utils": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {
+        "plugin-signature-badge": {
+          "count": 1,
+          "files": [
+            "src/components/DataSourcePicker.tsx"
+          ],
+          "propUsage": {
+            "status": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{o.meta.signature}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 213,
+              "lineStart": 213,
+              "snippet": "<PluginSignatureBadge status={o.meta.signature} />",
+              "sourcePath": "src/components/DataSourcePicker.tsx"
+            }
+          ]
+        },
+        "select": {
+          "count": 1,
+          "files": [
+            "src/components/DataSourcePicker.tsx"
+          ],
+          "propUsage": {
+            "aria-label": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "'Select a data source'"
+                }
+              ]
+            },
+            "autoFocus": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{autoFocus}"
+                }
+              ]
+            },
+            "backspaceRemovesValue": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "false"
+                }
+              ]
+            },
+            "className": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"ds-picker select-container\""
+                }
+              ]
+            },
+            "data-testid": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{selectors.components.DataSourcePicker.inputV2}"
+                }
+              ]
+            },
+            "disabled": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{disabled}"
+                }
+              ]
+            },
+            "getOptionLabel": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(o) => { if (o.meta && isUnsignedPluginSignature(o.meta.signature) && o !== value) { return ( <Stack alignItems=\"center…}"
+                }
+              ]
+            },
+            "inputId": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{inputId || 'data-source-picker'}"
+                }
+              ]
+            },
+            "invalid": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{Boolean(error) || Boolean(this.props.invalid)}"
+                }
+              ]
+            },
+            "isClearable": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{isClearable}"
+                }
+              ]
+            },
+            "isLoading": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{isLoading}"
+                }
+              ]
+            },
+            "isMulti": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "false"
+                }
+              ]
+            },
+            "maxMenuHeight": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "500"
+                }
+              ]
+            },
+            "noOptionsMessage": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"No datasources found\""
+                }
+              ]
+            },
+            "onBlur": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{onBlur}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{this.onChange}"
+                }
+              ]
+            },
+            "openMenuOnFocus": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{openMenuOnFocus}"
+                }
+              ]
+            },
+            "options": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{options}"
+                }
+              ]
+            },
+            "placeholder": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{placeholder}"
+                }
+              ]
+            },
+            "value": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{value ?? null}"
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{width}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 209,
+              "lineStart": 188,
+              "snippet": "<Select\n          isLoading={isLoading}\n          disabled={disabled}\n          aria-label={'Select a data source'}\n          data-testid={selectors.components.DataSourcePicker.inputV2}\n          inputId={inputId || 'data-source-picker'}\n          className=\"ds-picker select-container\"\n          isMulti={false}\n          isClearable={isClearable}\n          backspaceRemovesValue={false}\n          onChange={this.onChange}\n          options={options}\n          autoFocus={autoFocus}\n          onBlur={onBlur}\n          width={width}\n          openMenuOnFocus={openMenuOnFocus}\n          maxMenuHeight={500}\n          placeholder={placeholder}\n          noOptionsMessage=\"No datasources found\"\n          value={value ?? null}\n          invalid={Boolean(error) || Boolean(this.props.invalid)}\n          getOptionLabel={(o) =>",
+              "sourcePath": "src/components/DataSourcePicker.tsx"
+            }
+          ]
+        },
+        "stack": {
+          "count": 1,
+          "files": [
+            "src/components/DataSourcePicker.tsx"
+          ],
+          "propUsage": {
+            "alignItems": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"center\""
+                }
+              ]
+            },
+            "justifyContent": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"space-between\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 214,
+              "lineStart": 212,
+              "snippet": "<Stack alignItems=\"center\" justifyContent=\"space-between\">\n                  <span>{o.label}</span> <PluginSignatureBadge status={o.meta.signature} />\n                </Stack>",
+              "sourcePath": "src/components/DataSourcePicker.tsx"
+            }
+          ]
+        },
+        "attach-debugger": {
+          "count": 1,
+          "files": [
+            "src/services/LocationService.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 178,
+              "lineStart": 178,
+              "snippet": "attachDebugger('location', locationService, navigationLog);",
+              "sourcePath": "src/services/LocationService.tsx"
+            }
+          ]
+        },
+        "create-logger": {
+          "count": 1,
+          "files": [
+            "src/services/LocationService.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 172,
+              "lineStart": 172,
+              "snippet": "const navigationLog = createLogger('Router');",
+              "sourcePath": "src/services/LocationService.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@test-plugins/extensions-test-app": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-datasource": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-panel": {
+      "records": {}
+    }
+  }
+}

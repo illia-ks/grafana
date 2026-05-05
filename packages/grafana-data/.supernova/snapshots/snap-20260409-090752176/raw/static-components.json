@@ -1,0 +1,42 @@
+[
+  {
+    "componentKey": "data-links-context",
+    "componentPath": "field/fieldOverrides.ts",
+    "exportName": "DataLinksContext"
+  },
+  {
+    "componentKey": "data-source-plugin-context-provider",
+    "componentPath": "context/plugins/DataSourcePluginContextProvider.tsx",
+    "exportName": "DataSourcePluginContextProvider"
+  },
+  {
+    "componentKey": "local-storage-value-provider",
+    "componentPath": "utils/LocalStorageValueProvider.tsx",
+    "exportName": "LocalStorageValueProvider"
+  },
+  {
+    "componentKey": "plugin-context",
+    "componentPath": "context/plugins/PluginContext.tsx",
+    "exportName": "PluginContext"
+  },
+  {
+    "componentKey": "plugin-context-provider",
+    "componentPath": "context/plugins/PluginContextProvider.tsx",
+    "exportName": "PluginContextProvider"
+  },
+  {
+    "componentKey": "restricted-grafana-apis-context",
+    "componentPath": "context/plugins/RestrictedGrafanaApis.tsx",
+    "exportName": "RestrictedGrafanaApisContext"
+  },
+  {
+    "componentKey": "restricted-grafana-apis-context-provider",
+    "componentPath": "context/plugins/RestrictedGrafanaApis.tsx",
+    "exportName": "RestrictedGrafanaApisContextProvider"
+  },
+  {
+    "componentKey": "theme-context",
+    "componentPath": "themes/context.tsx",
+    "exportName": "ThemeContext"
+  }
+]

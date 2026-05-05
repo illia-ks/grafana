@@ -1,0 +1,37 @@
+[
+  {
+    "componentKey": "get-apibase-url",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getAPIBaseURL",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-apinamespace",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getAPINamespace",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "handle-request-error",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "handleRequestError",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "mock-backend-srv",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "MockBackendSrv",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "normalize-error",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "normalizeError",
+    "exportType": "inferred-export"
+  }
+]

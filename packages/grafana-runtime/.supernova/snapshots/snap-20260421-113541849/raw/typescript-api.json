@@ -1,0 +1,107 @@
+{
+  "folder-picker": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "clearable",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "excludeUIDs",
+        "required": false,
+        "type": "string[]"
+      },
+      {
+        "name": "invalid",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "onChange",
+        "required": false,
+        "type": "(folderUID: string | undefined, folderName: string | undefined) => void"
+      },
+      {
+        "name": "permission",
+        "required": false,
+        "type": "\"view\" | \"edit\""
+      },
+      {
+        "name": "rootFolderUID",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "showRootFolder",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "value",
+        "required": false,
+        "type": "string"
+      }
+    ],
+    "sourcePath": "components/FolderPicker.tsx"
+  },
+  "location-service-provider": {
+    "linkedTypes": [
+      {
+        "definition": "export interface LocationService {\n  partial: (query: Record<string, any>, replace?: boolean) => void;\n  push: (location: H.Path | H.LocationDescriptor<any>) => void;\n  replace: (location: H.Path | H.LocationDescriptor<any>) => void;\n  reload: () => void;\n  getLocation: () => H.Location;\n  getHistory: () => H.History;\n  getSearch: () => URLSearchParams;\n  getSearchObject: () => UrlQueryMap;\n  getLocationObservable: () => Observable<H.Location>;\n\n  /**\n   * This is from the old LocationSrv interface\n   * @deprecated use partial, push or replace instead */\n  update: (update: LocationUpdate) => void;\n}",
+        "lineEnd": 31,
+        "lineStart": 16,
+        "name": "LocationService",
+        "sourcePath": "services/LocationService.tsx"
+      },
+      {
+        "definition": "export interface LocationSrv {\n  update(options: LocationUpdate): void;\n}",
+        "lineEnd": 49,
+        "lineStart": 47,
+        "name": "LocationSrv",
+        "sourcePath": "services/LocationSrv.ts"
+      },
+      {
+        "definition": "export interface LocationUpdate {\n  /**\n   * Target path where you automatically wants to navigate the user.\n   */\n  path?: string;\n\n  /**\n   * Specify this value if you want to add values to the query string of the URL.\n   */\n  query?: UrlQueryMap;\n\n  /**\n   * If set to true, the query argument will be added to the existing URL.\n   */\n  partial?: boolean;\n\n  /**\n   * Used internally to sync the Redux state from Angular to make sure that the Redux location\n   * state is in sync when navigating using the Angular router.\n   *\n   * @remarks\n   * Do not change this unless you are the Angular router.\n   *\n   * @internal\n   */\n  routeParams?: UrlQueryMap;\n\n  /*\n   * If set to true, this will replace URL state (ie. cause no new browser history).\n   */\n  replace?: boolean;\n}",
+        "lineEnd": 38,
+        "lineStart": 7,
+        "name": "LocationUpdate",
+        "sourcePath": "services/LocationSrv.ts"
+      }
+    ],
+    "props": [
+      {
+        "name": "service",
+        "required": true,
+        "type": "export interface LocationService { partial: (query: Record<string, any>, replace?: boolean) => void; push: (location: H.Path | H.LocationDescriptor<any>) => void; replace: (location: H.Path | H.LocationDescriptor<any>) => void; reload: () => void; getLocation: () => H.Location; getHistory: () => H.History; getSearch: () => URLSearchParams; getSearchObject: () => UrlQueryMap; getLocationObservable: () => Observable<H.Location>; /** * This is from the old LocationSrv interface * @deprecated use partial, push or replace instead */ update: (update: LocationUpdate) => void; }"
+      }
+    ],
+    "sourcePath": "services/LocationService.tsx"
+  },
+  "render-limited-components": {
+    "linkedTypes": [],
+    "props": [
+      {
+        "name": "components",
+        "required": true,
+        "type": "ComponentTypeWithExtensionMeta<Props>[]"
+      },
+      {
+        "name": "limit",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "pluginId",
+        "required": false,
+        "type": "string | RegExp | string[]"
+      },
+      {
+        "name": "props",
+        "required": true,
+        "type": "Props"
+      }
+    ],
+    "sourcePath": "services/pluginExtensions/utils.tsx"
+  }
+}

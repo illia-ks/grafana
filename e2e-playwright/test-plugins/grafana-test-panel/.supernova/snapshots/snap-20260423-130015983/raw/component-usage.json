@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@test-plugins/extensions-test-app",
+      "@test-plugins/grafana-e2etest-datasource"
+    ]
+  },
+  "packages": {
+    "@grafana/alerting": {
+      "records": {}
+    },
+    "@grafana/api-clients": {
+      "records": {}
+    },
+    "@grafana/data": {
+      "records": {}
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {
+        "trans": {
+          "count": 2,
+          "files": [
+            "components/SimplePanel.tsx"
+          ],
+          "propUsage": {
+            "defaults": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"Number of series: {{numberOfSeries}}\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"Text option value: {{optionValue}}\""
+                }
+              ]
+            },
+            "i18nKey": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"components.simplePanel.options.showSeriesCount\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"components.simplePanel.options.textOptionValue\""
+                }
+              ]
+            },
+            "values": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{{ numberOfSeries: data.series.length }}"
+                },
+                {
+                  "count": 1,
+                  "value": "{{ optionValue: options.text }}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 70,
+              "lineStart": 66,
+              "snippet": "<Trans\n              i18nKey=\"components.simplePanel.options.showSeriesCount\"\n              defaults=\"Number of series: {{numberOfSeries}}\"\n              values={{ numberOfSeries: data.series.length }}\n            />",
+              "sourcePath": "components/SimplePanel.tsx"
+            },
+            {
+              "lineEnd": 78,
+              "lineStart": 74,
+              "snippet": "<Trans\n            i18nKey=\"components.simplePanel.options.textOptionValue\"\n            defaults=\"Text option value: {{optionValue}}\"\n            values={{ optionValue: options.text }}\n          />",
+              "sourcePath": "components/SimplePanel.tsx"
+            }
+          ]
+        },
+        "init-plugin-translations": {
+          "count": 1,
+          "files": [
+            "module.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 8,
+              "lineStart": 8,
+              "snippet": "await initPluginTranslations(pluginJson.id);",
+              "sourcePath": "module.ts"
+            }
+          ]
+        },
+        "t": {
+          "count": 11,
+          "files": [
+            "module.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 12,
+              "lineStart": 12,
+              "snippet": ".addTextInput({",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 14,
+              "lineStart": 14,
+              "snippet": "name: t('panel.options.text.name', 'Simple text option'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 15,
+              "lineStart": 15,
+              "snippet": "description: t('panel.options.text.description', 'Description of panel option'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 16,
+              "lineStart": 16,
+              "snippet": "defaultValue: t('panel.options.text.defaultValue', 'Default value of text input option'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 20,
+              "lineStart": 20,
+              "snippet": "name: t('panel.options.showSeriesCount.name', 'Show series counter'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 25,
+              "lineStart": 25,
+              "snippet": "name: t('panel.options.circleColor.name', 'Circle color'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 26,
+              "lineStart": 26,
+              "snippet": "description: t('panel.options.circleColor.description', 'Color of the circle'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 33,
+              "lineStart": 33,
+              "snippet": "name: t('panel.options.seriesCountSize.name', 'Series counter size'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 38,
+              "lineStart": 38,
+              "snippet": "label: t('panel.options.seriesCountSize.options.sm', 'Small'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 42,
+              "lineStart": 42,
+              "snippet": "label: t('panel.options.seriesCountSize.options.md', 'Medium'),",
+              "sourcePath": "module.ts"
+            },
+            {
+              "lineEnd": 46,
+              "lineStart": 46,
+              "snippet": "label: t('panel.options.seriesCountSize.options.lg', 'Large'),",
+              "sourcePath": "module.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {
+        "grafana-config": {
+          "count": 1,
+          "files": [
+            "webpack.config.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 23,
+              "lineStart": 23,
+              "snippet": "const baseConfig = await grafanaConfig(env);",
+              "sourcePath": "webpack.config.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/runtime": {
+      "records": {
+        "panel-data-error-view": {
+          "count": 1,
+          "files": [
+            "components/SimplePanel.tsx"
+          ],
+          "propUsage": {
+            "data": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{data}"
+                }
+              ]
+            },
+            "fieldConfig": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{fieldConfig}"
+                }
+              ]
+            },
+            "needsStringField": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{true}"
+                }
+              ]
+            },
+            "panelId": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{id}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 37,
+              "lineStart": 37,
+              "snippet": "<PanelDataErrorView fieldConfig={fieldConfig} panelId={id} data={data} needsStringField />",
+              "sourcePath": "components/SimplePanel.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/schema": {
+      "records": {}
+    },
+    "@grafana/sql": {
+      "records": {}
+    },
+    "@grafana/test-utils": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {
+        "use-styles2": {
+          "count": 1,
+          "files": [
+            "components/SimplePanel.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 34,
+              "lineStart": 34,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "components/SimplePanel.tsx"
+            }
+          ]
+        },
+        "use-theme2": {
+          "count": 1,
+          "files": [
+            "components/SimplePanel.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 33,
+              "lineStart": 33,
+              "snippet": "const theme = useTheme2();",
+              "sourcePath": "components/SimplePanel.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@test-plugins/extensions-test-app": {
+      "records": {}
+    },
+    "@test-plugins/grafana-e2etest-datasource": {
+      "records": {}
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "trans": {
+    "linkedTypes": [
+      {
+        "definition": "type TransChild = React.ReactNode | Record<string, unknown>;",
+        "lineEnd": 11,
+        "lineStart": 11,
+        "name": "TransChild",
+        "sourcePath": "types.ts"
+      }
+    ],
+    "props": [
+      {
+        "name": "children",
+        "required": false,
+        "type": "TransChild | readonly TransChild[]"
+      },
+      {
+        "name": "className",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "components",
+        "required": false,
+        "type": "readonly ReactElement<unknown, string | JSXElementConstructor<any>>[] | { readonly [tagName: string]: ReactElement<unknown, string | JSXElementConstructor<any>>; }"
+      },
+      {
+        "name": "count",
+        "required": false,
+        "type": "number"
+      },
+      {
+        "name": "defaults",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "i18nKey",
+        "required": true,
+        "type": "string"
+      },
+      {
+        "name": "ns",
+        "required": false,
+        "type": "string"
+      },
+      {
+        "name": "shouldUnescape",
+        "required": false,
+        "type": "boolean"
+      },
+      {
+        "name": "values",
+        "required": false,
+        "type": "{ [P in K]: T; }"
+      }
+    ],
+    "sourcePath": "i18n.tsx"
+  }
+}

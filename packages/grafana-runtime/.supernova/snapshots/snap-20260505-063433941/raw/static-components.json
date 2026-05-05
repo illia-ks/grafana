@@ -1,0 +1,471 @@
+[
+  {
+    "componentKey": "create-data-source-plugin-event-properties",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createDataSourcePluginEventProperties",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "create-monitoring-logger",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createMonitoringLogger",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "create-plugin-event-properties",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createPluginEventProperties",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "create-query-runner",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createQueryRunner",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "data-source-picker",
+    "componentPath": "components/DataSourcePicker.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "DataSourcePicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-source-with-backend",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DataSourceWithBackend",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "embedded-dashboard",
+    "componentPath": "components/EmbeddedDashboard.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "EmbeddedDashboard",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "feature-enabled",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "featureEnabled",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "folder-picker",
+    "componentPath": "components/FolderPicker.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "FolderPicker",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "frame-to-metric-find-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "frameToMetricFindValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-app-plugin-version",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getAppPluginVersion",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-correlations-service",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getCorrelationsService",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-listed-panel-plugin-ids",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getListedPanelPluginIds",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-panel-plugin-version",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getPanelPluginVersion",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-plugin-import-utils",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getPluginImportUtils",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-run-request",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getRunRequest",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-all-permissions",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasAllPermissions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-any-permission",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasAnyPermission",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-permission",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasPermission",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "has-permission-in-metadata",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "hasPermissionInMetadata",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "health-check-error",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "HealthCheckError",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "health-status",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "HealthStatus",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-app-plugin-installed",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isAppPluginInstalled",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-expression-reference",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isExpressionReference",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-migration-handler",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isMigrationHandler",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-panel-plugin-installed",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isPanelPluginInstalled",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "load-plugin-css",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "loadPluginCss",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "location-service-provider",
+    "componentPath": "services/LocationService.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "LocationServiceProvider",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "log-debug",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "logDebug",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "log-error",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "logError",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "log-info",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "logInfo",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "log-measurement",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "logMeasurement",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "log-warning",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "logWarning",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "migrate-query",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "migrateQuery",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "migrate-request",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "migrateRequest",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "panel-data-error-view",
+    "componentPath": "components/PanelDataErrorView.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PanelDataErrorView",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "panel-renderer",
+    "componentPath": "components/PanelRenderer.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PanelRenderer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "plugin-page",
+    "componentPath": "components/PluginPage.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "PluginPage",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "query-editor-with-migration",
+    "componentPath": "components/QueryEditorWithMigration.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "QueryEditorWithMigration",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "render-limited-components",
+    "componentPath": "services/pluginExtensions/utils.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "renderLimitedComponents",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "report-experiment-view",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "reportExperimentView",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "report-interaction",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "reportInteraction",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "report-meta-analytics",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "reportMetaAnalytics",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "report-pageview",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "reportPageview",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "scopes-context",
+    "componentPath": "services/ScopesContext.ts",
+    "enrichmentStatus": "partial",
+    "exportName": "ScopesContext",
+    "exportType": "star-export"
+  },
+  {
+    "componentKey": "set-chrome-header-height-hook",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setChromeHeaderHeightHook",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-correlations-service",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setCorrelationsService",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-embedded-dashboard",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setEmbeddedDashboard",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-folder-picker",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setFolderPicker",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-mega-menu-open-hook",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setMegaMenuOpenHook",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-plugin-import-utils",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setPluginImportUtils",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-query-runner-factory",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setQueryRunnerFactory",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-return-to-previous-hook",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setReturnToPreviousHook",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "set-run-request",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "setRunRequest",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-data-query-error",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toDataQueryError",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "to-data-query-response",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "toDataQueryResponse",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-app-plugin-installed",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useAppPluginInstalled",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-app-plugin-version",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useAppPluginVersion",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-chrome-header-height",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useChromeHeaderHeight",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-favorite-datasources",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useFavoriteDatasources",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-listed-panel-plugin-ids",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useListedPanelPluginIds",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-mega-menu-open",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useMegaMenuOpen",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-panel-plugin-installed",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "usePanelPluginInstalled",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-panel-plugin-version",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "usePanelPluginVersion",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-plugin-interaction-reporter",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "usePluginInteractionReporter",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-plugin-user-storage",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "usePluginUserStorage",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "use-return-to-previous",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useReturnToPrevious",
+    "exportType": "inferred-export"
+  }
+]

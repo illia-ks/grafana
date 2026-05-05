@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/ui",
+      "@grafana/ui/internal"
+    ]
+  },
+  "records": {
+    "folder": {
+      "count": 1,
+      "files": [
+        "src/handlers/apis/folder.grafana.app/v1beta1/handlers.ts"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 137,
+          "lineStart": 137,
+          "snippet": "<Folder, 'spec' | 'metadata'>",
+          "sourcePath": "src/handlers/apis/folder.grafana.app/v1beta1/handlers.ts"
+        }
+      ]
+    }
+  }
+}

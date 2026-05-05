@@ -1,0 +1,1135 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/api-clients",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@grafana/ui/internal"
+    ]
+  },
+  "packages": {
+    "@grafana/api-clients": {
+      "records": {
+        "list-routing-tree-api-response": {
+          "count": 1,
+          "files": [
+            "src/grafana/api/notifications/v0alpha1/mocks/fakes/Routes.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 63,
+              "lineStart": 63,
+              "snippet": "<ListRoutingTreeApiResponse>",
+              "sourcePath": "src/grafana/api/notifications/v0alpha1/mocks/fakes/Routes.ts"
+            }
+          ]
+        },
+        "routing-tree": {
+          "count": 5,
+          "files": [
+            "src/grafana/api/notifications/v0alpha1/mocks/fakes/Routes.ts",
+            "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx",
+            "src/grafana/notificationPolicies/consts.ts",
+            "src/grafana/notificationPolicies/hooks/useMatchPolicies.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 39,
+              "lineStart": 39,
+              "snippet": "<RoutingTree>",
+              "sourcePath": "src/grafana/api/notifications/v0alpha1/mocks/fakes/Routes.ts"
+            },
+            {
+              "lineEnd": 13,
+              "lineStart": 13,
+              "snippet": "<RoutingTree>",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 9,
+              "lineStart": 9,
+              "snippet": "export function isDefaultRoutingTree(tree: RoutingTree): boolean {",
+              "sourcePath": "src/grafana/notificationPolicies/consts.ts"
+            },
+            {
+              "lineEnd": 17,
+              "lineStart": 17,
+              "snippet": "<RoutingTree['metadata'], 'name'>",
+              "sourcePath": "src/grafana/notificationPolicies/hooks/useMatchPolicies.ts"
+            },
+            {
+              "lineEnd": 78,
+              "lineStart": 78,
+              "snippet": "<RoutingTree | null>",
+              "sourcePath": "src/grafana/notificationPolicies/hooks/useMatchPolicies.ts"
+            }
+          ]
+        },
+        "mock-backend-srv": {
+          "count": 1,
+          "files": [
+            "tests/provider.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 15,
+              "lineStart": 15,
+              "snippet": "setBackendSrv(new MockBackendSrv());",
+              "sourcePath": "tests/provider.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/data": {
+      "records": {
+        "parse-flags": {
+          "count": 2,
+          "files": [
+            "src/grafana/matchers/utils.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 108,
+              "lineStart": 108,
+              "snippet": "const valueWithFlagsParsed = parseFlags(`^(?:${mv})$`);",
+              "sourcePath": "src/grafana/matchers/utils.ts"
+            },
+            {
+              "lineEnd": 113,
+              "lineStart": 113,
+              "snippet": "const valueWithFlagsParsed = parseFlags(`^(?:${mv})$`);",
+              "sourcePath": "src/grafana/matchers/utils.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {
+        "t": {
+          "count": 13,
+          "files": [
+            "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx",
+            "src/grafana/rules/components/labels/AlertLabels.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 31,
+              "lineStart": 31,
+              "snippet": "* Supports both single-select (default) and multi-select modes via the `multi` prop.",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 72,
+              "lineStart": 72,
+              "snippet": "lookup.set(name, tree);",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 75,
+              "lineStart": 75,
+              "snippet": "label: isDefault ? t('alerting.routing-tree-selector.default-policy', 'Default policy') : name,",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 78,
+              "lineStart": 78,
+              "snippet": "? t(",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 82,
+              "lineStart": 82,
+              "snippet": ": t('alerting.routing-tree-selector.custom-policy-desc', 'Route alerts through the {{name}} policy tree', {",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 87,
+              "lineStart": 87,
+              "snippet": ".sort((a, b) => {",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 105,
+              "lineStart": 105,
+              "snippet": "title={t('alerting.routing-tree-selector.error', 'Failed to load notification policies')}",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 115,
+              "lineStart": 115,
+              "snippet": ".map((opt) => treeLookup.get(opt.value))",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 131,
+              "lineStart": 131,
+              "snippet": "const tree = treeLookup.get(selectedOption.value);",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 40,
+              "lineStart": 40,
+              "snippet": ".reject(isPrivateLabel)",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 41,
+              "lineStart": 41,
+              "snippet": ".reject(([key]) => (showCommonLabels ? false : key in computedCommonLabels))",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 46,
+              "lineStart": 46,
+              "snippet": "const tooltip = t('alert-labels.button.show.tooltip', 'Show common labels');",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 60,
+              "lineStart": 60,
+              "snippet": "<div className={styles.wrapper} role=\"list\" aria-label={t('alerting.alert-labels.aria-label-labels', 'Labels')}>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            }
+          ]
+        },
+        "trans": {
+          "count": 4,
+          "files": [
+            "src/grafana/rules/components/labels/AlertLabels.tsx",
+            "src/grafana/rules/components/state/StateText.tsx"
+          ],
+          "propUsage": {
+            "i18nKey": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"alerting.alert-labels.common-labels-count\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"alert-labels.button.hide\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"alerting.paused-badge.paused\""
+                }
+              ]
+            },
+            "count": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{commonLabelsCount}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 88,
+              "lineStart": 86,
+              "snippet": "<Trans i18nKey=\"alerting.alert-labels.common-labels-count\" count={commonLabelsCount}>\n                +{'{{count}}'} common labels\n              </Trans>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 95,
+              "lineStart": 93,
+              "snippet": "<Trans i18nKey=\"alerting.alert-labels.common-labels-count\" count={commonLabelsCount}>\n                  +{'{{count}}'} common labels\n                </Trans>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 110,
+              "lineStart": 110,
+              "snippet": "<Trans i18nKey=\"alert-labels.button.hide\">Hide common labels</Trans>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 122,
+              "lineStart": 122,
+              "snippet": "<Trans i18nKey=\"alerting.paused-badge.paused\">Paused</Trans>",
+              "sourcePath": "src/grafana/rules/components/state/StateText.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {}
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/runtime": {
+      "records": {
+        "set-backend-srv": {
+          "count": 1,
+          "files": [
+            "tests/provider.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 15,
+              "lineStart": 15,
+              "snippet": "setBackendSrv(new MockBackendSrv());",
+              "sourcePath": "tests/provider.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/schema": {
+      "records": {}
+    },
+    "@grafana/sql": {
+      "records": {}
+    },
+    "@grafana/test-utils": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {
+        "field": {
+          "count": 3,
+          "files": [
+            "src/grafana/contactPoints/components/ContactPointSelector/ContactPointSelector.story.tsx",
+            "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.story.tsx"
+          ],
+          "propUsage": {
+            "label": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"Select contact point\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"Select notification policies\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"Select notification policy\""
+                }
+              ]
+            },
+            "noMargin": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 3,
+                  "value": "{true}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 28,
+              "lineStart": 26,
+              "snippet": "<Field noMargin label=\"Select contact point\">\n      <ContactPointSelector {...args} id={id} />\n    </Field>",
+              "sourcePath": "src/grafana/contactPoints/components/ContactPointSelector/ContactPointSelector.story.tsx"
+            },
+            {
+              "lineEnd": 32,
+              "lineStart": 30,
+              "snippet": "<Field noMargin label=\"Select notification policy\">\n      <RoutingTreeSelector {...args} id={id} />\n    </Field>",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.story.tsx"
+            },
+            {
+              "lineEnd": 62,
+              "lineStart": 60,
+              "snippet": "<Field noMargin label=\"Select notification policies\">\n      <RoutingTreeSelector {...args} multi value={[]} onChange={() => {}} id={id} />\n    </Field>",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.story.tsx"
+            }
+          ]
+        },
+        "combobox": {
+          "count": 2,
+          "files": [
+            "src/grafana/contactPoints/components/ContactPointSelector/ContactPointSelector.tsx",
+            "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+          ],
+          "propUsage": {
+            "loading": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{isLoading}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{handleChange}"
+                }
+              ]
+            },
+            "options": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{options}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 67,
+              "lineStart": 67,
+              "snippet": "<Combobox {...comboboxProps} loading={isLoading} options={options} onChange={handleChange} />",
+              "sourcePath": "src/grafana/contactPoints/components/ContactPointSelector/ContactPointSelector.tsx"
+            },
+            {
+              "lineEnd": 141,
+              "lineStart": 141,
+              "snippet": "<Combobox {...props} loading={isLoading} options={options} onChange={handleChange} />",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            }
+          ]
+        },
+        "combobox-option": {
+          "count": 4,
+          "files": [
+            "src/grafana/contactPoints/components/ContactPointSelector/ContactPointSelector.tsx",
+            "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 49,
+              "lineStart": 49,
+              "snippet": "<ComboboxOption>",
+              "sourcePath": "src/grafana/contactPoints/components/ContactPointSelector/ContactPointSelector.tsx"
+            },
+            {
+              "lineEnd": 59,
+              "lineStart": 59,
+              "snippet": "<ComboboxOption<string>",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 67,
+              "lineStart": 67,
+              "snippet": "<ComboboxOption<string>",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            },
+            {
+              "lineEnd": 113,
+              "lineStart": 113,
+              "snippet": "<ComboboxOption<string>",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            }
+          ]
+        },
+        "alert": {
+          "count": 1,
+          "files": [
+            "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+          ],
+          "propUsage": {
+            "severity": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"warning\""
+                }
+              ]
+            },
+            "title": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t('alerting.routing-tree-selector.error', 'Failed to load notification policies')}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 106,
+              "lineStart": 103,
+              "snippet": "<Alert\n        severity=\"warning\"\n        title={t('alerting.routing-tree-selector.error', 'Failed to load notification policies')}\n      />",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            }
+          ]
+        },
+        "multi-combobox": {
+          "count": 1,
+          "files": [
+            "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+          ],
+          "propUsage": {
+            "loading": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{isLoading}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{handleChange}"
+                }
+              ]
+            },
+            "options": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{options}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 121,
+              "lineStart": 121,
+              "snippet": "<MultiCombobox {...rest} loading={isLoading} options={options} onChange={handleChange} />",
+              "sourcePath": "src/grafana/notificationPolicies/components/RoutingTreeSelector/RoutingTreeSelector.tsx"
+            }
+          ]
+        },
+        "stack": {
+          "count": 12,
+          "files": [
+            "src/grafana/rules/components/labels/AlertLabel.story.tsx",
+            "src/grafana/rules/components/labels/AlertLabel.tsx",
+            "src/grafana/rules/components/labels/AlertLabels.story.tsx",
+            "src/grafana/rules/components/labels/AlertLabels.tsx",
+            "src/grafana/rules/components/state/StateDot.tsx",
+            "src/grafana/rules/components/state/StateText.story.tsx",
+            "src/grafana/rules/components/state/StateText.tsx"
+          ],
+          "propUsage": {
+            "direction": {
+              "count": 12,
+              "values": [
+                {
+                  "count": 6,
+                  "value": "\"column\""
+                },
+                {
+                  "count": 6,
+                  "value": "\"row\""
+                }
+              ]
+            },
+            "alignItems": {
+              "count": 10,
+              "values": [
+                {
+                  "count": 6,
+                  "value": "\"flex-start\""
+                },
+                {
+                  "count": 3,
+                  "value": "\"center\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"stretch\""
+                }
+              ]
+            },
+            "gap": {
+              "count": 9,
+              "values": [
+                {
+                  "count": 4,
+                  "value": "0.5"
+                },
+                {
+                  "count": 4,
+                  "value": "1"
+                },
+                {
+                  "count": 1,
+                  "value": "0"
+                }
+              ]
+            },
+            "role": {
+              "count": 4,
+              "values": [
+                {
+                  "count": 4,
+                  "value": "\"list\""
+                }
+              ]
+            },
+            "wrap": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"nowrap\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"wrap\""
+                }
+              ]
+            },
+            "flex": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"0 0 auto\""
+                }
+              ]
+            },
+            "data-testid": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"common-labels-tooltip-content\""
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "48"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 22,
+              "lineStart": 17,
+              "snippet": "<Stack direction=\"column\" alignItems=\"flex-start\" gap={1} role=\"list\">\n      <AlertLabel role=\"listitem\" labelKey=\"alertname\" value=\"HighErrorRate\" />\n      <AlertLabel role=\"listitem\" labelKey=\"instance\" value=\"web-01\" />\n      <AlertLabel role=\"listitem\" labelKey=\"job\" value=\"nginx\" />\n      <AlertLabel role=\"listitem\" value=\"hello, world!\" />\n    </Stack>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.story.tsx"
+            },
+            {
+              "lineEnd": 35,
+              "lineStart": 28,
+              "snippet": "<Stack direction=\"column\" alignItems=\"flex-start\" gap={1} role=\"list\">\n      <Text>md</Text>\n      <AlertLabel role=\"listitem\" labelKey=\"zone\" value=\"us-east-1\" size=\"md\" />\n      <Text>sm</Text>\n      <AlertLabel role=\"listitem\" labelKey=\"zone\" value=\"us-east-1\" size=\"sm\" />\n      <Text>xs</Text>\n      <AlertLabel role=\"listitem\" labelKey=\"zone\" value=\"us-east-1\" size=\"xs\" />\n    </Stack>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.story.tsx"
+            },
+            {
+              "lineEnd": 58,
+              "lineStart": 52,
+              "snippet": "<Stack direction=\"column\" alignItems=\"flex-start\" gap={1} role=\"list\">\n      <AlertLabel role=\"listitem\" icon=\"tag-alt\" labelKey=\"setColor\" value=\"#268bd2\" color=\"#268bd2\" />\n      <AlertLabel role=\"listitem\" icon=\"tag-alt\" labelKey=\"setColor\" value=\"#2aa198\" color=\"#2aa198\" />\n      <AlertLabel role=\"listitem\" icon=\"tag-alt\" labelKey=\"colorBy\" value=\"key\" colorBy=\"key\" />\n      <AlertLabel role=\"listitem\" icon=\"tag-alt\" labelKey=\"colorBy\" value=\"value\" colorBy=\"value\" />\n      <AlertLabel role=\"listitem\" icon=\"tag-alt\" labelKey=\"colorBy\" value=\"both\" colorBy=\"both\" />\n    </Stack>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.story.tsx"
+            },
+            {
+              "lineEnd": 47,
+              "lineStart": 31,
+              "snippet": "<Stack direction=\"row\" gap={0} alignItems=\"stretch\">\n        {labelKey && (\n          <div className={styles.label}>\n            <Stack direction=\"row\" gap={0.5} alignItems=\"center\">\n              {icon && <Icon name={icon} />}\n              {labelKey && (\n                <span className={styles.labelText} title={labelKey.toString()}>\n                  {labelKey ?? ''}\n                </span>\n              )}\n            </Stack>\n          </div>\n        )}\n        <div className={cx(styles.value, keyless && styles.valueWithoutKey)} title={value?.toString()}>\n          {value ?? '-'}\n        </div>\n      </Stack>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.tsx"
+            },
+            {
+              "lineEnd": 41,
+              "lineStart": 34,
+              "snippet": "<Stack direction=\"row\" gap={0.5} alignItems=\"center\">\n              {icon && <Icon name={icon} />}\n              {labelKey && (\n                <span className={styles.labelText} title={labelKey.toString()}>\n                  {labelKey ?? ''}\n                </span>\n              )}\n            </Stack>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.tsx"
+            },
+            {
+              "lineEnd": 32,
+              "lineStart": 17,
+              "snippet": "<Stack direction=\"column\" alignItems=\"flex-start\">\n      <AlertLabels\n        {...args}\n        labels={{ alertname: 'HighErrorRate', instance: 'web-01', job: 'nginx', zone: 'us-east-1' }}\n      />\n      <AlertLabels\n        {...args}\n        size=\"sm\"\n        labels={{ alertname: 'HighCPU', instance: 'db-02', job: 'postgres', zone: 'us-west-2' }}\n      />\n      <AlertLabels\n        {...args}\n        size=\"xs\"\n        labels={{ alertname: 'DiskFull', instance: 'cache-3', job: 'redis', zone: 'eu-central-1' }}\n      />\n    </Stack>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.story.tsx"
+            },
+            {
+              "lineEnd": 54,
+              "lineStart": 50,
+              "snippet": "<Stack data-testid=\"common-labels-tooltip-content\" role=\"list\" direction=\"row\" wrap=\"wrap\" gap={1} width={48}>\n        {Object.entries(computedCommonLabels).map(([label, value]) => (\n          <AlertLabel key={label + value} size={size} labelKey={label} value={value} colorBy=\"key\" role=\"listitem\" />\n        ))}\n      </Stack>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 16,
+              "lineStart": 14,
+              "snippet": "<Stack direction=\"row\" gap={0.5}>\n      <div className={styles.dot} />\n    </Stack>",
+              "sourcePath": "src/grafana/rules/components/state/StateDot.tsx"
+            },
+            {
+              "lineEnd": 35,
+              "lineStart": 24,
+              "snippet": "<Stack direction=\"column\" alignItems=\"flex-start\">\n      <StateText {...args} />\n      <hr />\n      <StateText type=\"alerting\" state=\"normal\" />\n      <StateText type=\"alerting\" state=\"pending\" />\n      <StateText type=\"alerting\" state=\"firing\" />\n      <StateText type=\"alerting\" state=\"recovering\" />\n      <StateText type=\"alerting\" state=\"unknown\" />\n      <hr />\n      <StateText type=\"alerting\" state=\"firing\" health=\"error\" />\n      <StateText type=\"alerting\" state=\"firing\" health=\"nodata\" />\n    </Stack>",
+              "sourcePath": "src/grafana/rules/components/state/StateText.story.tsx"
+            },
+            {
+              "lineEnd": 44,
+              "lineStart": 41,
+              "snippet": "<Stack direction=\"column\" alignItems=\"flex-start\">\n      <StateText type=\"recording\" health=\"error\" />\n      <StateText type=\"recording\" />\n    </Stack>",
+              "sourcePath": "src/grafana/rules/components/state/StateText.story.tsx"
+            },
+            {
+              "lineEnd": 113,
+              "lineStart": 108,
+              "snippet": "<Stack direction=\"row\" gap={0.5} wrap=\"nowrap\" flex=\"0 0 auto\" alignItems=\"center\">\n      <StateDot color={color} />\n      <Text variant=\"bodySmall\" color={textColor}>\n        {text}\n      </Text>\n    </Stack>",
+              "sourcePath": "src/grafana/rules/components/state/StateText.tsx"
+            },
+            {
+              "lineEnd": 123,
+              "lineStart": 120,
+              "snippet": "<Stack direction=\"row\" gap={0.5} wrap=\"nowrap\" flex=\"0 0 auto\" alignItems=\"center\">\n        <Icon name=\"pause\" size=\"xs\" />\n        <Trans i18nKey=\"alerting.paused-badge.paused\">Paused</Trans>\n      </Stack>",
+              "sourcePath": "src/grafana/rules/components/state/StateText.tsx"
+            }
+          ]
+        },
+        "text": {
+          "count": 6,
+          "files": [
+            "src/grafana/rules/components/labels/AlertLabel.story.tsx",
+            "src/grafana/rules/components/state/StateIcon.tsx",
+            "src/grafana/rules/components/state/StateText.tsx"
+          ],
+          "propUsage": {
+            "color": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"warning\""
+                },
+                {
+                  "count": 1,
+                  "value": "{iconColor}"
+                },
+                {
+                  "count": 1,
+                  "value": "{textColor}"
+                }
+              ]
+            },
+            "variant": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"bodySmall\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 29,
+              "lineStart": 29,
+              "snippet": "<Text>md</Text>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.story.tsx"
+            },
+            {
+              "lineEnd": 31,
+              "lineStart": 31,
+              "snippet": "<Text>sm</Text>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.story.tsx"
+            },
+            {
+              "lineEnd": 33,
+              "lineStart": 33,
+              "snippet": "<Text>xs</Text>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.story.tsx"
+            },
+            {
+              "lineEnd": 152,
+              "lineStart": 121,
+              "snippet": "<Text color={iconColor}>\n          <div className={styles.iconsContainer}>\n            <Icon name={iconName} width={ICON_SIZE} height={ICON_SIZE} aria-label={stateName} />\n            {/* this loading spinner works by using an optical illusion;\n              the actual icon is static and the \"spinning\" part is just a semi-transparent darker circle overlayed on top.\n              This makes it look like there is a small bright colored spinner rotating.\n            */}\n            {operation && (\n              <svg\n                width={ICON_SIZE}\n                height={ICON_SIZE}\n                viewBox=\"0 0 20 20\"\n                version=\"1.1\"\n                xmlns=\"http://www.w3.org/2000/svg\"\n                className={styles.spinning}\n              >\n                <circle\n                  r={ICON_SIZE / 2}\n                  cx=\"10\"\n                  cy=\"10\"\n                  // make sure to match this color to the color of the list item background where it's being used! Works for both light and dark themes.\n                  stroke={theme.colors.background.primary}\n                  strokeWidth=\"2\"\n                  strokeLinecap=\"round\"\n                  fill=\"transparent\"\n                  strokeOpacity={0.85}\n                  strokeDasharray=\"20px\"\n                />\n              </svg>\n            )}\n          </div>\n        </Text>",
+              "sourcePath": "src/grafana/rules/components/state/StateIcon.tsx"
+            },
+            {
+              "lineEnd": 112,
+              "lineStart": 110,
+              "snippet": "<Text variant=\"bodySmall\" color={textColor}>\n        {text}\n      </Text>",
+              "sourcePath": "src/grafana/rules/components/state/StateText.tsx"
+            },
+            {
+              "lineEnd": 124,
+              "lineStart": 119,
+              "snippet": "<Text variant=\"bodySmall\" color=\"warning\">\n      <Stack direction=\"row\" gap={0.5} wrap=\"nowrap\" flex=\"0 0 auto\" alignItems=\"center\">\n        <Icon name=\"pause\" size=\"xs\" />\n        <Trans i18nKey=\"alerting.paused-badge.paused\">Paused</Trans>\n      </Stack>\n    </Text>",
+              "sourcePath": "src/grafana/rules/components/state/StateText.tsx"
+            }
+          ]
+        },
+        "icon": {
+          "count": 3,
+          "files": [
+            "src/grafana/rules/components/labels/AlertLabel.tsx",
+            "src/grafana/rules/components/state/StateIcon.tsx",
+            "src/grafana/rules/components/state/StateText.tsx"
+          ],
+          "propUsage": {
+            "name": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"pause\""
+                },
+                {
+                  "count": 1,
+                  "value": "{icon}"
+                },
+                {
+                  "count": 1,
+                  "value": "{iconName}"
+                }
+              ]
+            },
+            "aria-label": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{stateName}"
+                }
+              ]
+            },
+            "height": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{ICON_SIZE}"
+                }
+              ]
+            },
+            "size": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"xs\""
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{ICON_SIZE}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 35,
+              "lineStart": 35,
+              "snippet": "<Icon name={icon} />",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.tsx"
+            },
+            {
+              "lineEnd": 123,
+              "lineStart": 123,
+              "snippet": "<Icon name={iconName} width={ICON_SIZE} height={ICON_SIZE} aria-label={stateName} />",
+              "sourcePath": "src/grafana/rules/components/state/StateIcon.tsx"
+            },
+            {
+              "lineEnd": 121,
+              "lineStart": 121,
+              "snippet": "<Icon name=\"pause\" size=\"xs\" />",
+              "sourcePath": "src/grafana/rules/components/state/StateText.tsx"
+            }
+          ]
+        },
+        "get-tag-colors-from-name": {
+          "count": 2,
+          "files": [
+            "src/grafana/rules/components/labels/AlertLabel.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 76,
+              "lineStart": 76,
+              "snippet": "const candidate = getTagColorsFromName(attempt).color;",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.tsx"
+            },
+            {
+              "lineEnd": 83,
+              "lineStart": 83,
+              "snippet": "return getTagColorsFromName(chosen).color;",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.tsx"
+            }
+          ]
+        },
+        "use-styles2": {
+          "count": 4,
+          "files": [
+            "src/grafana/rules/components/labels/AlertLabel.tsx",
+            "src/grafana/rules/components/labels/AlertLabels.tsx",
+            "src/grafana/rules/components/state/StateDot.tsx",
+            "src/grafana/rules/components/state/StateIcon.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 24,
+              "lineStart": 24,
+              "snippet": "const styles = useStyles2(getStyles, theColor, size);",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabel.tsx"
+            },
+            {
+              "lineEnd": 30,
+              "lineStart": 30,
+              "snippet": "const styles = useStyles2(getStyles, size);",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 11,
+              "lineStart": 11,
+              "snippet": "const styles = useStyles2(getDotStyles, { color });",
+              "sourcePath": "src/grafana/rules/components/state/StateDot.tsx"
+            },
+            {
+              "lineEnd": 81,
+              "lineStart": 81,
+              "snippet": "const styles = useStyles2(getStyles);",
+              "sourcePath": "src/grafana/rules/components/state/StateIcon.tsx"
+            }
+          ]
+        },
+        "button": {
+          "count": 3,
+          "files": [
+            "src/grafana/rules/components/labels/AlertLabels.tsx"
+          ],
+          "propUsage": {
+            "fill": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 3,
+                  "value": "\"text\""
+                }
+              ]
+            },
+            "size": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 3,
+                  "value": "\"sm\""
+                }
+              ]
+            },
+            "variant": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 3,
+                  "value": "\"secondary\""
+                }
+              ]
+            },
+            "onClick": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{() => setShowCommonLabels(false)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{() => setShowCommonLabels(true)}"
+                }
+              ]
+            },
+            "tooltipPlacement": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "\"top\""
+                }
+              ]
+            },
+            "data-testid": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"common-labels-tooltip-trigger\""
+                }
+              ]
+            },
+            "tooltip": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{tooltip}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 89,
+              "lineStart": 78,
+              "snippet": "<Button\n              variant=\"secondary\"\n              fill=\"text\"\n              onClick={() => setShowCommonLabels(true)}\n              tooltip={tooltip}\n              tooltipPlacement=\"top\"\n              size=\"sm\"\n            >\n              <Trans i18nKey=\"alerting.alert-labels.common-labels-count\" count={commonLabelsCount}>\n                +{'{{count}}'} common labels\n              </Trans>\n            </Button>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 96,
+              "lineStart": 92,
+              "snippet": "<Button data-testid=\"common-labels-tooltip-trigger\" variant=\"secondary\" fill=\"text\" size=\"sm\">\n                <Trans i18nKey=\"alerting.alert-labels.common-labels-count\" count={commonLabelsCount}>\n                  +{'{{count}}'} common labels\n                </Trans>\n              </Button>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            },
+            {
+              "lineEnd": 111,
+              "lineStart": 103,
+              "snippet": "<Button\n            variant=\"secondary\"\n            fill=\"text\"\n            onClick={() => setShowCommonLabels(false)}\n            tooltipPlacement=\"top\"\n            size=\"sm\"\n          >\n            <Trans i18nKey=\"alert-labels.button.hide\">Hide common labels</Trans>\n          </Button>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            }
+          ]
+        },
+        "toggletip": {
+          "count": 1,
+          "files": [
+            "src/grafana/rules/components/labels/AlertLabels.tsx"
+          ],
+          "propUsage": {
+            "closeButton": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "false"
+                }
+              ]
+            },
+            "content": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{commonLabelsTooltip}"
+                }
+              ]
+            },
+            "fitContent": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 97,
+              "lineStart": 91,
+              "snippet": "<Toggletip content={commonLabelsTooltip} closeButton={false} fitContent={true}>\n              <Button data-testid=\"common-labels-tooltip-trigger\" variant=\"secondary\" fill=\"text\" size=\"sm\">\n                <Trans i18nKey=\"alerting.alert-labels.common-labels-count\" count={commonLabelsCount}>\n                  +{'{{count}}'} common labels\n                </Trans>\n              </Button>\n            </Toggletip>",
+              "sourcePath": "src/grafana/rules/components/labels/AlertLabels.tsx"
+            }
+          ]
+        },
+        "tooltip": {
+          "count": 1,
+          "files": [
+            "src/grafana/rules/components/state/StateIcon.tsx"
+          ],
+          "propUsage": {
+            "content": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{stateName}"
+                }
+              ]
+            },
+            "placement": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"right\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 154,
+              "lineStart": 119,
+              "snippet": "<Tooltip content={stateName} placement=\"right\">\n      <div>\n        <Text color={iconColor}>\n          <div className={styles.iconsContainer}>\n            <Icon name={iconName} width={ICON_SIZE} height={ICON_SIZE} aria-label={stateName} />\n            {/* this loading spinner works by using an optical illusion;\n              the actual icon is static and the \"spinning\" part is just a semi-transparent darker circle overlayed on top.\n              This makes it look like there is a small bright colored spinner rotating.\n            */}\n            {operation && (\n              <svg\n                width={ICON_SIZE}\n                height={ICON_SIZE}\n                viewBox=\"0 0 20 20\"\n                version=\"1.1\"\n                xmlns=\"http://www.w3.org/2000/svg\"\n                className={styles.spinning}\n              >\n                <circle\n                  r={ICON_SIZE / 2}\n                  cx=\"10\"\n                  cy=\"10\"\n                  // make sure to match this color to the color of the list item background where it's being used! Works for both light and dark themes.\n                  stroke={theme.colors.background.primary}\n                  strokeWidth=\"2\"\n                  strokeLinecap=\"round\"\n                  fill=\"transparent\"\n                  strokeOpacity={0.85}\n                  strokeDasharray=\"20px\"\n                />\n              </svg>\n            )}\n          </div>\n        </Text>\n      </div>\n    </Tooltip>",
+              "sourcePath": "src/grafana/rules/components/state/StateIcon.tsx"
+            }
+          ]
+        },
+        "use-theme2": {
+          "count": 1,
+          "files": [
+            "src/grafana/rules/components/state/StateIcon.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 82,
+              "lineStart": 82,
+              "snippet": "const theme = useTheme2();",
+              "sourcePath": "src/grafana/rules/components/state/StateIcon.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/ui/internal": {
+      "records": {}
+    }
+  }
+}

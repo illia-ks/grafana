@@ -1,0 +1,776 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/data",
+      "@grafana/e2e-selectors",
+      "@grafana/eslint-plugin",
+      "@grafana/flamegraph",
+      "@grafana/i18n",
+      "@grafana/o11y-ds-frontend",
+      "@grafana/openapi",
+      "@grafana/plugin-configs",
+      "@grafana/prometheus",
+      "@grafana/runtime",
+      "@grafana/schema",
+      "@grafana/sql",
+      "@grafana/test-utils",
+      "@grafana/ui",
+      "@grafana/ui/internal"
+    ]
+  },
+  "packages": {
+    "@grafana/alerting": {
+      "records": {}
+    },
+    "@grafana/api-clients": {
+      "records": {}
+    },
+    "@grafana/data": {
+      "records": {
+        "data-query-response": {
+          "count": 1,
+          "files": [
+            "datasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 34,
+              "lineStart": 34,
+              "snippet": "<DataQueryResponse>",
+              "sourcePath": "datasource.ts"
+            }
+          ]
+        },
+        "create-data-frame": {
+          "count": 1,
+          "files": [
+            "datasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 41,
+              "lineStart": 41,
+              "snippet": "createDataFrame({",
+              "sourcePath": "datasource.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/e2e-selectors": {
+      "records": {}
+    },
+    "@grafana/eslint-plugin": {
+      "records": {}
+    },
+    "@grafana/flamegraph": {
+      "records": {}
+    },
+    "@grafana/i18n": {
+      "records": {
+        "t": {
+          "count": 10,
+          "files": [
+            "components/ConfigEditor.tsx"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 50,
+              "lineStart": 50,
+              "snippet": "label={t('config-editor.path.label', 'Path')}",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 53,
+              "lineStart": 53,
+              "snippet": "tooltip={t('config-editor.path.tooltip', 'Json field returned to frontend')}",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 59,
+              "lineStart": 59,
+              "snippet": "placeholder={t('config-editor.path.placeholder', 'Enter the path, e.g. /api/v1')}",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 64,
+              "lineStart": 64,
+              "snippet": "label={t('config-editor.api-key.label', 'API Key')}",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 67,
+              "lineStart": 67,
+              "snippet": "tooltip={t('config-editor.api-key.tooltip', 'Secure json field (backend only)')}",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 74,
+              "lineStart": 74,
+              "snippet": "placeholder={t('config-editor.api-key.placeholder', 'Enter your API key')}",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 80,
+              "lineStart": 80,
+              "snippet": "<InlineField label={t('config-editor.switch-enabled.label', 'Switch Enabled')}>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 83,
+              "lineStart": 83,
+              "snippet": "label={t('config-editor.switch-enabled.label', 'Switch Enabled')}",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 88,
+              "lineStart": 88,
+              "snippet": "<InlineField label={t('config-editor.checkbox-enabled.label', 'Checkbox Enabled')}>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 96,
+              "lineStart": 96,
+              "snippet": "<InlineField label={t('config-editor.auth-type.label', 'Auth type')}>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            }
+          ]
+        },
+        "init-plugin-translations": {
+          "count": 1,
+          "files": [
+            "module.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 9,
+              "lineStart": 9,
+              "snippet": "await initPluginTranslations(pluginJson.id);",
+              "sourcePath": "module.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/o11y-ds-frontend": {
+      "records": {}
+    },
+    "@grafana/openapi": {
+      "records": {}
+    },
+    "@grafana/plugin-configs": {
+      "records": {
+        "grafana-config": {
+          "count": 1,
+          "files": [
+            "webpack.config.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 23,
+              "lineStart": 23,
+              "snippet": "const baseConfig = await grafanaConfig(env);",
+              "sourcePath": "webpack.config.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/prometheus": {
+      "records": {}
+    },
+    "@grafana/runtime": {
+      "records": {
+        "get-backend-srv": {
+          "count": 1,
+          "files": [
+            "datasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 53,
+              "lineStart": 53,
+              "snippet": "const response = getBackendSrv().fetch<DataSourceResponse>({",
+              "sourcePath": "datasource.ts"
+            }
+          ]
+        },
+        "is-fetch-error": {
+          "count": 1,
+          "files": [
+            "datasource.ts"
+          ],
+          "propUsage": {},
+          "snippets": [
+            {
+              "lineEnd": 82,
+              "lineStart": 82,
+              "snippet": "} else if (isFetchError(err)) {",
+              "sourcePath": "datasource.ts"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/schema": {
+      "records": {}
+    },
+    "@grafana/sql": {
+      "records": {}
+    },
+    "@grafana/test-utils": {
+      "records": {}
+    },
+    "@grafana/ui": {
+      "records": {
+        "checkbox": {
+          "count": 1,
+          "files": [
+            "components/ConfigEditor.tsx"
+          ],
+          "propUsage": {
+            "id": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"config-checkbox-enabled\""
+                }
+              ]
+            },
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(e: ChangeEvent<HTMLInputElement>) => onJsonDataChange('checkboxEnabled', e.target.checked)}"
+                }
+              ]
+            },
+            "value": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{jsonData.checkboxEnabled}"
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "40"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 93,
+              "lineStart": 89,
+              "snippet": "<Checkbox\n          width={40}\n          id=\"config-checkbox-enabled\"\n          value={jsonData.checkboxEnabled}\n          onChange={(e: ChangeEvent<HTMLInputElement>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            }
+          ]
+        },
+        "inline-field": {
+          "count": 7,
+          "files": [
+            "components/ConfigEditor.tsx",
+            "components/QueryEditor.tsx"
+          ],
+          "propUsage": {
+            "label": {
+              "count": 7,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"Constant\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"Query Text\""
+                },
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.api-key.label', 'API Key')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.auth-type.label', 'Auth type')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.checkbox-enabled.label', 'Checkbox Enabled')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.path.label', 'Path')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.switch-enabled.label', 'Switch Enabled')}"
+                }
+              ]
+            },
+            "labelWidth": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "14"
+                },
+                {
+                  "count": 1,
+                  "value": "16"
+                }
+              ]
+            },
+            "tooltip": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"Not used yet\""
+                },
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.api-key.tooltip', 'Secure json field (backend only)')}"
+                },
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.path.tooltip', 'Json field returned to frontend')}"
+                }
+              ]
+            },
+            "interactive": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 2,
+                  "value": "{true}"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 62,
+              "lineStart": 49,
+              "snippet": "<InlineField\n        label={t('config-editor.path.label', 'Path')}\n        labelWidth={14}\n        interactive\n        tooltip={t('config-editor.path.tooltip', 'Json field returned to frontend')}\n      >\n        <Input\n          id=\"config-editor-path\"\n          onChange={(e: ChangeEvent<HTMLInputElement>) => onJsonDataChange('path', e.target.value)}\n          value={jsonData.path}\n          placeholder={t('config-editor.path.placeholder', 'Enter the path, e.g. /api/v1')}\n          width={40}\n        />\n      </InlineField>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 79,
+              "lineStart": 63,
+              "snippet": "<InlineField\n        label={t('config-editor.api-key.label', 'API Key')}\n        labelWidth={14}\n        interactive\n        tooltip={t('config-editor.api-key.tooltip', 'Secure json field (backend only)')}\n      >\n        <SecretInput\n          required\n          id=\"config-editor-api-key\"\n          isConfigured={secureJsonFields.apiKey}\n          value={secureJsonData?.apiKey}\n          placeholder={t('config-editor.api-key.placeholder', 'Enter your API key')}\n          width={40}\n          onReset={onResetAPIKey}\n          onChange={(e: ChangeEvent<HTMLInputElement>) => onSecureJsonDataChange('path', e.target.value)}\n        />\n      </InlineField>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 87,
+              "lineStart": 80,
+              "snippet": "<InlineField label={t('config-editor.switch-enabled.label', 'Switch Enabled')}>\n        <InlineSwitch\n          width={40}\n          label={t('config-editor.switch-enabled.label', 'Switch Enabled')}\n          value={jsonData.switchEnabled ?? false}\n          onChange={(e: ChangeEvent<HTMLInputElement>) => onJsonDataChange('switchEnabled', e.target.checked)}\n        />\n      </InlineField>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 95,
+              "lineStart": 88,
+              "snippet": "<InlineField label={t('config-editor.checkbox-enabled.label', 'Checkbox Enabled')}>\n        <Checkbox\n          width={40}\n          id=\"config-checkbox-enabled\"\n          value={jsonData.checkboxEnabled}\n          onChange={(e: ChangeEvent<HTMLInputElement>) => onJsonDataChange('checkboxEnabled', e.target.checked)}\n        />\n      </InlineField>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 104,
+              "lineStart": 96,
+              "snippet": "<InlineField label={t('config-editor.auth-type.label', 'Auth type')}>\n        <Select\n          width={40}\n          inputId=\"config-auth-type\"\n          value={jsonData.authType ?? 'keys'}\n          options={['keys', 'credentials'].map(toOption)}\n          onChange={(e: SelectableValue<string>) => onJsonDataChange('authType', e.value!)}\n        />\n      </InlineField>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 33,
+              "lineStart": 24,
+              "snippet": "<InlineField label=\"Constant\">\n        <Input\n          id=\"query-editor-constant\"\n          onChange={onConstantChange}\n          value={constant}\n          width={8}\n          type=\"number\"\n          step=\"0.1\"\n        />\n      </InlineField>",
+              "sourcePath": "components/QueryEditor.tsx"
+            },
+            {
+              "lineEnd": 42,
+              "lineStart": 34,
+              "snippet": "<InlineField label=\"Query Text\" labelWidth={16} tooltip=\"Not used yet\">\n        <Input\n          id=\"query-editor-query-text\"\n          onChange={onQueryTextChange}\n          value={queryText || ''}\n          required\n          placeholder=\"Enter a query\"\n        />\n      </InlineField>",
+              "sourcePath": "components/QueryEditor.tsx"
+            }
+          ]
+        },
+        "inline-switch": {
+          "count": 1,
+          "files": [
+            "components/ConfigEditor.tsx"
+          ],
+          "propUsage": {
+            "label": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.switch-enabled.label', 'Switch Enabled')}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(e: ChangeEvent<HTMLInputElement>) => onJsonDataChange('switchEnabled', e.target.checked)}"
+                }
+              ]
+            },
+            "value": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{jsonData.switchEnabled ?? false}"
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "40"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 85,
+              "lineStart": 81,
+              "snippet": "<InlineSwitch\n          width={40}\n          label={t('config-editor.switch-enabled.label', 'Switch Enabled')}\n          value={jsonData.switchEnabled ?? false}\n          onChange={(e: ChangeEvent<HTMLInputElement>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            }
+          ]
+        },
+        "input": {
+          "count": 3,
+          "files": [
+            "components/ConfigEditor.tsx",
+            "components/QueryEditor.tsx"
+          ],
+          "propUsage": {
+            "id": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"config-editor-path\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"query-editor-constant\""
+                },
+                {
+                  "count": 1,
+                  "value": "\"query-editor-query-text\""
+                }
+              ]
+            },
+            "onChange": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(e: ChangeEvent<HTMLInputElement>) => onJsonDataChange('path', e.target.value)}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onConstantChange}"
+                },
+                {
+                  "count": 1,
+                  "value": "{onQueryTextChange}"
+                }
+              ]
+            },
+            "value": {
+              "count": 3,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{constant}"
+                },
+                {
+                  "count": 1,
+                  "value": "{jsonData.path}"
+                },
+                {
+                  "count": 1,
+                  "value": "{queryText || ''}"
+                }
+              ]
+            },
+            "placeholder": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"Enter a query\""
+                },
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.path.placeholder', 'Enter the path, e.g. /api/v1')}"
+                }
+              ]
+            },
+            "width": {
+              "count": 2,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "40"
+                },
+                {
+                  "count": 1,
+                  "value": "8"
+                }
+              ]
+            },
+            "required": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{true}"
+                }
+              ]
+            },
+            "step": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"0.1\""
+                }
+              ]
+            },
+            "type": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"number\""
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 57,
+              "lineStart": 55,
+              "snippet": "<Input\n          id=\"config-editor-path\"\n          onChange={(e: ChangeEvent<HTMLInputElement>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            },
+            {
+              "lineEnd": 32,
+              "lineStart": 25,
+              "snippet": "<Input\n          id=\"query-editor-constant\"\n          onChange={onConstantChange}\n          value={constant}\n          width={8}\n          type=\"number\"\n          step=\"0.1\"\n        />",
+              "sourcePath": "components/QueryEditor.tsx"
+            },
+            {
+              "lineEnd": 41,
+              "lineStart": 35,
+              "snippet": "<Input\n          id=\"query-editor-query-text\"\n          onChange={onQueryTextChange}\n          value={queryText || ''}\n          required\n          placeholder=\"Enter a query\"\n        />",
+              "sourcePath": "components/QueryEditor.tsx"
+            }
+          ]
+        },
+        "secret-input": {
+          "count": 1,
+          "files": [
+            "components/ConfigEditor.tsx"
+          ],
+          "propUsage": {
+            "id": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"config-editor-api-key\""
+                }
+              ]
+            },
+            "isConfigured": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{secureJsonFields.apiKey}"
+                }
+              ]
+            },
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(e: ChangeEvent<HTMLInputElement>) => onSecureJsonDataChange('path', e.target.value)}"
+                }
+              ]
+            },
+            "onReset": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{onResetAPIKey}"
+                }
+              ]
+            },
+            "placeholder": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{t('config-editor.api-key.placeholder', 'Enter your API key')}"
+                }
+              ]
+            },
+            "required": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{true}"
+                }
+              ]
+            },
+            "value": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{secureJsonData?.apiKey}"
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "40"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 77,
+              "lineStart": 69,
+              "snippet": "<SecretInput\n          required\n          id=\"config-editor-api-key\"\n          isConfigured={secureJsonFields.apiKey}\n          value={secureJsonData?.apiKey}\n          placeholder={t('config-editor.api-key.placeholder', 'Enter your API key')}\n          width={40}\n          onReset={onResetAPIKey}\n          onChange={(e: ChangeEvent<HTMLInputElement>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            }
+          ]
+        },
+        "select": {
+          "count": 1,
+          "files": [
+            "components/ConfigEditor.tsx"
+          ],
+          "propUsage": {
+            "inputId": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "\"config-auth-type\""
+                }
+              ]
+            },
+            "onChange": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{(e: SelectableValue<string>) => onJsonDataChange('authType', e.value!)}"
+                }
+              ]
+            },
+            "options": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{['keys', 'credentials'].map(toOption)}"
+                }
+              ]
+            },
+            "value": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "{jsonData.authType ?? 'keys'}"
+                }
+              ]
+            },
+            "width": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "40"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 102,
+              "lineStart": 97,
+              "snippet": "<Select\n          width={40}\n          inputId=\"config-auth-type\"\n          value={jsonData.authType ?? 'keys'}\n          options={['keys', 'credentials'].map(toOption)}\n          onChange={(e: SelectableValue<string>",
+              "sourcePath": "components/ConfigEditor.tsx"
+            }
+          ]
+        },
+        "stack": {
+          "count": 1,
+          "files": [
+            "components/QueryEditor.tsx"
+          ],
+          "propUsage": {
+            "gap": {
+              "count": 1,
+              "values": [
+                {
+                  "count": 1,
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "snippets": [
+            {
+              "lineEnd": 43,
+              "lineStart": 23,
+              "snippet": "<Stack gap={0}>\n      <InlineField label=\"Constant\">\n        <Input\n          id=\"query-editor-constant\"\n          onChange={onConstantChange}\n          value={constant}\n          width={8}\n          type=\"number\"\n          step=\"0.1\"\n        />\n      </InlineField>\n      <InlineField label=\"Query Text\" labelWidth={16} tooltip=\"Not used yet\">\n        <Input\n          id=\"query-editor-query-text\"\n          onChange={onQueryTextChange}\n          value={queryText || ''}\n          required\n          placeholder=\"Enter a query\"\n        />\n      </InlineField>\n    </Stack>",
+              "sourcePath": "components/QueryEditor.tsx"
+            }
+          ]
+        }
+      }
+    },
+    "@grafana/ui/internal": {
+      "records": {}
+    }
+  }
+}

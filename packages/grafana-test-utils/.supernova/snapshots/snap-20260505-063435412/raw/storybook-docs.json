@@ -1,0 +1,31 @@
+{
+  "matchers": [
+    {
+      "docPath": "README.md",
+      "kind": "reference",
+      "lineEnd": 7,
+      "lineStart": 7,
+      "score": 20,
+      "snippet": "To add the matchers to your Jest config, import them then extend `expect`. This should be done in the `setupFilesAfterEnv` file declared in `jest.config.{js,ts}`.",
+      "title": "Grafana test utils"
+    },
+    {
+      "docPath": "README.md",
+      "kind": "reference",
+      "lineEnd": 11,
+      "lineStart": 9,
+      "score": 20,
+      "snippet": "```ts\n// setupTests.ts\nimport { matchers } from '@grafana/test-utils';",
+      "title": "Grafana test utils"
+    },
+    {
+      "docPath": "README.md",
+      "kind": "reference",
+      "lineEnd": 14,
+      "lineStart": 13,
+      "score": 20,
+      "snippet": "expect.extend(matchers);\n```",
+      "title": "Grafana test utils"
+    }
+  ]
+}

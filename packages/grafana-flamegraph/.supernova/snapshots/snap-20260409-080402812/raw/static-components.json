@@ -1,0 +1,7 @@
+[
+  {
+    "componentKey": "flame-graph",
+    "componentPath": "FlameGraphContainer.tsx",
+    "exportName": "FlameGraph"
+  }
+]

@@ -1,0 +1,443 @@
+[
+  {
+    "componentKey": "add-label-to-query",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "addLabelToQuery",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "alerting-settings-overhaul",
+    "componentPath": "configuration/AlertingSettingsOverhaul.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "AlertingSettingsOverhaul",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "annotation-query-editor",
+    "componentPath": "components/AnnotationQueryEditor.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "AnnotationQueryEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "build-visual-query-from-string",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "buildVisualQueryFromString",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "config-editor",
+    "componentPath": "configuration/ConfigEditor.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "ConfigEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "data-source-http-settings-overhaul",
+    "componentPath": "configuration/DataSourceHttpSettingsOverhaul.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "DataSourceHttpSettingsOverhaul",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "docs-tip",
+    "componentPath": "configuration/shared/utils.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "docsTip",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "exemplar-setting",
+    "componentPath": "configuration/ExemplarSetting.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ExemplarSetting",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "exemplars-settings",
+    "componentPath": "configuration/ExemplarsSettings.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ExemplarsSettings",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "get-init-hints",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getInitHints",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-prometheus-time",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getPrometheusTime",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "get-query-hints",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "getQueryHints",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "instant-query-ref-id-index",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "InstantQueryRefIdIndex",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "interpolate-query-expr",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "interpolateQueryExpr",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "is-valid-legacy-name",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "isValidLegacyName",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "label-filter-item",
+    "componentPath": "querybuilder/components/LabelFilterItem.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "LabelFilterItem",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "label-filters",
+    "componentPath": "querybuilder/components/LabelFilters.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "LabelFilters",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "label-param-editor",
+    "componentPath": "querybuilder/components/LabelParamEditor.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "LabelParamEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "legend-format-mode",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LegendFormatMode",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "load-resources",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "loadResources",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "metric-combobox",
+    "componentPath": "querybuilder/components/MetricCombobox.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MetricCombobox",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "metrics-browser",
+    "componentPath": "components/metrics-browser/MetricsBrowser.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "MetricsBrowser",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "metrics-labels-section",
+    "componentPath": "querybuilder/components/MetricsLabelsSection.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MetricsLabelsSection",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "metrics-modal",
+    "componentPath": "querybuilder/components/metrics-modal/MetricsModal.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MetricsModal",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "monaco-query-field-lazy",
+    "componentPath": "components/monaco-query-field/MonacoQueryFieldLazy.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MonacoQueryFieldLazy",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "nested-query",
+    "componentPath": "querybuilder/components/NestedQuery.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "NestedQuery",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "nested-query-list",
+    "componentPath": "querybuilder/components/NestedQueryList.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "NestedQueryList",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "overhaul-styles",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "overhaulStyles",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "parse-sample-value",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "parseSampleValue",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prom-application",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PromApplication",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prom-cheat-sheet",
+    "componentPath": "components/PromCheatSheet.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "PromCheatSheet",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-config-label-width",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PROM_CONFIG_LABEL_WIDTH",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prom-exemplar-field",
+    "componentPath": "components/PromExemplarField.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PromExemplarField",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-explore-extra-field",
+    "componentPath": "components/PromExploreExtraField.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PromExploreExtraField",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-flavor-versions",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PromFlavorVersions",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prom-query-builder",
+    "componentPath": "querybuilder/components/PromQueryBuilder.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "PromQueryBuilder",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-builder-container",
+    "componentPath": "querybuilder/components/PromQueryBuilderContainer.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "PromQueryBuilderContainer",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-builder-explained",
+    "componentPath": "querybuilder/components/PromQueryBuilderExplained.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "PromQueryBuilderExplained",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-builder-options",
+    "componentPath": "querybuilder/components/PromQueryBuilderOptions.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "PromQueryBuilderOptions",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-code-editor",
+    "componentPath": "querybuilder/components/PromQueryCodeEditor.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "PromQueryCodeEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-editor-by-app",
+    "componentPath": "components/PromQueryEditorByApp.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "PromQueryEditorByApp",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-editor-for-alerting",
+    "componentPath": "components/PromQueryEditorForAlerting.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "PromQueryEditorForAlerting",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-editor-selector",
+    "componentPath": "querybuilder/components/PromQueryEditorSelector.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "PromQueryEditorSelector",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-field",
+    "componentPath": "components/PromQueryField.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PromQueryField",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-legend-editor",
+    "componentPath": "querybuilder/components/PromQueryLegendEditor.tsx",
+    "enrichmentStatus": "full",
+    "exportName": "PromQueryLegendEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-query-modeller",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PromQueryModeller",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prom-settings",
+    "componentPath": "configuration/PromSettings.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "PromSettings",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-variable-query-editor",
+    "componentPath": "components/VariableQueryEditor.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "PromVariableQueryEditor",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "prom-variable-query-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PromVariableQueryType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prometheus-cache-level",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PrometheusCacheLevel",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prometheus-datasource",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PrometheusDatasource",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prometheus-metric-find-query",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PrometheusMetricFindQuery",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "prometheus-variable-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PrometheusVariableSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "promql-grammar",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "promqlGrammar",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "query-pattern",
+    "componentPath": "querybuilder/QueryPattern.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "QueryPattern",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "query-patterns-modal",
+    "componentPath": "querybuilder/QueryPatternsModal.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "QueryPatternsModal",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "query-preview",
+    "componentPath": "querybuilder/components/QueryPreview.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "QueryPreview",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "sort-series-by-label",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "sortSeriesByLabel",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "transform-dfto-table",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "transformDFToTable",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "transform-v2",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "transformV2",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "utf8-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "utf8Support",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "validate-input",
+    "componentPath": "configuration/shared/utils.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "validateInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "wrap-utf8-filters",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "wrapUtf8Filters",
+    "exportType": "inferred-export"
+  }
+]

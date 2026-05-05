@@ -1,0 +1,1256 @@
+{
+  "meta": {
+    "importFromPackages": [
+      "@grafana/alerting",
+      "@grafana/api-clients",
+      "@grafana/ui",
+      "@grafana/ui/internal"
+    ]
+  },
+  "records": {
+    "inline-field": {
+      "count": 18,
+      "files": [
+        "src/IntervalInput/IntervalInput.tsx",
+        "src/NodeGraph/NodeGraphSettings.tsx",
+        "src/SpanBar/SpanBarSettings.tsx",
+        "src/TraceToLogs/TraceToLogsSettings.tsx",
+        "src/TraceToMetrics/TraceToMetricsSettings.tsx",
+        "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+      ],
+      "propUsage": {
+        "label": {
+          "count": 17,
+          "values": [
+            {
+              "count": 3,
+              "value": "\"Data source\""
+            },
+            {
+              "count": 3,
+              "value": "\"Query\""
+            },
+            {
+              "count": 3,
+              "value": "\"Tags\""
+            },
+            {
+              "count": 2,
+              "value": "\"Use custom query\""
+            },
+            {
+              "count": 1,
+              "value": "\"Enable node graph\""
+            },
+            {
+              "count": 1,
+              "value": "\"Label\""
+            },
+            {
+              "count": 1,
+              "value": "\"Link Label\""
+            },
+            {
+              "count": 1,
+              "value": "\"Profile type\""
+            },
+            {
+              "count": 1,
+              "value": "\"Tag key\""
+            },
+            {
+              "count": 1,
+              "value": "{`Filter by ${props.type} ID`}"
+            }
+          ]
+        },
+        "labelWidth": {
+          "count": 17,
+          "values": [
+            {
+              "count": 16,
+              "value": "26"
+            },
+            {
+              "count": 1,
+              "value": "10"
+            }
+          ]
+        },
+        "tooltip": {
+          "count": 17,
+          "values": [
+            {
+              "count": 2,
+              "value": "\"Use a custom query with the possibility to interpolate variables from the trace or span\""
+            },
+            {
+              "count": 1,
+              "value": "\"Default: duration\""
+            },
+            {
+              "count": 1,
+              "value": "\"Descriptive label for the linked query\""
+            },
+            {
+              "count": 1,
+              "value": "\"Displays the node graph above the trace view. Default: disabled\""
+            },
+            {
+              "count": 1,
+              "value": "\"Profile type that will be used in the query\""
+            },
+            {
+              "count": 1,
+              "value": "\"Tag key which will be used to get the tag value. A span's attributes and resources will be searched for the tag key\""
+            },
+            {
+              "count": 1,
+              "value": "\"Tags that will be used in the metrics query\""
+            },
+            {
+              "count": 1,
+              "value": "\"Tags that will be used in the query. Default tags: 'cluster', 'hostname', 'namespace', 'pod', 'service.name', 'service.…\""
+            },
+            {
+              "count": 1,
+              "value": "\"Tags that will be used in the query. Default tags: 'service.name', 'service.namespace'\""
+            },
+            {
+              "count": 1,
+              "value": "\"The logs data source the trace is going to navigate to\""
+            },
+            {
+              "count": 1,
+              "value": "\"The profiles data source the trace is going to navigate to\""
+            },
+            {
+              "count": 1,
+              "value": "\"The Prometheus data source the trace is going to navigate to\""
+            },
+            {
+              "count": 1,
+              "value": "\"The Prometheus query that will run when navigating from a trace to metrics. Interpolate tags using the `$__tags` keyword\""
+            },
+            {
+              "count": 1,
+              "value": "\"The query that will run when navigating from a trace to logs data source. Interpolate tags using the `$__tags` keyword\""
+            },
+            {
+              "count": 1,
+              "value": "\"The query that will run when navigating from a trace to profiles data source. Interpolate tags using the `$__tags` keyw…\""
+            },
+            {
+              "count": 1,
+              "value": "{`Filters logs by ${props.type} ID, where the ${props.type} ID should be part of the log line`}"
+            }
+          ]
+        },
+        "grow": {
+          "count": 5,
+          "values": [
+            {
+              "count": 5,
+              "value": "{true}"
+            }
+          ]
+        },
+        "disabled": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{props.disabled}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 66,
+          "lineStart": 55,
+          "snippet": "<InlineField {...fieldProps}>\n      <Input\n        type=\"text\"\n        placeholder={props.placeholder || '0'}\n        width={props.width || 40}\n        onChange={(e) => {\n          props.onChange(e.currentTarget.value);\n        }}\n        value={props.value}\n        aria-label={props.ariaLabel || 'interval input'}\n      />\n    </InlineField>",
+          "sourcePath": "src/IntervalInput/IntervalInput.tsx"
+        },
+        {
+          "lineEnd": 44,
+          "lineStart": 29,
+          "snippet": "<InlineField\n          tooltip=\"Displays the node graph above the trace view. Default: disabled\"\n          label=\"Enable node graph\"\n          labelWidth={26}\n        >\n          <InlineSwitch\n            id=\"enableNodeGraph\"\n            value={options.jsonData.nodeGraph?.enabled}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'nodeGraph', {\n                ...options.jsonData.nodeGraph,\n                enabled: event.currentTarget.checked,\n              })\n            }\n          />\n        </InlineField>",
+          "sourcePath": "src/NodeGraph/NodeGraphSettings.tsx"
+        },
+        {
+          "lineEnd": 51,
+          "lineStart": 35,
+          "snippet": "<InlineField label=\"Label\" labelWidth={26} tooltip=\"Default: duration\" grow>\n          <Select\n            inputId=\"label\"\n            options={selectOptions}\n            value={options.jsonData.spanBar?.type || ''}\n            onChange={(v) => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'spanBar', {\n                ...options.jsonData.spanBar,\n                type: v?.value ?? '',\n              });\n            }}\n            placeholder=\"Duration\"\n            isClearable\n            aria-label={'select-label-name'}\n            width={40}\n          />\n        </InlineField>",
+          "sourcePath": "src/SpanBar/SpanBarSettings.tsx"
+        },
+        {
+          "lineEnd": 72,
+          "lineStart": 55,
+          "snippet": "<InlineField\n            label=\"Tag key\"\n            labelWidth={26}\n            tooltip=\"Tag key which will be used to get the tag value. A span's attributes and resources will be searched for the tag key\"\n          >\n            <Input\n              type=\"text\"\n              placeholder=\"Enter tag key\"\n              onChange={(v) =>\n                updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'spanBar', {\n                  ...options.jsonData.spanBar,\n                  tag: v.currentTarget.value,\n                })\n              }\n              value={options.jsonData.spanBar?.tag || ''}\n              width={40}\n            />\n          </InlineField>",
+          "sourcePath": "src/SpanBar/SpanBarSettings.tsx"
+        },
+        {
+          "lineEnd": 136,
+          "lineStart": 118,
+          "snippet": "<InlineField\n          tooltip=\"The logs data source the trace is going to navigate to\"\n          label=\"Data source\"\n          labelWidth={26}\n        >\n          <DataSourcePicker\n            inputId=\"trace-to-logs-data-source-picker\"\n            filter={(ds) => supportedDataSourceTypes.includes(ds.type)}\n            current={traceToLogs.datasourceUid}\n            noDefault={true}\n            width={40}\n            onChange={(ds: DataSourceInstanceSettings) =>\n              updateTracesToLogs({\n                datasourceUid: ds.uid,\n              })\n            }\n            onClear={() => updateTracesToLogs({ datasourceUid: undefined })}\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 170,
+          "lineStart": 164,
+          "snippet": "<InlineField\n          tooltip=\"Tags that will be used in the query. Default tags: 'cluster', 'hostname', 'namespace', 'pod', 'service.name', 'service.namespace'\"\n          label=\"Tags\"\n          labelWidth={26}\n        >\n          <TagMappingInput values={tags ?? []} onChange={(v) => updateTracesToLogs({ tags: v })} />\n        </InlineField>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 201,
+          "lineStart": 189,
+          "snippet": "<InlineField\n          tooltip=\"Use a custom query with the possibility to interpolate variables from the trace or span\"\n          label=\"Use custom query\"\n          labelWidth={26}\n        >\n          <InlineSwitch\n            id={'customQuerySwitch'}\n            value={customQuery}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>) =>\n              updateTracesToLogs({ customQuery: event.currentTarget.checked })\n            }\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 218,
+          "lineStart": 205,
+          "snippet": "<InlineField\n          label=\"Query\"\n          labelWidth={26}\n          tooltip=\"The query that will run when navigating from a trace to logs data source. Interpolate tags using the `$__tags` keyword\"\n          grow\n        >\n          <Input\n            label=\"Query\"\n            type=\"text\"\n            allowFullScreen\n            value={query}\n            onChange={(e) => updateTracesToLogs({ query: e.currentTarget.value })}\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 246,
+          "lineStart": 234,
+          "snippet": "<InlineField\n        disabled={props.disabled}\n        label={`Filter by ${props.type} ID`}\n        labelWidth={26}\n        grow\n        tooltip={`Filters logs by ${props.type} ID, where the ${props.type} ID should be part of the log line`}\n      >\n        <InlineSwitch\n          id={props.id}\n          value={props.value}\n          onChange={(event: React.SyntheticEvent<HTMLInputElement>) => props.onChange(event.currentTarget.checked)}\n        />\n      </InlineField>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 71,
+          "lineStart": 47,
+          "snippet": "<InlineField\n          tooltip=\"The Prometheus data source the trace is going to navigate to\"\n          label=\"Data source\"\n          labelWidth={26}\n        >\n          <DataSourcePicker\n            inputId=\"trace-to-metrics-data-source-picker\"\n            current={options.jsonData.tracesToMetrics?.datasourceUid}\n            noDefault={true}\n            width={40}\n            filter={(ds) => supportedDataSourceTypes.includes(ds.type)}\n            onChange={(ds: DataSourceInstanceSettings) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n                ...options.jsonData.tracesToMetrics,\n                datasourceUid: ds.uid,\n              })\n            }\n            onClear={() =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n                ...options.jsonData.tracesToMetrics,\n                datasourceUid: undefined,\n              })\n            }\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 117,
+          "lineStart": 107,
+          "snippet": "<InlineField tooltip=\"Tags that will be used in the metrics query\" label=\"Tags\" labelWidth={26}>\n          <TagMappingInput\n            values={options.jsonData.tracesToMetrics?.tags ?? []}\n            onChange={(v) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n                ...options.jsonData.tracesToMetrics,\n                tags: v,\n              })\n            }\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 141,
+          "lineStart": 122,
+          "snippet": "<InlineField label=\"Link Label\" labelWidth={26} tooltip=\"Descriptive label for the linked query\">\n            <Input\n              label=\"Link Label\"\n              type=\"text\"\n              allowFullScreen\n              value={query.name}\n              width={40}\n              onChange={(e) => {\n                const newQueries = (options.jsonData.tracesToMetrics?.queries ?? []).map(\n                  (traceToMetricQuery, index) => {\n                    return index === i ? { ...traceToMetricQuery, name: e.currentTarget.value } : traceToMetricQuery;\n                  }\n                );\n                updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n                  ...options.jsonData.tracesToMetrics,\n                  queries: newQueries,\n                });\n              }}\n            />\n          </InlineField>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 165,
+          "lineStart": 142,
+          "snippet": "<InlineField\n            label=\"Query\"\n            labelWidth={10}\n            tooltip=\"The Prometheus query that will run when navigating from a trace to metrics. Interpolate tags using the `$__tags` keyword\"\n            grow\n          >\n            <Input\n              label=\"Query\"\n              type=\"text\"\n              allowFullScreen\n              value={query.query}\n              onChange={(e) => {\n                const updatedQueries = (options.jsonData.tracesToMetrics?.queries ?? []).map(\n                  (traceToMetricQuery, index) => {\n                    return index === i ? { ...traceToMetricQuery, query: e.currentTarget.value } : traceToMetricQuery;\n                  }\n                );\n                updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n                  ...options.jsonData.tracesToMetrics,\n                  queries: updatedQueries,\n                });\n              }}\n            />\n          </InlineField>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 91,
+          "lineStart": 67,
+          "snippet": "<InlineField\n          tooltip=\"The profiles data source the trace is going to navigate to\"\n          label=\"Data source\"\n          labelWidth={26}\n        >\n          <DataSourcePicker\n            inputId=\"trace-to-profiles-data-source-picker\"\n            filter={(ds) => supportedDataSourceTypes.includes(ds.type)}\n            current={options.jsonData.tracesToProfiles?.datasourceUid}\n            noDefault={true}\n            width={40}\n            onChange={(ds: DataSourceInstanceSettings) => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                datasourceUid: ds.uid,\n              });\n            }}\n            onClear={() => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                datasourceUid: undefined,\n              });\n            }}\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        },
+        {
+          "lineEnd": 109,
+          "lineStart": 95,
+          "snippet": "<InlineField\n          tooltip=\"Tags that will be used in the query. Default tags: 'service.name', 'service.namespace'\"\n          label=\"Tags\"\n          labelWidth={26}\n        >\n          <TagMappingInput\n            values={options.jsonData.tracesToProfiles?.tags ?? []}\n            onChange={(v) => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                tags: v,\n              });\n            }}\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        },
+        {
+          "lineEnd": 126,
+          "lineStart": 113,
+          "snippet": "<InlineField tooltip=\"Profile type that will be used in the query\" label=\"Profile type\" labelWidth={26}>\n          <ProfileTypesCascader\n            profileTypes={profileTypes}\n            placeholder={profileTypesPlaceholder}\n            initialProfileTypeId={options.jsonData.tracesToProfiles?.profileTypeId}\n            onChange={(val) => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                profileTypeId: val,\n              });\n            }}\n            width={40}\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        },
+        {
+          "lineEnd": 145,
+          "lineStart": 130,
+          "snippet": "<InlineField\n          tooltip=\"Use a custom query with the possibility to interpolate variables from the trace or span\"\n          label=\"Use custom query\"\n          labelWidth={26}\n        >\n          <InlineSwitch\n            id={'profilesCustomQuerySwitch'}\n            value={options.jsonData.tracesToProfiles?.customQuery}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                customQuery: event.currentTarget.checked,\n              })\n            }\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        },
+        {
+          "lineEnd": 167,
+          "lineStart": 149,
+          "snippet": "<InlineField\n          label=\"Query\"\n          labelWidth={26}\n          tooltip=\"The query that will run when navigating from a trace to profiles data source. Interpolate tags using the `$__tags` keyword\"\n          grow\n        >\n          <Input\n            label=\"Query\"\n            type=\"text\"\n            allowFullScreen\n            value={options.jsonData.tracesToProfiles?.query || ''}\n            onChange={(e) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                query: e.currentTarget.value,\n              })\n            }\n          />\n        </InlineField>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        }
+      ]
+    },
+    "input": {
+      "count": 6,
+      "files": [
+        "src/IntervalInput/IntervalInput.tsx",
+        "src/SpanBar/SpanBarSettings.tsx",
+        "src/TraceToLogs/TraceToLogsSettings.tsx",
+        "src/TraceToMetrics/TraceToMetricsSettings.tsx",
+        "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+      ],
+      "propUsage": {
+        "onChange": {
+          "count": 6,
+          "values": [
+            {
+              "count": 1,
+              "value": "{(e) => { const newQueries = (options.jsonData.tracesToMetrics?.queries ?? []).map( (traceToMetricQuery, index) => { ret…}"
+            },
+            {
+              "count": 1,
+              "value": "{(e) => { const updatedQueries = (options.jsonData.tracesToMetrics?.queries ?? []).map( (traceToMetricQuery, index) => {…}"
+            },
+            {
+              "count": 1,
+              "value": "{(e) => { props.onChange(e.currentTarget.value); }}"
+            },
+            {
+              "count": 1,
+              "value": "{(e) => updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', { ...options.jsonData.tra…}"
+            },
+            {
+              "count": 1,
+              "value": "{(e) => updateTracesToLogs({ query: e.currentTarget.value })}"
+            },
+            {
+              "count": 1,
+              "value": "{(v) => updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'spanBar', { ...options.jsonData.spanBar, tag…}"
+            }
+          ]
+        },
+        "type": {
+          "count": 6,
+          "values": [
+            {
+              "count": 6,
+              "value": "\"text\""
+            }
+          ]
+        },
+        "value": {
+          "count": 6,
+          "values": [
+            {
+              "count": 1,
+              "value": "{options.jsonData.spanBar?.tag || ''}"
+            },
+            {
+              "count": 1,
+              "value": "{options.jsonData.tracesToProfiles?.query || ''}"
+            },
+            {
+              "count": 1,
+              "value": "{props.value}"
+            },
+            {
+              "count": 1,
+              "value": "{query.name}"
+            },
+            {
+              "count": 1,
+              "value": "{query.query}"
+            },
+            {
+              "count": 1,
+              "value": "{query}"
+            }
+          ]
+        },
+        "allowFullScreen": {
+          "count": 4,
+          "values": [
+            {
+              "count": 4,
+              "value": "{true}"
+            }
+          ]
+        },
+        "label": {
+          "count": 4,
+          "values": [
+            {
+              "count": 3,
+              "value": "\"Query\""
+            },
+            {
+              "count": 1,
+              "value": "\"Link Label\""
+            }
+          ]
+        },
+        "width": {
+          "count": 3,
+          "values": [
+            {
+              "count": 2,
+              "value": "40"
+            },
+            {
+              "count": 1,
+              "value": "{props.width || 40}"
+            }
+          ]
+        },
+        "placeholder": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"Enter tag key\""
+            },
+            {
+              "count": 1,
+              "value": "{props.placeholder || '0'}"
+            }
+          ]
+        },
+        "aria-label": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{props.ariaLabel || 'interval input'}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 60,
+          "lineStart": 56,
+          "snippet": "<Input\n        type=\"text\"\n        placeholder={props.placeholder || '0'}\n        width={props.width || 40}\n        onChange={(e) =>",
+          "sourcePath": "src/IntervalInput/IntervalInput.tsx"
+        },
+        {
+          "lineEnd": 63,
+          "lineStart": 60,
+          "snippet": "<Input\n              type=\"text\"\n              placeholder=\"Enter tag key\"\n              onChange={(v) =>",
+          "sourcePath": "src/SpanBar/SpanBarSettings.tsx"
+        },
+        {
+          "lineEnd": 216,
+          "lineStart": 211,
+          "snippet": "<Input\n            label=\"Query\"\n            type=\"text\"\n            allowFullScreen\n            value={query}\n            onChange={(e) =>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 129,
+          "lineStart": 123,
+          "snippet": "<Input\n              label=\"Link Label\"\n              type=\"text\"\n              allowFullScreen\n              value={query.name}\n              width={40}\n              onChange={(e) =>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 153,
+          "lineStart": 148,
+          "snippet": "<Input\n              label=\"Query\"\n              type=\"text\"\n              allowFullScreen\n              value={query.query}\n              onChange={(e) =>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 160,
+          "lineStart": 155,
+          "snippet": "<Input\n            label=\"Query\"\n            type=\"text\"\n            allowFullScreen\n            value={options.jsonData.tracesToProfiles?.query || ''}\n            onChange={(e) =>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        }
+      ]
+    },
+    "inline-field-row": {
+      "count": 17,
+      "files": [
+        "src/NodeGraph/NodeGraphSettings.tsx",
+        "src/SpanBar/SpanBarSettings.tsx",
+        "src/TraceToLogs/TraceToLogsSettings.tsx",
+        "src/TraceToMetrics/TraceToMetricsSettings.tsx",
+        "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+      ],
+      "propUsage": {
+        "className": {
+          "count": 4,
+          "values": [
+            {
+              "count": 4,
+              "value": "{styles.row}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 45,
+          "lineStart": 28,
+          "snippet": "<InlineFieldRow className={styles.row}>\n        <InlineField\n          tooltip=\"Displays the node graph above the trace view. Default: disabled\"\n          label=\"Enable node graph\"\n          labelWidth={26}\n        >\n          <InlineSwitch\n            id=\"enableNodeGraph\"\n            value={options.jsonData.nodeGraph?.enabled}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'nodeGraph', {\n                ...options.jsonData.nodeGraph,\n                enabled: event.currentTarget.checked,\n              })\n            }\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/NodeGraph/NodeGraphSettings.tsx"
+        },
+        {
+          "lineEnd": 52,
+          "lineStart": 34,
+          "snippet": "<InlineFieldRow className={styles.row}>\n        <InlineField label=\"Label\" labelWidth={26} tooltip=\"Default: duration\" grow>\n          <Select\n            inputId=\"label\"\n            options={selectOptions}\n            value={options.jsonData.spanBar?.type || ''}\n            onChange={(v) => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'spanBar', {\n                ...options.jsonData.spanBar,\n                type: v?.value ?? '',\n              });\n            }}\n            placeholder=\"Duration\"\n            isClearable\n            aria-label={'select-label-name'}\n            width={40}\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/SpanBar/SpanBarSettings.tsx"
+        },
+        {
+          "lineEnd": 73,
+          "lineStart": 54,
+          "snippet": "<InlineFieldRow className={styles.row}>\n          <InlineField\n            label=\"Tag key\"\n            labelWidth={26}\n            tooltip=\"Tag key which will be used to get the tag value. A span's attributes and resources will be searched for the tag key\"\n          >\n            <Input\n              type=\"text\"\n              placeholder=\"Enter tag key\"\n              onChange={(v) =>\n                updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'spanBar', {\n                  ...options.jsonData.spanBar,\n                  tag: v.currentTarget.value,\n                })\n              }\n              value={options.jsonData.spanBar?.tag || ''}\n              width={40}\n            />\n          </InlineField>\n        </InlineFieldRow>",
+          "sourcePath": "src/SpanBar/SpanBarSettings.tsx"
+        },
+        {
+          "lineEnd": 137,
+          "lineStart": 117,
+          "snippet": "<InlineFieldRow>\n        <InlineField\n          tooltip=\"The logs data source the trace is going to navigate to\"\n          label=\"Data source\"\n          labelWidth={26}\n        >\n          <DataSourcePicker\n            inputId=\"trace-to-logs-data-source-picker\"\n            filter={(ds) => supportedDataSourceTypes.includes(ds.type)}\n            current={traceToLogs.datasourceUid}\n            noDefault={true}\n            width={40}\n            onChange={(ds: DataSourceInstanceSettings) =>\n              updateTracesToLogs({\n                datasourceUid: ds.uid,\n              })\n            }\n            onClear={() => updateTracesToLogs({ datasourceUid: undefined })}\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 149,
+          "lineStart": 139,
+          "snippet": "<InlineFieldRow>\n        <IntervalInput\n          label={getTimeShiftLabel('start')}\n          tooltip={getTimeShiftTooltip('start', '0')}\n          value={traceToLogs.spanStartTimeShift || ''}\n          onChange={(val) => {\n            updateTracesToLogs({ spanStartTimeShift: val });\n          }}\n          isInvalidError={invalidTimeShiftError}\n        />\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 161,
+          "lineStart": 151,
+          "snippet": "<InlineFieldRow>\n        <IntervalInput\n          label={getTimeShiftLabel('end')}\n          tooltip={getTimeShiftTooltip('end', '0')}\n          value={traceToLogs.spanEndTimeShift || ''}\n          onChange={(val) => {\n            updateTracesToLogs({ spanEndTimeShift: val });\n          }}\n          isInvalidError={invalidTimeShiftError}\n        />\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 171,
+          "lineStart": 163,
+          "snippet": "<InlineFieldRow>\n        <InlineField\n          tooltip=\"Tags that will be used in the query. Default tags: 'cluster', 'hostname', 'namespace', 'pod', 'service.name', 'service.namespace'\"\n          label=\"Tags\"\n          labelWidth={26}\n        >\n          <TagMappingInput values={tags ?? []} onChange={(v) => updateTracesToLogs({ tags: v })} />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 202,
+          "lineStart": 188,
+          "snippet": "<InlineFieldRow>\n        <InlineField\n          tooltip=\"Use a custom query with the possibility to interpolate variables from the trace or span\"\n          label=\"Use custom query\"\n          labelWidth={26}\n        >\n          <InlineSwitch\n            id={'customQuerySwitch'}\n            value={customQuery}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>) =>\n              updateTracesToLogs({ customQuery: event.currentTarget.checked })\n            }\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 247,
+          "lineStart": 233,
+          "snippet": "<InlineFieldRow>\n      <InlineField\n        disabled={props.disabled}\n        label={`Filter by ${props.type} ID`}\n        labelWidth={26}\n        grow\n        tooltip={`Filters logs by ${props.type} ID, where the ${props.type} ID should be part of the log line`}\n      >\n        <InlineSwitch\n          id={props.id}\n          value={props.value}\n          onChange={(event: React.SyntheticEvent<HTMLInputElement>) => props.onChange(event.currentTarget.checked)}\n        />\n      </InlineField>\n    </InlineFieldRow>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 72,
+          "lineStart": 46,
+          "snippet": "<InlineFieldRow className={styles.row}>\n        <InlineField\n          tooltip=\"The Prometheus data source the trace is going to navigate to\"\n          label=\"Data source\"\n          labelWidth={26}\n        >\n          <DataSourcePicker\n            inputId=\"trace-to-metrics-data-source-picker\"\n            current={options.jsonData.tracesToMetrics?.datasourceUid}\n            noDefault={true}\n            width={40}\n            filter={(ds) => supportedDataSourceTypes.includes(ds.type)}\n            onChange={(ds: DataSourceInstanceSettings) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n                ...options.jsonData.tracesToMetrics,\n                datasourceUid: ds.uid,\n              })\n            }\n            onClear={() =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n                ...options.jsonData.tracesToMetrics,\n                datasourceUid: undefined,\n              })\n            }\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 88,
+          "lineStart": 74,
+          "snippet": "<InlineFieldRow>\n        <IntervalInput\n          label={getTimeShiftLabel('start')}\n          tooltip={getTimeShiftTooltip('start', '-2m')}\n          value={options.jsonData.tracesToMetrics?.spanStartTimeShift || ''}\n          onChange={(val) => {\n            updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n              ...options.jsonData.tracesToMetrics,\n              spanStartTimeShift: val,\n            });\n          }}\n          placeholder={'-2m'}\n          isInvalidError={invalidTimeShiftError}\n        />\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 104,
+          "lineStart": 90,
+          "snippet": "<InlineFieldRow>\n        <IntervalInput\n          label={getTimeShiftLabel('end')}\n          tooltip={getTimeShiftTooltip('end', '2m')}\n          value={options.jsonData.tracesToMetrics?.spanEndTimeShift || ''}\n          onChange={(val) => {\n            updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n              ...options.jsonData.tracesToMetrics,\n              spanEndTimeShift: val,\n            });\n          }}\n          placeholder={'2m'}\n          isInvalidError={invalidTimeShiftError}\n        />\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 118,
+          "lineStart": 106,
+          "snippet": "<InlineFieldRow>\n        <InlineField tooltip=\"Tags that will be used in the metrics query\" label=\"Tags\" labelWidth={26}>\n          <TagMappingInput\n            values={options.jsonData.tracesToMetrics?.tags ?? []}\n            onChange={(v) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n                ...options.jsonData.tracesToMetrics,\n                tags: v,\n              })\n            }\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 92,
+          "lineStart": 66,
+          "snippet": "<InlineFieldRow>\n        <InlineField\n          tooltip=\"The profiles data source the trace is going to navigate to\"\n          label=\"Data source\"\n          labelWidth={26}\n        >\n          <DataSourcePicker\n            inputId=\"trace-to-profiles-data-source-picker\"\n            filter={(ds) => supportedDataSourceTypes.includes(ds.type)}\n            current={options.jsonData.tracesToProfiles?.datasourceUid}\n            noDefault={true}\n            width={40}\n            onChange={(ds: DataSourceInstanceSettings) => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                datasourceUid: ds.uid,\n              });\n            }}\n            onClear={() => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                datasourceUid: undefined,\n              });\n            }}\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        },
+        {
+          "lineEnd": 110,
+          "lineStart": 94,
+          "snippet": "<InlineFieldRow>\n        <InlineField\n          tooltip=\"Tags that will be used in the query. Default tags: 'service.name', 'service.namespace'\"\n          label=\"Tags\"\n          labelWidth={26}\n        >\n          <TagMappingInput\n            values={options.jsonData.tracesToProfiles?.tags ?? []}\n            onChange={(v) => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                tags: v,\n              });\n            }}\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        },
+        {
+          "lineEnd": 127,
+          "lineStart": 112,
+          "snippet": "<InlineFieldRow>\n        <InlineField tooltip=\"Profile type that will be used in the query\" label=\"Profile type\" labelWidth={26}>\n          <ProfileTypesCascader\n            profileTypes={profileTypes}\n            placeholder={profileTypesPlaceholder}\n            initialProfileTypeId={options.jsonData.tracesToProfiles?.profileTypeId}\n            onChange={(val) => {\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                profileTypeId: val,\n              });\n            }}\n            width={40}\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        },
+        {
+          "lineEnd": 146,
+          "lineStart": 129,
+          "snippet": "<InlineFieldRow>\n        <InlineField\n          tooltip=\"Use a custom query with the possibility to interpolate variables from the trace or span\"\n          label=\"Use custom query\"\n          labelWidth={26}\n        >\n          <InlineSwitch\n            id={'profilesCustomQuerySwitch'}\n            value={options.jsonData.tracesToProfiles?.customQuery}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>) =>\n              updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToProfiles', {\n                ...options.jsonData.tracesToProfiles,\n                customQuery: event.currentTarget.checked,\n              })\n            }\n          />\n        </InlineField>\n      </InlineFieldRow>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        }
+      ]
+    },
+    "inline-switch": {
+      "count": 4,
+      "files": [
+        "src/NodeGraph/NodeGraphSettings.tsx",
+        "src/TraceToLogs/TraceToLogsSettings.tsx",
+        "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+      ],
+      "propUsage": {
+        "id": {
+          "count": 4,
+          "values": [
+            {
+              "count": 1,
+              "value": "'customQuerySwitch'"
+            },
+            {
+              "count": 1,
+              "value": "'profilesCustomQuerySwitch'"
+            },
+            {
+              "count": 1,
+              "value": "\"enableNodeGraph\""
+            },
+            {
+              "count": 1,
+              "value": "{props.id}"
+            }
+          ]
+        },
+        "onChange": {
+          "count": 4,
+          "values": [
+            {
+              "count": 2,
+              "value": "{(event: React.SyntheticEvent<HTMLInputElement>) => updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, '…}"
+            },
+            {
+              "count": 1,
+              "value": "{(event: React.SyntheticEvent<HTMLInputElement>) => props.onChange(event.currentTarget.checked)}"
+            },
+            {
+              "count": 1,
+              "value": "{(event: React.SyntheticEvent<HTMLInputElement>) => updateTracesToLogs({ customQuery: event.currentTarget.checked })}"
+            }
+          ]
+        },
+        "value": {
+          "count": 4,
+          "values": [
+            {
+              "count": 1,
+              "value": "{customQuery}"
+            },
+            {
+              "count": 1,
+              "value": "{options.jsonData.nodeGraph?.enabled}"
+            },
+            {
+              "count": 1,
+              "value": "{options.jsonData.tracesToProfiles?.customQuery}"
+            },
+            {
+              "count": 1,
+              "value": "{props.value}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 37,
+          "lineStart": 34,
+          "snippet": "<InlineSwitch\n            id=\"enableNodeGraph\"\n            value={options.jsonData.nodeGraph?.enabled}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>",
+          "sourcePath": "src/NodeGraph/NodeGraphSettings.tsx"
+        },
+        {
+          "lineEnd": 197,
+          "lineStart": 194,
+          "snippet": "<InlineSwitch\n            id={'customQuerySwitch'}\n            value={customQuery}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 244,
+          "lineStart": 241,
+          "snippet": "<InlineSwitch\n          id={props.id}\n          value={props.value}\n          onChange={(event: React.SyntheticEvent<HTMLInputElement>",
+          "sourcePath": "src/TraceToLogs/TraceToLogsSettings.tsx"
+        },
+        {
+          "lineEnd": 138,
+          "lineStart": 135,
+          "snippet": "<InlineSwitch\n            id={'profilesCustomQuerySwitch'}\n            value={options.jsonData.tracesToProfiles?.customQuery}\n            onChange={(event: React.SyntheticEvent<HTMLInputElement>",
+          "sourcePath": "src/TraceToProfiles/TraceToProfilesSettings.tsx"
+        }
+      ]
+    },
+    "use-styles2": {
+      "count": 4,
+      "files": [
+        "src/NodeGraph/NodeGraphSettings.tsx",
+        "src/SpanBar/SpanBarSettings.tsx",
+        "src/TraceToLogs/TagMappingInput.tsx",
+        "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 24,
+          "lineStart": 24,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/NodeGraph/NodeGraphSettings.tsx"
+        },
+        {
+          "lineEnd": 29,
+          "lineStart": 29,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/SpanBar/SpanBarSettings.tsx"
+        },
+        {
+          "lineEnd": 15,
+          "lineStart": 15,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/TraceToLogs/TagMappingInput.tsx"
+        },
+        {
+          "lineEnd": 42,
+          "lineStart": 42,
+          "snippet": "const styles = useStyles2(getStyles);",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        }
+      ]
+    },
+    "cascader": {
+      "count": 1,
+      "files": [
+        "src/pyroscope/ProfileTypesCascader.tsx"
+      ],
+      "propUsage": {
+        "allowCustomValue": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "true"
+            }
+          ]
+        },
+        "changeOnSelect": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "false"
+            }
+          ]
+        },
+        "displayAllSelectedLevels": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "true"
+            }
+          ]
+        },
+        "initialValue": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{props.initialProfileTypeId}"
+            }
+          ]
+        },
+        "onSelect": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{props.onChange}"
+            }
+          ]
+        },
+        "options": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{cascaderOptions}"
+            }
+          ]
+        },
+        "placeholder": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{props.placeholder}"
+            }
+          ]
+        },
+        "separator": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "'-'"
+            }
+          ]
+        },
+        "width": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{props.width ?? 26}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 30,
+          "lineStart": 20,
+          "snippet": "<Cascader\n      placeholder={props.placeholder}\n      separator={'-'}\n      displayAllSelectedLevels={true}\n      initialValue={props.initialProfileTypeId}\n      allowCustomValue={true}\n      onSelect={props.onChange}\n      options={cascaderOptions}\n      changeOnSelect={false}\n      width={props.width ?? 26}\n    />",
+          "sourcePath": "src/pyroscope/ProfileTypesCascader.tsx"
+        }
+      ]
+    },
+    "select": {
+      "count": 1,
+      "files": [
+        "src/SpanBar/SpanBarSettings.tsx"
+      ],
+      "propUsage": {
+        "aria-label": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "'select-label-name'"
+            }
+          ]
+        },
+        "inputId": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"label\""
+            }
+          ]
+        },
+        "isClearable": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{true}"
+            }
+          ]
+        },
+        "onChange": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{(v) => { updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'spanBar', { ...options.jsonData.spanBar, t…}"
+            }
+          ]
+        },
+        "options": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{selectOptions}"
+            }
+          ]
+        },
+        "placeholder": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"Duration\""
+            }
+          ]
+        },
+        "value": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{options.jsonData.spanBar?.type || ''}"
+            }
+          ]
+        },
+        "width": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "40"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 40,
+          "lineStart": 36,
+          "snippet": "<Select\n            inputId=\"label\"\n            options={selectOptions}\n            value={options.jsonData.spanBar?.type || ''}\n            onChange={(v) =>",
+          "sourcePath": "src/SpanBar/SpanBarSettings.tsx"
+        }
+      ]
+    },
+    "alert": {
+      "count": 1,
+      "files": [
+        "src/TemporaryAlert.tsx"
+      ],
+      "propUsage": {
+        "className": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{style}"
+            }
+          ]
+        },
+        "elevated": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "true"
+            }
+          ]
+        },
+        "onRemove": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{() => setVisible(false)}"
+            }
+          ]
+        },
+        "severity": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{props.severity}"
+            }
+          ]
+        },
+        "title": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{props.text}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 67,
+          "lineStart": 64,
+          "snippet": "<Alert\n          className={style}\n          elevated={true}\n          onRemove={() =>",
+          "sourcePath": "src/TemporaryAlert.tsx"
+        }
+      ]
+    },
+    "use-theme2": {
+      "count": 1,
+      "files": [
+        "src/TemporaryAlert.tsx"
+      ],
+      "propUsage": {},
+      "snippets": [
+        {
+          "lineEnd": 38,
+          "lineStart": 38,
+          "snippet": "const style = getStyle(useTheme2());",
+          "sourcePath": "src/TemporaryAlert.tsx"
+        }
+      ]
+    },
+    "inline-label": {
+      "count": 1,
+      "files": [
+        "src/TraceToLogs/TagMappingInput.tsx"
+      ],
+      "propUsage": {
+        "aria-label": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"equals\""
+            }
+          ]
+        },
+        "className": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "{styles.operator}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 39,
+          "lineStart": 37,
+          "snippet": "<InlineLabel aria-label=\"equals\" className={styles.operator}>\n              as\n            </InlineLabel>",
+          "sourcePath": "src/TraceToLogs/TagMappingInput.tsx"
+        }
+      ]
+    },
+    "segment-input": {
+      "count": 2,
+      "files": [
+        "src/TraceToLogs/TagMappingInput.tsx"
+      ],
+      "propUsage": {
+        "id": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "{`${id}-key-${idx}`}"
+            },
+            {
+              "count": 1,
+              "value": "{`${id}-value-${idx}`}"
+            }
+          ]
+        },
+        "onChange": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "{(e) => { onChange( values.map((v, i) => { if (i === idx) { return { ...v, key: String(e) }; } return v; }) ); }}"
+            },
+            {
+              "count": 1,
+              "value": "{(e) => { onChange( values.map((v, i) => { if (i === idx) { return { ...v, value: String(e) }; } return v; }) ); }}"
+            }
+          ]
+        },
+        "placeholder": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "'New name (optional)'"
+            },
+            {
+              "count": 1,
+              "value": "'Tag name'"
+            }
+          ]
+        },
+        "value": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "{value.key}"
+            },
+            {
+              "count": 1,
+              "value": "{value.value || ''}"
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 26,
+          "lineStart": 22,
+          "snippet": "<SegmentInput\n              id={`${id}-key-${idx}`}\n              placeholder={'Tag name'}\n              value={value.key}\n              onChange={(e) =>",
+          "sourcePath": "src/TraceToLogs/TagMappingInput.tsx"
+        },
+        {
+          "lineEnd": 44,
+          "lineStart": 40,
+          "snippet": "<SegmentInput\n              id={`${id}-value-${idx}`}\n              placeholder={'New name (optional)'}\n              value={value.value || ''}\n              onChange={(e) =>",
+          "sourcePath": "src/TraceToLogs/TagMappingInput.tsx"
+        }
+      ]
+    },
+    "toolbar-button": {
+      "count": 3,
+      "files": [
+        "src/TraceToLogs/TagMappingInput.tsx"
+      ],
+      "propUsage": {
+        "aria-label": {
+          "count": 3,
+          "values": [
+            {
+              "count": 2,
+              "value": "\"Add tag\""
+            },
+            {
+              "count": 1,
+              "value": "\"Remove tag\""
+            }
+          ]
+        },
+        "className": {
+          "count": 3,
+          "values": [
+            {
+              "count": 2,
+              "value": "\"query-part\""
+            },
+            {
+              "count": 1,
+              "value": "{cx(styles.removeTag, 'query-part')}"
+            }
+          ]
+        },
+        "icon": {
+          "count": 3,
+          "values": [
+            {
+              "count": 2,
+              "value": "\"plus\""
+            },
+            {
+              "count": 1,
+              "value": "\"times\""
+            }
+          ]
+        },
+        "onClick": {
+          "count": 3,
+          "values": [
+            {
+              "count": 2,
+              "value": "{() => onChange([...values, { key: '', value: '' }])}"
+            },
+            {
+              "count": 1,
+              "value": "{() => onChange([...values.slice(0, idx), ...values.slice(idx + 1)])}"
+            }
+          ]
+        },
+        "type": {
+          "count": 3,
+          "values": [
+            {
+              "count": 3,
+              "value": "\"button\""
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 56,
+          "lineStart": 55,
+          "snippet": "<ToolbarButton\n              onClick={() =>",
+          "sourcePath": "src/TraceToLogs/TagMappingInput.tsx"
+        },
+        {
+          "lineEnd": 65,
+          "lineStart": 64,
+          "snippet": "<ToolbarButton\n                onClick={() =>",
+          "sourcePath": "src/TraceToLogs/TagMappingInput.tsx"
+        },
+        {
+          "lineEnd": 77,
+          "lineStart": 75,
+          "snippet": "<ToolbarButton\n          icon=\"plus\"\n          onClick={() =>",
+          "sourcePath": "src/TraceToLogs/TagMappingInput.tsx"
+        }
+      ]
+    },
+    "button": {
+      "count": 2,
+      "files": [
+        "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+      ],
+      "propUsage": {
+        "icon": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"plus\""
+            },
+            {
+              "count": 1,
+              "value": "\"times\""
+            }
+          ]
+        },
+        "onClick": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "{() => { const newQueries = options.jsonData.tracesToMetrics?.queries.filter((_, index) => index !== i); updateDatasourc…}"
+            },
+            {
+              "count": 1,
+              "value": "{() => { updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', { ...options.jsonData.tra…}"
+            }
+          ]
+        },
+        "type": {
+          "count": 2,
+          "values": [
+            {
+              "count": 2,
+              "value": "\"button\""
+            }
+          ]
+        },
+        "variant": {
+          "count": 2,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"destructive\""
+            },
+            {
+              "count": 1,
+              "value": "\"secondary\""
+            }
+          ]
+        },
+        "aria-label": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"Remove query\""
+            }
+          ]
+        },
+        "title": {
+          "count": 1,
+          "values": [
+            {
+              "count": 1,
+              "value": "\"Add query\""
+            }
+          ]
+        }
+      },
+      "snippets": [
+        {
+          "lineEnd": 172,
+          "lineStart": 167,
+          "snippet": "<Button\n            variant=\"destructive\"\n            aria-label=\"Remove query\"\n            icon=\"times\"\n            type=\"button\"\n            onClick={() =>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        },
+        {
+          "lineEnd": 196,
+          "lineStart": 183,
+          "snippet": "<Button\n        variant=\"secondary\"\n        title=\"Add query\"\n        icon=\"plus\"\n        type=\"button\"\n        onClick={() => {\n          updateDatasourcePluginJsonDataOption({ onOptionsChange, options }, 'tracesToMetrics', {\n            ...options.jsonData.tracesToMetrics,\n            queries: [...(options.jsonData.tracesToMetrics?.queries ?? []), { query: '' }],\n          });\n        }}\n      >\n        Add query\n      </Button>",
+          "sourcePath": "src/TraceToMetrics/TraceToMetricsSettings.tsx"
+        }
+      ]
+    }
+  }
+}

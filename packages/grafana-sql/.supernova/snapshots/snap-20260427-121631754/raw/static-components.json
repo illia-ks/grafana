@@ -1,0 +1,149 @@
+[
+  {
+    "componentKey": "apply-query-defaults",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "applyQueryDefaults",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "common-fns",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "COMMON_FNS",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "connection-limits",
+    "componentPath": "components/configuration/ConnectionLimits.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "ConnectionLimits",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "create-select-clause",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "createSelectClause",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "divider",
+    "componentPath": "components/configuration/Divider.tsx",
+    "enrichmentStatus": "none",
+    "exportName": "Divider",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "format-sql",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "formatSQL",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "have-columns",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "haveColumns",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "load-resources",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "loadResources",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "macro-functions",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "MACRO_FUNCTIONS",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "make-variable",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "makeVariable",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "max-lifetime-field",
+    "componentPath": "components/configuration/MaxLifetimeField.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MaxLifetimeField",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "max-open-connections-field",
+    "componentPath": "components/configuration/MaxOpenConnectionsField.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "MaxOpenConnectionsField",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "number-input",
+    "componentPath": "components/configuration/NumberInput.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "NumberInput",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "preview",
+    "componentPath": "components/visual-query-builder/Preview.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Preview",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "query-editor-expression-type",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "QueryEditorExpressionType",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "query-format",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "QueryFormat",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "sql-datasource",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SqlDatasource",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "sql-query-editor-lazy",
+    "componentPath": "components/QueryEditorLazy.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "SqlQueryEditorLazy",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "sqlvariable-support",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SQLVariableSupport",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "tlssecrets-config",
+    "componentPath": "components/configuration/TLSSecretsConfig.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "TLSSecretsConfig",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "use-migrate-database-fields",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "useMigrateDatabaseFields",
+    "exportType": "inferred-export"
+  }
+]

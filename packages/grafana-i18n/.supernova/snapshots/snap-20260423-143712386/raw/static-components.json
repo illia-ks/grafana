@@ -1,0 +1,205 @@
+[
+  {
+    "componentKey": "brazilian-portuguese",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "BRAZILIAN_PORTUGUESE",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "chinese-simplified",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CHINESE_SIMPLIFIED",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "chinese-traditional",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CHINESE_TRADITIONAL",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "czech-czechia",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "CZECH_CZECHIA",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "default-language",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DEFAULT_LANGUAGE",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "dutch-netherlands",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "DUTCH_NETHERLANDS",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "english-us",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ENGLISH_US",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "format-date",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "formatDate",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "format-date-range",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "formatDateRange",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "format-duration",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "formatDuration",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "french-france",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "FRENCH_FRANCE",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "german-germany",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "GERMAN_GERMANY",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "hungarian-hungary",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "HUNGARIAN_HUNGARY",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "indonesian-indonesia",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "INDONESIAN_INDONESIA",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "init-plugin-translations",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "initPluginTranslations",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "init-regional-format-for-tests",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "initRegionalFormatForTests",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "italian-italy",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "ITALIAN_ITALY",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "japanese-japan",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "JAPANESE_JAPAN",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "korean-korea",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "KOREAN_KOREA",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "languages",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "LANGUAGES",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "polish-poland",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "POLISH_POLAND",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "portuguese-portugal",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PORTUGUESE_PORTUGAL",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "pseudo-locale",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "PSEUDO_LOCALE",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "russian-russia",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "RUSSIAN_RUSSIA",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "spanish-spain",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SPANISH_SPAIN",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "swedish-sweden",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "SWEDISH_SWEDEN",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "t",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "t",
+    "exportType": "inferred-export"
+  },
+  {
+    "componentKey": "trans",
+    "componentPath": "i18n.tsx",
+    "enrichmentStatus": "partial",
+    "exportName": "Trans",
+    "exportType": "explicit-export"
+  },
+  {
+    "componentKey": "turkish-turkey",
+    "componentPath": "index.ts",
+    "enrichmentStatus": "none",
+    "exportName": "TURKISH_TURKEY",
+    "exportType": "inferred-export"
+  }
+]

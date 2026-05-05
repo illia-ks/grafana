@@ -1,0 +1,67 @@
+[
+  {
+    "componentKey": "interval-input",
+    "componentPath": "IntervalInput/IntervalInput.tsx",
+    "exportName": "IntervalInput"
+  },
+  {
+    "componentKey": "node-graph-section",
+    "componentPath": "NodeGraph/NodeGraphSettings.tsx",
+    "exportName": "NodeGraphSection"
+  },
+  {
+    "componentKey": "node-graph-settings",
+    "componentPath": "NodeGraph/NodeGraphSettings.tsx",
+    "exportName": "NodeGraphSettings"
+  },
+  {
+    "componentKey": "span-bar-section",
+    "componentPath": "SpanBar/SpanBarSettings.tsx",
+    "exportName": "SpanBarSection"
+  },
+  {
+    "componentKey": "span-bar-settings",
+    "componentPath": "SpanBar/SpanBarSettings.tsx",
+    "exportName": "SpanBarSettings"
+  },
+  {
+    "componentKey": "tag-mapping-input",
+    "componentPath": "TraceToLogs/TagMappingInput.tsx",
+    "exportName": "TagMappingInput"
+  },
+  {
+    "componentKey": "temporary-alert",
+    "componentPath": "TemporaryAlert.tsx",
+    "exportName": "TemporaryAlert"
+  },
+  {
+    "componentKey": "trace-to-logs-section",
+    "componentPath": "TraceToLogs/TraceToLogsSettings.tsx",
+    "exportName": "TraceToLogsSection"
+  },
+  {
+    "componentKey": "trace-to-logs-settings",
+    "componentPath": "TraceToLogs/TraceToLogsSettings.tsx",
+    "exportName": "TraceToLogsSettings"
+  },
+  {
+    "componentKey": "trace-to-metrics-section",
+    "componentPath": "TraceToMetrics/TraceToMetricsSettings.tsx",
+    "exportName": "TraceToMetricsSection"
+  },
+  {
+    "componentKey": "trace-to-metrics-settings",
+    "componentPath": "TraceToMetrics/TraceToMetricsSettings.tsx",
+    "exportName": "TraceToMetricsSettings"
+  },
+  {
+    "componentKey": "trace-to-profiles-section",
+    "componentPath": "TraceToProfiles/TraceToProfilesSettings.tsx",
+    "exportName": "TraceToProfilesSection"
+  },
+  {
+    "componentKey": "trace-to-profiles-settings",
+    "componentPath": "TraceToProfiles/TraceToProfilesSettings.tsx",
+    "exportName": "TraceToProfilesSettings"
+  }
+]
