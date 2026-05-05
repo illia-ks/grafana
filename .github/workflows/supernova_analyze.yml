@@ -1,4 +1,4 @@
-name: Supernova Analyze
+name: Supernova Code Analyze
 
 on:
   push:
@@ -9,20 +9,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      # 1. Checkout Grafana source
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Install CLI
+      # 2. Install Supernova CLI
+      - name: Install Supernova CLI
         run: npm install -g @supernovaio/cli
 
-      - name: Login to Supernova
+      # 3. Run analysis
+      - name: Run Supernova analyze
         env:
           SUPERNOVA_API_KEY: ${{ secrets.SUPERNOVA_API_KEY }}
         run: |
-          supernova login --apiKey "$SUPERNOVA_API_KEY"
-
-      - name: Run analysis
-        env:
-          SUPERNOVA_DESIGN_SYSTEM_ID: ${{ secrets.SUPERNOVA_DESIGN_SYSTEM_ID }}
-        run: |
           supernova code analyze \
-            -d "$SUPERNOVA_DESIGN_SYSTEM_ID"
+            -d "${{ secrets.SUPERNOVA_DESIGN_SYSTEM_ID }}"
